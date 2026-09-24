@@ -481,6 +481,63 @@
    "credit": "Versilian Studios"
   }
  ],
+ "erhu/phrase": [
+  {
+   "source": "commons",
+   "file": "File:江河水.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:%E6%B1%9F%E6%B2%B3%E6%B0%B4.ogg",
+   "license": "CC BY-SA 4.0",
+   "artist": "Folk tune, re-arranged by 黃海懷, record by: David290, performed by :Zhang Peijian",
+   "excerpt": "219.5-229.5s",
+   "credit": "Folk tune, re-arranged by 黃海懷, record by: David290, performed by :Zhang Peijian (Wikimedia Commons)"
+  }
+ ],
+ "erhu/mix": [
+  {
+   "source": "commons",
+   "file": "File:江河水.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:%E6%B1%9F%E6%B2%B3%E6%B0%B4.ogg",
+   "license": "CC BY-SA 4.0",
+   "artist": "Folk tune, re-arranged by 黃海懷, record by: David290, performed by :Zhang Peijian",
+   "excerpt": "219.5-229.5s",
+   "credit": "Folk tune, re-arranged by 黃海懷, record by: David290, performed by :Zhang Peijian (Wikimedia Commons)"
+  },
+  {
+   "source": "freepats",
+   "bank": "MuldjordKit",
+   "file": "drum groove (kick, snare, hi-hat)",
+   "license": "CC-BY-4.0",
+   "credit": "MuldjordKit by Lars Muldjord (FreePats stereo version)"
+  },
+  {
+   "source": "generated",
+   "preset": "speech-shaped noise and room reverb",
+   "license": "CC0-1.0",
+   "credit": "Generated in code for this library"
+  }
+ ],
+ "erhu/phone": [
+  {
+   "source": "commons",
+   "file": "File:江河水.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:%E6%B1%9F%E6%B2%B3%E6%B0%B4.ogg",
+   "license": "CC BY-SA 4.0",
+   "artist": "Folk tune, re-arranged by 黃海懷, record by: David290, performed by :Zhang Peijian",
+   "excerpt": "219.5-229.5s",
+   "credit": "Folk tune, re-arranged by 黃海懷, record by: David290, performed by :Zhang Peijian (Wikimedia Commons)"
+  }
+ ],
+ "erhu/excerpt-2": [
+  {
+   "source": "commons",
+   "file": "File:二泉映月.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:%E4%BA%8C%E6%B3%89%E6%98%A0%E6%9C%88.ogg",
+   "license": "CC BY-SA 4.0",
+   "artist": "Originally composed and performed by 阿炳 (Abing), record by: David290, performed by :Zhang Peijian",
+   "excerpt": "105.5-115.5s",
+   "credit": "Originally composed and performed by 阿炳 (Abing), record by: David290, performed by :Zhang Peijian (Wikimedia Commons)"
+  }
+ ],
  "acoustic-guitar-nylon/note-1": [
   {
    "source": "freepats",
@@ -1740,6 +1797,155 @@
    "credit": "FreePats Jaw Harp"
   }
  ],
+ "mandolin/phrase": [
+  {
+   "source": "commons",
+   "file": "File:Schneewalzer.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Schneewalzer.ogg",
+   "license": "CC0",
+   "artist": "StephanDo",
+   "excerpt": "11.4-19.4s",
+   "credit": "StephanDo (Wikimedia Commons)"
+  }
+ ],
+ "mandolin/mix": [
+  {
+   "source": "commons",
+   "file": "File:Schneewalzer.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Schneewalzer.ogg",
+   "license": "CC0",
+   "artist": "StephanDo",
+   "excerpt": "11.4-19.4s",
+   "credit": "StephanDo (Wikimedia Commons)"
+  },
+  {
+   "source": "freepats",
+   "bank": "MuldjordKit",
+   "file": "drum groove (kick, snare, hi-hat)",
+   "license": "CC-BY-4.0",
+   "credit": "MuldjordKit by Lars Muldjord (FreePats stereo version)"
+  },
+  {
+   "source": "generated",
+   "preset": "speech-shaped noise and room reverb",
+   "license": "CC0-1.0",
+   "credit": "Generated in code for this library"
+  }
+ ],
+ "mandolin/phone": [
+  {
+   "source": "commons",
+   "file": "File:Schneewalzer.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Schneewalzer.ogg",
+   "license": "CC0",
+   "artist": "StephanDo",
+   "excerpt": "11.4-19.4s",
+   "credit": "StephanDo (Wikimedia Commons)"
+  }
+ ],
+ "banjo/phrase": [
+  {
+   "source": "commons",
+   "file": "File:Banjo.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Banjo.ogg",
+   "license": "CC BY-SA 3.0",
+   "artist": "Poniol60",
+   "excerpt": "1.0-11.0s",
+   "credit": "Poniol60 (Wikimedia Commons)"
+  }
+ ],
+ "banjo/mix": [
+  {
+   "source": "commons",
+   "file": "File:Banjo.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Banjo.ogg",
+   "license": "CC BY-SA 3.0",
+   "artist": "Poniol60",
+   "excerpt": "1.0-11.0s",
+   "credit": "Poniol60 (Wikimedia Commons)"
+  },
+  {
+   "source": "freepats",
+   "bank": "MuldjordKit",
+   "file": "drum groove (kick, snare, hi-hat)",
+   "license": "CC-BY-4.0",
+   "credit": "MuldjordKit by Lars Muldjord (FreePats stereo version)"
+  },
+  {
+   "source": "generated",
+   "preset": "speech-shaped noise and room reverb",
+   "license": "CC0-1.0",
+   "credit": "Generated in code for this library"
+  }
+ ],
+ "banjo/phone": [
+  {
+   "source": "commons",
+   "file": "File:Banjo.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Banjo.ogg",
+   "license": "CC BY-SA 3.0",
+   "artist": "Poniol60",
+   "excerpt": "1.0-11.0s",
+   "credit": "Poniol60 (Wikimedia Commons)"
+  }
+ ],
+ "sitar/phrase": [
+  {
+   "source": "commons",
+   "file": "File:Sitar sample yaman.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Sitar_sample_yaman.ogg",
+   "license": "CC BY-SA 3.0",
+   "artist": "Tito Dutta",
+   "excerpt": "51.7-61.7s",
+   "credit": "Tito Dutta (Wikimedia Commons)"
+  }
+ ],
+ "sitar/mix": [
+  {
+   "source": "commons",
+   "file": "File:Sitar sample yaman.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Sitar_sample_yaman.ogg",
+   "license": "CC BY-SA 3.0",
+   "artist": "Tito Dutta",
+   "excerpt": "51.7-61.7s",
+   "credit": "Tito Dutta (Wikimedia Commons)"
+  },
+  {
+   "source": "freepats",
+   "bank": "MuldjordKit",
+   "file": "drum groove (kick, snare, hi-hat)",
+   "license": "CC-BY-4.0",
+   "credit": "MuldjordKit by Lars Muldjord (FreePats stereo version)"
+  },
+  {
+   "source": "generated",
+   "preset": "speech-shaped noise and room reverb",
+   "license": "CC0-1.0",
+   "credit": "Generated in code for this library"
+  }
+ ],
+ "sitar/phone": [
+  {
+   "source": "commons",
+   "file": "File:Sitar sample yaman.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Sitar_sample_yaman.ogg",
+   "license": "CC BY-SA 3.0",
+   "artist": "Tito Dutta",
+   "excerpt": "51.7-61.7s",
+   "credit": "Tito Dutta (Wikimedia Commons)"
+  }
+ ],
+ "sitar/excerpt-2": [
+  {
+   "source": "commons",
+   "file": "File:Sitar clipping.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Sitar_clipping.ogg",
+   "license": "CC BY-SA 3.0",
+   "artist": "Sanath311",
+   "excerpt": "1.0-9.0s",
+   "credit": "Sanath311 (Wikimedia Commons)"
+  }
+ ],
  "grand-piano/note-1": [
   {
    "source": "vcsl",
@@ -2294,6 +2500,98 @@
    "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Electrophones/TX81Z/FM%20Piano/FMPiano_G%233_vl3.wav",
    "license": "CC0-1.0",
    "credit": "Versilian Studios and contributors"
+  }
+ ],
+ "rhodes/phrase": [
+  {
+   "source": "commons",
+   "file": "File:Rhodes Mark I Tubeamp.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Rhodes_Mark_I_Tubeamp.ogg",
+   "license": "Public domain",
+   "artist": "The original uploader was Fetz at German Wikipedia.",
+   "excerpt": "0.0-8.5s",
+   "credit": "The original uploader was Fetz at German Wikipedia. (Wikimedia Commons)"
+  }
+ ],
+ "rhodes/mix": [
+  {
+   "source": "commons",
+   "file": "File:Rhodes Mark I Tubeamp.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Rhodes_Mark_I_Tubeamp.ogg",
+   "license": "Public domain",
+   "artist": "The original uploader was Fetz at German Wikipedia.",
+   "excerpt": "0.0-8.5s",
+   "credit": "The original uploader was Fetz at German Wikipedia. (Wikimedia Commons)"
+  },
+  {
+   "source": "freepats",
+   "bank": "MuldjordKit",
+   "file": "drum groove (kick, snare, hi-hat)",
+   "license": "CC-BY-4.0",
+   "credit": "MuldjordKit by Lars Muldjord (FreePats stereo version)"
+  },
+  {
+   "source": "generated",
+   "preset": "speech-shaped noise and room reverb",
+   "license": "CC0-1.0",
+   "credit": "Generated in code for this library"
+  }
+ ],
+ "rhodes/phone": [
+  {
+   "source": "commons",
+   "file": "File:Rhodes Mark I Tubeamp.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Rhodes_Mark_I_Tubeamp.ogg",
+   "license": "Public domain",
+   "artist": "The original uploader was Fetz at German Wikipedia.",
+   "excerpt": "0.0-8.5s",
+   "credit": "The original uploader was Fetz at German Wikipedia. (Wikimedia Commons)"
+  }
+ ],
+ "music-box/phrase": [
+  {
+   "source": "commons",
+   "file": "File:Caja de música (PianoConcerto5 Beethoven).ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Caja_de_m%C3%BAsica_(PianoConcerto5_Beethoven).ogg",
+   "license": "CC BY-SA 4.0",
+   "artist": "Ludwig van Beethoven",
+   "excerpt": "99.1-109.1s",
+   "credit": "Ludwig van Beethoven (Wikimedia Commons)"
+  }
+ ],
+ "music-box/mix": [
+  {
+   "source": "commons",
+   "file": "File:Caja de música (PianoConcerto5 Beethoven).ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Caja_de_m%C3%BAsica_(PianoConcerto5_Beethoven).ogg",
+   "license": "CC BY-SA 4.0",
+   "artist": "Ludwig van Beethoven",
+   "excerpt": "99.1-109.1s",
+   "credit": "Ludwig van Beethoven (Wikimedia Commons)"
+  },
+  {
+   "source": "freepats",
+   "bank": "MuldjordKit",
+   "file": "drum groove (kick, snare, hi-hat)",
+   "license": "CC-BY-4.0",
+   "credit": "MuldjordKit by Lars Muldjord (FreePats stereo version)"
+  },
+  {
+   "source": "generated",
+   "preset": "speech-shaped noise and room reverb",
+   "license": "CC0-1.0",
+   "credit": "Generated in code for this library"
+  }
+ ],
+ "music-box/phone": [
+  {
+   "source": "commons",
+   "file": "File:Caja de música (PianoConcerto5 Beethoven).ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Caja_de_m%C3%BAsica_(PianoConcerto5_Beethoven).ogg",
+   "license": "CC BY-SA 4.0",
+   "artist": "Ludwig van Beethoven",
+   "excerpt": "99.1-109.1s",
+   "credit": "Ludwig van Beethoven (Wikimedia Commons)"
   }
  ],
  "pipe-organ/note-1": [
@@ -2868,6 +3166,109 @@
    "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Aerophones/Free%20Aerophones/Harmonica-Hohner-Super64/Sustains/Normal/Hohner-Super64_Normal%20_G4.wav",
    "license": "CC0-1.0",
    "credit": "Versilian Studios and contributors"
+  }
+ ],
+ "harmonium/phrase": [
+  {
+   "source": "commons",
+   "file": "File:César Franck-Harmonium-5e pièce en do.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:C%C3%A9sar_Franck-Harmonium-5e_pi%C3%A8ce_en_do.ogg",
+   "license": "Public domain",
+   "artist": "César Franck",
+   "excerpt": "51.8-61.8s",
+   "credit": "César Franck (Wikimedia Commons)"
+  }
+ ],
+ "harmonium/mix": [
+  {
+   "source": "commons",
+   "file": "File:César Franck-Harmonium-5e pièce en do.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:C%C3%A9sar_Franck-Harmonium-5e_pi%C3%A8ce_en_do.ogg",
+   "license": "Public domain",
+   "artist": "César Franck",
+   "excerpt": "51.8-61.8s",
+   "credit": "César Franck (Wikimedia Commons)"
+  },
+  {
+   "source": "freepats",
+   "bank": "MuldjordKit",
+   "file": "drum groove (kick, snare, hi-hat)",
+   "license": "CC-BY-4.0",
+   "credit": "MuldjordKit by Lars Muldjord (FreePats stereo version)"
+  },
+  {
+   "source": "generated",
+   "preset": "speech-shaped noise and room reverb",
+   "license": "CC0-1.0",
+   "credit": "Generated in code for this library"
+  }
+ ],
+ "harmonium/phone": [
+  {
+   "source": "commons",
+   "file": "File:César Franck-Harmonium-5e pièce en do.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:C%C3%A9sar_Franck-Harmonium-5e_pi%C3%A8ce_en_do.ogg",
+   "license": "Public domain",
+   "artist": "César Franck",
+   "excerpt": "51.8-61.8s",
+   "credit": "César Franck (Wikimedia Commons)"
+  }
+ ],
+ "harmonium/excerpt-2": [
+  {
+   "source": "commons",
+   "file": "File:Harmonium (C Major).wav",
+   "url": "https://commons.wikimedia.org/wiki/File:Harmonium_(C_Major).wav",
+   "license": "CC BY-SA 4.0",
+   "artist": "ShortStat",
+   "excerpt": "0.2-4.8s",
+   "credit": "ShortStat (Wikimedia Commons)"
+  }
+ ],
+ "melodica/phrase": [
+  {
+   "source": "commons",
+   "file": "File:Melodica rakesofkildare.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Melodica_rakesofkildare.ogg",
+   "license": "CC BY-SA 4.0",
+   "artist": "Melodicas",
+   "excerpt": "20.2-30.2s",
+   "credit": "Melodicas (Wikimedia Commons)"
+  }
+ ],
+ "melodica/mix": [
+  {
+   "source": "commons",
+   "file": "File:Melodica rakesofkildare.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Melodica_rakesofkildare.ogg",
+   "license": "CC BY-SA 4.0",
+   "artist": "Melodicas",
+   "excerpt": "20.2-30.2s",
+   "credit": "Melodicas (Wikimedia Commons)"
+  },
+  {
+   "source": "freepats",
+   "bank": "MuldjordKit",
+   "file": "drum groove (kick, snare, hi-hat)",
+   "license": "CC-BY-4.0",
+   "credit": "MuldjordKit by Lars Muldjord (FreePats stereo version)"
+  },
+  {
+   "source": "generated",
+   "preset": "speech-shaped noise and room reverb",
+   "license": "CC0-1.0",
+   "credit": "Generated in code for this library"
+  }
+ ],
+ "melodica/phone": [
+  {
+   "source": "commons",
+   "file": "File:Melodica rakesofkildare.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Melodica_rakesofkildare.ogg",
+   "license": "CC BY-SA 4.0",
+   "artist": "Melodicas",
+   "excerpt": "20.2-30.2s",
+   "credit": "Melodicas (Wikimedia Commons)"
   }
  ],
  "flute/note-1": [
@@ -3464,6 +3865,52 @@
    "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Aerophones/Edge-blown%20Aerophones/Ocarina%2C%20Typical/Sustains/SusVib/StdOcarina_SusVib_F%234.wav",
    "license": "CC0-1.0",
    "credit": "Versilian Studios and contributors"
+  }
+ ],
+ "tin-whistle/phrase": [
+  {
+   "source": "commons",
+   "file": "File:Buachaill on Eirne D tin whistle.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Buachaill_on_Eirne_D_tin_whistle.ogg",
+   "license": "CC BY-SA 3.0",
+   "artist": "Julien Grandgagnage",
+   "excerpt": "14.6-24.6s",
+   "credit": "Julien Grandgagnage (Wikimedia Commons)"
+  }
+ ],
+ "tin-whistle/mix": [
+  {
+   "source": "commons",
+   "file": "File:Buachaill on Eirne D tin whistle.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Buachaill_on_Eirne_D_tin_whistle.ogg",
+   "license": "CC BY-SA 3.0",
+   "artist": "Julien Grandgagnage",
+   "excerpt": "14.6-24.6s",
+   "credit": "Julien Grandgagnage (Wikimedia Commons)"
+  },
+  {
+   "source": "freepats",
+   "bank": "MuldjordKit",
+   "file": "drum groove (kick, snare, hi-hat)",
+   "license": "CC-BY-4.0",
+   "credit": "MuldjordKit by Lars Muldjord (FreePats stereo version)"
+  },
+  {
+   "source": "generated",
+   "preset": "speech-shaped noise and room reverb",
+   "license": "CC0-1.0",
+   "credit": "Generated in code for this library"
+  }
+ ],
+ "tin-whistle/phone": [
+  {
+   "source": "commons",
+   "file": "File:Buachaill on Eirne D tin whistle.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Buachaill_on_Eirne_D_tin_whistle.ogg",
+   "license": "CC BY-SA 3.0",
+   "artist": "Julien Grandgagnage",
+   "excerpt": "14.6-24.6s",
+   "credit": "Julien Grandgagnage (Wikimedia Commons)"
   }
  ],
  "oboe/note-1": [
@@ -4249,6 +4696,52 @@
    "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Aerophones/Reed%20Aerophones/Saxello/Vibrato/BrettSaxello_SusVB_MainSpirit_A%233_vl2_rr1.wav",
    "license": "CC0-1.0",
    "credit": "Versilian Studios and contributors"
+  }
+ ],
+ "alto-sax/phrase": [
+  {
+   "source": "commons",
+   "file": "File:Joachim Andersen - Caprice No.1 Op.15 - Arr for alto saxophone - David Hernando Vitores.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Joachim_Andersen_-_Caprice_No.1_Op.15_-_Arr_for_alto_saxophone_-_David_Hernando_Vitores.ogg",
+   "license": "CC BY-SA 4.0",
+   "artist": "Joachim Andersen",
+   "excerpt": "43.2-53.2s",
+   "credit": "Joachim Andersen (Wikimedia Commons)"
+  }
+ ],
+ "alto-sax/mix": [
+  {
+   "source": "commons",
+   "file": "File:Joachim Andersen - Caprice No.1 Op.15 - Arr for alto saxophone - David Hernando Vitores.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Joachim_Andersen_-_Caprice_No.1_Op.15_-_Arr_for_alto_saxophone_-_David_Hernando_Vitores.ogg",
+   "license": "CC BY-SA 4.0",
+   "artist": "Joachim Andersen",
+   "excerpt": "43.2-53.2s",
+   "credit": "Joachim Andersen (Wikimedia Commons)"
+  },
+  {
+   "source": "freepats",
+   "bank": "MuldjordKit",
+   "file": "drum groove (kick, snare, hi-hat)",
+   "license": "CC-BY-4.0",
+   "credit": "MuldjordKit by Lars Muldjord (FreePats stereo version)"
+  },
+  {
+   "source": "generated",
+   "preset": "speech-shaped noise and room reverb",
+   "license": "CC0-1.0",
+   "credit": "Generated in code for this library"
+  }
+ ],
+ "alto-sax/phone": [
+  {
+   "source": "commons",
+   "file": "File:Joachim Andersen - Caprice No.1 Op.15 - Arr for alto saxophone - David Hernando Vitores.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Joachim_Andersen_-_Caprice_No.1_Op.15_-_Arr_for_alto_saxophone_-_David_Hernando_Vitores.ogg",
+   "license": "CC BY-SA 4.0",
+   "artist": "Joachim Andersen",
+   "excerpt": "43.2-53.2s",
+   "credit": "Joachim Andersen (Wikimedia Commons)"
   }
  ],
  "bagpipe/note-1": [
@@ -6540,6 +7033,63 @@
    "credit": "Versilian Studios and contributors"
   }
  ],
+ "djembe/phrase": [
+  {
+   "source": "commons",
+   "file": "File:Djembee2.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Djembee2.ogg",
+   "license": "CC BY-SA 3.0",
+   "artist": "Dennis Ruigrok at Dutch Wikipedia",
+   "excerpt": "44.4-54.4s",
+   "credit": "Dennis Ruigrok at Dutch Wikipedia (Wikimedia Commons)"
+  }
+ ],
+ "djembe/mix": [
+  {
+   "source": "commons",
+   "file": "File:Djembee2.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Djembee2.ogg",
+   "license": "CC BY-SA 3.0",
+   "artist": "Dennis Ruigrok at Dutch Wikipedia",
+   "excerpt": "44.4-54.4s",
+   "credit": "Dennis Ruigrok at Dutch Wikipedia (Wikimedia Commons)"
+  },
+  {
+   "source": "freepats",
+   "bank": "MuldjordKit",
+   "file": "drum groove (kick, snare, hi-hat)",
+   "license": "CC-BY-4.0",
+   "credit": "MuldjordKit by Lars Muldjord (FreePats stereo version)"
+  },
+  {
+   "source": "generated",
+   "preset": "speech-shaped noise and room reverb",
+   "license": "CC0-1.0",
+   "credit": "Generated in code for this library"
+  }
+ ],
+ "djembe/phone": [
+  {
+   "source": "commons",
+   "file": "File:Djembee2.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Djembee2.ogg",
+   "license": "CC BY-SA 3.0",
+   "artist": "Dennis Ruigrok at Dutch Wikipedia",
+   "excerpt": "44.4-54.4s",
+   "credit": "Dennis Ruigrok at Dutch Wikipedia (Wikimedia Commons)"
+  }
+ ],
+ "djembe/excerpt-2": [
+  {
+   "source": "commons",
+   "file": "File:Djembe accompaniment.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Djembe_accompaniment.ogg",
+   "license": "CC0",
+   "artist": "Michi Henning",
+   "excerpt": "1.2-11.2s",
+   "credit": "Michi Henning (Wikimedia Commons)"
+  }
+ ],
  "cajon/hit-1": [
   {
    "source": "vcsl",
@@ -6619,6 +7169,52 @@
    "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Membranophones/Struck%20Membranophones/Frame%20Drum/HDrumL_Hand_rr1_Sum.wav",
    "license": "CC0-1.0",
    "credit": "Versilian Studios and contributors"
+  }
+ ],
+ "tabla/phrase": [
+  {
+   "source": "commons",
+   "file": "File:Tabla drums demo.oga",
+   "url": "https://commons.wikimedia.org/wiki/File:Tabla_drums_demo.oga",
+   "license": "CC BY-SA 3.0",
+   "artist": "tabladrumsonline",
+   "excerpt": "96.3-104.3s",
+   "credit": "tabladrumsonline (Wikimedia Commons)"
+  }
+ ],
+ "tabla/mix": [
+  {
+   "source": "commons",
+   "file": "File:Tabla drums demo.oga",
+   "url": "https://commons.wikimedia.org/wiki/File:Tabla_drums_demo.oga",
+   "license": "CC BY-SA 3.0",
+   "artist": "tabladrumsonline",
+   "excerpt": "96.3-104.3s",
+   "credit": "tabladrumsonline (Wikimedia Commons)"
+  },
+  {
+   "source": "freepats",
+   "bank": "MuldjordKit",
+   "file": "drum groove (kick, snare, hi-hat)",
+   "license": "CC-BY-4.0",
+   "credit": "MuldjordKit by Lars Muldjord (FreePats stereo version)"
+  },
+  {
+   "source": "generated",
+   "preset": "speech-shaped noise and room reverb",
+   "license": "CC0-1.0",
+   "credit": "Generated in code for this library"
+  }
+ ],
+ "tabla/phone": [
+  {
+   "source": "commons",
+   "file": "File:Tabla drums demo.oga",
+   "url": "https://commons.wikimedia.org/wiki/File:Tabla_drums_demo.oga",
+   "license": "CC BY-SA 3.0",
+   "artist": "tabladrumsonline",
+   "excerpt": "96.3-104.3s",
+   "credit": "tabladrumsonline (Wikimedia Commons)"
   }
  ],
  "hi-hat/hit-1": [
@@ -9028,6 +9624,935 @@
    "preset": "theremin",
    "license": "CC0-1.0",
    "credit": "Generated in code for this library"
+  }
+ ],
+ "theremin/excerpt-1": [
+  {
+   "source": "commons",
+   "file": "File:Epro theremin middle bach.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Epro_theremin_middle_bach.ogg",
+   "license": "Public domain",
+   "artist": "Effebit",
+   "excerpt": "1.0-13.0s",
+   "credit": "Effebit (Wikimedia Commons)"
+  }
+ ],
+ "theremin/excerpt-2": [
+  {
+   "source": "commons",
+   "file": "File:Threremin bass.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Threremin_bass.ogg",
+   "license": "CC BY-SA 3.0",
+   "artist": "Effebit",
+   "excerpt": "11.5-21.5s",
+   "credit": "Effebit (Wikimedia Commons)"
+  }
+ ],
+ "rainstick/phrase": [
+  {
+   "source": "commons",
+   "file": "File:Rainstick - Slow - Overtones.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Rainstick_-_Slow_-_Overtones.ogg",
+   "license": "CC BY-SA 4.0",
+   "artist": "Hubertl",
+   "excerpt": "22.8-32.8s",
+   "credit": "Hubertl (Wikimedia Commons)"
+  }
+ ],
+ "rainstick/mix": [
+  {
+   "source": "commons",
+   "file": "File:Rainstick - Slow - Overtones.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Rainstick_-_Slow_-_Overtones.ogg",
+   "license": "CC BY-SA 4.0",
+   "artist": "Hubertl",
+   "excerpt": "22.8-32.8s",
+   "credit": "Hubertl (Wikimedia Commons)"
+  },
+  {
+   "source": "freepats",
+   "bank": "MuldjordKit",
+   "file": "drum groove (kick, snare, hi-hat)",
+   "license": "CC-BY-4.0",
+   "credit": "MuldjordKit by Lars Muldjord (FreePats stereo version)"
+  },
+  {
+   "source": "generated",
+   "preset": "speech-shaped noise and room reverb",
+   "license": "CC0-1.0",
+   "credit": "Generated in code for this library"
+  }
+ ],
+ "rainstick/phone": [
+  {
+   "source": "commons",
+   "file": "File:Rainstick - Slow - Overtones.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Rainstick_-_Slow_-_Overtones.ogg",
+   "license": "CC BY-SA 4.0",
+   "artist": "Hubertl",
+   "excerpt": "22.8-32.8s",
+   "credit": "Hubertl (Wikimedia Commons)"
+  }
+ ],
+ "rainstick/excerpt-2": [
+  {
+   "source": "commons",
+   "file": "File:Rainstick.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Rainstick.ogg",
+   "license": "Public domain",
+   "artist": "BambooBeast",
+   "excerpt": "3.8-11.8s",
+   "credit": "BambooBeast (Wikimedia Commons)"
+  }
+ ],
+ "pan-flute/phrase": [
+  {
+   "source": "commons",
+   "file": "File:Interpretación del tema \"29 de setiembre\" ejecutada con sikus Malta - Sonido conjunto de Ira y Arka.wav",
+   "url": "https://commons.wikimedia.org/wiki/File:Interpretaci%C3%B3n_del_tema_%2229_de_setiembre%22_ejecutada_con_sikus_Malta_-_Sonido_conjunto_de_Ira_y_Arka.wav",
+   "license": "CC BY-SA 4.0",
+   "artist": "Abel Christian Apaza Amanqui",
+   "excerpt": "103.9-113.9s",
+   "credit": "Abel Christian Apaza Amanqui (Wikimedia Commons)"
+  }
+ ],
+ "pan-flute/mix": [
+  {
+   "source": "commons",
+   "file": "File:Interpretación del tema \"29 de setiembre\" ejecutada con sikus Malta - Sonido conjunto de Ira y Arka.wav",
+   "url": "https://commons.wikimedia.org/wiki/File:Interpretaci%C3%B3n_del_tema_%2229_de_setiembre%22_ejecutada_con_sikus_Malta_-_Sonido_conjunto_de_Ira_y_Arka.wav",
+   "license": "CC BY-SA 4.0",
+   "artist": "Abel Christian Apaza Amanqui",
+   "excerpt": "103.9-113.9s",
+   "credit": "Abel Christian Apaza Amanqui (Wikimedia Commons)"
+  },
+  {
+   "source": "freepats",
+   "bank": "MuldjordKit",
+   "file": "drum groove (kick, snare, hi-hat)",
+   "license": "CC-BY-4.0",
+   "credit": "MuldjordKit by Lars Muldjord (FreePats stereo version)"
+  },
+  {
+   "source": "generated",
+   "preset": "speech-shaped noise and room reverb",
+   "license": "CC0-1.0",
+   "credit": "Generated in code for this library"
+  }
+ ],
+ "pan-flute/phone": [
+  {
+   "source": "commons",
+   "file": "File:Interpretación del tema \"29 de setiembre\" ejecutada con sikus Malta - Sonido conjunto de Ira y Arka.wav",
+   "url": "https://commons.wikimedia.org/wiki/File:Interpretaci%C3%B3n_del_tema_%2229_de_setiembre%22_ejecutada_con_sikus_Malta_-_Sonido_conjunto_de_Ira_y_Arka.wav",
+   "license": "CC BY-SA 4.0",
+   "artist": "Abel Christian Apaza Amanqui",
+   "excerpt": "103.9-113.9s",
+   "credit": "Abel Christian Apaza Amanqui (Wikimedia Commons)"
+  }
+ ],
+ "wurlitzer/phrase": [
+  {
+   "source": "commons",
+   "file": "File:Wurlitzer EP200.mp3",
+   "url": "https://commons.wikimedia.org/wiki/File:Wurlitzer_EP200.mp3",
+   "license": "CC BY-SA 4.0",
+   "artist": "Ritchie333",
+   "excerpt": "36.5-46.5s",
+   "credit": "Ritchie333 (Wikimedia Commons)"
+  }
+ ],
+ "wurlitzer/mix": [
+  {
+   "source": "commons",
+   "file": "File:Wurlitzer EP200.mp3",
+   "url": "https://commons.wikimedia.org/wiki/File:Wurlitzer_EP200.mp3",
+   "license": "CC BY-SA 4.0",
+   "artist": "Ritchie333",
+   "excerpt": "36.5-46.5s",
+   "credit": "Ritchie333 (Wikimedia Commons)"
+  },
+  {
+   "source": "freepats",
+   "bank": "MuldjordKit",
+   "file": "drum groove (kick, snare, hi-hat)",
+   "license": "CC-BY-4.0",
+   "credit": "MuldjordKit by Lars Muldjord (FreePats stereo version)"
+  },
+  {
+   "source": "generated",
+   "preset": "speech-shaped noise and room reverb",
+   "license": "CC0-1.0",
+   "credit": "Generated in code for this library"
+  }
+ ],
+ "wurlitzer/phone": [
+  {
+   "source": "commons",
+   "file": "File:Wurlitzer EP200.mp3",
+   "url": "https://commons.wikimedia.org/wiki/File:Wurlitzer_EP200.mp3",
+   "license": "CC BY-SA 4.0",
+   "artist": "Ritchie333",
+   "excerpt": "36.5-46.5s",
+   "credit": "Ritchie333 (Wikimedia Commons)"
+  }
+ ],
+ "koto/phrase": [
+  {
+   "source": "commons",
+   "file": "File:Koto performance.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Koto_performance.ogg",
+   "license": "CC BY 3.0",
+   "artist": "Torsodog",
+   "excerpt": "8.4-18.4s",
+   "credit": "Torsodog (Wikimedia Commons)"
+  }
+ ],
+ "koto/mix": [
+  {
+   "source": "commons",
+   "file": "File:Koto performance.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Koto_performance.ogg",
+   "license": "CC BY 3.0",
+   "artist": "Torsodog",
+   "excerpt": "8.4-18.4s",
+   "credit": "Torsodog (Wikimedia Commons)"
+  },
+  {
+   "source": "freepats",
+   "bank": "MuldjordKit",
+   "file": "drum groove (kick, snare, hi-hat)",
+   "license": "CC-BY-4.0",
+   "credit": "MuldjordKit by Lars Muldjord (FreePats stereo version)"
+  },
+  {
+   "source": "generated",
+   "preset": "speech-shaped noise and room reverb",
+   "license": "CC0-1.0",
+   "credit": "Generated in code for this library"
+  }
+ ],
+ "koto/phone": [
+  {
+   "source": "commons",
+   "file": "File:Koto performance.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Koto_performance.ogg",
+   "license": "CC BY 3.0",
+   "artist": "Torsodog",
+   "excerpt": "8.4-18.4s",
+   "credit": "Torsodog (Wikimedia Commons)"
+  }
+ ],
+ "shamisen/phrase": [
+  {
+   "source": "commons",
+   "file": "File:三味線の音オーディオ.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:%E4%B8%89%E5%91%B3%E7%B7%9A%E3%81%AE%E9%9F%B3%E3%82%AA%E3%83%BC%E3%83%87%E3%82%A3%E3%82%AA.ogg",
+   "license": "CC BY 3.0",
+   "artist": "KOIKICHIGAI",
+   "excerpt": "0.0-9.4s",
+   "credit": "KOIKICHIGAI (Wikimedia Commons)"
+  }
+ ],
+ "shamisen/mix": [
+  {
+   "source": "commons",
+   "file": "File:三味線の音オーディオ.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:%E4%B8%89%E5%91%B3%E7%B7%9A%E3%81%AE%E9%9F%B3%E3%82%AA%E3%83%BC%E3%83%87%E3%82%A3%E3%82%AA.ogg",
+   "license": "CC BY 3.0",
+   "artist": "KOIKICHIGAI",
+   "excerpt": "0.0-9.4s",
+   "credit": "KOIKICHIGAI (Wikimedia Commons)"
+  },
+  {
+   "source": "freepats",
+   "bank": "MuldjordKit",
+   "file": "drum groove (kick, snare, hi-hat)",
+   "license": "CC-BY-4.0",
+   "credit": "MuldjordKit by Lars Muldjord (FreePats stereo version)"
+  },
+  {
+   "source": "generated",
+   "preset": "speech-shaped noise and room reverb",
+   "license": "CC0-1.0",
+   "credit": "Generated in code for this library"
+  }
+ ],
+ "shamisen/phone": [
+  {
+   "source": "commons",
+   "file": "File:三味線の音オーディオ.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:%E4%B8%89%E5%91%B3%E7%B7%9A%E3%81%AE%E9%9F%B3%E3%82%AA%E3%83%BC%E3%83%87%E3%82%A3%E3%82%AA.ogg",
+   "license": "CC BY 3.0",
+   "artist": "KOIKICHIGAI",
+   "excerpt": "0.0-9.4s",
+   "credit": "KOIKICHIGAI (Wikimedia Commons)"
+  }
+ ],
+ "oud/phrase": [
+  {
+   "source": "commons",
+   "file": "File:OUD.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:OUD.ogg",
+   "license": "CC BY-SA 3.0",
+   "artist": "Houssem bettaibi",
+   "excerpt": "37.8-47.8s",
+   "credit": "Houssem bettaibi (Wikimedia Commons)"
+  }
+ ],
+ "oud/mix": [
+  {
+   "source": "commons",
+   "file": "File:OUD.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:OUD.ogg",
+   "license": "CC BY-SA 3.0",
+   "artist": "Houssem bettaibi",
+   "excerpt": "37.8-47.8s",
+   "credit": "Houssem bettaibi (Wikimedia Commons)"
+  },
+  {
+   "source": "freepats",
+   "bank": "MuldjordKit",
+   "file": "drum groove (kick, snare, hi-hat)",
+   "license": "CC-BY-4.0",
+   "credit": "MuldjordKit by Lars Muldjord (FreePats stereo version)"
+  },
+  {
+   "source": "generated",
+   "preset": "speech-shaped noise and room reverb",
+   "license": "CC0-1.0",
+   "credit": "Generated in code for this library"
+  }
+ ],
+ "oud/phone": [
+  {
+   "source": "commons",
+   "file": "File:OUD.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:OUD.ogg",
+   "license": "CC BY-SA 3.0",
+   "artist": "Houssem bettaibi",
+   "excerpt": "37.8-47.8s",
+   "credit": "Houssem bettaibi (Wikimedia Commons)"
+  }
+ ],
+ "oud/excerpt-2": [
+  {
+   "source": "commons",
+   "file": "File:Oud music by Andy R. Jordan 1V2 long.mp3",
+   "url": "https://commons.wikimedia.org/wiki/File:Oud_music_by_Andy_R._Jordan_1V2_long.mp3",
+   "license": "CC BY-SA 3.0",
+   "artist": "Andy R. Jordan",
+   "excerpt": "15.3-25.3s",
+   "credit": "Andy R. Jordan (Wikimedia Commons)"
+  }
+ ],
+ "bouzouki/phrase": [
+  {
+   "source": "commons",
+   "file": "File:The Mountain Road - Medium - Bouzouki.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:The_Mountain_Road_-_Medium_-_Bouzouki.ogg",
+   "license": "CC BY-SA 4.0",
+   "artist": "SoylentGreen",
+   "excerpt": "28.4-38.4s",
+   "credit": "SoylentGreen (Wikimedia Commons)"
+  }
+ ],
+ "bouzouki/mix": [
+  {
+   "source": "commons",
+   "file": "File:The Mountain Road - Medium - Bouzouki.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:The_Mountain_Road_-_Medium_-_Bouzouki.ogg",
+   "license": "CC BY-SA 4.0",
+   "artist": "SoylentGreen",
+   "excerpt": "28.4-38.4s",
+   "credit": "SoylentGreen (Wikimedia Commons)"
+  },
+  {
+   "source": "freepats",
+   "bank": "MuldjordKit",
+   "file": "drum groove (kick, snare, hi-hat)",
+   "license": "CC-BY-4.0",
+   "credit": "MuldjordKit by Lars Muldjord (FreePats stereo version)"
+  },
+  {
+   "source": "generated",
+   "preset": "speech-shaped noise and room reverb",
+   "license": "CC0-1.0",
+   "credit": "Generated in code for this library"
+  }
+ ],
+ "bouzouki/phone": [
+  {
+   "source": "commons",
+   "file": "File:The Mountain Road - Medium - Bouzouki.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:The_Mountain_Road_-_Medium_-_Bouzouki.ogg",
+   "license": "CC BY-SA 4.0",
+   "artist": "SoylentGreen",
+   "excerpt": "28.4-38.4s",
+   "credit": "SoylentGreen (Wikimedia Commons)"
+  }
+ ],
+ "pedal-steel/phrase": [
+  {
+   "source": "commons",
+   "file": "File:Sound of steel guitar (pedal).ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Sound_of_steel_guitar_(pedal).ogg",
+   "license": "CC0",
+   "artist": "Eagledj",
+   "excerpt": "10.1-20.1s",
+   "credit": "Eagledj (Wikimedia Commons)"
+  }
+ ],
+ "pedal-steel/mix": [
+  {
+   "source": "commons",
+   "file": "File:Sound of steel guitar (pedal).ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Sound_of_steel_guitar_(pedal).ogg",
+   "license": "CC0",
+   "artist": "Eagledj",
+   "excerpt": "10.1-20.1s",
+   "credit": "Eagledj (Wikimedia Commons)"
+  },
+  {
+   "source": "freepats",
+   "bank": "MuldjordKit",
+   "file": "drum groove (kick, snare, hi-hat)",
+   "license": "CC-BY-4.0",
+   "credit": "MuldjordKit by Lars Muldjord (FreePats stereo version)"
+  },
+  {
+   "source": "generated",
+   "preset": "speech-shaped noise and room reverb",
+   "license": "CC0-1.0",
+   "credit": "Generated in code for this library"
+  }
+ ],
+ "pedal-steel/phone": [
+  {
+   "source": "commons",
+   "file": "File:Sound of steel guitar (pedal).ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Sound_of_steel_guitar_(pedal).ogg",
+   "license": "CC0",
+   "artist": "Eagledj",
+   "excerpt": "10.1-20.1s",
+   "credit": "Eagledj (Wikimedia Commons)"
+  }
+ ],
+ "twelve-string/phrase": [
+  {
+   "source": "commons",
+   "file": "File:Vladan Kuzmanović - Bravoure For 12 String Guitar.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Vladan_Kuzmanovi%C4%87_-_Bravoure_For_12_String_Guitar.ogg",
+   "license": "CC BY-SA 4.0",
+   "artist": "Vladan L. Kuzmanović",
+   "excerpt": "290.0-300.0s",
+   "credit": "Vladan L. Kuzmanović (Wikimedia Commons)"
+  }
+ ],
+ "twelve-string/mix": [
+  {
+   "source": "commons",
+   "file": "File:Vladan Kuzmanović - Bravoure For 12 String Guitar.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Vladan_Kuzmanovi%C4%87_-_Bravoure_For_12_String_Guitar.ogg",
+   "license": "CC BY-SA 4.0",
+   "artist": "Vladan L. Kuzmanović",
+   "excerpt": "290.0-300.0s",
+   "credit": "Vladan L. Kuzmanović (Wikimedia Commons)"
+  },
+  {
+   "source": "freepats",
+   "bank": "MuldjordKit",
+   "file": "drum groove (kick, snare, hi-hat)",
+   "license": "CC-BY-4.0",
+   "credit": "MuldjordKit by Lars Muldjord (FreePats stereo version)"
+  },
+  {
+   "source": "generated",
+   "preset": "speech-shaped noise and room reverb",
+   "license": "CC0-1.0",
+   "credit": "Generated in code for this library"
+  }
+ ],
+ "twelve-string/phone": [
+  {
+   "source": "commons",
+   "file": "File:Vladan Kuzmanović - Bravoure For 12 String Guitar.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Vladan_Kuzmanovi%C4%87_-_Bravoure_For_12_String_Guitar.ogg",
+   "license": "CC BY-SA 4.0",
+   "artist": "Vladan L. Kuzmanović",
+   "excerpt": "290.0-300.0s",
+   "credit": "Vladan L. Kuzmanović (Wikimedia Commons)"
+  }
+ ],
+ "bandoneon/phrase": [
+  {
+   "source": "commons",
+   "file": "File:Bandoneón.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Bandone%C3%B3n.ogg",
+   "license": "CC BY-SA 3.0",
+   "artist": "Poniol60",
+   "excerpt": "5.4-15.4s",
+   "credit": "Poniol60 (Wikimedia Commons)"
+  }
+ ],
+ "bandoneon/mix": [
+  {
+   "source": "commons",
+   "file": "File:Bandoneón.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Bandone%C3%B3n.ogg",
+   "license": "CC BY-SA 3.0",
+   "artist": "Poniol60",
+   "excerpt": "5.4-15.4s",
+   "credit": "Poniol60 (Wikimedia Commons)"
+  },
+  {
+   "source": "freepats",
+   "bank": "MuldjordKit",
+   "file": "drum groove (kick, snare, hi-hat)",
+   "license": "CC-BY-4.0",
+   "credit": "MuldjordKit by Lars Muldjord (FreePats stereo version)"
+  },
+  {
+   "source": "generated",
+   "preset": "speech-shaped noise and room reverb",
+   "license": "CC0-1.0",
+   "credit": "Generated in code for this library"
+  }
+ ],
+ "bandoneon/phone": [
+  {
+   "source": "commons",
+   "file": "File:Bandoneón.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Bandone%C3%B3n.ogg",
+   "license": "CC BY-SA 3.0",
+   "artist": "Poniol60",
+   "excerpt": "5.4-15.4s",
+   "credit": "Poniol60 (Wikimedia Commons)"
+  }
+ ],
+ "shakuhachi/phrase": [
+  {
+   "source": "commons",
+   "file": "File:Shakuhachi-flute-440Hz.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Shakuhachi-flute-440Hz.ogg",
+   "license": "CC0",
+   "artist": "--DeletedUser--",
+   "excerpt": "0.1-8.6s",
+   "credit": "--DeletedUser-- (Wikimedia Commons)"
+  }
+ ],
+ "shakuhachi/mix": [
+  {
+   "source": "commons",
+   "file": "File:Shakuhachi-flute-440Hz.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Shakuhachi-flute-440Hz.ogg",
+   "license": "CC0",
+   "artist": "--DeletedUser--",
+   "excerpt": "0.1-8.6s",
+   "credit": "--DeletedUser-- (Wikimedia Commons)"
+  },
+  {
+   "source": "freepats",
+   "bank": "MuldjordKit",
+   "file": "drum groove (kick, snare, hi-hat)",
+   "license": "CC-BY-4.0",
+   "credit": "MuldjordKit by Lars Muldjord (FreePats stereo version)"
+  },
+  {
+   "source": "generated",
+   "preset": "speech-shaped noise and room reverb",
+   "license": "CC0-1.0",
+   "credit": "Generated in code for this library"
+  }
+ ],
+ "shakuhachi/phone": [
+  {
+   "source": "commons",
+   "file": "File:Shakuhachi-flute-440Hz.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Shakuhachi-flute-440Hz.ogg",
+   "license": "CC0",
+   "artist": "--DeletedUser--",
+   "excerpt": "0.1-8.6s",
+   "credit": "--DeletedUser-- (Wikimedia Commons)"
+  }
+ ],
+ "shakuhachi/excerpt-2": [
+  {
+   "source": "commons",
+   "file": "File:Shikanotoone new.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Shikanotoone_new.ogg",
+   "license": "Public domain",
+   "artist": "derivative work: Torsodog (talk) Shikanotoone.ogg: Araki Kodō III (1879–1935)",
+   "excerpt": "145.1-157.1s",
+   "credit": "derivative work: Torsodog (talk) Shikanotoone.ogg: Araki Kodō III (1879–1935) (Wikimedia Commons)"
+  }
+ ],
+ "bansuri/phrase": [
+  {
+   "source": "commons",
+   "file": "File:Bansuri sample E bass.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Bansuri_sample_E_bass.ogg",
+   "license": "Public domain",
+   "artist": "own work",
+   "excerpt": "27.7-37.7s",
+   "credit": "own work (Wikimedia Commons)"
+  }
+ ],
+ "bansuri/mix": [
+  {
+   "source": "commons",
+   "file": "File:Bansuri sample E bass.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Bansuri_sample_E_bass.ogg",
+   "license": "Public domain",
+   "artist": "own work",
+   "excerpt": "27.7-37.7s",
+   "credit": "own work (Wikimedia Commons)"
+  },
+  {
+   "source": "freepats",
+   "bank": "MuldjordKit",
+   "file": "drum groove (kick, snare, hi-hat)",
+   "license": "CC-BY-4.0",
+   "credit": "MuldjordKit by Lars Muldjord (FreePats stereo version)"
+  },
+  {
+   "source": "generated",
+   "preset": "speech-shaped noise and room reverb",
+   "license": "CC0-1.0",
+   "credit": "Generated in code for this library"
+  }
+ ],
+ "bansuri/phone": [
+  {
+   "source": "commons",
+   "file": "File:Bansuri sample E bass.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Bansuri_sample_E_bass.ogg",
+   "license": "Public domain",
+   "artist": "own work",
+   "excerpt": "27.7-37.7s",
+   "credit": "own work (Wikimedia Commons)"
+  }
+ ],
+ "duduk/phrase": [
+  {
+   "source": "commons",
+   "file": "File:Sound of Armenian Duduk.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Sound_of_Armenian_Duduk.ogg",
+   "license": "CC BY-SA 4.0",
+   "artist": "איליה מעזיה",
+   "excerpt": "62.3-72.3s",
+   "credit": "איליה מעזיה (Wikimedia Commons)"
+  }
+ ],
+ "duduk/mix": [
+  {
+   "source": "commons",
+   "file": "File:Sound of Armenian Duduk.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Sound_of_Armenian_Duduk.ogg",
+   "license": "CC BY-SA 4.0",
+   "artist": "איליה מעזיה",
+   "excerpt": "62.3-72.3s",
+   "credit": "איליה מעזיה (Wikimedia Commons)"
+  },
+  {
+   "source": "freepats",
+   "bank": "MuldjordKit",
+   "file": "drum groove (kick, snare, hi-hat)",
+   "license": "CC-BY-4.0",
+   "credit": "MuldjordKit by Lars Muldjord (FreePats stereo version)"
+  },
+  {
+   "source": "generated",
+   "preset": "speech-shaped noise and room reverb",
+   "license": "CC0-1.0",
+   "credit": "Generated in code for this library"
+  }
+ ],
+ "duduk/phone": [
+  {
+   "source": "commons",
+   "file": "File:Sound of Armenian Duduk.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Sound_of_Armenian_Duduk.ogg",
+   "license": "CC BY-SA 4.0",
+   "artist": "איליה מעזיה",
+   "excerpt": "62.3-72.3s",
+   "credit": "איליה מעזיה (Wikimedia Commons)"
+  }
+ ],
+ "taiko/phrase": [
+  {
+   "source": "commons",
+   "file": "File:Sumo-Ichibandaiko.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Sumo-Ichibandaiko.ogg",
+   "license": "CC0",
+   "artist": "RuinDig/Yuki Uchida",
+   "excerpt": "1.0-11.0s",
+   "credit": "RuinDig/Yuki Uchida (Wikimedia Commons)"
+  }
+ ],
+ "taiko/mix": [
+  {
+   "source": "commons",
+   "file": "File:Sumo-Ichibandaiko.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Sumo-Ichibandaiko.ogg",
+   "license": "CC0",
+   "artist": "RuinDig/Yuki Uchida",
+   "excerpt": "1.0-11.0s",
+   "credit": "RuinDig/Yuki Uchida (Wikimedia Commons)"
+  },
+  {
+   "source": "freepats",
+   "bank": "MuldjordKit",
+   "file": "drum groove (kick, snare, hi-hat)",
+   "license": "CC-BY-4.0",
+   "credit": "MuldjordKit by Lars Muldjord (FreePats stereo version)"
+  },
+  {
+   "source": "generated",
+   "preset": "speech-shaped noise and room reverb",
+   "license": "CC0-1.0",
+   "credit": "Generated in code for this library"
+  }
+ ],
+ "taiko/phone": [
+  {
+   "source": "commons",
+   "file": "File:Sumo-Ichibandaiko.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Sumo-Ichibandaiko.ogg",
+   "license": "CC0",
+   "artist": "RuinDig/Yuki Uchida",
+   "excerpt": "1.0-11.0s",
+   "credit": "RuinDig/Yuki Uchida (Wikimedia Commons)"
+  }
+ ],
+ "kazoo/phrase": [
+  {
+   "source": "commons",
+   "file": "File:Advance Australia Fair on Kazoo.wav",
+   "url": "https://commons.wikimedia.org/wiki/File:Advance_Australia_Fair_on_Kazoo.wav",
+   "license": "Public domain",
+   "artist": "Unknown author",
+   "excerpt": "37.7-47.7s",
+   "credit": "Unknown author (Wikimedia Commons)"
+  }
+ ],
+ "kazoo/mix": [
+  {
+   "source": "commons",
+   "file": "File:Advance Australia Fair on Kazoo.wav",
+   "url": "https://commons.wikimedia.org/wiki/File:Advance_Australia_Fair_on_Kazoo.wav",
+   "license": "Public domain",
+   "artist": "Unknown author",
+   "excerpt": "37.7-47.7s",
+   "credit": "Unknown author (Wikimedia Commons)"
+  },
+  {
+   "source": "freepats",
+   "bank": "MuldjordKit",
+   "file": "drum groove (kick, snare, hi-hat)",
+   "license": "CC-BY-4.0",
+   "credit": "MuldjordKit by Lars Muldjord (FreePats stereo version)"
+  },
+  {
+   "source": "generated",
+   "preset": "speech-shaped noise and room reverb",
+   "license": "CC0-1.0",
+   "credit": "Generated in code for this library"
+  }
+ ],
+ "kazoo/phone": [
+  {
+   "source": "commons",
+   "file": "File:Advance Australia Fair on Kazoo.wav",
+   "url": "https://commons.wikimedia.org/wiki/File:Advance_Australia_Fair_on_Kazoo.wav",
+   "license": "Public domain",
+   "artist": "Unknown author",
+   "excerpt": "37.7-47.7s",
+   "credit": "Unknown author (Wikimedia Commons)"
+  }
+ ],
+ "bass-clarinet/phrase": [
+  {
+   "source": "commons",
+   "file": "File:R. Strauss Don Qixote.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:R._Strauss_Don_Qixote.ogg",
+   "license": "CC BY-SA 4.0",
+   "artist": "Richard Haynes",
+   "excerpt": "0.3-11.8s",
+   "credit": "Richard Haynes (Wikimedia Commons)"
+  }
+ ],
+ "bass-clarinet/mix": [
+  {
+   "source": "commons",
+   "file": "File:R. Strauss Don Qixote.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:R._Strauss_Don_Qixote.ogg",
+   "license": "CC BY-SA 4.0",
+   "artist": "Richard Haynes",
+   "excerpt": "0.3-11.8s",
+   "credit": "Richard Haynes (Wikimedia Commons)"
+  },
+  {
+   "source": "freepats",
+   "bank": "MuldjordKit",
+   "file": "drum groove (kick, snare, hi-hat)",
+   "license": "CC-BY-4.0",
+   "credit": "MuldjordKit by Lars Muldjord (FreePats stereo version)"
+  },
+  {
+   "source": "generated",
+   "preset": "speech-shaped noise and room reverb",
+   "license": "CC0-1.0",
+   "credit": "Generated in code for this library"
+  }
+ ],
+ "bass-clarinet/phone": [
+  {
+   "source": "commons",
+   "file": "File:R. Strauss Don Qixote.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:R._Strauss_Don_Qixote.ogg",
+   "license": "CC BY-SA 4.0",
+   "artist": "Richard Haynes",
+   "excerpt": "0.3-11.8s",
+   "credit": "Richard Haynes (Wikimedia Commons)"
+  }
+ ],
+ "contrabassoon/phrase": [
+  {
+   "source": "commons",
+   "file": "File:Contra2.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Contra2.ogg",
+   "license": "CC BY-SA 3.0",
+   "artist": "Kat Walsh. Uploaded by Mindspillage at en.wikipedia",
+   "excerpt": "1.0-13.0s",
+   "credit": "Kat Walsh. Uploaded by Mindspillage at en.wikipedia (Wikimedia Commons)"
+  }
+ ],
+ "contrabassoon/mix": [
+  {
+   "source": "commons",
+   "file": "File:Contra2.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Contra2.ogg",
+   "license": "CC BY-SA 3.0",
+   "artist": "Kat Walsh. Uploaded by Mindspillage at en.wikipedia",
+   "excerpt": "1.0-13.0s",
+   "credit": "Kat Walsh. Uploaded by Mindspillage at en.wikipedia (Wikimedia Commons)"
+  },
+  {
+   "source": "freepats",
+   "bank": "MuldjordKit",
+   "file": "drum groove (kick, snare, hi-hat)",
+   "license": "CC-BY-4.0",
+   "credit": "MuldjordKit by Lars Muldjord (FreePats stereo version)"
+  },
+  {
+   "source": "generated",
+   "preset": "speech-shaped noise and room reverb",
+   "license": "CC0-1.0",
+   "credit": "Generated in code for this library"
+  }
+ ],
+ "contrabassoon/phone": [
+  {
+   "source": "commons",
+   "file": "File:Contra2.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Contra2.ogg",
+   "license": "CC BY-SA 3.0",
+   "artist": "Kat Walsh. Uploaded by Mindspillage at en.wikipedia",
+   "excerpt": "1.0-13.0s",
+   "credit": "Kat Walsh. Uploaded by Mindspillage at en.wikipedia (Wikimedia Commons)"
+  }
+ ],
+ "flugelhorn/phrase": [
+  {
+   "source": "commons",
+   "file": "File:Short flugelhorn excerpt.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Short_flugelhorn_excerpt.ogg",
+   "license": "CC BY-SA 4.0",
+   "artist": "Ovinus Real",
+   "excerpt": "17.2-27.2s",
+   "credit": "Ovinus Real (Wikimedia Commons)"
+  }
+ ],
+ "flugelhorn/mix": [
+  {
+   "source": "commons",
+   "file": "File:Short flugelhorn excerpt.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Short_flugelhorn_excerpt.ogg",
+   "license": "CC BY-SA 4.0",
+   "artist": "Ovinus Real",
+   "excerpt": "17.2-27.2s",
+   "credit": "Ovinus Real (Wikimedia Commons)"
+  },
+  {
+   "source": "freepats",
+   "bank": "MuldjordKit",
+   "file": "drum groove (kick, snare, hi-hat)",
+   "license": "CC-BY-4.0",
+   "credit": "MuldjordKit by Lars Muldjord (FreePats stereo version)"
+  },
+  {
+   "source": "generated",
+   "preset": "speech-shaped noise and room reverb",
+   "license": "CC0-1.0",
+   "credit": "Generated in code for this library"
+  }
+ ],
+ "flugelhorn/phone": [
+  {
+   "source": "commons",
+   "file": "File:Short flugelhorn excerpt.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Short_flugelhorn_excerpt.ogg",
+   "license": "CC BY-SA 4.0",
+   "artist": "Ovinus Real",
+   "excerpt": "17.2-27.2s",
+   "credit": "Ovinus Real (Wikimedia Commons)"
+  }
+ ],
+ "santur/phrase": [
+  {
+   "source": "commons",
+   "file": "File:Santur by Mohammad R Azadehfar.wav",
+   "url": "https://commons.wikimedia.org/wiki/File:Santur_by_Mohammad_R_Azadehfar.wav",
+   "license": "CC BY-SA 4.0",
+   "artist": "Mohammad R Azadehfar",
+   "excerpt": "39.4-49.4s",
+   "credit": "Mohammad R Azadehfar (Wikimedia Commons)"
+  }
+ ],
+ "santur/mix": [
+  {
+   "source": "commons",
+   "file": "File:Santur by Mohammad R Azadehfar.wav",
+   "url": "https://commons.wikimedia.org/wiki/File:Santur_by_Mohammad_R_Azadehfar.wav",
+   "license": "CC BY-SA 4.0",
+   "artist": "Mohammad R Azadehfar",
+   "excerpt": "39.4-49.4s",
+   "credit": "Mohammad R Azadehfar (Wikimedia Commons)"
+  },
+  {
+   "source": "freepats",
+   "bank": "MuldjordKit",
+   "file": "drum groove (kick, snare, hi-hat)",
+   "license": "CC-BY-4.0",
+   "credit": "MuldjordKit by Lars Muldjord (FreePats stereo version)"
+  },
+  {
+   "source": "generated",
+   "preset": "speech-shaped noise and room reverb",
+   "license": "CC0-1.0",
+   "credit": "Generated in code for this library"
+  }
+ ],
+ "santur/phone": [
+  {
+   "source": "commons",
+   "file": "File:Santur by Mohammad R Azadehfar.wav",
+   "url": "https://commons.wikimedia.org/wiki/File:Santur_by_Mohammad_R_Azadehfar.wav",
+   "license": "CC BY-SA 4.0",
+   "artist": "Mohammad R Azadehfar",
+   "excerpt": "39.4-49.4s",
+   "credit": "Mohammad R Azadehfar (Wikimedia Commons)"
   }
  ]
 }

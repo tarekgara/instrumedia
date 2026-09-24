@@ -120,17 +120,24 @@ def parse_note(name):
 def http_get(url, dest):
     dest.parent.mkdir(parents=True, exist_ok=True)
     tmp = dest.with_suffix(dest.suffix + ".part")
-    req = urllib.request.Request(url, headers={"User-Agent": "instrumedia-build"})
-    for attempt in range(4):
+    # Wikimedia asks for a descriptive User-Agent and rate-limits bursts (HTTP 429).
+    req = urllib.request.Request(url, headers={"User-Agent": "InstrumediaBuild/1.0 (open-source instrument reference; sample sourcing)"})
+    for attempt in range(6):
         try:
             with urllib.request.urlopen(req, timeout=60) as r, open(tmp, "wb") as f:
                 shutil.copyfileobj(r, f)
             tmp.replace(dest)
             return dest
-        except Exception as e:  # network hiccups: retry with backoff
-            if attempt == 3:
+        except Exception as e:  # network hiccups and rate limits: retry with backoff
+            if attempt == 5:
                 raise RuntimeError(f"download failed: {url}: {e}")
-            time.sleep(2 * (attempt + 1))
+            wait = 5 * (attempt + 1)
+            retry_after = getattr(e, "headers", None) and e.headers.get("Retry-After")
+            if retry_after and str(retry_after).isdigit():
+                wait = max(wait, int(retry_after))
+            elif getattr(e, "code", None) == 429:
+                wait = 30 * (attempt + 1)
+            time.sleep(wait)
 
 
 # ------------------------------------------------------------------ sources
@@ -227,9 +234,17 @@ def parse_sfz(bank, want=None):
 COMMONS_API = "https://commons.wikimedia.org/w/api.php"
 
 
+def commons_key(title):
+    """Cache filename: readable part plus a hash, so all-CJK titles don't collide."""
+    name = title.replace("File:", "")
+    ext = Path(name).suffix.lower()
+    stem = re.sub(r"[^A-Za-z0-9._-]+", "_", Path(name).stem).strip("_")[:60]
+    return f"{stem or 'file'}-{hashlib.sha1(title.encode()).hexdigest()[:8]}{ext}"
+
+
 def commons(title):
     """Download a Wikimedia Commons file (cached) and return (path, metadata)."""
-    key = re.sub(r"[^A-Za-z0-9._-]+", "_", title.replace("File:", ""))
+    key = commons_key(title)
     meta_path = CACHE / "commons" / (key + ".json")
     if not meta_path.exists():
         q = urllib.parse.urlencode({"action": "query", "titles": title, "prop": "imageinfo",
@@ -246,7 +261,7 @@ def commons(title):
     }
     audio = CACHE / "commons" / key
     if not audio.exists():
-        http_get(ii["url"], audio)
+        http_get(ii["url"].split("?")[0], audio)
     return audio, meta
 
 
@@ -833,6 +848,7 @@ def license_for(origin, lib):
 
 
 def main():
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
     ap = argparse.ArgumentParser()
     ap.add_argument("--only", help="comma-separated instrument ids")
     ap.add_argument("--force", action="store_true")
@@ -854,6 +870,16 @@ def main():
         todo = [i for i in todo if i["id"] in only]
     for src in REPOS:
         tree(src)
+    # Wikimedia rate-limits parallel downloads, so fetch Commons files one at a time up front.
+    titles = [ex["file"] for i in todo for ex in i.get("samples", {}).get("excerpts", [])]
+    missing = [t for t in titles if not (CACHE / "commons" / commons_key(t)).exists()]
+    for n, t in enumerate(missing, 1):
+        log(f"  fetching from Commons ({n}/{len(missing)}): {t}")
+        try:
+            commons(t)
+        except Exception as e:
+            log(f"  ! {t}: {e}")
+        time.sleep(3)
 
     built = {}
     for f in (CACHE / "built").glob("*.json"):

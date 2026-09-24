@@ -237,7 +237,6 @@ instruments:
     name: Erhu
     family: bowed
     sub: Spike fiddle
-    status: wanted
     traits: { pitched: "yes", sustain: held, attack: [soft], tone: [bowed, reedy], register: [mid, high] }
     summary: Chinese two-string fiddle. Nasal, plaintive, constantly sliding between notes.
     listen: ["Frequent slides and bends", "A hollow nasal tone, almost vocal"]
@@ -245,6 +244,11 @@ instruments:
       - { id: violin, cue: "Violin is fuller and more resonant. Erhu is thinner and slides much more." }
 
   # ---------------------------------------------------------------- plucked
+    samples:
+      excerpts:
+        - { file: "File:江河水.ogg", label: "“River” (Jiang He Shui)", dur: 10 }
+        - { file: "File:二泉映月.ogg", label: "“The Moon Reflected on Erquan”", dur: 10 }
+
   - id: acoustic-guitar-nylon
     name: Classical guitar
     family: plucked
@@ -391,30 +395,33 @@ instruments:
     name: Mandolin
     family: plucked
     sub: Lute
-    status: wanted
     traits: { pitched: "yes", sustain: decays, attack: [sharp], tone: [twangy, metallic], register: [mid, high] }
     summary: Paired steel strings, bright and short. Long notes are played as fast tremolo picking.
     listen: ["Rapid tremolo on sustained notes", "A bright, thin, chiming tone"]
     confusions:
       - { id: acoustic-guitar-steel, cue: "Guitar is lower and fuller." }
       - { id: banjo, cue: "Banjo is twangier, with a drum-head snap." }
+    samples:
+      excerpts:
+        - { file: "File:Schneewalzer.ogg", label: "Waltz (concert mandolin)", dur: 8 }
 
   - id: banjo
     name: Banjo
     family: plucked
     sub: Lute
-    status: wanted
     traits: { pitched: "yes", sustain: decays, attack: [sharp], tone: [twangy], register: [mid, high] }
     summary: Strings over a drum head. Bright, twangy, quick decay, rolling fingerpicked patterns.
     listen: ["A papery snap and fast decay", "Rolling repeated patterns"]
     confusions:
       - { id: acoustic-guitar-steel, cue: "Guitar sustains longer with a woody body." }
+    samples:
+      excerpts:
+        - { file: "File:Banjo.ogg", label: "Picking", dur: 10 }
 
   - id: sitar
     name: Sitar
     family: plucked
     sub: Lute
-    status: wanted
     traits: { pitched: "yes", sustain: decays, attack: [sharp], tone: [twangy, buzzy], register: [mid] }
     summary: North Indian long-necked lute. Buzzing bridge, sympathetic strings, sliding notes.
     listen: ["A buzzing, sizzling halo around each note", "Deep pitch bends and a shimmering drone"]
@@ -422,6 +429,11 @@ instruments:
       - { id: dan-tranh, cue: "Zither is cleaner, without the sizzling buzz." }
 
   # ---------------------------------------------------------------- keys
+    samples:
+      excerpts:
+        - { file: "File:Sitar sample yaman.ogg", label: "Raag Yaman", dur: 10 }
+        - { file: "File:Sitar clipping.ogg", label: "Phrase", dur: 8 }
+
   - id: grand-piano
     name: Grand piano
     family: keys
@@ -491,7 +503,6 @@ instruments:
     name: Tine electric piano (Rhodes)
     family: keys
     sub: Electric piano
-    status: wanted
     aliases: [rhodes, wurlitzer, electric piano, ep]
     traits: { pitched: "yes", sustain: decays, attack: [sharp, soft], tone: [metallic, hammered], register: [mid] }
     summary: Hammers hitting metal tines. Warm, bell-like, barking when played hard.
@@ -499,6 +510,9 @@ instruments:
     confusions:
       - { id: fm-electric-piano, cue: "FM pianos are glassier and brighter." }
       - { id: vibraphone, cue: "Vibraphone is purer and rings longer." }
+    samples:
+      excerpts:
+        - { file: "File:Rhodes Mark I Tubeamp.ogg", label: "Rhodes Mark I through a tube amp", dur: 8.5 }
 
   - id: celesta
     name: Celesta
@@ -518,7 +532,6 @@ instruments:
     name: Music box
     family: mallet
     sub: Comb
-    status: wanted
     traits: { pitched: "yes", sustain: decays, attack: [sharp], tone: [metallic], register: [high] }
     summary: Plucked metal comb teeth. Tiny, tinkly, mechanical.
     listen: ["Very high, plinky notes", "Clockwork regularity"]
@@ -527,6 +540,10 @@ instruments:
       - { id: kalimba, cue: "Kalimba is lower and woodier." }
 
   # ---------------------------------------------------------------- organ
+    samples:
+      excerpts:
+        - { file: "File:Caja de música (PianoConcerto5 Beethoven).ogg", label: "Beethoven theme", dur: 10 }
+
   - id: pipe-organ
     name: Pipe organ
     family: organ
@@ -602,19 +619,21 @@ instruments:
     name: Harmonium
     family: organ
     sub: Free reed
-    status: wanted
     aliases: [reed organ, pump organ]
     traits: { pitched: "yes", sustain: held, attack: [soft], tone: [reedy], register: [mid] }
     summary: A pumped reed organ. Soft, reedy, used in Indian devotional music and old parlors.
     listen: ["A soft reedy chord", "Slow swells from the pumping hand"]
     confusions:
       - { id: accordion, cue: "Accordion is brighter and buzzier." }
+    samples:
+      excerpts:
+        - { file: "File:César Franck-Harmonium-5e pièce en do.ogg", label: "Franck, pièce en do (European reed organ)", dur: 10 }
+        - { file: "File:Harmonium (C Major).wav", label: "Indian harmonium, scale", dur: 4.6 }
 
   - id: melodica
     name: Melodica
     family: organ
     sub: Free reed
-    status: wanted
     traits: { pitched: "yes", sustain: held, attack: [soft], tone: [reedy], register: [mid, high] }
     summary: A blown keyboard with harmonica reeds. Thin, bright, reedy.
     listen: ["A reedy tone with breath dynamics", "Keyboard-like melodies"]
@@ -622,6 +641,10 @@ instruments:
       - { id: harmonica, cue: "Harmonica bends notes and is breathier." }
 
   # ---------------------------------------------------------------- woodwind
+    samples:
+      excerpts:
+        - { file: "File:Melodica rakesofkildare.ogg", label: "Irish tune", dur: 10 }
+
   - id: flute
     name: Flute
     family: woodwind
@@ -697,13 +720,15 @@ instruments:
     name: Tin whistle
     family: woodwind
     sub: Duct flute
-    status: wanted
     aliases: [penny whistle, irish whistle]
     traits: { pitched: "yes", sustain: held, attack: [sharp], tone: [pure, breathy], register: [high] }
     summary: Irish folk whistle. Bright, thin, heavily ornamented with cuts and rolls.
     listen: ["Quick flicked ornaments", "A thin, bright tone"]
     confusions:
       - { id: recorder, cue: "Recorder is softer and sweeter." }
+    samples:
+      excerpts:
+        - { file: "File:Buachaill on Eirne D tin whistle.ogg", label: "Irish air", dur: 10 }
 
   - id: oboe
     name: Oboe
@@ -809,12 +834,14 @@ instruments:
     name: Alto saxophone
     family: woodwind
     sub: Saxophone
-    status: wanted
     traits: { pitched: "yes", sustain: held, attack: [soft, sharp], tone: [reedy, brassy], register: [mid] }
     summary: The most common sax. Brighter than tenor, bluesy, cutting.
     listen: ["A bright, edgy reed tone"]
     confusions:
       - { id: tenor-sax, cue: "Tenor is lower and smokier." }
+    samples:
+      excerpts:
+        - { file: "File:Joachim Andersen - Caprice No.1 Op.15 - Arr for alto saxophone - David Hernando Vitores.ogg", label: "Caprice (unaccompanied)", dur: 10 }
 
   - id: bagpipe
     name: Bagpipes
@@ -1220,12 +1247,15 @@ instruments:
     name: Djembe
     family: drums
     sub: Hand drum
-    status: wanted
     traits: { pitched: "no", sustain: decays, attack: [sharp], tone: [skin], register: [low, mid] }
     summary: West African goblet drum. Deep bass, ringing tone, cracking slap.
     listen: ["A very sharp slap", "A deep bass in the center"]
     confusions:
       - { id: congas, cue: "Congas are mellower." }
+    samples:
+      excerpts:
+        - { file: "File:Djembee2.ogg", label: "Groove", dur: 10 }
+        - { file: "File:Djembe accompaniment.ogg", label: "Bass, tone and slap", dur: 10 }
 
   - id: cajon
     name: Cajón
@@ -1279,7 +1309,6 @@ instruments:
     name: Tabla
     family: drums
     sub: Hand drum
-    status: wanted
     traits: { pitched: "yes", sustain: decays, attack: [sharp], tone: [skin], register: [mid] }
     summary: North Indian drum pair. Singing, pitched strokes and bending bass.
     listen: ["Ringing pitched tones", "A bass drum that bends upward"]
@@ -1287,6 +1316,10 @@ instruments:
       - { id: darbuka, cue: "Darbuka tones are not pitched and do not bend." }
 
   # ---------------------------------------------------------------- metal & small
+    samples:
+      excerpts:
+        - { file: "File:Tabla drums demo.oga", label: "Demo", dur: 8 }
+
   - id: hi-hat
     name: Hi-hat
     family: metal
@@ -2109,6 +2142,7 @@ instruments:
     sub: Early electronic
     traits: { pitched: "yes", sustain: held, attack: [soft], tone: [electronic, pure], register: [mid, high] }
     summary: Played without touch, by moving hands near two antennas. An eerie, gliding, voice-like sine tone.
+    note: Single notes and the first phrase are synthesized; the clips marked “Real theremin” are recordings of a Moog Etherwave Pro.
     listen: ["Swooping glides between notes", "A wide, wobbly vibrato", "The 1950s sci-fi sound"]
     confusions:
       - { id: flexatone, cue: "Flexatone warbles with a metallic rattle." }
@@ -2117,24 +2151,29 @@ instruments:
       - { id: wine-glasses, cue: "Glass harp can't glide between notes." }
     samples:
       notes: { src: generated, preset: theremin, phrase: true }
+      excerpts:
+        - { file: "File:Epro theremin middle bach.ogg", label: "Real theremin: Bach (Moog Etherwave Pro)", dur: 12 }
+        - { file: "File:Threremin bass.ogg", label: "Real theremin: low register", dur: 10 }
 
   - id: rainstick
     name: Rainstick
     family: metal
     sub: Rattle
-    status: wanted
     traits: { pitched: "no", sustain: held, attack: [soft], tone: [noisy], register: [high] }
     summary: A long tube with pins inside and pebbles that trickle through. The sound of falling rain.
     listen: ["A long cascade of tiny ticks"]
     confusions:
       - { id: ocean-drum, cue: "Ocean drum is a smoother, bigger wash." }
       - { id: shaker, cue: "Shaker is rhythmic." }
+    samples:
+      excerpts:
+        - { file: "File:Rainstick - Slow - Overtones.ogg", label: "Slow turn", dur: 10 }
+        - { file: "File:Rainstick.ogg", label: "Turn", dur: 8 }
 
   - id: pan-flute
     name: Pan flute
     family: woodwind
     sub: Flute
-    status: wanted
     aliases: [pan pipes, panpipes, zampoña, siku, nai]
     traits: { pitched: "yes", sustain: held, attack: [soft], tone: [breathy, pure], register: [mid, high] }
     summary: A row of pipes blown across the top. Very breathy, hollow notes, often with a chiff.
@@ -2143,3 +2182,293 @@ instruments:
       - { id: flute, cue: "Flute is smoother, with less air around the note." }
       - { id: ocarina, cue: "Ocarina is purer and rounder." }
       - { id: recorder, cue: "Recorder is cleaner, with less breath." }
+    samples:
+      excerpts:
+        - { file: "File:Interpretación del tema \"29 de setiembre\" ejecutada con sikus Malta - Sonido conjunto de Ira y Arka.wav", label: "Andean sikus (panpipes)", dur: 10 }
+
+  # ---------------------------------------------------------------- recordings from Wikimedia Commons
+
+  - id: wurlitzer
+    name: Wurlitzer electric piano
+    family: keys
+    sub: Electric piano
+    aliases: [wurly, wurlitzer ep200, reed electric piano]
+    traits: { pitched: "yes", sustain: decays, attack: [sharp], tone: [metallic, reedy], register: [mid] }
+    summary: An electric piano with struck metal reeds. Nasal and punchy, growly when played hard. The sound of 1970s soul and pop.
+    listen: ["A reedy, slightly nasal bite on the attack", "A bark or growl on loud notes"]
+    confusions:
+      - { id: rhodes, cue: "Rhodes is rounder and more bell-like; Wurlitzer is reedier and more nasal." }
+      - { id: fm-electric-piano, cue: "FM pianos are glassier, with no growl." }
+      - { id: upright-piano, cue: "Acoustic piano has string resonance and a longer sustain." }
+    samples:
+      excerpts:
+        - { file: "File:Wurlitzer EP200.mp3", label: "Wurlitzer EP200", dur: 10 }
+
+  - id: koto
+    name: Koto
+    family: plucked
+    sub: Zither
+    aliases: [japanese zither, 13-string koto]
+    traits: { pitched: "yes", sustain: decays, attack: [sharp], tone: [twangy], register: [mid, high] }
+    summary: Japanese 13-string zither. Clear, bright plucks with pitch bends made by pressing the string.
+    listen: ["Bright plucks that bend up after the attack", "Pentatonic Japanese melodies"]
+    confusions:
+      - { id: dan-tranh, cue: "Đàn tranh is thinner and more metallic, with faster vibrato." }
+      - { id: harp, cue: "Harp never bends a note." }
+      - { id: shamisen, cue: "Shamisen is a percussive, snappy lute." }
+    samples:
+      excerpts:
+        - { file: "File:Koto performance.ogg", label: "Sakura Sakura", dur: 10 }
+
+  - id: shamisen
+    name: Shamisen
+    family: plucked
+    sub: Lute
+    aliases: [samisen, sangen]
+    traits: { pitched: "yes", sustain: decays, attack: [sharp], tone: [twangy, buzzy], register: [mid] }
+    summary: Japanese three-string lute struck with a large plectrum. Snappy, percussive and buzzy.
+    listen: ["A dry snap as the plectrum hits the skin", "A buzzing ring called sawari"]
+    confusions:
+      - { id: banjo, cue: "Banjo is brighter and rolls; shamisen hits hard and slides." }
+      - { id: koto, cue: "Koto is a softer, ringing zither." }
+      - { id: sitar, cue: "Sitar has a lush halo of sympathetic strings." }
+    samples:
+      excerpts:
+        - { file: "File:三味線の音オーディオ.ogg", label: "Phrase", dur: 9.4 }
+
+  - id: oud
+    name: Oud
+    family: plucked
+    sub: Lute
+    aliases: [ud, arabic lute]
+    traits: { pitched: "yes", sustain: decays, attack: [sharp], tone: [twangy], register: [low, mid] }
+    summary: The fretless lute of Arabic, Turkish and Persian music. Deep, warm, woody plucks with slides.
+    listen: ["A warm, dark pluck with a woody body", "Slides and quarter-tone ornaments"]
+    confusions:
+      - { id: acoustic-guitar-nylon, cue: "Guitar is fretted and brighter; oud slides and sounds darker." }
+      - { id: bouzouki, cue: "Bouzouki is brighter and metallic, with doubled steel strings." }
+      - { id: sitar, cue: "Sitar buzzes and sustains much longer." }
+    samples:
+      excerpts:
+        - { file: "File:OUD.ogg", label: "Hobb Eih (excerpt)", dur: 10 }
+        - { file: "File:Oud music by Andy R. Jordan 1V2 long.mp3", label: "Solo piece", dur: 10 }
+
+  - id: bouzouki
+    name: Bouzouki
+    family: plucked
+    sub: Lute
+    aliases: [irish bouzouki, greek bouzouki]
+    traits: { pitched: "yes", sustain: decays, attack: [sharp], tone: [twangy, metallic], register: [mid] }
+    summary: A long-necked lute with paired steel strings. Bright, jangly and chiming.
+    listen: ["A shimmering, doubled-string jangle", "Fast picked melodies"]
+    note: This recording is an Irish bouzouki. The Greek bouzouki is brighter still.
+    confusions:
+      - { id: mandolin, cue: "Mandolin is an octave higher and thinner." }
+      - { id: acoustic-guitar-steel, cue: "Guitar is fuller, with single strings." }
+      - { id: oud, cue: "Oud is darker and fretless." }
+    samples:
+      excerpts:
+        - { file: "File:The Mountain Road - Medium - Bouzouki.ogg", label: "Reel", dur: 10 }
+
+  - id: pedal-steel
+    name: Pedal steel guitar
+    family: plucked
+    sub: Steel guitar
+    aliases: [steel guitar, lap steel, dobro, slide guitar]
+    traits: { pitched: "yes", sustain: decays, attack: [soft, sharp], tone: [twangy, pure], register: [mid, high] }
+    summary: A guitar played flat with a steel bar. Notes glide and chords bend. The crying sound of country music.
+    listen: ["Smooth glides between notes and chords", "A swelling, weeping sustain"]
+    confusions:
+      - { id: electric-guitar-clean, cue: "A regular guitar steps between frets; steel glides." }
+      - { id: theremin, cue: "Theremin glides too, but has no pluck." }
+      - { id: erhu, cue: "Erhu is bowed and nasal." }
+    samples:
+      excerpts:
+        - { file: "File:Sound of steel guitar (pedal).ogg", label: "Western swing", dur: 10 }
+
+  - id: twelve-string
+    name: 12-string guitar
+    family: plucked
+    sub: Guitar
+    aliases: [twelve-string guitar]
+    traits: { pitched: "yes", sustain: decays, attack: [sharp], tone: [twangy, metallic], register: [low, mid] }
+    summary: A guitar with doubled strings, some an octave apart. A shimmering, chorused jangle.
+    listen: ["Every note has a bright octave shadow", "A lush, chorus-like shimmer"]
+    confusions:
+      - { id: acoustic-guitar-steel, cue: "A 6-string sounds plainer, without the octave shimmer." }
+      - { id: bouzouki, cue: "Bouzouki is higher and thinner." }
+      - { id: harpsichord, cue: "Harpsichord jangles too, but can't bend or vary loudness." }
+    samples:
+      excerpts:
+        - { file: "File:Vladan Kuzmanović - Bravoure For 12 String Guitar.ogg", label: "Bravoure (excerpt)", dur: 10 }
+
+  - id: bandoneon
+    name: Bandoneon
+    family: organ
+    sub: Free reed
+    aliases: [bandoneón, tango accordion, concertina]
+    traits: { pitched: "yes", sustain: held, attack: [soft, sharp], tone: [reedy], register: [low, mid] }
+    summary: The button squeezebox of Argentine tango. Darker and more plaintive than an accordion.
+    listen: ["A dark, reedy, melancholy tone", "Sharp bellows accents in tango rhythms"]
+    confusions:
+      - { id: accordion, cue: "Accordion is brighter, often with a wavering musette tremolo." }
+      - { id: harmonium, cue: "Harmonium is steadier and pumped." }
+      - { id: harmonica, cue: "Harmonica is smaller, breathier and single-line." }
+    samples:
+      excerpts:
+        - { file: "File:Bandoneón.ogg", label: "Phrase", dur: 10 }
+
+  - id: shakuhachi
+    name: Shakuhachi
+    family: woodwind
+    sub: Flute
+    aliases: [japanese bamboo flute]
+    traits: { pitched: "yes", sustain: held, attack: [soft], tone: [breathy], register: [mid] }
+    summary: Japanese end-blown bamboo flute. Very breathy and expressive, with swells, bends and air bursts.
+    listen: ["Rushing breath around the note", "Slow swells, pitch bends and sudden air accents"]
+    confusions:
+      - { id: flute, cue: "Concert flute is cleaner and steadier." }
+      - { id: pan-flute, cue: "Pan flute plays quick separate notes, less bending." }
+      - { id: bansuri, cue: "Bansuri is sweeter, with fluid Indian ornaments." }
+    samples:
+      excerpts:
+        - { file: "File:Shakuhachi-flute-440Hz.ogg", label: "Held note (A4)", dur: 8.5 }
+        - { file: "File:Shikanotoone new.ogg", label: "Honkyoku (historic recording)", dur: 12 }
+
+  - id: bansuri
+    name: Bansuri
+    family: woodwind
+    sub: Flute
+    aliases: [indian bamboo flute, venu]
+    traits: { pitched: "yes", sustain: held, attack: [soft], tone: [breathy, pure], register: [mid, high] }
+    summary: Indian side-blown bamboo flute. Sweet, airy and flowing, with slides between notes.
+    listen: ["A soft, airy tone", "Smooth slides and rapid ornaments"]
+    note: This recording is a bass bansuri, lower and breathier than the common size.
+    confusions:
+      - { id: flute, cue: "Western flute is brighter and more even, with less sliding." }
+      - { id: shakuhachi, cue: "Shakuhachi is harsher, with breath bursts." }
+    samples:
+      excerpts:
+        - { file: "File:Bansuri sample E bass.ogg", label: "Bass bansuri", dur: 10 }
+
+  - id: duduk
+    name: Duduk
+    family: woodwind
+    sub: Double reed
+    aliases: [doudouk, armenian duduk]
+    traits: { pitched: "yes", sustain: held, attack: [soft], tone: [reedy, pure], register: [mid] }
+    summary: Armenian apricot-wood double reed. Soft, dark, mournful and very vocal, often over a drone.
+    listen: ["A soft, velvety reed tone", "Mournful slides and swells"]
+    confusions:
+      - { id: oboe, cue: "Oboe is brighter and more piercing." }
+      - { id: clarinet, cue: "Clarinet is hollower and steadier." }
+      - { id: english-horn, cue: "English horn is similar in mood but more focused." }
+    samples:
+      excerpts:
+        - { file: "File:Sound of Armenian Duduk.ogg", label: "Melody", dur: 10 }
+
+  - id: taiko
+    name: Taiko
+    family: drums
+    sub: Japanese drum
+    aliases: [wadaiko, japanese drum]
+    traits: { pitched: "no", sustain: decays, attack: [sharp], tone: [skin], register: [low] }
+    summary: Large Japanese barrel drums hit with heavy sticks. Booming, powerful and resonant.
+    listen: ["A huge, deep boom with a stick crack", "Rim clicks between the big hits"]
+    note: Recorded outdoors at a sumo tournament, with some ambience.
+    confusions:
+      - { id: concert-bass-drum, cue: "Bass drum is softer-edged, hit with a padded beater." }
+      - { id: timpani, cue: "Timpani has a clear pitch." }
+      - { id: toms, cue: "Toms are much smaller and shorter." }
+    samples:
+      excerpts:
+        - { file: "File:Sumo-Ichibandaiko.ogg", label: "Yagura-daiko", dur: 10 }
+
+  - id: kazoo
+    name: Kazoo
+    family: woodwind
+    sub: Mirliton
+    traits: { pitched: "yes", sustain: held, attack: [soft], tone: [buzzy], register: [mid] }
+    summary: A membrane that buzzes when you hum into it. A comic, nasal, buzzing voice.
+    listen: ["A buzzing, nasal hum", "Clearly shaped by a human voice"]
+    confusions:
+      - { id: harmonica, cue: "Harmonica is reedy but not buzzy." }
+      - { id: comb-and-paper, cue: "Comb and paper is the same idea, softer." }
+      - { id: electric-guitar-distorted, cue: "Distorted guitar has picked attacks." }
+    samples:
+      excerpts:
+        - { file: "File:Advance Australia Fair on Kazoo.wav", label: "Anthem", dur: 10 }
+
+  - id: comb-and-paper
+    name: Comb and paper
+    family: woodwind
+    sub: Mirliton
+    status: wanted
+    traits: { pitched: "yes", sustain: held, attack: [soft], tone: [buzzy], register: [mid] }
+    summary: Humming through paper held against a comb. A soft, raspy kazoo sound.
+    listen: ["A thin, papery buzz on a hummed tune"]
+    confusions:
+      - { id: kazoo, cue: "Kazoo is louder and more nasal." }
+
+  - id: bass-clarinet
+    name: Bass clarinet
+    family: woodwind
+    sub: Single reed
+    traits: { pitched: "yes", sustain: held, attack: [soft, sharp], tone: [reedy, pure], register: [low] }
+    summary: A clarinet an octave lower. Dark, woody and hollow, often mysterious in film scores.
+    listen: ["A dark, hollow, woody low tone", "Smooth and round, not buzzy"]
+    confusions:
+      - { id: clarinet, cue: "Clarinet is an octave higher and brighter." }
+      - { id: bassoon, cue: "Bassoon is drier and buzzier." }
+      - { id: tenor-sax, cue: "Sax is brassier, with more edge." }
+    samples:
+      excerpts:
+        - { file: "File:R. Strauss Don Qixote.ogg", label: "Strauss, Don Quixote", dur: 11.5 }
+
+  - id: contrabassoon
+    name: Contrabassoon
+    family: woodwind
+    sub: Double reed
+    aliases: [double bassoon]
+    traits: { pitched: "yes", sustain: held, attack: [soft, sharp], tone: [reedy, buzzy], register: [low] }
+    summary: A bassoon an octave lower, the deepest woodwind. A gravelly, rattling growl.
+    listen: ["An extremely low, gravelly buzz", "You can almost hear the reed flap"]
+    confusions:
+      - { id: bassoon, cue: "Bassoon is an octave higher and smoother." }
+      - { id: tuba, cue: "Tuba is round and brassy, not rattly." }
+      - { id: double-bass, cue: "Double bass has bow grain." }
+    samples:
+      excerpts:
+        - { file: "File:Contra2.ogg", label: "Bach cello suite", dur: 12 }
+
+  - id: flugelhorn
+    name: Flugelhorn
+    family: brass
+    sub: Trumpet
+    aliases: [fluegelhorn]
+    traits: { pitched: "yes", sustain: held, attack: [soft], tone: [brassy, pure], register: [mid] }
+    summary: A wide-bored cousin of the trumpet. Dark, mellow and velvety, a jazz ballad favorite.
+    listen: ["A soft, round, dark brass tone", "Less bite than a trumpet"]
+    confusions:
+      - { id: trumpet, cue: "Trumpet is brighter and more piercing." }
+      - { id: french-horn, cue: "Horn is more distant and covered." }
+    samples:
+      excerpts:
+        - { file: "File:Short flugelhorn excerpt.ogg", label: "Jazz phrase", dur: 10 }
+
+  - id: santur
+    name: Santur
+    family: plucked
+    sub: Hammered dulcimer
+    aliases: [santoor, hammered dulcimer, cimbalom, yangqin, dulcimer]
+    traits: { pitched: "yes", sustain: decays, attack: [sharp], tone: [metallic, twangy], register: [mid, high] }
+    summary: A trapezoid box of strings struck with light hammers. Shimmering, bell-like tremolos and cascades.
+    listen: ["A ringing, metallic shimmer that sustains", "Fast hammered tremolos"]
+    note: This recording is a Persian santur. The cimbalom, yangqin and Western hammered dulcimer work the same way.
+    confusions:
+      - { id: harpsichord, cue: "Harpsichord is plucked and dry, no ringing wash." }
+      - { id: dan-tranh, cue: "Zither is plucked and bends notes." }
+      - { id: harp, cue: "Harp is softer and rounder." }
+    samples:
+      excerpts:
+        - { file: "File:Santur by Mohammad R Azadehfar.wav", label: "Persian santur", dur: 10 }
