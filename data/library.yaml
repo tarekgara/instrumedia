@@ -1,0 +1,2145 @@
+# Instrumedia library definition.
+#
+# This file is the single source of truth for the taxonomy, the perceptual
+# traits used by the "Not sure" identifier, the confusion map, and which raw
+# recordings become reference clips. `python tools/build.py` reads it and
+# produces js/data.js plus the encoded audio in audio/.
+#
+# Trait vocabulary (keep in sync with `questions` below):
+#   pitched:  yes | no
+#   sustain:  held (keeps sounding while played) | decays (dies away on its own)
+#   attack:   sharp | soft
+#   tone:     breathy reedy brassy bowed twangy hammered metallic woody skin
+#             noisy electronic buzzy pure
+#   register: low | mid | high
+
+sources:
+  vcsl:
+    name: Versilian Community Sample Library
+    url: https://github.com/sgossner/VCSL
+    license: CC0-1.0
+    credit: Versilian Studios and contributors
+  vsco:
+    name: VSCO 2 Community Edition
+    url: https://github.com/sgossner/VSCO-2-CE
+    license: CC0-1.0
+    credit: Versilian Studios
+  freepats:
+    name: FreePats
+    url: https://freepats.zenvoid.org/
+    license: per bank (see banks)
+    credit: FreePats project and contributors
+  commons:
+    name: Wikimedia Commons
+    url: https://commons.wikimedia.org/
+    license: per file (CC0, public domain, CC BY or CC BY-SA)
+    credit: Individual authors, credited per clip
+  generated:
+    name: Instrumedia synthesizer
+    url: tools/synth.py
+    license: CC0-1.0
+    credit: Generated in code for this library
+
+families:
+  - id: bowed
+    name: Bowed strings
+    blurb: A bow drawn across strings. Smooth, singing, able to swell and hold.
+  - id: plucked
+    name: Plucked strings
+    blurb: Strings set ringing by a finger or pick, then left to fade.
+  - id: keys
+    name: Keyboards
+    blurb: Strings or electronics triggered from a keyboard. Chords are easy here.
+  - id: organ
+    name: Organs & free reeds
+    blurb: Air through pipes or metal reeds. Notes hold as long as keys stay down.
+  - id: woodwind
+    name: Woodwinds
+    blurb: Breath through a reed or across an edge. Airy to nasal.
+  - id: brass
+    name: Brass
+    blurb: Lips buzzing into a metal tube. Bold, bright, warm when soft.
+  - id: mallet
+    name: Tuned percussion
+    blurb: Bars, bells and tines struck or plucked at definite pitches.
+  - id: drums
+    name: Drums
+    blurb: Struck skins and boxes. Thumps, cracks, booms.
+  - id: metal
+    name: Cymbals & small percussion
+    blurb: Crashes, shimmers, rattles, clicks. Mostly no clear note.
+  - id: electronic
+    name: Electronic
+    blurb: Synthesizers and drum machines. Waveforms, filters, envelopes.
+
+questions:
+  - id: pitched
+    ask: Can you hum along with it?
+    hint: A clear note you could sing back, or a hit, rattle or noise with no settled pitch.
+    weight: 3
+    options:
+      - { value: "yes", label: "Yes, there's a note", example: flute/note-3 }
+      - { value: "no", label: "No, it's a hit or noise", example: snare-drum/hit-1 }
+  - id: tone
+    ask: Which texture is closest?
+    hint: Ignore pitch for a moment and listen to the grain of the sound.
+    weight: 3
+    options:
+      - { value: breathy, label: "Airy, breathy", example: flute/note-3 }
+      - { value: reedy, label: "Reedy, nasal", example: oboe/note-3 }
+      - { value: brassy, label: "Brassy, blaring", example: trumpet/note-3 }
+      - { value: bowed, label: "Bowed string", example: cello/note-3 }
+      - { value: twangy, label: "Plucked string", example: acoustic-guitar-steel/note-3 }
+      - { value: hammered, label: "Hammered, piano-like", example: grand-piano/note-3 }
+      - { value: metallic, label: "Metallic, bell-like", example: glockenspiel/note-3 }
+      - { value: woody, label: "Woody knock", example: marimba/note-3 }
+      - { value: skin, label: "Drum skin", example: congas/hit-1 }
+      - { value: noisy, label: "Hiss, wash or rattle", example: shaker/hit-1 }
+      - { value: buzzy, label: "Buzzing, gritty", example: electric-guitar-distorted/note-3 }
+      - { value: pure, label: "Pure, whistle-like", example: ocarina/note-3 }
+      - { value: electronic, label: "Synthetic, electronic", example: synth-lead-saw/note-3 }
+  - id: sustain
+    ask: If a note is held, what happens?
+    hint: Listen to the end of a long note. Does it hang at the same level, or fade by itself?
+    weight: 2.5
+    options:
+      - { value: held, label: "It holds steady", example: clarinet/note-3 }
+      - { value: decays, label: "It fades away", example: acoustic-guitar-nylon/note-3 }
+  - id: attack
+    ask: How does each note begin?
+    hint: The first few milliseconds. A click or strike, or a swell from nothing.
+    weight: 1.5
+    options:
+      - { value: sharp, label: "Instantly, with a click or strike", example: xylophone/note-3 }
+      - { value: soft, label: "Softly, swelling in", example: synth-pad/note-3 }
+  - id: register
+    ask: Where does it sit?
+    hint: Compare against these three references. Pick where most of the notes live.
+    weight: 1.5
+    options:
+      - { value: low, label: "Low", example: tuba/note-2 }
+      - { value: mid, label: "Middle", example: french-horn/note-4 }
+      - { value: high, label: "High", example: piccolo/note-4 }
+
+# ---------------------------------------------------------------------------
+# Instruments
+#
+# samples.notes     one articulation sampled across the range (single notes,
+#                   plus an assembled phrase, a busy-mix and a phone-speaker
+#                   rendering). `count` notes are chosen spread across range.
+# samples.variants  techniques, each rendered as one mid-range note
+# samples.hits      unpitched: individual labelled hits, plus a groove pattern
+# status: wanted    listed so the confusion map can point at it, no audio yet
+# ---------------------------------------------------------------------------
+
+instruments:
+
+  # ---------------------------------------------------------------- bowed
+  - id: violin
+    name: Violin
+    family: bowed
+    sub: Violin family
+    aliases: [fiddle]
+    traits: { pitched: "yes", sustain: held, attack: [soft, sharp], tone: [bowed], register: [mid, high] }
+    summary: The highest bowed string. Bright, singing, with a thin rosin edge when played hard.
+    listen: ["A bright, focused line above the melody range of a voice", "Vibrato that wobbles the pitch slightly", "Bow noise and small scrapes on note starts"]
+    confusions:
+      - { id: viola, cue: "Viola is darker and huskier, rarely climbs into the violin's bright top register." }
+      - { id: violin-section, cue: "A section blurs into a smooth sheen. One violin has a single clear vibrato and audible bow detail." }
+      - { id: erhu, cue: "Erhu slides constantly between notes and has a nasal, hollow tone with no string-body warmth." }
+      - { id: flute, cue: "Flute is airier with no bow grain. Violin notes carry a buzzy rosin texture." }
+    samples:
+      notes: { src: vsco, dir: Strings/Solo Violin/Arco Vib, prefer: [_f] }
+      variants:
+        - { label: Pizzicato (plucked), src: vsco, dir: Strings/Solo Violin/Pizz, prefer: [_f_] }
+        - { label: Tremolo, src: vsco, dir: Strings/Solo Violin/Trem }
+        - { label: Spiccato (bounced bow), src: vsco, dir: Strings/Solo Violin/spic, phrase: true }
+
+  - id: violin-section
+    name: Violin section
+    family: bowed
+    sub: String ensemble
+    aliases: [strings, string section, orchestra strings]
+    traits: { pitched: "yes", sustain: held, attack: [soft], tone: [bowed], register: [mid, high] }
+    summary: Many violins in unison. Lush and smooth, the classic film-score string sound.
+    listen: ["A wide, shimmering body with no single vibrato", "Softer bow detail than a solo violin", "Chorus-like thickness"]
+    confusions:
+      - { id: violin, cue: "Solo violin has one clear vibrato and exposed bow noise. The section is smoother and wider." }
+      - { id: synth-pad, cue: "Synth strings and pads hold perfectly even. Real sections breathe, with bow changes and tiny pitch drift." }
+      - { id: viola, cue: "Violas sit lower and sound darker, more covered." }
+    samples:
+      notes: { src: vsco, dir: Strings/Violin Section/susVib, prefer: [_v2] }
+      variants:
+        - { label: Pizzicato, src: vsco, dir: Strings/Violin Section/Pizz, prefer: [_v2] }
+        - { label: Tremolo, src: vsco, dir: Strings/Violin Section/Trem, prefer: [_v2] }
+        - { label: Spiccato, src: vsco, dir: Strings/Violin Section/Spic, phrase: true }
+
+  - id: viola
+    name: Viola
+    family: bowed
+    sub: Violin family
+    traits: { pitched: "yes", sustain: held, attack: [soft, sharp], tone: [bowed], register: [mid] }
+    summary: A slightly larger violin, tuned a fifth lower. Warm, husky, a little veiled.
+    listen: ["Middle-register bowed tone, darker than violin", "A covered, nasal-husky color on the low strings"]
+    note: These recordings are a viola section. A solo viola sounds more focused, with clearer bow detail.
+    confusions:
+      - { id: violin, cue: "Violin is brighter and sits higher. Viola sounds as if a blanket were draped over a violin." }
+      - { id: cello, cue: "Cello goes much deeper and has a rounder, chestier resonance." }
+    samples:
+      notes: { src: vsco, dir: Strings/Viola Section/susvib, prefer: [_v2] }
+      variants:
+        - { label: Pizzicato, src: vsco, dir: Strings/Viola Section/pizz, prefer: [_v2] }
+        - { label: Tremolo, src: vsco, dir: Strings/Viola Section/trem }
+        - { label: Spiccato, src: vsco, dir: Strings/Viola Section/spic, phrase: true }
+
+  - id: cello
+    name: Cello
+    family: bowed
+    sub: Violin family
+    aliases: [violoncello]
+    traits: { pitched: "yes", sustain: held, attack: [soft, sharp], tone: [bowed], register: [low, mid] }
+    summary: Deep and vocal. Spans the range of a male voice and sings like one.
+    listen: ["Rich low bowed notes with a woody resonance", "Expressive vibrato in the tenor range"]
+    note: These recordings are a cello section.
+    confusions:
+      - { id: double-bass, cue: "Double bass is an octave lower and gruffer. Cello's low notes still have a singing core." }
+      - { id: viola, cue: "Viola cannot reach cello's deep register and sounds thinner." }
+      - { id: bassoon, cue: "Bassoon is reedy with a dry buzz. Cello has bow grain and a resonant wooden body." }
+      - { id: french-horn, cue: "Horn is round and brassy-soft with no bow texture." }
+    samples:
+      notes: { src: vsco, dir: Strings/Cello Section/susvib, prefer: [_v2] }
+      variants:
+        - { label: Pizzicato, src: vsco, dir: Strings/Cello Section/pizzT, prefer: [_v2] }
+        - { label: Tremolo, src: vsco, dir: Strings/Cello Section/trem }
+        - { label: Spiccato, src: vsco, dir: Strings/Cello Section/spic, phrase: true }
+
+  - id: double-bass
+    name: Double bass
+    family: bowed
+    sub: Violin family
+    aliases: [upright bass, contrabass, acoustic bass, string bass]
+    traits: { pitched: "yes", sustain: [held, decays], attack: [soft, sharp], tone: [bowed, twangy], register: [low] }
+    summary: The lowest bowed string. Bowed in orchestras, plucked in jazz as the walking bass.
+    listen: ["Very low notes with a grainy bow rasp", "Plucked: a woody, thumpy note that blooms then fades"]
+    confusions:
+      - { id: electric-bass, cue: "Plucked upright bass is woodier and thumpier with a quick bloom. Electric bass sustains longer and sounds smoother, more even." }
+      - { id: cello, cue: "Cello sits an octave higher and sounds more vocal." }
+      - { id: tuba, cue: "Tuba is a smooth brass tone with no bow grit." }
+      - { id: synth-bass, cue: "Synth bass is perfectly even and often filtered. Upright bass has wood and finger noise." }
+    samples:
+      notes: { src: vsco, dir: Strings/Solo Contrabass/SusVib, prefer: [_v2] }
+      variants:
+        - { label: Pizzicato (jazz-style pluck), src: vsco, dir: Strings/Solo Contrabass/Pizz, prefer: [_v2], phrase: true }
+        - { label: Non-vibrato, src: vsco, dir: Strings/Solo Contrabass/SusNV, prefer: [_v2] }
+        - { label: Tremolo, src: vsco, dir: Strings/Solo Contrabass/Trem }
+
+  - id: erhu
+    name: Erhu
+    family: bowed
+    sub: Spike fiddle
+    status: wanted
+    traits: { pitched: "yes", sustain: held, attack: [soft], tone: [bowed, reedy], register: [mid, high] }
+    summary: Chinese two-string fiddle. Nasal, plaintive, constantly sliding between notes.
+    listen: ["Frequent slides and bends", "A hollow nasal tone, almost vocal"]
+    confusions:
+      - { id: violin, cue: "Violin is fuller and more resonant. Erhu is thinner and slides much more." }
+
+  # ---------------------------------------------------------------- plucked
+  - id: acoustic-guitar-nylon
+    name: Classical guitar
+    family: plucked
+    sub: Guitar
+    aliases: [nylon-string guitar, spanish guitar, acoustic guitar]
+    traits: { pitched: "yes", sustain: decays, attack: [sharp], tone: [twangy], register: [low, mid] }
+    summary: Nylon strings. Round, soft-edged and warm, the sound of flamenco and bossa nova.
+    listen: ["Mellow plucked notes with a rounded attack", "Less shimmer and jangle than steel strings"]
+    confusions:
+      - { id: acoustic-guitar-steel, cue: "Steel strings are brighter and jangly, with a metallic shimmer. Nylon is rounder and softer." }
+      - { id: harp, cue: "Harp notes ring longer and cleaner with a bell-like bloom. Guitar has more finger and body sound." }
+      - { id: ukulele, cue: "Ukulele is smaller and higher, with a short, boxy plink." }
+      - { id: electric-guitar-clean, cue: "Clean electric is smoother and sustains more evenly, with no wooden body resonance." }
+    samples:
+      notes: { src: freepats, bank: SpanishClassicalGuitar, phrase: true }
+
+  - id: acoustic-guitar-steel
+    name: Steel-string acoustic guitar
+    family: plucked
+    sub: Guitar
+    aliases: [acoustic guitar, folk guitar, western guitar, dreadnought]
+    traits: { pitched: "yes", sustain: decays, attack: [sharp], tone: [twangy], register: [low, mid] }
+    summary: The singer-songwriter guitar. Bright, jangly, shimmering overtones.
+    listen: ["Crisp metallic sparkle on each note", "Strummed chords with a bright wash"]
+    confusions:
+      - { id: acoustic-guitar-nylon, cue: "Nylon is warmer and rounder with less sparkle." }
+      - { id: electric-guitar-clean, cue: "Clean electric lacks the woody body boom and sounds smoother." }
+      - { id: mandolin, cue: "Mandolin is higher and thinner, often tremolo-picked on doubled strings." }
+      - { id: banjo, cue: "Banjo is twangier and dies away fast with a papery snap." }
+      - { id: harpsichord, cue: "Harpsichord is also plucked but brassier, with a hard quill snap and no bends." }
+    samples:
+      notes: { src: freepats, bank: FSS-SteelStringGuitar, sfz: FSS-SteelStringGuitar, phrase: true }
+
+  - id: electric-guitar-clean
+    name: Electric guitar (clean)
+    family: plucked
+    sub: Guitar
+    aliases: [clean guitar, jazz guitar, strat, telecaster]
+    traits: { pitched: "yes", sustain: decays, attack: [sharp], tone: [twangy], register: [low, mid] }
+    summary: Amplified with no distortion. Glassy, smooth, even sustain.
+    listen: ["A smooth, even decay without acoustic body boom", "A slightly glassy or quacky edge depending on pickup"]
+    confusions:
+      - { id: acoustic-guitar-steel, cue: "Acoustic guitars have a woody body resonance and more string noise." }
+      - { id: electric-guitar-distorted, cue: "Distortion adds grit, compression and endless sustain." }
+      - { id: rhodes, cue: "Electric piano is bell-like and rounder, with no pick attack." }
+      - { id: harp, cue: "Harp has no amp color and blooms more." }
+    samples:
+      notes: { src: freepats, bank: EGuitarFSBS-clean-bridge-small, phrase: true }
+
+  - id: electric-guitar-distorted
+    name: Electric guitar (distorted)
+    family: plucked
+    sub: Guitar
+    aliases: [overdrive, rock guitar, metal guitar, fuzz guitar]
+    traits: { pitched: "yes", sustain: held, attack: [sharp], tone: [buzzy, twangy], register: [low, mid] }
+    summary: Driven through overdrive or fuzz. Gritty, compressed, sustaining.
+    listen: ["A buzzing, saturated edge on every note", "Notes that sustain far longer than a clean guitar"]
+    confusions:
+      - { id: synth-lead-saw, cue: "Saw leads are perfectly steady. Distorted guitar has pick attack, string bends and feedback wobble." }
+      - { id: electric-guitar-clean, cue: "No grit or crunch means clean." }
+      - { id: bagpipe, cue: "Bagpipe has a constant drone underneath and no pick attacks." }
+    samples:
+      notes: { src: freepats, bank: EGuitarFSBS-dist1, phrase: true }
+
+  - id: electric-bass
+    name: Electric bass
+    family: plucked
+    sub: Bass
+    aliases: [bass guitar, fender bass, finger bass]
+    traits: { pitched: "yes", sustain: decays, attack: [sharp], tone: [twangy], register: [low] }
+    summary: The foundation of most pop, rock and funk. Round, punchy, smooth sustain.
+    listen: ["Low notes with a clear finger or pick attack", "An even, smooth decay"]
+    confusions:
+      - { id: double-bass, cue: "Upright bass is woodier and more percussive, and fades sooner. Electric bass holds a smoother tone." }
+      - { id: synth-bass, cue: "Synth bass is even, often with filter sweeps and no finger noise." }
+      - { id: sub-808, cue: "808 bass is a pure sine boom with a pitch drop at the start." }
+      - { id: tuba, cue: "Tuba is breathy-brassy and swells. Bass guitar is plucked." }
+    samples:
+      notes: { src: freepats, bank: FingerBassYR, phrase: true }
+
+  - id: ukulele
+    name: Ukulele
+    family: plucked
+    sub: Guitar
+    aliases: [uke]
+    traits: { pitched: "yes", sustain: decays, attack: [sharp], tone: [twangy], register: [mid, high] }
+    summary: Four nylon strings on a tiny body. Short, bright plinks.
+    listen: ["Short, boxy plucks with fast decay", "A high, sweet register with no bass strings"]
+    confusions:
+      - { id: acoustic-guitar-nylon, cue: "Classical guitar reaches much lower and rings longer." }
+      - { id: mandolin, cue: "Mandolin has metal strings: brighter, thinner, often tremolo-picked." }
+    samples:
+      notes: { src: freepats, bank: Ukulele, phrase: true }
+
+  - id: harp
+    name: Harp
+    family: plucked
+    sub: Harp
+    aliases: [concert harp, pedal harp]
+    traits: { pitched: "yes", sustain: decays, attack: [sharp, soft], tone: [twangy], register: [low, mid, high] }
+    summary: Dozens of open strings. Clear, ringing, bell-like plucks and sweeping glissandos.
+    listen: ["Pure, round plucks that ring freely", "Sweeping runs up and down the strings"]
+    confusions:
+      - { id: acoustic-guitar-nylon, cue: "Guitar has a boxier, drier sound with fret noise. Harp rings open and bell-like." }
+      - { id: celesta, cue: "Celesta is a metallic bell tone, not a string." }
+      - { id: dan-tranh, cue: "Zither is brighter, metallic, and often bent in pitch." }
+      - { id: kalimba, cue: "Kalimba has a metallic tine buzz and short sustain." }
+    samples:
+      notes: { src: vcsl, dir: Chordophones/Composite Chordophones/Concert Harp, prefer: [_f], phrase: true }
+      variants:
+        - { label: Folk harp (lever harp), src: vcsl, dir: Chordophones/Composite Chordophones/Folk Harp, prefer: [_v3_] }
+
+  - id: dan-tranh
+    name: Zither (đàn tranh)
+    family: plucked
+    sub: Zither
+    aliases: [dan tranh, guzheng, koto, zither]
+    traits: { pitched: "yes", sustain: decays, attack: [sharp], tone: [twangy, metallic], register: [mid, high] }
+    summary: Vietnamese long zither, close cousin of the guzheng and koto. Bright metallic plucks, bends and vibrato.
+    listen: ["Bright twangy plucks with pitch bends after the attack", "Tremolo and cascading glissandos"]
+    confusions:
+      - { id: harp, cue: "Harp is rounder and never bends a note after plucking." }
+      - { id: sitar, cue: "Sitar has a buzzing jawari tone and sympathetic string halo." }
+    samples:
+      notes: { src: vcsl, dir: Chordophones/Zithers/Dan Tranh/Normal, prefer: [_f_], phrase: true }
+      variants:
+        - { label: Vibrato (pressed bends), src: vcsl, dir: Chordophones/Zithers/Dan Tranh/Vibrato, prefer: [_ff_] }
+        - { label: Tremolo, src: vcsl, dir: Chordophones/Zithers/Dan Tranh/Tremolo }
+
+  - id: jaw-harp
+    name: Jaw harp
+    family: plucked
+    sub: Lamellophone
+    aliases: [jew's harp, mouth harp, trump]
+    traits: { pitched: "yes", sustain: decays, attack: [sharp], tone: [buzzy, metallic], register: [low, mid] }
+    summary: A metal tongue plucked in front of the mouth. A twanging "boing" shaped by the mouth.
+    listen: ["A buzzing drone whose overtones wah around", "A boingy, cartoonish twang"]
+    confusions:
+      - { id: didgeridoo, cue: "Didgeridoo is blown and continuous. Jaw harp is plucked in rhythmic twangs." }
+    samples:
+      notes: { src: freepats, bank: JawHarp, count: 3 }
+
+  - id: mandolin
+    name: Mandolin
+    family: plucked
+    sub: Lute
+    status: wanted
+    traits: { pitched: "yes", sustain: decays, attack: [sharp], tone: [twangy, metallic], register: [mid, high] }
+    summary: Paired steel strings, bright and short. Long notes are played as fast tremolo picking.
+    listen: ["Rapid tremolo on sustained notes", "A bright, thin, chiming tone"]
+    confusions:
+      - { id: acoustic-guitar-steel, cue: "Guitar is lower and fuller." }
+      - { id: banjo, cue: "Banjo is twangier, with a drum-head snap." }
+
+  - id: banjo
+    name: Banjo
+    family: plucked
+    sub: Lute
+    status: wanted
+    traits: { pitched: "yes", sustain: decays, attack: [sharp], tone: [twangy], register: [mid, high] }
+    summary: Strings over a drum head. Bright, twangy, quick decay, rolling fingerpicked patterns.
+    listen: ["A papery snap and fast decay", "Rolling repeated patterns"]
+    confusions:
+      - { id: acoustic-guitar-steel, cue: "Guitar sustains longer with a woody body." }
+
+  - id: sitar
+    name: Sitar
+    family: plucked
+    sub: Lute
+    status: wanted
+    traits: { pitched: "yes", sustain: decays, attack: [sharp], tone: [twangy, buzzy], register: [mid] }
+    summary: North Indian long-necked lute. Buzzing bridge, sympathetic strings, sliding notes.
+    listen: ["A buzzing, sizzling halo around each note", "Deep pitch bends and a shimmering drone"]
+    confusions:
+      - { id: dan-tranh, cue: "Zither is cleaner, without the sizzling buzz." }
+
+  # ---------------------------------------------------------------- keys
+  - id: grand-piano
+    name: Grand piano
+    family: keys
+    sub: Piano
+    aliases: [piano, acoustic piano, concert grand]
+    traits: { pitched: "yes", sustain: decays, attack: [sharp], tone: [hammered], register: [low, mid, high] }
+    summary: Felt hammers striking steel strings. Huge range, rich resonance, long decay.
+    listen: ["A soft thud of hammer then a ringing, complex tone", "Chords, and deep bass notes with long tails"]
+    confusions:
+      - { id: upright-piano, cue: "Upright is boxier and a little honkier, with less bass bloom." }
+      - { id: fm-electric-piano, cue: "Electric pianos are smoother and bell-like, with no hammer thud or string shimmer." }
+      - { id: harpsichord, cue: "Harpsichord plucks: jangly, bright and without dynamics." }
+      - { id: vibraphone, cue: "Vibraphone is a pure metallic tone, often with a wobble." }
+    samples:
+      notes: { src: vcsl, dir: "Chordophones/Zithers/Grand Piano, Steinway B/Sus", prefer: [_vl3_], phrase: true }
+      variants:
+        - { label: Soft touch, src: vcsl, dir: "Chordophones/Zithers/Grand Piano, Steinway B/Sus", prefer: [_vl1_] }
+        - { label: Dampened (no pedal), src: vcsl, dir: "Chordophones/Zithers/Grand Piano, Steinway B/NoSus", prefer: [_vl3_] }
+
+  - id: upright-piano
+    name: Upright piano
+    family: keys
+    sub: Piano
+    aliases: [piano, home piano, bar piano]
+    traits: { pitched: "yes", sustain: decays, attack: [sharp], tone: [hammered], register: [low, mid, high] }
+    summary: The vertical home piano. Boxier and more intimate than a grand, sometimes a little out of tune.
+    listen: ["A drier, more mid-heavy piano", "Mechanical key and pedal noise up close"]
+    confusions:
+      - { id: grand-piano, cue: "Grand has a deeper bass and longer, richer sustain." }
+      - { id: harpsichord, cue: "Harpsichord plucks with a jangle and cannot play soft or loud." }
+    samples:
+      notes: { src: vcsl, dir: "Chordophones/Zithers/Upright Piano, Yamaha/Sustains", prefer: [_vl2_, _rr1], phrase: true }
+
+  - id: harpsichord
+    name: Harpsichord
+    family: keys
+    sub: Plucked keyboard
+    traits: { pitched: "yes", sustain: decays, attack: [sharp], tone: [twangy, metallic], register: [low, mid, high] }
+    summary: Baroque keyboard that plucks its strings with quills. Jangly, bright, every note the same volume.
+    listen: ["A crisp pluck with a metallic jangle", "No loud or soft notes, just even plucks"]
+    confusions:
+      - { id: acoustic-guitar-steel, cue: "Guitar varies its dynamics and has a warmer body." }
+      - { id: grand-piano, cue: "Piano notes swell from a hammer thud. Harpsichord snaps." }
+      - { id: harp, cue: "Harp is softer and rounder." }
+    samples:
+      notes: { src: vcsl, dir: "Chordophones/Zithers/Harpsichord, French/Sustains", phrase: true }
+      variants:
+        - { label: Lute stop (muted), src: vcsl, dir: "Chordophones/Zithers/Harpsichord, English/Sustains/Lute" }
+
+  - id: fm-electric-piano
+    name: FM electric piano
+    family: keys
+    sub: Electric piano
+    aliases: [dx7 piano, digital electric piano, 80s electric piano, tx81z]
+    traits: { pitched: "yes", sustain: decays, attack: [sharp], tone: [electronic, metallic], register: [mid, high] }
+    summary: The glassy, bell-tinged 1980s electric piano from FM synthesis.
+    listen: ["A glassy, bell-like tine on the attack", "A clean, hollow sustain"]
+    confusions:
+      - { id: rhodes, cue: "A real Rhodes is warmer and barks when hit hard. FM piano is glassier and cleaner." }
+      - { id: vibraphone, cue: "Vibraphone is acoustic metal with a softer mallet attack." }
+      - { id: grand-piano, cue: "Acoustic piano has hammer noise and string complexity." }
+      - { id: celesta, cue: "Celesta is higher and more delicate, like a music box." }
+    samples:
+      notes: { src: vcsl, dir: Electrophones/TX81Z/FM Piano, prefer: [_vl3], phrase: true }
+
+  - id: rhodes
+    name: Tine electric piano (Rhodes)
+    family: keys
+    sub: Electric piano
+    status: wanted
+    aliases: [rhodes, wurlitzer, electric piano, ep]
+    traits: { pitched: "yes", sustain: decays, attack: [sharp, soft], tone: [metallic, hammered], register: [mid] }
+    summary: Hammers hitting metal tines. Warm, bell-like, barking when played hard.
+    listen: ["A soft bell on top of a warm body", "Often a stereo tremolo wobble"]
+    confusions:
+      - { id: fm-electric-piano, cue: "FM pianos are glassier and brighter." }
+      - { id: vibraphone, cue: "Vibraphone is purer and rings longer." }
+
+  - id: celesta
+    name: Celesta
+    family: keys
+    sub: Keyboard glockenspiel
+    status: wanted
+    aliases: [celeste]
+    traits: { pitched: "yes", sustain: decays, attack: [sharp], tone: [metallic], register: [high] }
+    summary: Keyboard-played steel bars in resonators. The "Sugar Plum Fairy" sound. Soft, sweet, music-box bell.
+    listen: ["Soft, sweet bell tones with a short ring", "Delicate high melodies"]
+    confusions:
+      - { id: glockenspiel, cue: "Glockenspiel is harder, brighter and rings longer." }
+      - { id: vibraphone, cue: "Vibraphone is lower and usually has a wobbling vibrato." }
+      - { id: music-box, cue: "Music box is tinier and plinkier, with a mechanical tick." }
+
+  - id: music-box
+    name: Music box
+    family: mallet
+    sub: Comb
+    status: wanted
+    traits: { pitched: "yes", sustain: decays, attack: [sharp], tone: [metallic], register: [high] }
+    summary: Plucked metal comb teeth. Tiny, tinkly, mechanical.
+    listen: ["Very high, plinky notes", "Clockwork regularity"]
+    confusions:
+      - { id: celesta, cue: "Celesta is fuller and softer." }
+      - { id: kalimba, cue: "Kalimba is lower and woodier." }
+
+  # ---------------------------------------------------------------- organ
+  - id: pipe-organ
+    name: Pipe organ
+    family: organ
+    sub: Organ
+    aliases: [church organ, organ]
+    traits: { pitched: "yes", sustain: held, attack: [soft, sharp], tone: [pure, breathy], register: [low, mid, high] }
+    summary: Air through ranks of pipes. Notes hold with no fade, and the room rings for seconds after.
+    listen: ["Perfectly steady held notes", "A long cathedral-like reverb tail", "Chiffy air at the start of notes on softer stops"]
+    confusions:
+      - { id: drawbar-organ, cue: "Drawbar organ is electric: tighter, often with a whirling speaker and key click." }
+      - { id: accordion, cue: "Accordion is reedy and buzzy with bellows swells. Pipe organ is steadier." }
+      - { id: synth-pad, cue: "Pads usually fade in slowly. Organ notes switch on and off." }
+      - { id: harmonica, cue: "Harmonica is reedy and breathy, played by one person, rarely full chords." }
+    samples:
+      notes: { src: vcsl, dir: Aerophones/Edge-blown Aerophones/Pipe Organ/Loud, phrase: true }
+      variants:
+        - { label: Quiet stop, src: vcsl, dir: Aerophones/Edge-blown Aerophones/Pipe Organ/Quiet }
+        - { label: Pedal (bass), src: vcsl, dir: Aerophones/Edge-blown Aerophones/Pipe Organ/Loud Pedal }
+        - { label: Small chamber organ, src: vcsl, dir: "Aerophones/Edge-blown Aerophones/Renaissance Organ/8'" }
+
+  - id: drawbar-organ
+    name: Drawbar organ (Hammond-style)
+    family: organ
+    sub: Electric organ
+    aliases: [hammond, b3, tonewheel organ, electric organ, jazz organ, gospel organ]
+    traits: { pitched: "yes", sustain: held, attack: [sharp], tone: [pure, electronic], register: [mid] }
+    summary: The rock, soul and gospel organ. Buzzy-pure held notes, key click, whirling speaker.
+    listen: ["A click at the start of notes", "A swirling, rotating-speaker shimmer", "Notes stop dead when released"]
+    note: These clips come from a CC0 emulation of a drawbar organ, not a recording of a vintage instrument.
+    confusions:
+      - { id: pipe-organ, cue: "Pipe organ is airier and bigger, with long room tails and no key click." }
+      - { id: accordion, cue: "Accordion swells with the bellows and has a reedy buzz." }
+      - { id: harmonium, cue: "Harmonium is reedy and pumped, like a softer accordion." }
+      - { id: synth-lead-square, cue: "Square leads are hollow and usually monophonic." }
+    samples:
+      notes: { src: freepats, bank: DrawbarOrganEmulation, phrase: true }
+
+  - id: accordion
+    name: Accordion
+    family: organ
+    sub: Free reed
+    aliases: [button accordion, squeezebox, bandoneon, concertina]
+    traits: { pitched: "yes", sustain: held, attack: [soft, sharp], tone: [reedy, buzzy], register: [mid] }
+    summary: Metal reeds driven by bellows. Reedy, buzzy, with a wavering chorus of slightly detuned reeds.
+    listen: ["A reedy buzz with a slow beating shimmer", "Swells and pulses from the bellows"]
+    confusions:
+      - { id: harmonica, cue: "Harmonica is the same reed idea but smaller, breathier and usually single-line." }
+      - { id: drawbar-organ, cue: "Electric organ is steady and pure, without bellows breathing." }
+      - { id: harmonium, cue: "Harmonium is softer and rounder, with a pumped, less dry sound." }
+      - { id: bagpipe, cue: "Bagpipe has a continuous drone and a piercing chanter." }
+    samples:
+      notes: { src: freepats, bank: ButtonAccordionHN, phrase: true }
+
+  - id: harmonica
+    name: Harmonica
+    family: organ
+    sub: Free reed
+    aliases: [mouth organ, blues harp]
+    traits: { pitched: "yes", sustain: held, attack: [soft, sharp], tone: [reedy, breathy], register: [mid, high] }
+    summary: Small reeds blown and drawn by mouth. Breathy, reedy, with expressive bends.
+    listen: ["Breath noise in and around the reed tone", "Bent notes and hand-cupping wah"]
+    confusions:
+      - { id: accordion, cue: "Accordion is bigger, with chords and a bellows pulse." }
+      - { id: melodica, cue: "Melodica is smoother and keyboard-played, with fewer bends." }
+      - { id: oboe, cue: "Oboe is a single focused reed with no chordal breathiness." }
+    samples:
+      notes: { src: vcsl, dir: Aerophones/Free Aerophones/Harmonica-Hohner-Special20-C/Sustains/Normal, phrase: true }
+      variants:
+        - { label: Hand vibrato, src: vcsl, dir: Aerophones/Free Aerophones/Harmonica-Hohner-Special20-F/Sustains/HandVib }
+        - { label: Chromatic harmonica, src: vcsl, dir: Aerophones/Free Aerophones/Harmonica-Hohner-Super64/Sustains/Normal }
+
+  - id: harmonium
+    name: Harmonium
+    family: organ
+    sub: Free reed
+    status: wanted
+    aliases: [reed organ, pump organ]
+    traits: { pitched: "yes", sustain: held, attack: [soft], tone: [reedy], register: [mid] }
+    summary: A pumped reed organ. Soft, reedy, used in Indian devotional music and old parlors.
+    listen: ["A soft reedy chord", "Slow swells from the pumping hand"]
+    confusions:
+      - { id: accordion, cue: "Accordion is brighter and buzzier." }
+
+  - id: melodica
+    name: Melodica
+    family: organ
+    sub: Free reed
+    status: wanted
+    traits: { pitched: "yes", sustain: held, attack: [soft], tone: [reedy], register: [mid, high] }
+    summary: A blown keyboard with harmonica reeds. Thin, bright, reedy.
+    listen: ["A reedy tone with breath dynamics", "Keyboard-like melodies"]
+    confusions:
+      - { id: harmonica, cue: "Harmonica bends notes and is breathier." }
+
+  # ---------------------------------------------------------------- woodwind
+  - id: flute
+    name: Flute
+    family: woodwind
+    sub: Flute
+    aliases: [concert flute, transverse flute]
+    traits: { pitched: "yes", sustain: held, attack: [soft], tone: [breathy, pure], register: [mid, high] }
+    summary: Air split across an edge. Pure and airy, with breath audible at low volume.
+    listen: ["A breathy halo around a pure tone", "Soft, rounded note starts"]
+    confusions:
+      - { id: recorder, cue: "Recorder is simpler and more whistle-like, with less vibrato and dynamic range." }
+      - { id: piccolo, cue: "Piccolo sits an octave higher and pierces." }
+      - { id: ocarina, cue: "Ocarina is hollower and purer, with almost no breath edge." }
+      - { id: clarinet, cue: "Clarinet is reedy and hollow, not airy." }
+      - { id: synth-lead-square, cue: "Synth leads have no breath noise and stay perfectly steady." }
+    samples:
+      notes: { src: vsco, dir: Woodwinds/Flute/susvib, phrase: true }
+      variants:
+        - { label: Non-vibrato, src: vsco, dir: Woodwinds/Flute/susNV }
+        - { label: Staccato, src: vsco, dir: Woodwinds/Flute/stac, prefer: [_v2], phrase: true }
+
+  - id: piccolo
+    name: Piccolo
+    family: woodwind
+    sub: Flute
+    traits: { pitched: "yes", sustain: held, attack: [soft, sharp], tone: [breathy, pure], register: [high] }
+    summary: A half-size flute, an octave higher. Shrill, bright, cuts through a full orchestra.
+    listen: ["Piercing high notes", "Whistle-like trills above everything else"]
+    confusions:
+      - { id: flute, cue: "Flute is lower, warmer and airier." }
+      - { id: tin-whistle, cue: "Tin whistle is folkier and simpler, with ornamented cuts." }
+      - { id: glockenspiel, cue: "Glockenspiel is struck metal and decays." }
+    samples:
+      notes: { src: vsco, dir: Woodwinds/Piccolo/Sus, count: 4 }
+      variants:
+        - { label: Staccato, src: vsco, dir: Woodwinds/Piccolo/Stac }
+
+  - id: recorder
+    name: Recorder
+    family: woodwind
+    sub: Duct flute
+    aliases: [alto recorder, soprano recorder, fipple flute, blockflute]
+    traits: { pitched: "yes", sustain: held, attack: [soft, sharp], tone: [pure, breathy], register: [mid, high] }
+    summary: A duct flute. Sweet, simple, whistle-like. Common in early music and school bands.
+    listen: ["A plain, whistle-like tone", "Little vibrato, gentle chiff at note starts"]
+    confusions:
+      - { id: flute, cue: "Flute is breathier with more vibrato and power." }
+      - { id: ocarina, cue: "Ocarina is rounder and hollower." }
+      - { id: tin-whistle, cue: "Tin whistle is thinner and brighter." }
+    samples:
+      notes: { src: vcsl, dir: Aerophones/Edge-blown Aerophones/Baroque Alto Recorder/Sustain, phrase: true }
+      variants:
+        - { label: Soprano recorder, src: vcsl, dir: Aerophones/Edge-blown Aerophones/Baroque Soprano Recorder/Sustain }
+        - { label: Bass recorder, src: vcsl, dir: Aerophones/Edge-blown Aerophones/Baroque Bass Recorder/Sustain }
+        - { label: Staccato, src: vcsl, dir: Aerophones/Edge-blown Aerophones/Baroque Alto Recorder/Staccato, phrase: true }
+
+  - id: ocarina
+    name: Ocarina
+    family: woodwind
+    sub: Vessel flute
+    traits: { pitched: "yes", sustain: held, attack: [soft], tone: [pure], register: [mid, high] }
+    summary: A clay vessel flute. Hollow, round, nearly a pure sine tone.
+    listen: ["Very pure, hollow notes", "Little breath or edge"]
+    confusions:
+      - { id: recorder, cue: "Recorder has more edge and chiff." }
+      - { id: flute, cue: "Flute is breathier and brighter." }
+      - { id: wine-glasses, cue: "Glass harp is shimmering and ethereal with a slow onset." }
+    samples:
+      notes: { src: vcsl, dir: "Aerophones/Edge-blown Aerophones/Ocarina, Typical/Sustains/Sus", phrase: true }
+      variants:
+        - { label: Vibrato, src: vcsl, dir: "Aerophones/Edge-blown Aerophones/Ocarina, Typical/Sustains/SusVib" }
+
+  - id: tin-whistle
+    name: Tin whistle
+    family: woodwind
+    sub: Duct flute
+    status: wanted
+    aliases: [penny whistle, irish whistle]
+    traits: { pitched: "yes", sustain: held, attack: [sharp], tone: [pure, breathy], register: [high] }
+    summary: Irish folk whistle. Bright, thin, heavily ornamented with cuts and rolls.
+    listen: ["Quick flicked ornaments", "A thin, bright tone"]
+    confusions:
+      - { id: recorder, cue: "Recorder is softer and sweeter." }
+
+  - id: oboe
+    name: Oboe
+    family: woodwind
+    sub: Double reed
+    traits: { pitched: "yes", sustain: held, attack: [soft, sharp], tone: [reedy], register: [mid, high] }
+    summary: A double reed. Nasal, penetrating, plaintive.
+    listen: ["A pinched, nasal tone that cuts through", "A focused, almost vocal line"]
+    confusions:
+      - { id: english-horn, cue: "English horn is lower, darker and more mournful." }
+      - { id: clarinet, cue: "Clarinet is hollow and smooth, less nasal." }
+      - { id: soprano-sax, cue: "Soprano sax is brighter and more brassy, with a wider vibrato." }
+      - { id: bagpipe, cue: "Bagpipe has drones and cannot stop between notes." }
+    samples:
+      notes: { src: vsco, dir: Woodwinds/Oboe/Sus, prefer: [_v2], phrase: true }
+      variants:
+        - { label: Vibrato, src: vsco, dir: Woodwinds/Oboe/Vib, prefer: [_v2] }
+        - { label: Staccato, src: vsco, dir: Woodwinds/Oboe/Stacc, prefer: [_v2], phrase: true }
+
+  - id: english-horn
+    name: English horn
+    family: woodwind
+    sub: Double reed
+    status: wanted
+    aliases: [cor anglais]
+    traits: { pitched: "yes", sustain: held, attack: [soft], tone: [reedy], register: [mid] }
+    summary: An alto oboe. Darker, more mournful, a favorite for melancholy solos.
+    listen: ["A veiled, melancholic reed tone"]
+    confusions:
+      - { id: oboe, cue: "Oboe is higher and brighter." }
+
+  - id: clarinet
+    name: Clarinet
+    family: woodwind
+    sub: Single reed
+    traits: { pitched: "yes", sustain: held, attack: [soft, sharp], tone: [reedy, pure], register: [low, mid, high] }
+    summary: A single reed on a cylindrical tube. Hollow and dark low, sweet and clear up high.
+    listen: ["A hollow, woody low register", "Smooth, round tone without nasal edge"]
+    confusions:
+      - { id: oboe, cue: "Oboe is more nasal and penetrating." }
+      - { id: soprano-sax, cue: "Soprano sax is brighter and edgier, with more bite." }
+      - { id: flute, cue: "Flute is airier and has no reed buzz." }
+      - { id: french-horn, cue: "Horn is brassy-warm and larger." }
+    samples:
+      notes: { src: vsco, dir: Woodwinds/Clarinet/susLong, prefer: [_v2], phrase: true }
+      variants:
+        - { label: Staccato, src: vsco, dir: Woodwinds/Clarinet/stac, prefer: [_v2], phrase: true }
+
+  - id: bassoon
+    name: Bassoon
+    family: woodwind
+    sub: Double reed
+    traits: { pitched: "yes", sustain: held, attack: [soft, sharp], tone: [reedy, buzzy], register: [low, mid] }
+    summary: The bass double reed. Dry, buzzy, often comic in staccato, plaintive up high.
+    listen: ["A dry, buzzy low reed tone", "Bouncy staccato bass lines"]
+    confusions:
+      - { id: cello, cue: "Cello is richer and bowed, with a resonant body." }
+      - { id: tenor-sax, cue: "Tenor sax is louder and brassier, with a smoky edge." }
+      - { id: trombone, cue: "Trombone is brassy and round, not reedy." }
+    samples:
+      notes: { src: vsco, dir: Woodwinds/Bassoon/sus, prefer: [_v2], phrase: true }
+      variants:
+        - { label: Vibrato, src: vsco, dir: Woodwinds/Bassoon/vib }
+        - { label: Staccato, src: vsco, dir: Woodwinds/Bassoon/stac, prefer: [_v2], phrase: true }
+
+  - id: tenor-sax
+    name: Tenor saxophone
+    family: woodwind
+    sub: Saxophone
+    aliases: [sax, saxophone, tenor]
+    traits: { pitched: "yes", sustain: held, attack: [soft, sharp], tone: [reedy, brassy, breathy], register: [low, mid] }
+    summary: The jazz and R&B tenor voice. Smoky, breathy, brassy when pushed.
+    listen: ["Breath and growl around a warm reed tone", "Scoops into notes, wide expressive vibrato"]
+    confusions:
+      - { id: alto-sax, cue: "Alto is higher and brighter." }
+      - { id: trombone, cue: "Trombone is brass: rounder, with slides between notes." }
+      - { id: bassoon, cue: "Bassoon is drier and thinner." }
+      - { id: clarinet, cue: "Clarinet is smoother and hollower, without the brassy edge." }
+    samples:
+      notes: { src: vcsl, dir: Aerophones/Reed Aerophones/Tenor Saxophone/Non-Vibrato, prefer: [_vl2_, _rr1], phrase: true }
+      variants:
+        - { label: Vibrato, src: vcsl, dir: Aerophones/Reed Aerophones/Tenor Saxophone/Vibrato }
+        - { label: Staccato, src: vcsl, dir: Aerophones/Reed Aerophones/Tenor Saxophone/Staccato, phrase: true }
+
+  - id: soprano-sax
+    name: Soprano saxophone
+    family: woodwind
+    sub: Saxophone
+    aliases: [saxello, soprano sax]
+    traits: { pitched: "yes", sustain: held, attack: [soft, sharp], tone: [reedy, brassy], register: [mid, high] }
+    summary: The smallest common sax. Bright, sweet, nasal. Easily mistaken for oboe or clarinet.
+    listen: ["A bright, singing reed tone with brassy edge", "Smooth-jazz style scoops and vibrato"]
+    note: Recorded on a saxello, a curved soprano saxophone with an almost identical tone.
+    confusions:
+      - { id: oboe, cue: "Oboe is more nasal and focused, with less power." }
+      - { id: clarinet, cue: "Clarinet is rounder and hollower." }
+    samples:
+      notes: { src: vcsl, dir: Aerophones/Reed Aerophones/Saxello/Non-Vibrato, prefer: [_vl2_], phrase: true }
+      variants:
+        - { label: Vibrato, src: vcsl, dir: Aerophones/Reed Aerophones/Saxello/Vibrato }
+
+  - id: alto-sax
+    name: Alto saxophone
+    family: woodwind
+    sub: Saxophone
+    status: wanted
+    traits: { pitched: "yes", sustain: held, attack: [soft, sharp], tone: [reedy, brassy], register: [mid] }
+    summary: The most common sax. Brighter than tenor, bluesy, cutting.
+    listen: ["A bright, edgy reed tone"]
+    confusions:
+      - { id: tenor-sax, cue: "Tenor is lower and smokier." }
+
+  - id: bagpipe
+    name: Bagpipes
+    family: woodwind
+    sub: Double reed
+    aliases: [highland bagpipes, pipes]
+    traits: { pitched: "yes", sustain: held, attack: [sharp], tone: [reedy, buzzy], register: [mid, high] }
+    summary: A chanter over constant drones, fed from a bag. Loud, piercing, never stops between notes.
+    listen: ["A constant low drone underneath", "A piercing chanter with fast grace-note ornaments"]
+    confusions:
+      - { id: oboe, cue: "Oboe has no drone and can stop between notes." }
+      - { id: accordion, cue: "Accordion plays chords and breathes with the bellows." }
+    samples:
+      notes: { src: freepats, bank: Bagpipe-small, phrase: true }
+
+  # ---------------------------------------------------------------- brass
+  - id: trumpet
+    name: Trumpet
+    family: brass
+    sub: Trumpet
+    aliases: [cornet, flugelhorn]
+    traits: { pitched: "yes", sustain: held, attack: [sharp, soft], tone: [brassy], register: [mid, high] }
+    summary: The highest common brass. Bright, bold, fanfare-like. Mutes make it nasal or buzzy.
+    listen: ["A bright, bold blare", "Crisp tongued attacks"]
+    confusions:
+      - { id: french-horn, cue: "Horn is rounder, darker and more distant." }
+      - { id: trombone, cue: "Trombone is lower and slides between notes." }
+      - { id: soprano-sax, cue: "Soprano sax has reed buzz and a breathier edge." }
+      - { id: synth-lead-saw, cue: "Synth brass is steady and lacks breath and lip flutter." }
+    samples:
+      notes: { src: vsco, dir: Brass/Trumpet/sus, prefer: [_v2], phrase: true }
+      variants:
+        - { label: Vibrato, src: vsco, dir: Brass/Trumpet/susvib }
+        - { label: Staccato, src: vsco, dir: Brass/Trumpet/stac, prefer: [_v2], phrase: true }
+        - { label: Straight mute, src: vsco, dir: Brass/Trumpet/straightM-sus, prefer: [_v2] }
+        - { label: Harmon mute (wah), src: vsco, dir: Brass/Trumpet/harmonM-sus, prefer: [_v2] }
+
+  - id: french-horn
+    name: French horn
+    family: brass
+    sub: Horn
+    aliases: [horn]
+    traits: { pitched: "yes", sustain: held, attack: [soft], tone: [brassy, pure], register: [mid] }
+    summary: A coiled horn played with a hand in the bell. Warm, round, noble, heroic at full volume.
+    listen: ["A mellow, rounded brass tone", "Heroic calls that bloom out of softness"]
+    confusions:
+      - { id: trumpet, cue: "Trumpet is brighter and more direct." }
+      - { id: trombone, cue: "Trombone is brassier and lower, with slides." }
+      - { id: cello, cue: "Cello has bow grain. Horn is smooth air." }
+      - { id: tuba, cue: "Tuba lives much lower." }
+    samples:
+      notes: { src: vsco, dir: Brass/F Horn/sus, prefer: [_v2], phrase: true }
+      variants:
+        - { label: Staccato, src: vsco, dir: Brass/F Horn/stac, prefer: [_v2], phrase: true }
+        - { label: Muted, src: vsco, dir: Brass/F Horn/mute }
+
+  - id: trombone
+    name: Trombone
+    family: brass
+    sub: Trombone
+    traits: { pitched: "yes", sustain: held, attack: [soft, sharp], tone: [brassy], register: [low, mid] }
+    summary: A slide brass instrument. Big, round, brassy, famous for glissandos.
+    listen: ["Slides between notes", "A round tone that turns blaring when loud"]
+    confusions:
+      - { id: french-horn, cue: "Horn is softer and more covered." }
+      - { id: tuba, cue: "Tuba is deeper and softer-edged." }
+      - { id: tenor-sax, cue: "Sax has a reedy buzz and breath." }
+      - { id: bassoon, cue: "Bassoon is thin and reedy." }
+    samples:
+      notes: { src: vsco, dir: Brass/Tenor Trombone/sus, prefer: [_v2], phrase: true }
+      variants:
+        - { label: Vibrato, src: vsco, dir: Brass/Tenor Trombone/vib }
+        - { label: Staccato, src: vsco, dir: Brass/Tenor Trombone/stac, prefer: [_v2], phrase: true }
+        - { label: Fall (glissando down), src: vsco, dir: Brass/OldTrombone/Fall }
+        - { label: Buzzy, src: vsco, dir: Brass/OldTrombone/Buzz }
+
+  - id: tuba
+    name: Tuba
+    family: brass
+    sub: Tuba
+    aliases: [sousaphone]
+    traits: { pitched: "yes", sustain: held, attack: [soft], tone: [brassy], register: [low] }
+    summary: The lowest brass. Deep, soft-edged, the oom-pah bass.
+    listen: ["Deep, round brass notes", "Oom-pah bass lines in marching and polka music"]
+    confusions:
+      - { id: trombone, cue: "Trombone is higher and brighter." }
+      - { id: electric-bass, cue: "Bass guitar is plucked with a clear attack." }
+      - { id: double-bass, cue: "Double bass has bow grit or a woody pluck." }
+    samples:
+      notes: { src: vsco, dir: Brass/Tuba/sus, prefer: [_v2], phrase: true }
+      variants:
+        - { label: Staccato, src: vsco, dir: Brass/Tuba/stac, prefer: [_v2], phrase: true }
+
+  - id: didgeridoo
+    name: Didgeridoo
+    family: brass
+    sub: Lip drone
+    aliases: [didge, yidaki]
+    traits: { pitched: "yes", sustain: held, attack: [soft, sharp], tone: [buzzy], register: [low] }
+    summary: A long wooden tube played with buzzing lips and circular breathing. A deep, pulsing, throaty drone.
+    listen: ["A continuous low drone with wah-like mouth shaping", "Barks and rhythmic pulses"]
+    confusions:
+      - { id: jaw-harp, cue: "Jaw harp is plucked metal, with a twangy attack." }
+      - { id: synth-bass, cue: "A filtered synth bass can sound similar, but lacks breath and bark." }
+    samples:
+      hits:
+        - { label: Drone, src: vcsl, dir: Aerophones/Lip Aerophones/Didgeridoo, match: Drone|Sus, limit: 1 }
+        - { label: Bark, src: vcsl, dir: Aerophones/Lip Aerophones/Didgeridoo, match: Bark, limit: 1 }
+        - { label: Tap, src: vcsl, dir: Aerophones/Lip Aerophones/Didgeridoo, match: Tap, limit: 1 }
+
+  # ---------------------------------------------------------------- mallet
+  - id: glockenspiel
+    name: Glockenspiel
+    family: mallet
+    sub: Metal bars
+    aliases: [bells, orchestra bells, glock]
+    traits: { pitched: "yes", sustain: decays, attack: [sharp], tone: [metallic], register: [high] }
+    summary: Steel bars struck with hard mallets. Bright, piercing, twinkling bells.
+    listen: ["Very high, ringing metallic notes", "A hard ping on each strike"]
+    confusions:
+      - { id: celesta, cue: "Celesta is softer, rounder and keyboard-played." }
+      - { id: vibraphone, cue: "Vibraphone is lower, warmer, often with wobble." }
+      - { id: music-box, cue: "Music box is tinier and more mechanical." }
+      - { id: triangle, cue: "Triangle has no clear pitch, just a shimmer." }
+    samples:
+      notes: { src: vcsl, dir: Idiophones/Struck Idiophones/Glockenspiel, prefer: [loud], phrase: true }
+      variants:
+        - { label: Soft mallets, src: vcsl, dir: Idiophones/Struck Idiophones/Glockenspiel, prefer: [soft] }
+
+  - id: vibraphone
+    name: Vibraphone
+    family: mallet
+    sub: Metal bars
+    aliases: [vibes]
+    traits: { pitched: "yes", sustain: decays, attack: [sharp, soft], tone: [metallic, pure], register: [mid] }
+    summary: Aluminum bars with motor-driven resonators. Warm, sustaining bell tone with a pulsing wobble.
+    listen: ["Soft metallic notes that ring for seconds", "A pulsing tremolo from spinning fans"]
+    confusions:
+      - { id: glockenspiel, cue: "Glockenspiel is higher and harder." }
+      - { id: marimba, cue: "Marimba is wooden and dies quickly." }
+      - { id: rhodes, cue: "Electric piano has a keyboard attack and warmer body." }
+      - { id: celesta, cue: "Celesta is higher with a shorter ring." }
+    samples:
+      notes: { src: vcsl, dir: Idiophones/Struck Idiophones/Vibraphone/Hard Mallets, prefer: [_v2_], phrase: true }
+      variants:
+        - { label: Soft mallets, src: vcsl, dir: Idiophones/Struck Idiophones/Vibraphone/Soft Mallets }
+        - { label: Bowed, src: vcsl, dir: Idiophones/Struck Idiophones/Vibraphone/Bowed }
+
+  - id: marimba
+    name: Marimba
+    family: mallet
+    sub: Wood bars
+    traits: { pitched: "yes", sustain: decays, attack: [sharp, soft], tone: [woody], register: [low, mid] }
+    summary: Rosewood bars over resonator tubes. Warm, round, woody, with a mellow bass.
+    listen: ["Warm, rounded wooden tones", "Rolls to fake a sustained note"]
+    confusions:
+      - { id: xylophone, cue: "Xylophone is higher, harder, drier and more clicky." }
+      - { id: balafon, cue: "Balafon has a buzzing membrane on each note." }
+      - { id: vibraphone, cue: "Vibraphone is metal and rings much longer." }
+      - { id: kalimba, cue: "Kalimba is plucked metal, a little buzzy." }
+    samples:
+      notes: { src: vcsl, dir: Idiophones/Struck Idiophones/Marimba, prefer: [loud], phrase: true }
+
+  - id: xylophone
+    name: Xylophone
+    family: mallet
+    sub: Wood bars
+    traits: { pitched: "yes", sustain: decays, attack: [sharp], tone: [woody], register: [mid, high] }
+    summary: Hard wooden bars. Bright, dry, clicky, the skeleton-dance sound.
+    listen: ["Bright, dry knocks with a very short ring", "A clacking, cartoonish top end"]
+    confusions:
+      - { id: marimba, cue: "Marimba is lower, warmer and rounder." }
+      - { id: glockenspiel, cue: "Glockenspiel is metal and rings." }
+      - { id: woodblock, cue: "Woodblock has no melodic pitch." }
+    samples:
+      notes: { src: vcsl, dir: Idiophones/Struck Idiophones/Xylophone/Hard Mallets, prefer: [_ff_], phrase: true }
+      variants:
+        - { label: Soft mallets, src: vcsl, dir: Idiophones/Struck Idiophones/Xylophone/Soft Mallets, prefer: [_ff_] }
+
+  - id: tubular-bells
+    name: Tubular bells
+    family: mallet
+    sub: Bells
+    aliases: [chimes, orchestral chimes]
+    traits: { pitched: "yes", sustain: decays, attack: [sharp], tone: [metallic], register: [mid] }
+    summary: Hanging brass tubes struck with a hammer. Church-bell tones in the orchestra.
+    listen: ["A clangy strike then a long, bell-like ring", "Complex, slightly out-of-tune overtones"]
+    confusions:
+      - { id: vibraphone, cue: "Vibraphone is purer and softer." }
+      - { id: hand-chimes, cue: "Hand chimes are softer and rounder." }
+      - { id: gong, cue: "Gong has no clear pitch and swells after the hit." }
+    samples:
+      notes: { src: vcsl, dir: Idiophones/Struck Idiophones/Tubular Bells 2, prefer: [_v3_], phrase: true }
+
+  - id: hand-chimes
+    name: Hand chimes
+    family: mallet
+    sub: Bells
+    aliases: [handbells]
+    traits: { pitched: "yes", sustain: decays, attack: [soft, sharp], tone: [metallic, pure], register: [mid, high] }
+    summary: Tuned metal tubes with a clapper. Soft, pure, sweet bell tones.
+    listen: ["Gentle bell tones with a pure center", "A long, soft ring"]
+    confusions:
+      - { id: tubular-bells, cue: "Tubular bells are louder and clangier." }
+      - { id: vibraphone, cue: "Vibraphone has a mallet knock and often wobbles." }
+    samples:
+      notes: { src: vcsl, dir: Idiophones/Struck Idiophones/Hand Chimes, phrase: true }
+
+  - id: kalimba
+    name: Kalimba
+    family: mallet
+    sub: Lamellophone
+    aliases: [mbira, thumb piano, sanza]
+    traits: { pitched: "yes", sustain: decays, attack: [sharp], tone: [metallic, woody], register: [mid, high] }
+    summary: Metal tines plucked by thumbs over a wooden box. Soft, plinky, sometimes buzzy.
+    listen: ["Soft plinks with a gentle metallic buzz", "Short, rounded notes in repeating patterns"]
+    confusions:
+      - { id: music-box, cue: "Music box is higher and more mechanical." }
+      - { id: marimba, cue: "Marimba is struck wood, warmer." }
+      - { id: hang, cue: "Handpan is a struck steel shell, rounder, with long ring." }
+    samples:
+      notes: { src: vcsl, dir: "Idiophones/Plucked Idiophones/Kalimba, Tanzania", phrase: true }
+      variants:
+        - { label: Mbira (Zimbabwe), src: vcsl, dir: "Idiophones/Plucked Idiophones/Mbira dzaVadzimu Nyamaropa, Zimbabwe, Low B" }
+
+  - id: hang
+    name: Handpan
+    family: mallet
+    sub: Steel shell
+    aliases: [hang, hang drum, handpan]
+    traits: { pitched: "yes", sustain: decays, attack: [soft, sharp], tone: [metallic, pure], register: [mid] }
+    summary: A steel shell with tuned dimples, struck with hands. Round, ethereal, with long ringing notes.
+    listen: ["Warm, bell-like notes with a soft touch", "A glowing halo of overtones"]
+    confusions:
+      - { id: steel-drum, cue: "Steel pan is brighter and punchier, played with sticks." }
+      - { id: kalimba, cue: "Kalimba is plucked and shorter." }
+      - { id: vibraphone, cue: "Vibraphone is purer and more even." }
+    samples:
+      notes: { src: freepats, bank: Hang-D-minor, phrase: true }
+
+  - id: steel-drum
+    name: Steel pan
+    family: mallet
+    sub: Steel shell
+    status: wanted
+    aliases: [steel drum, steelpan]
+    traits: { pitched: "yes", sustain: decays, attack: [sharp], tone: [metallic], register: [mid, high] }
+    summary: Caribbean tuned oil drum. Bright, bouncy, a quick metallic "boing".
+    listen: ["A bright metallic ping with a vocal quality", "Rolled notes on long tones"]
+    confusions:
+      - { id: hang, cue: "Handpan is softer and more ethereal." }
+
+  - id: balafon
+    name: Balafon
+    family: mallet
+    sub: Wood bars
+    traits: { pitched: "yes", sustain: decays, attack: [sharp], tone: [woody, buzzy], register: [mid] }
+    summary: West African wooden xylophone with gourd resonators and buzzing membranes.
+    listen: ["Woody knocks with a kazoo-like buzz", "Fast interlocking patterns"]
+    confusions:
+      - { id: marimba, cue: "Marimba is cleaner and warmer, with no buzz." }
+      - { id: xylophone, cue: "Xylophone is brighter and has no buzz." }
+    samples:
+      notes: { src: vcsl, dir: Idiophones/Struck Idiophones/Balafon/Traditional Mallet, prefer: [_vl2_], phrase: true }
+
+  - id: wine-glasses
+    name: Glass harp
+    family: mallet
+    sub: Friction
+    aliases: [singing glasses, wine glasses, glass harmonica]
+    traits: { pitched: "yes", sustain: held, attack: [soft], tone: [pure], register: [mid, high] }
+    summary: Wet fingers rubbing glass rims. Ghostly, pure, shimmering.
+    listen: ["Pure sustained tones that fade in", "An eerie, slow beating shimmer"]
+    confusions:
+      - { id: ocarina, cue: "Ocarina is breathier and more articulated." }
+      - { id: synth-pad, cue: "Pads are more complex and even." }
+    samples:
+      notes: { src: vcsl, dir: Idiophones/Friction Idiophones/Wine Glasses/Sustains/Slow, count: 3 }
+
+  # ---------------------------------------------------------------- drums
+  - id: timpani
+    name: Timpani
+    family: drums
+    sub: Kettle drum
+    aliases: [kettle drums, timps]
+    traits: { pitched: "yes", sustain: decays, attack: [sharp], tone: [skin], register: [low] }
+    summary: Tuned copper kettle drums. Booming, resonant, with a real pitch.
+    listen: ["A deep boom with a definite note", "Thunderous rolls"]
+    confusions:
+      - { id: toms, cue: "Toms are shorter and punchier, with less pitch." }
+      - { id: concert-bass-drum, cue: "Bass drum has no clear pitch and a lower, looser boom." }
+      - { id: kick-drum, cue: "Kick is tighter, drier and pitchless." }
+    samples:
+      hits:
+        - { label: Hit (loud), src: vcsl, dir: Membranophones/Struck Membranophones/Timpani 1/Hit, match: _v4_, limit: 1 }
+        - { label: Hit (soft), src: vcsl, dir: Membranophones/Struck Membranophones/Timpani 1/Hit, match: _v2_, limit: 1 }
+        - { label: Roll, src: vcsl, dir: Membranophones/Struck Membranophones/Timpani 1/Roll, match: _v4_, limit: 1 }
+
+  - id: kick-drum
+    name: Kick drum
+    family: drums
+    sub: Drum kit
+    aliases: [bass drum, kick, bd]
+    traits: { pitched: "no", sustain: decays, attack: [sharp], tone: [skin], register: [low] }
+    summary: The drum kit's pedal-played bass drum. A tight, punchy thud on the beat.
+    listen: ["A low thump with a beater click", "Usually on beats one and three"]
+    confusions:
+      - { id: concert-bass-drum, cue: "Orchestral bass drum is bigger and boomier, with a long tail." }
+      - { id: drum-machine, cue: "808 and 909 kicks are synthetic, very even, and often longer." }
+      - { id: toms, cue: "Floor tom is pitched higher and rings." }
+    samples:
+      hits:
+        - { label: Hit, src: freepats, bank: MuldjordKit, files: KdrumL, limit: 2 }
+
+  - id: concert-bass-drum
+    name: Concert bass drum
+    family: drums
+    sub: Orchestral
+    aliases: [gran cassa, bass drum]
+    traits: { pitched: "no", sustain: decays, attack: [soft, sharp], tone: [skin], register: [low] }
+    summary: The huge orchestral bass drum. Deep, booming, like distant thunder.
+    listen: ["A very low boom with a long rumble", "Rolls that swell like thunder"]
+    confusions:
+      - { id: kick-drum, cue: "Kick is short and punchy." }
+      - { id: timpani, cue: "Timpani has a definite note." }
+      - { id: sub-808, cue: "808 bass is a clean sine with a clear pitch." }
+    samples:
+      hits:
+        - { label: Hit (loud), src: vcsl, dir: Membranophones/Struck Membranophones/Bass Drum 1, match: _v6_|_v7_, limit: 1 }
+        - { label: Hit (soft), src: vcsl, dir: Membranophones/Struck Membranophones/Bass Drum 1, match: _v2_|_v3_, limit: 1 }
+
+  - id: snare-drum
+    name: Snare drum
+    family: drums
+    sub: Drum kit
+    aliases: [snare, side drum]
+    traits: { pitched: "no", sustain: decays, attack: [sharp], tone: [skin, noisy], register: [mid] }
+    summary: A drum with wires under the bottom head. A cracking hit with a sizzling rattle.
+    listen: ["A sharp crack followed by a buzzing rattle", "The backbeat on two and four"]
+    confusions:
+      - { id: toms, cue: "Toms have no rattle, just a pitched boom." }
+      - { id: claps, cue: "Hand claps are drier with no drum body." }
+      - { id: drum-machine, cue: "Machine snares are thinner and identical every hit." }
+      - { id: cajon, cue: "Cajon's slap is woodier with a softer buzz." }
+    samples:
+      hits:
+        - { label: Hit, src: vcsl, dir: "Membranophones/Struck Membranophones/Snare Drum, Modern 1", match: HitSN|Hit_|HitS_, exclude: NS, limit: 2 }
+        - { label: Snares off, src: vcsl, dir: "Membranophones/Struck Membranophones/Snare Drum, Modern 1", match: HitNS, limit: 1 }
+        - { label: Roll, src: vcsl, dir: "Membranophones/Struck Membranophones/Snare Drum, Modern 1", match: Roll, limit: 1 }
+
+  - id: toms
+    name: Toms
+    family: drums
+    sub: Drum kit
+    aliases: [tom-tom, rack tom, floor tom]
+    traits: { pitched: "no", sustain: decays, attack: [sharp], tone: [skin], register: [low, mid] }
+    summary: Drum kit toms. Pitched booms used in fills.
+    listen: ["Resonant booms, often descending in a fill", "No snare rattle"]
+    confusions:
+      - { id: timpani, cue: "Timpani is deeper and sings a clear note." }
+      - { id: snare-drum, cue: "Snare has a wire rattle." }
+      - { id: congas, cue: "Congas are hand-played, with slaps and tones." }
+    samples:
+      hits:
+        - { label: High tom, src: vcsl, dir: Membranophones/Struck Membranophones/Tom 1/Stick, match: Hit, limit: 1 }
+        - { label: Low tom, src: vcsl, dir: Membranophones/Struck Membranophones/Tom 2/Stick, match: Hit, limit: 1 }
+        - { label: Mallet roll, src: vcsl, dir: Membranophones/Struck Membranophones/Tom 2/Mallet, match: Roll, limit: 1 }
+
+  - id: bongos
+    name: Bongos
+    family: drums
+    sub: Hand drum
+    traits: { pitched: "no", sustain: decays, attack: [sharp], tone: [skin], register: [mid, high] }
+    summary: A pair of small hand drums. High, cracking, chattering.
+    listen: ["High, tight pops", "Fast finger patterns"]
+    confusions:
+      - { id: congas, cue: "Congas are bigger and lower." }
+      - { id: darbuka, cue: "Darbuka has a sharper, ringing tek and a deep doum." }
+    samples:
+      hits:
+        - { label: High bongo, src: vcsl, dir: Membranophones/Struck Membranophones/Bongos, match: BongoH_Hit, limit: 1 }
+        - { label: Low bongo, src: vcsl, dir: Membranophones/Struck Membranophones/Bongos, match: BongoL_Hit, limit: 1 }
+
+  - id: congas
+    name: Congas
+    family: drums
+    sub: Hand drum
+    aliases: [conga, tumba, tumbadora]
+    traits: { pitched: "no", sustain: decays, attack: [sharp], tone: [skin], register: [mid] }
+    summary: Tall Afro-Cuban hand drums. Open tones, slaps and bass, in rolling patterns.
+    listen: ["Singing open tones and cracking slaps", "Hand-played grooves in Latin music"]
+    confusions:
+      - { id: bongos, cue: "Bongos are smaller and higher." }
+      - { id: toms, cue: "Toms are stick-played, with a harder attack." }
+      - { id: djembe, cue: "Djembe has a deeper bass and a sharper slap." }
+    samples:
+      hits:
+        - { label: Open tone, src: vcsl, dir: Membranophones/Struck Membranophones/Conga, match: Conga_HitO|Conga_HitN, limit: 1 }
+        - { label: Tumba (low), src: vcsl, dir: Membranophones/Struck Membranophones/Conga, match: Tumba_Hit, limit: 1 }
+        - { label: Muted, src: vcsl, dir: Membranophones/Struck Membranophones/Conga, match: HitFM|HitM, limit: 1 }
+
+  - id: djembe
+    name: Djembe
+    family: drums
+    sub: Hand drum
+    status: wanted
+    traits: { pitched: "no", sustain: decays, attack: [sharp], tone: [skin], register: [low, mid] }
+    summary: West African goblet drum. Deep bass, ringing tone, cracking slap.
+    listen: ["A very sharp slap", "A deep bass in the center"]
+    confusions:
+      - { id: congas, cue: "Congas are mellower." }
+
+  - id: cajon
+    name: Cajón
+    family: drums
+    sub: Box drum
+    aliases: [cajon, box drum]
+    traits: { pitched: "no", sustain: decays, attack: [sharp], tone: [skin, woody], register: [low, mid] }
+    summary: A wooden box you sit on and slap. Kick-like bass, snare-like slap.
+    listen: ["A woody bass thump", "A buzzy slap like a soft snare"]
+    confusions:
+      - { id: kick-drum, cue: "Kick is rounder, with a beater click." }
+      - { id: snare-drum, cue: "Snare cracks and rattles more crisply." }
+    samples:
+      hits:
+        - { label: Bass, src: vcsl, dir: Idiophones/Struck Idiophones/Cajon, match: hit1_f, limit: 1 }
+        - { label: Slap, src: vcsl, dir: Idiophones/Struck Idiophones/Cajon, match: hit3_f|hit2_f, limit: 1 }
+
+  - id: darbuka
+    name: Darbuka
+    family: drums
+    sub: Goblet drum
+    aliases: [darbouka, doumbek, tabla (arabic)]
+    traits: { pitched: "no", sustain: decays, attack: [sharp], tone: [skin], register: [mid, high] }
+    summary: Middle Eastern goblet drum. Deep "doum", crisp "tek", fast rolling rhythms.
+    listen: ["A deep doum and bright tek alternating", "Fast finger rolls"]
+    confusions:
+      - { id: bongos, cue: "Bongos are two drums with dry pops." }
+      - { id: tabla, cue: "Tabla has pitched, bending, singing tones." }
+    samples:
+      hits:
+        - { label: Doum, src: vcsl, dir: Membranophones/Struck Membranophones/Darbuka, match: Darbuka_1_hit_vl2, limit: 1 }
+        - { label: Tek, src: vcsl, dir: Membranophones/Struck Membranophones/Darbuka, match: Darbuka_3_hit_vl2|Darbuka_4_hit_vl2, limit: 1 }
+
+  - id: frame-drum
+    name: Frame drum
+    family: drums
+    sub: Frame drum
+    aliases: [bodhrán, tar, bendir, riq]
+    traits: { pitched: "no", sustain: decays, attack: [sharp, soft], tone: [skin], register: [low, mid] }
+    summary: A skin stretched over a wide, shallow hoop. Deep, soft, resonant thumps.
+    listen: ["Soft, wide booms", "Hand and finger strokes"]
+    confusions:
+      - { id: tambourine, cue: "Tambourine adds jingles." }
+      - { id: concert-bass-drum, cue: "Bass drum is much bigger and deeper." }
+    samples:
+      hits:
+        - { label: Hand, src: vcsl, dir: Membranophones/Struck Membranophones/Frame Drum, match: Hand, limit: 1 }
+        - { label: Hit, src: vcsl, dir: Membranophones/Struck Membranophones/Frame Drum, match: Hit_v3, limit: 1 }
+
+  - id: tabla
+    name: Tabla
+    family: drums
+    sub: Hand drum
+    status: wanted
+    traits: { pitched: "yes", sustain: decays, attack: [sharp], tone: [skin], register: [mid] }
+    summary: North Indian drum pair. Singing, pitched strokes and bending bass.
+    listen: ["Ringing pitched tones", "A bass drum that bends upward"]
+    confusions:
+      - { id: darbuka, cue: "Darbuka tones are not pitched and do not bend." }
+
+  # ---------------------------------------------------------------- metal & small
+  - id: hi-hat
+    name: Hi-hat
+    family: metal
+    sub: Drum kit
+    aliases: [hihat, hats]
+    traits: { pitched: "no", sustain: decays, attack: [sharp], tone: [noisy, metallic], register: [high] }
+    summary: Two cymbals on a pedal stand. Tight "tss" ticks when closed, sizzle when open.
+    listen: ["Steady ticking eighth notes", "An open \"tsss\" that is cut off by closing"]
+    confusions:
+      - { id: shaker, cue: "Shaker is grainy and has no metallic ring." }
+      - { id: ride-cymbal, cue: "Ride pings with a sustained wash." }
+      - { id: drum-machine, cue: "Machine hats are thin, noisy and identical." }
+    samples:
+      hits:
+        - { label: Closed, src: vcsl, dir: Idiophones/Struck Idiophones/Hi-Hat Cymbal, match: Close, limit: 1 }
+        - { label: Open, src: vcsl, dir: Idiophones/Struck Idiophones/Hi-Hat Cymbal, match: HitO, limit: 1 }
+
+  - id: crash-cymbal
+    name: Crash cymbal
+    family: metal
+    sub: Drum kit
+    aliases: [crash]
+    traits: { pitched: "no", sustain: decays, attack: [sharp], tone: [noisy, metallic], register: [high] }
+    summary: A thin kit cymbal for accents. An explosive wash that fades over seconds.
+    listen: ["A bright explosion of noise", "A long, shimmering fade"]
+    confusions:
+      - { id: ride-cymbal, cue: "Ride is a pinging, controlled pattern." }
+      - { id: clash-cymbals, cue: "Orchestral clash cymbals are bigger and more metallic." }
+      - { id: gong, cue: "Gong is lower and swells after the hit." }
+    samples:
+      hits:
+        - { label: Crash, src: freepats, bank: MuldjordKit, files: CrashL, limit: 1 }
+
+  - id: ride-cymbal
+    name: Ride cymbal
+    family: metal
+    sub: Drum kit
+    aliases: [ride]
+    traits: { pitched: "no", sustain: decays, attack: [sharp], tone: [metallic, noisy], register: [high] }
+    summary: A heavy kit cymbal played in patterns. A clear ping over a soft wash.
+    listen: ["A pinging stick attack", "A steady spang-a-lang jazz pattern"]
+    confusions:
+      - { id: hi-hat, cue: "Hi-hat is tighter, with chick sounds." }
+      - { id: crash-cymbal, cue: "Crash is an explosion, not a ping." }
+      - { id: cowbell, cue: "Cowbell is a hollow clonk with no wash." }
+    samples:
+      hits:
+        - { label: Ride, src: freepats, bank: MuldjordKit, files: RideL, limit: 1 }
+        - { label: Bell, src: freepats, bank: MuldjordKit, files: RideLBell, limit: 1 }
+
+  - id: clash-cymbals
+    name: Clash cymbals
+    family: metal
+    sub: Orchestral
+    aliases: [piatti, hand cymbals, orchestral cymbals]
+    traits: { pitched: "no", sustain: decays, attack: [sharp], tone: [metallic, noisy], register: [mid, high] }
+    summary: Two large cymbals crashed together by hand. A huge orchestral climax crash.
+    listen: ["A wide, metallic crash with a long ring"]
+    confusions:
+      - { id: crash-cymbal, cue: "Kit crash is thinner and splashier." }
+      - { id: suspended-cymbal, cue: "Suspended cymbal is usually rolled with mallets, swelling in." }
+    samples:
+      hits:
+        - { label: Crash, src: vcsl, dir: Idiophones/Struck Idiophones/Clash Cymbals 1, match: ff, limit: 1 }
+
+  - id: suspended-cymbal
+    name: Suspended cymbal
+    family: metal
+    sub: Orchestral
+    traits: { pitched: "no", sustain: decays, attack: [soft, sharp], tone: [metallic, noisy], register: [high] }
+    summary: A single cymbal on a stand, often rolled with soft mallets into a swelling wash.
+    listen: ["A shimmering swell from nothing", "Bowed cymbal squeals in film scores"]
+    confusions:
+      - { id: gong, cue: "Gong is lower and darker." }
+      - { id: synth-pad, cue: "Noise swells and risers in electronic music can mimic it." }
+    samples:
+      hits:
+        - { label: Mallet roll, src: vcsl, dir: Idiophones/Struck Idiophones/Suspended Cymbal 1, match: roll, limit: 1 }
+        - { label: Bowed, src: vcsl, dir: Idiophones/Struck Idiophones/Suspended Cymbal 1, match: bow, limit: 1 }
+        - { label: Hit, src: vcsl, dir: Idiophones/Struck Idiophones/Suspended Cymbal 1, match: hit, limit: 1 }
+
+  - id: gong
+    name: Gong
+    family: metal
+    sub: Gong
+    aliases: [tam-tam]
+    traits: { pitched: "no", sustain: decays, attack: [soft], tone: [metallic], register: [low, mid] }
+    summary: A large bronze disc. A deep crash that blooms and roars after the hit.
+    listen: ["A low, dark strike", "A wash that grows louder before fading"]
+    confusions:
+      - { id: suspended-cymbal, cue: "Cymbals are higher and hissier." }
+      - { id: tubular-bells, cue: "Bells have a clear pitch." }
+    samples:
+      hits:
+        - { label: Hit, src: vcsl, dir: Idiophones/Struck Idiophones/Gong 1, match: _f, exclude: scrape, limit: 1 }
+        - { label: Scrape, src: vcsl, dir: Idiophones/Struck Idiophones/Gong 1, match: scrape, limit: 1 }
+
+  - id: triangle
+    name: Triangle
+    family: metal
+    sub: Orchestral
+    traits: { pitched: "no", sustain: decays, attack: [sharp], tone: [metallic], register: [high] }
+    summary: A bent steel bar. A tiny, bright "ting" that rings on.
+    listen: ["A high, clear ting with long ring", "Fast rolls that shimmer"]
+    confusions:
+      - { id: glockenspiel, cue: "Glockenspiel plays actual notes." }
+      - { id: cowbell, cue: "Cowbell is dull and hollow." }
+      - { id: finger-cymbals, cue: "Finger cymbals are more of a ringing clink." }
+    samples:
+      hits:
+        - { label: Hit, src: vcsl, dir: Idiophones/Struck Idiophones/Triangles, match: Triangle1_Hit, limit: 1 }
+        - { label: Roll, src: vcsl, dir: Idiophones/Struck Idiophones/Triangles, match: Roll, limit: 1 }
+
+  - id: tambourine
+    name: Tambourine
+    family: metal
+    sub: Jingles
+    traits: { pitched: "no", sustain: decays, attack: [sharp], tone: [noisy, metallic], register: [high] }
+    summary: A frame with metal jingles. Jingly shakes and hits.
+    listen: ["A bright jingle-rattle", "Shakes on every beat in pop and gospel"]
+    confusions:
+      - { id: sleigh-bells, cue: "Sleigh bells are round little bells, more tinkly." }
+      - { id: shaker, cue: "Shaker is grainy with no jingle." }
+    samples:
+      hits:
+        - { label: Hit, src: vcsl, dir: Idiophones/Struck Idiophones/Tambourine 1, match: Hit, limit: 1 }
+        - { label: Shake, src: vcsl, dir: Idiophones/Struck Idiophones/Tambourine 1, match: Shake, limit: 1 }
+        - { label: Roll, src: vcsl, dir: Idiophones/Struck Idiophones/Tambourine 1, match: Roll, limit: 1 }
+
+  - id: shaker
+    name: Shaker
+    family: metal
+    sub: Rattle
+    aliases: [egg shaker]
+    traits: { pitched: "no", sustain: decays, attack: [sharp, soft], tone: [noisy], register: [high] }
+    summary: Beads or seeds in a container. A grainy "chk-chk" pulse.
+    listen: ["Soft, grainy shushing", "Steady sixteenth-note pulse"]
+    confusions:
+      - { id: hi-hat, cue: "Hi-hat has a metallic ring." }
+      - { id: brushes, cue: "Brushes sweep on a snare, smoother and swishier." }
+      - { id: tambourine, cue: "Tambourine jingles." }
+    samples:
+      hits:
+        - { label: Shake, src: vcsl, dir: "Idiophones/Struck Idiophones/Shaker, Small", match: Shaker_, limit: 1 }
+        - { label: Large shaker, src: vcsl, dir: "Idiophones/Struck Idiophones/Shaker, Large", match: Shake, limit: 1 }
+
+  - id: brushes
+    name: Brushes
+    family: drums
+    sub: Drum kit
+    status: wanted
+    traits: { pitched: "no", sustain: decays, attack: [soft], tone: [noisy], register: [mid, high] }
+    summary: Wire brushes swept on a snare. Soft, swishing jazz textures.
+    listen: ["Circular swishing", "Soft taps"]
+    confusions:
+      - { id: shaker, cue: "Shaker is grainier and more rhythmic." }
+
+  - id: sleigh-bells
+    name: Sleigh bells
+    family: metal
+    sub: Jingles
+    aliases: [jingle bells]
+    traits: { pitched: "no", sustain: decays, attack: [sharp], tone: [metallic, noisy], register: [high] }
+    summary: Many tiny closed bells on a strap. The Christmas jingle.
+    listen: ["A tinkly cloud of little bells"]
+    confusions:
+      - { id: tambourine, cue: "Tambourine is flatter and has a skin thump." }
+      - { id: mark-tree, cue: "Mark tree is a glissando of chimes." }
+    samples:
+      hits:
+        - { label: Shake, src: vcsl, dir: Idiophones/Struck Idiophones/Sleigh Bells, match: shake|Shake, limit: 1 }
+        - { label: Hit, src: vcsl, dir: Idiophones/Struck Idiophones/Sleigh Bells, match: Hit, limit: 1 }
+
+  - id: mark-tree
+    name: Mark tree
+    family: metal
+    sub: Chimes
+    aliases: [wind chimes, bar chimes, chimes]
+    traits: { pitched: "no", sustain: decays, attack: [soft], tone: [metallic], register: [high] }
+    summary: Rows of small hanging chimes brushed with a finger. The magical "sparkle" gliss.
+    listen: ["A cascading shimmer of tiny chimes"]
+    confusions:
+      - { id: sleigh-bells, cue: "Sleigh bells jingle in rhythm." }
+      - { id: glockenspiel, cue: "Glockenspiel plays a melody." }
+    samples:
+      hits:
+        - { label: Glissando, src: vcsl, dir: Idiophones/Struck Idiophones/Mark Trees/Legacy, match: asc|desc|Desc, limit: 2 }
+
+  - id: finger-cymbals
+    name: Finger cymbals
+    family: metal
+    sub: Small cymbals
+    aliases: [zills, crotales]
+    traits: { pitched: "no", sustain: decays, attack: [sharp], tone: [metallic], register: [high] }
+    summary: Tiny cymbals clinked together. A sweet, ringing clink.
+    listen: ["A delicate clink with a long ring"]
+    confusions:
+      - { id: triangle, cue: "Triangle is brighter and pingier." }
+    samples:
+      hits:
+        - { label: Clink, src: vcsl, dir: Idiophones/Struck Idiophones/Finger Cymbals, limit: 1 }
+
+  - id: cowbell
+    name: Cowbell
+    family: metal
+    sub: Bells
+    traits: { pitched: "no", sustain: decays, attack: [sharp], tone: [metallic], register: [mid] }
+    summary: A clapperless bell struck with a stick. A hollow, dry "clonk".
+    listen: ["A short, hollow metallic clonk"]
+    confusions:
+      - { id: woodblock, cue: "Woodblock is a wooden knock." }
+      - { id: triangle, cue: "Triangle rings long and high." }
+      - { id: drum-machine, cue: "The 808 cowbell is a synthetic, two-tone clank." }
+    samples:
+      hits:
+        - { label: Hit, src: vcsl, dir: Idiophones/Struck Idiophones/Cowbells, match: Cowbell1_Hit, limit: 1 }
+
+  - id: woodblock
+    name: Woodblock
+    family: metal
+    sub: Wood
+    aliases: [temple block, wood block]
+    traits: { pitched: "no", sustain: decays, attack: [sharp], tone: [woody], register: [mid, high] }
+    summary: A hollowed wooden block. A dry, hollow "tock".
+    listen: ["A short, hollow tock, like a clock"]
+    confusions:
+      - { id: claves, cue: "Claves are a brighter, higher click." }
+      - { id: xylophone, cue: "Xylophone plays pitched melodies." }
+      - { id: cowbell, cue: "Cowbell is metal." }
+    samples:
+      hits:
+        - { label: Hit, src: vcsl, dir: Idiophones/Struck Idiophones/Woodblock, match: mf|_f, limit: 1 }
+
+  - id: claves
+    name: Claves
+    family: metal
+    sub: Wood
+    traits: { pitched: "no", sustain: decays, attack: [sharp], tone: [woody], register: [high] }
+    summary: Two hardwood sticks clicked together. A bright, piercing click in Latin rhythms.
+    listen: ["A high, penetrating click", "The clave rhythm pattern"]
+    confusions:
+      - { id: woodblock, cue: "Woodblock is hollower and lower." }
+      - { id: claps, cue: "Claps are fleshy and noisier." }
+    samples:
+      hits:
+        - { label: Click, src: vcsl, dir: Idiophones/Struck Idiophones/Claves, match: Claves1_Hit_v2, limit: 1 }
+
+  - id: guiro
+    name: Güiro
+    family: metal
+    sub: Scraper
+    aliases: [guiro, scraper]
+    traits: { pitched: "no", sustain: decays, attack: [soft, sharp], tone: [woody, noisy], register: [mid] }
+    summary: A notched gourd scraped with a stick. A ratchety "zzzip".
+    listen: ["A ratcheting scrape, long and short"]
+    confusions:
+      - { id: shaker, cue: "Shaker is smooth grain, not ratchety." }
+    samples:
+      hits:
+        - { label: Slow scrape, src: vcsl, dir: Idiophones/Struck Idiophones/Guiro, match: Slow, limit: 1 }
+        - { label: Fast scrape, src: vcsl, dir: Idiophones/Struck Idiophones/Guiro, match: Fast, limit: 1 }
+
+  - id: claps
+    name: Hand claps
+    family: metal
+    sub: Body
+    aliases: [clap, handclap]
+    traits: { pitched: "no", sustain: decays, attack: [sharp], tone: [noisy], register: [mid] }
+    summary: Real hands clapping. A fleshy, noisy snap.
+    listen: ["A short, noisy slap with no ring"]
+    confusions:
+      - { id: snare-drum, cue: "Snare has a drum body and a wire rattle." }
+      - { id: drum-machine, cue: "Machine claps are layered, thin and identical." }
+    samples:
+      hits:
+        - { label: Group clap, src: vcsl, dir: Idiophones/Struck Idiophones/Claps, match: ^Clap, limit: 1 }
+        - { label: Solo clap, src: vcsl, dir: Idiophones/Struck Idiophones/Claps, match: SoloClap_vl3|SoloClap_vl4, limit: 1 }
+
+  # ---------------------------------------------------------------- electronic
+  - id: synth-bass
+    name: Synth bass
+    family: electronic
+    sub: Synthesizer
+    aliases: [analog bass, moog bass, acid bass]
+    traits: { pitched: "yes", sustain: held, attack: [sharp], tone: [electronic, buzzy], register: [low] }
+    summary: A subtractive synth bass. Fat saw or square waves, shaped by a sweeping filter.
+    listen: ["A buzzy low note that gets darker as it holds", "Perfectly consistent notes, no finger noise"]
+    confusions:
+      - { id: electric-bass, cue: "Bass guitar has finger attack and string decay." }
+      - { id: sub-808, cue: "808 is a pure sine boom, no buzz." }
+      - { id: didgeridoo, cue: "Didgeridoo breathes and barks." }
+    samples:
+      notes: { src: generated, preset: synth-bass, phrase: true }
+
+  - id: sub-808
+    name: 808 bass
+    family: electronic
+    sub: Drum machine
+    aliases: [808, sub bass, trap bass]
+    traits: { pitched: "yes", sustain: decays, attack: [sharp], tone: [electronic, pure], register: [low] }
+    summary: A tuned 808 kick stretched into a bassline. A deep, clean boom with a pitch drop.
+    listen: ["A deep sine boom you feel more than hear", "A quick downward pitch dip at the start"]
+    confusions:
+      - { id: kick-drum, cue: "Acoustic kick is a short thud, not a sustained note." }
+      - { id: synth-bass, cue: "Synth bass is buzzier." }
+      - { id: electric-bass, cue: "Bass guitar has plucked string grit." }
+    samples:
+      notes: { src: generated, preset: sub-808, phrase: true }
+
+  - id: synth-lead-saw
+    name: Saw lead
+    family: electronic
+    sub: Synthesizer
+    aliases: [synth lead, lead synth, supersaw]
+    traits: { pitched: "yes", sustain: held, attack: [sharp], tone: [electronic, buzzy, brassy], register: [mid, high] }
+    summary: A sawtooth-wave lead. Bright, buzzy, brassy-electronic.
+    listen: ["A bright, steady buzz", "Glides between notes"]
+    confusions:
+      - { id: electric-guitar-distorted, cue: "Distorted guitar has pick attacks, bends and feedback." }
+      - { id: trumpet, cue: "Trumpet breathes and has lip attacks." }
+      - { id: synth-lead-square, cue: "Square leads are hollower and more woody." }
+    samples:
+      notes: { src: generated, preset: synth-lead-saw, phrase: true }
+
+  - id: synth-lead-square
+    name: Square lead
+    family: electronic
+    sub: Synthesizer
+    aliases: [chiptune, 8-bit, square wave]
+    traits: { pitched: "yes", sustain: held, attack: [sharp], tone: [electronic, reedy], register: [mid, high] }
+    summary: A square-wave lead. Hollow and reedy, the video-game sound.
+    listen: ["A hollow, clarinet-like electronic tone", "Chiptune arpeggios"]
+    confusions:
+      - { id: clarinet, cue: "Clarinet has breath and a soft attack." }
+      - { id: drawbar-organ, cue: "Organ has more overtones and a whirl." }
+      - { id: flute, cue: "Flute is airy." }
+    samples:
+      notes: { src: generated, preset: synth-lead-square, phrase: true }
+
+  - id: synth-pad
+    name: Synth pad
+    family: electronic
+    sub: Synthesizer
+    aliases: [pad, ambient pad, warm pad]
+    traits: { pitched: "yes", sustain: held, attack: [soft], tone: [electronic], register: [mid] }
+    summary: Detuned oscillators with a slow attack. A warm, wide, swelling bed of sound.
+    listen: ["Chords that swell in slowly", "A wide, gently moving shimmer"]
+    confusions:
+      - { id: violin-section, cue: "Real strings have bow changes and vibrato." }
+      - { id: pipe-organ, cue: "Organ notes switch on instantly." }
+      - { id: wine-glasses, cue: "Glasses are purer and eerier." }
+    samples:
+      notes: { src: generated, preset: synth-pad, phrase: true }
+
+  - id: synth-pluck
+    name: Synth pluck
+    family: electronic
+    sub: Synthesizer
+    aliases: [pluck, arp]
+    traits: { pitched: "yes", sustain: decays, attack: [sharp], tone: [electronic, twangy], register: [mid, high] }
+    summary: A short synth note with a fast filter snap. Common in EDM and pop arpeggios.
+    listen: ["A short, bright blip that darkens immediately", "Rapid repeated arpeggios"]
+    confusions:
+      - { id: electric-guitar-clean, cue: "Guitar has string noise and uneven dynamics." }
+      - { id: marimba, cue: "Marimba is woody and acoustic." }
+      - { id: harpsichord, cue: "Harpsichord has a mechanical jangle." }
+    samples:
+      notes: { src: generated, preset: synth-pluck, phrase: true }
+
+  - id: drum-machine
+    name: Drum machine
+    family: electronic
+    sub: Drum machine
+    aliases: [808, 909, beat, electronic drums]
+    traits: { pitched: "no", sustain: decays, attack: [sharp], tone: [electronic, noisy], register: [low, mid, high] }
+    summary: Synthesized kick, snare, clap and hats. Clean, identical, often booming.
+    listen: ["Identical hits every time", "A booming sine kick and hissing noise hats"]
+    confusions:
+      - { id: kick-drum, cue: "Acoustic kicks vary hit to hit and have a beater click." }
+      - { id: snare-drum, cue: "Acoustic snare has a wooden body and real wires." }
+      - { id: hi-hat, cue: "Real hats ring with metal." }
+    samples:
+      hits:
+        - { label: Kick, src: generated, preset: dm-kick }
+        - { label: Snare, src: generated, preset: dm-snare }
+        - { label: Clap, src: generated, preset: dm-clap }
+        - { label: Closed hat, src: generated, preset: dm-hat }
+
+  # ---------------------------------------------------------------- added in round two
+
+  - id: honky-tonk-piano
+    name: Honky-tonk piano
+    family: keys
+    sub: Piano
+    aliases: [old piano, saloon piano, out-of-tune piano, tack piano]
+    traits: { pitched: "yes", sustain: decays, attack: [sharp], tone: [hammered, metallic], register: [low, mid, high] }
+    summary: An old, slightly detuned upright. The saloon and ragtime sound, with a jangly, wobbling chorus on every note.
+    listen: ["A wavering, out-of-tune shimmer on each note", "A thinner, brighter tone than a concert grand"]
+    confusions:
+      - { id: upright-piano, cue: "A well-kept upright is in tune: no wobble between the strings of one note." }
+      - { id: harpsichord, cue: "Harpsichord plucks and cannot play loud or soft; honky-tonk still has a hammer thud." }
+    samples:
+      notes: { src: freepats, bank: PianoFB-small, phrase: true }
+
+  - id: bowed-psaltery
+    name: Bowed psaltery
+    family: bowed
+    sub: Zither
+    traits: { pitched: "yes", sustain: held, attack: [soft], tone: [bowed, pure], register: [mid, high] }
+    summary: A triangular zither played with small bows. Sweet, airy, glassy bowed notes that overlap and ring.
+    listen: ["A thin, silvery bowed tone", "Notes that keep ringing after the bow leaves"]
+    confusions:
+      - { id: violin, cue: "Violin is fuller and more focused, with vibrato." }
+      - { id: wine-glasses, cue: "Glass harp is purer, with no bow grain at all." }
+    samples:
+      notes: { src: vcsl, dir: "Chordophones/Zithers/Psaltery, Bowed and Plucked/LongBow", phrase: true }
+      variants:
+        - { label: Plucked, src: vcsl, dir: "Chordophones/Zithers/Psaltery, Bowed and Plucked/Pluck" }
+
+  - id: strumstick
+    name: Strumstick
+    family: plucked
+    sub: Dulcimer
+    aliases: [mountain dulcimer, appalachian dulcimer, stick dulcimer]
+    traits: { pitched: "yes", sustain: decays, attack: [sharp], tone: [twangy], register: [mid] }
+    summary: A small three-string, dulcimer-like folk instrument. Bright, simple, drone-friendly plucks.
+    listen: ["Bright, thin plucks", "Open strings droning under a melody"]
+    confusions:
+      - { id: acoustic-guitar-steel, cue: "Guitar is fuller, with more bass." }
+      - { id: banjo, cue: "Banjo has a drum-head snap and dies away faster." }
+      - { id: ukulele, cue: "Ukulele is nylon, softer and rounder." }
+    samples:
+      notes: { src: vcsl, dir: Chordophones/Composite Chordophones/Strumstick/Finger, prefer: [_vl2_], phrase: true }
+
+  - id: glasses-of-water
+    name: Glasses of water
+    family: mallet
+    sub: Glass
+    aliases: [water glasses, struck glasses, glass harmonica (struck)]
+    traits: { pitched: "yes", sustain: decays, attack: [sharp], tone: [pure, metallic], register: [mid, high] }
+    summary: Drinking glasses tuned with water and tapped. Delicate, pure pings with a glassy ring.
+    listen: ["A pure, slightly hollow ping", "Short glassy ring after each tap"]
+    confusions:
+      - { id: glockenspiel, cue: "Glockenspiel is steel: harder, brighter, longer ring." }
+      - { id: wine-glasses, cue: "Rubbed glasses sustain and swell; tapped ones ping and fade." }
+      - { id: celesta, cue: "Celesta is keyboard-played metal, sweeter and more even." }
+    samples:
+      notes: { src: freepats, bank: Glass, phrase: true }
+
+  - id: slit-drum
+    name: Slit drum
+    family: drums
+    sub: Log drum
+    aliases: [log drum, tongue drum]
+    traits: { pitched: "no", sustain: decays, attack: [sharp], tone: [woody], register: [low, mid] }
+    summary: A hollow log or box with a slit cut into it. Deep, hollow, resonant wooden tones.
+    listen: ["A hollow, resonant wooden bonk", "Two or more pitches on one body"]
+    confusions:
+      - { id: woodblock, cue: "Woodblock is smaller, higher and drier." }
+      - { id: marimba, cue: "Marimba plays full melodies on many bars." }
+      - { id: cajon, cue: "Cajón is slapped by hand, with a snare-like buzz." }
+    samples:
+      hits:
+        - { label: High, src: vcsl, dir: Idiophones/Struck Idiophones/Slit Drum, match: LogDrumHi_MedM_v2, limit: 1 }
+        - { label: Low, src: vcsl, dir: Idiophones/Struck Idiophones/Slit Drum, match: LogDrumLo_MedM_v2, limit: 1 }
+
+  - id: ocean-drum
+    name: Ocean drum
+    family: drums
+    sub: Frame drum
+    aliases: [wave drum]
+    traits: { pitched: "no", sustain: held, attack: [soft], tone: [noisy], register: [mid, high] }
+    summary: A frame drum filled with steel beads, tilted slowly. The sound of waves washing in.
+    listen: ["A slow, rolling hiss like surf", "No attacks, just swells"]
+    confusions:
+      - { id: shaker, cue: "Shaker is rhythmic, in short pulses." }
+      - { id: rainstick, cue: "Rainstick is a trickle of tiny ticks." }
+    samples:
+      hits:
+        - { label: Wave, src: vcsl, dir: Membranophones/Other Membranophones/Ocean Drum, match: Sus_1, limit: 1 }
+        - { label: Slow wave, src: vcsl, dir: Membranophones/Other Membranophones/Ocean Drum, match: Sus_3, limit: 1 }
+
+  - id: marching-snare
+    name: Marching snare
+    family: drums
+    sub: Marching
+    aliases: [field drum, drumline snare]
+    traits: { pitched: "no", sustain: decays, attack: [sharp], tone: [skin, noisy], register: [mid, high] }
+    summary: A deep, very tight snare for drumlines. Cracks like a whip, with a crisp, dry rattle.
+    listen: ["An extremely high, tight crack", "Fast rudiments and rolls"]
+    confusions:
+      - { id: snare-drum, cue: "A kit snare is looser and fatter." }
+      - { id: marching-tenors, cue: "Tenor drums have no rattle and play pitched runs." }
+    samples:
+      hits:
+        - { label: Hit, src: vcsl, dir: Membranophones/Struck Membranophones/Legacy Snares/drum3_marching, match: snare3_f_, limit: 1 }
+        - { label: Rimshot, src: vcsl, dir: Membranophones/Struck Membranophones/Legacy Snares/drum3_marching, match: rimshot, limit: 1 }
+
+  - id: marching-tenors
+    name: Marching tenor drums
+    family: drums
+    sub: Marching
+    aliases: [quads, quints, tenor drums, tom-toms (marching)]
+    traits: { pitched: "no", sustain: decays, attack: [sharp], tone: [skin], register: [mid] }
+    summary: A rack of tuned, snare-less drums carried in a drumline. Bright, pingy, melodic sweeps.
+    listen: ["Ringing, high-pitched tom sounds", "Fast sweeps across several drums"]
+    confusions:
+      - { id: toms, cue: "Kit toms are looser, deeper and fatter." }
+      - { id: marching-snare, cue: "Snare has a wire rattle." }
+    samples:
+      hits:
+        - { label: High, src: vcsl, dir: Membranophones/Struck Membranophones/Legacy Toms/tenor_higher, match: tenorH_f_, limit: 1 }
+        - { label: Low, src: vcsl, dir: Membranophones/Struck Membranophones/Legacy Toms/tenor_lower, match: tenor_f_, limit: 1 }
+
+  - id: castanets
+    name: Castanets
+    family: metal
+    sub: Wood
+    aliases: [castañuelas]
+    traits: { pitched: "no", sustain: decays, attack: [sharp], tone: [woody], register: [high] }
+    summary: Pairs of hardwood shells clicked in the hand. A bright, chattering click, famous in flamenco.
+    listen: ["A dry, bright double click", "Fast rattling rolls"]
+    confusions:
+      - { id: claves, cue: "Claves are one pitched click, longer ring." }
+      - { id: woodblock, cue: "Woodblock is hollower and lower." }
+      - { id: claps, cue: "Claps are fleshy and noisier." }
+    samples:
+      hits:
+        - { label: Click, src: freepats, bank: WorldPercussion, files: Castanets, limit: 2 }
+
+  - id: maracas
+    name: Maracas
+    family: metal
+    sub: Rattle
+    traits: { pitched: "no", sustain: decays, attack: [sharp], tone: [noisy], register: [high] }
+    summary: Gourds filled with seeds, shaken in pairs. A crisp "chk" at each end of the shake.
+    listen: ["A crisp, bright rattle on each flick", "Latin rhythm patterns"]
+    confusions:
+      - { id: shaker, cue: "An egg shaker is softer and smoother." }
+      - { id: cabasa, cue: "Cabasa is a metallic, raspy scrape." }
+    samples:
+      hits:
+        - { label: Shake, src: freepats, bank: WorldPercussion, files: Maracas, limit: 2 }
+
+  - id: cabasa
+    name: Cabasa
+    family: metal
+    sub: Rattle
+    aliases: [afuche]
+    traits: { pitched: "no", sustain: decays, attack: [sharp, soft], tone: [noisy, metallic], register: [high] }
+    summary: Steel bead chains wrapped around a cylinder, twisted against the hand. A raspy, metallic scrape.
+    listen: ["A dry, metallic scrape", "Twisting back-and-forth rhythms"]
+    confusions:
+      - { id: shaker, cue: "Shakers are grainier and softer." }
+      - { id: guiro, cue: "Güiro is a ratchety wooden scrape." }
+    samples:
+      hits:
+        - { label: Hit, src: vcsl, dir: Idiophones/Struck Idiophones/Cabasa, match: Hit_rr1, limit: 1 }
+        - { label: Rub, src: vcsl, dir: Idiophones/Struck Idiophones/Cabasa, match: Rub_v2_rr1, limit: 1 }
+
+  - id: agogo
+    name: Agogô bells
+    family: metal
+    sub: Bells
+    aliases: [agogo]
+    traits: { pitched: "no", sustain: decays, attack: [sharp], tone: [metallic], register: [mid, high] }
+    summary: Two joined cone bells, high and low, from Brazilian samba. A bright two-tone clank.
+    listen: ["High and low clanks alternating", "Samba patterns"]
+    confusions:
+      - { id: cowbell, cue: "Cowbell is one dull, lower clonk." }
+      - { id: triangle, cue: "Triangle rings on, high and thin." }
+    samples:
+      hits:
+        - { label: High bell, src: vcsl, dir: Idiophones/Struck Idiophones/Agogo Bells, match: High_v2, limit: 1 }
+        - { label: Low bell, src: vcsl, dir: Idiophones/Struck Idiophones/Agogo Bells, match: Low_v2, limit: 1 }
+
+  - id: bell-tree
+    name: Bell tree
+    family: metal
+    sub: Bells
+    traits: { pitched: "no", sustain: decays, attack: [soft], tone: [metallic], register: [high] }
+    summary: A stack of nested bowl bells swept with a beater. A shimmering cascade of bells.
+    listen: ["A glittering run of bell tones, up or down"]
+    confusions:
+      - { id: mark-tree, cue: "Mark tree chimes are tinier and more tinkly." }
+      - { id: glockenspiel, cue: "Glockenspiel runs are cleaner, in scales." }
+    samples:
+      hits:
+        - { label: Sweep, src: vcsl, dir: Idiophones/Struck Idiophones/Bell Tree/Stroke, match: Stroke_1_|Stroke_3_, limit: 1 }
+
+  - id: nepalese-bells
+    name: Hand bells (Nepalese)
+    family: metal
+    sub: Bells
+    aliases: [tingsha, meditation bells, temple bells]
+    traits: { pitched: "no", sustain: decays, attack: [sharp], tone: [metallic, pure], register: [high] }
+    summary: Small hand-held bells from Nepal. A clear, ringing, meditative strike.
+    listen: ["A bright strike that rings and beats slowly"]
+    confusions:
+      - { id: finger-cymbals, cue: "Finger cymbals are flatter and more of a clink." }
+      - { id: hand-chimes, cue: "Hand chimes are pitched and rounder." }
+    samples:
+      hits:
+        - { label: Strike, src: vcsl, dir: "Idiophones/Struck Idiophones/Hand Bells, Nepalese", limit: 2 }
+
+  - id: anvil
+    name: Anvil
+    family: metal
+    sub: Found metal
+    traits: { pitched: "no", sustain: decays, attack: [sharp], tone: [metallic], register: [mid, high] }
+    summary: A blacksmith's anvil struck with a hammer, used in opera and film scores. A hard, bright clang.
+    listen: ["A hard, piercing metal clang"]
+    confusions:
+      - { id: brake-drum, cue: "Brake drum is duller and more hollow." }
+      - { id: cowbell, cue: "Cowbell is hollow and shorter." }
+    samples:
+      hits:
+        - { label: Strike, src: vcsl, dir: Idiophones/Struck Idiophones/Anvil, match: Hit1_v3, limit: 1 }
+        - { label: Soft strike, src: vcsl, dir: Idiophones/Struck Idiophones/Anvil, match: Hit2_v1, limit: 1 }
+
+  - id: brake-drum
+    name: Brake drum
+    family: metal
+    sub: Found metal
+    traits: { pitched: "no", sustain: decays, attack: [sharp], tone: [metallic], register: [mid] }
+    summary: A car brake drum used as percussion. A heavy, clanky metallic ring.
+    listen: ["A thick, clanky metal hit with a short ring"]
+    confusions:
+      - { id: anvil, cue: "Anvil is brighter and more piercing." }
+      - { id: cowbell, cue: "Cowbell is more hollow and pitched." }
+    samples:
+      hits:
+        - { label: Hammer, src: vcsl, dir: Idiophones/Struck Idiophones/Brake Drum, match: Hammer_v2, limit: 1 }
+        - { label: Bowed, src: vcsl, dir: Idiophones/Struck Idiophones/Brake Drum, match: Bowed, limit: 1 }
+
+  - id: flexatone
+    name: Flexatone
+    family: metal
+    sub: Sound effects
+    traits: { pitched: "yes", sustain: decays, attack: [sharp], tone: [metallic], register: [high] }
+    summary: A flexible steel sheet between two beaters. A wobbling, cartoonish "wow-wow" warble.
+    listen: ["A rapidly warbling metallic tone", "Bending pitch, spooky or comic"]
+    confusions:
+      - { id: theremin, cue: "Theremin is smooth and sine-like, without the rattle." }
+      - { id: vibraslap, cue: "Vibraslap is a rattle with no pitch." }
+    samples:
+      hits:
+        - { label: Shake, src: vcsl, dir: Idiophones/Struck Idiophones/Flexatone, match: flexatone1, limit: 1 }
+        - { label: Long, src: vcsl, dir: Idiophones/Struck Idiophones/Flexatone, match: flexatone_long\., limit: 1 }
+
+  - id: vibraslap
+    name: Vibraslap
+    family: metal
+    sub: Sound effects
+    aliases: [jawbone, quijada]
+    traits: { pitched: "no", sustain: decays, attack: [sharp], tone: [noisy, woody], register: [mid] }
+    summary: A wooden box on a wire, struck so loose teeth rattle. A buzzing "brrrrr" rattle.
+    listen: ["A sharp hit that dissolves into a buzzing rattle"]
+    confusions:
+      - { id: guiro, cue: "Güiro is a scrape, not a rattle." }
+      - { id: ratchet, cue: "Ratchet is a mechanical clatter that lasts as long as it's cranked." }
+    samples:
+      hits:
+        - { label: Slap, src: vcsl, dir: Idiophones/Struck Idiophones/Vibraslap/Legacy, limit: 2 }
+
+  - id: ratchet
+    name: Ratchet
+    family: metal
+    sub: Sound effects
+    aliases: [rattle, noisemaker, gragger]
+    traits: { pitched: "no", sustain: held, attack: [sharp], tone: [woody, noisy], register: [mid] }
+    summary: A cog and wooden tongue spun by a handle. A clattering, machine-gun rattle.
+    listen: ["A fast, dry clatter while it spins"]
+    confusions:
+      - { id: guiro, cue: "Güiro is a single scrape, rougher." }
+      - { id: castanets, cue: "Castanets are separate clicks." }
+    samples:
+      hits:
+        - { label: Crank, src: vcsl, dir: Idiophones/Struck Idiophones/Ratchet, match: Ratchet1_Crank_rr1, limit: 1 }
+        - { label: Fast, src: vcsl, dir: Idiophones/Struck Idiophones/Ratchet, match: Ratchet1_Fast, limit: 1 }
+
+  - id: slapstick
+    name: Slapstick
+    family: metal
+    sub: Sound effects
+    aliases: [whip, whipcrack]
+    traits: { pitched: "no", sustain: decays, attack: [sharp], tone: [woody], register: [mid] }
+    summary: Two hinged boards slapped together. The orchestral whip crack.
+    listen: ["A single, very sharp crack"]
+    confusions:
+      - { id: claps, cue: "Claps are fleshy and softer." }
+      - { id: snare-drum, cue: "Snare has a drum body and rattle." }
+    samples:
+      hits:
+        - { label: Crack, src: vcsl, dir: Idiophones/Struck Idiophones/Slapstick, match: slapstick_rr, limit: 1 }
+        - { label: Quiet, src: vcsl, dir: Idiophones/Struck Idiophones/Slapstick, match: quiet, limit: 1 }
+
+  - id: whistle
+    name: Whistle
+    family: woodwind
+    sub: Whistles
+    aliases: [referee whistle, pea whistle, ball whistle, police whistle]
+    traits: { pitched: "yes", sustain: held, attack: [sharp], tone: [pure, noisy], register: [high] }
+    summary: A pea whistle, as blown by referees and samba leaders. Shrill with a trilling warble.
+    listen: ["A piercing, trilling shriek"]
+    confusions:
+      - { id: piccolo, cue: "Piccolo plays melodies without the pea's trill." }
+      - { id: siren-whistle, cue: "Siren whistle slides up and down." }
+    samples:
+      hits:
+        - { label: Long, src: vcsl, dir: Aerophones/Edge-blown Aerophones/Ball Whistle, match: Long, limit: 1 }
+        - { label: Short, src: vcsl, dir: Aerophones/Edge-blown Aerophones/Ball Whistle, match: Short, limit: 1 }
+
+  - id: siren-whistle
+    name: Siren whistle
+    family: woodwind
+    sub: Whistles
+    aliases: [siren]
+    traits: { pitched: "yes", sustain: held, attack: [soft], tone: [pure, breathy], register: [high] }
+    summary: A blown whistle with a spinning rotor. A rising and falling siren wail.
+    listen: ["A breathy tone that sweeps up and down"]
+    confusions:
+      - { id: whistle, cue: "A pea whistle trills on one pitch." }
+      - { id: theremin, cue: "Theremin is purer and plays melodies." }
+    samples:
+      hits:
+        - { label: Wail, src: vcsl, dir: Aerophones/Free Aerophones/Siren, match: "002|005", limit: 2 }
+
+  - id: train-whistle
+    name: Train whistle
+    family: woodwind
+    sub: Whistles
+    aliases: [toy train whistle]
+    traits: { pitched: "yes", sustain: held, attack: [soft], tone: [breathy, pure], register: [mid] }
+    summary: A multi-chambered toy whistle. The breathy chord of a steam train.
+    listen: ["A breathy chord of two or three pitches"]
+    confusions:
+      - { id: harmonica, cue: "Harmonica is reedy, not airy." }
+      - { id: pan-flute, cue: "Pan flute plays single notes of a melody." }
+    samples:
+      hits:
+        - { label: Blast, src: vcsl, dir: "Aerophones/Edge-blown Aerophones/Train Whistle, Toy", match: TrainLow_Sus, limit: 1 }
+        - { label: Double, src: vcsl, dir: "Aerophones/Edge-blown Aerophones/Train Whistle, Toy", match: TrainLow_Double, limit: 1 }
+
+  - id: synth-strings
+    name: Synth strings
+    family: electronic
+    sub: Synthesizer
+    aliases: [string machine, solina, string ensemble synth]
+    traits: { pitched: "yes", sustain: held, attack: [soft], tone: [electronic, bowed], register: [mid] }
+    summary: Synthesizer imitation of a string section. Smooth, silky and slightly artificial.
+    listen: ["A string-like sheen with no bow changes", "Perfectly even notes"]
+    confusions:
+      - { id: violin-section, cue: "Real strings have bow noise, vibrato and tiny tuning drift." }
+      - { id: synth-pad, cue: "A pad has no string character at all." }
+    samples:
+      notes: { src: freepats, bank: SynthStrings1, phrase: true }
+
+  - id: synth-brass
+    name: Synth brass
+    family: electronic
+    sub: Synthesizer
+    aliases: [brass synth, 80s brass stab]
+    traits: { pitched: "yes", sustain: held, attack: [sharp, soft], tone: [electronic, brassy], register: [mid] }
+    summary: "A synthesizer patch that mimics brass: bright, punchy saw chords with a filter \"blat\"."
+    listen: ["A brassy swell with no breath", "Big, even chord stabs"]
+    confusions:
+      - { id: trumpet, cue: "Real brass has breath, lip flutter and slight pitch scoops." }
+      - { id: synth-lead-saw, cue: "Saw leads are thinner and usually single notes." }
+    samples:
+      notes: { src: freepats, bank: SynthBrass1, phrase: true }
+
+  - id: acid-bass
+    name: Acid bass
+    family: electronic
+    sub: Synthesizer
+    aliases: [303, tb-303, acid]
+    traits: { pitched: "yes", sustain: decays, attack: [sharp], tone: [electronic, buzzy], register: [low, mid] }
+    summary: The squelchy bass of acid house. One saw wave through a screaming resonant filter.
+    listen: ["A rubbery, squelching 'wow' on each note", "Fast repeating sequences"]
+    note: Synthesized in code in the style of a TB-303.
+    confusions:
+      - { id: synth-bass, cue: "A standard synth bass is rounder, without the resonant squelch." }
+      - { id: jaw-harp, cue: "Jaw harp's wah comes from the mouth and is plucked." }
+    samples:
+      notes: { src: generated, preset: acid-bass, phrase: true }
+
+  - id: supersaw
+    name: Supersaw lead
+    family: electronic
+    sub: Synthesizer
+    aliases: [trance lead, edm lead, hoover]
+    traits: { pitched: "yes", sustain: held, attack: [sharp], tone: [electronic, buzzy], register: [mid, high] }
+    summary: Seven detuned saw waves stacked into one huge, shimmering lead. The trance and festival EDM sound.
+    listen: ["A wide, shimmering buzz, like many instruments at once"]
+    confusions:
+      - { id: synth-lead-saw, cue: "A plain saw lead is narrower and thinner." }
+      - { id: violin-section, cue: "Strings are softer, with bow texture." }
+    samples:
+      notes: { src: generated, preset: supersaw, phrase: true }
+
+  - id: fm-bell
+    name: FM bell
+    family: electronic
+    sub: Synthesizer
+    aliases: [dx bell, digital bell, tubular bell synth]
+    traits: { pitched: "yes", sustain: decays, attack: [sharp], tone: [electronic, metallic], register: [mid, high] }
+    summary: A digital bell from FM synthesis. Glassy, clangy, with odd inharmonic overtones.
+    listen: ["A glassy clang that settles into a pure tone"]
+    confusions:
+      - { id: celesta, cue: "Celesta is softer and acoustic." }
+      - { id: tubular-bells, cue: "Tubular bells are huge and complex, with a heavy strike." }
+      - { id: fm-electric-piano, cue: "FM piano has a hammer-like attack and a warmer body." }
+    samples:
+      notes: { src: generated, preset: fm-bell, phrase: true }
+
+  - id: theremin
+    name: Theremin
+    family: electronic
+    sub: Early electronic
+    traits: { pitched: "yes", sustain: held, attack: [soft], tone: [electronic, pure], register: [mid, high] }
+    summary: Played without touch, by moving hands near two antennas. An eerie, gliding, voice-like sine tone.
+    listen: ["Swooping glides between notes", "A wide, wobbly vibrato", "The 1950s sci-fi sound"]
+    confusions:
+      - { id: flexatone, cue: "Flexatone warbles with a metallic rattle." }
+      - { id: siren-whistle, cue: "Siren whistle is breathy, not electronic." }
+      - { id: violin, cue: "A high violin has bow grain and a rich tone." }
+      - { id: wine-glasses, cue: "Glass harp can't glide between notes." }
+    samples:
+      notes: { src: generated, preset: theremin, phrase: true }
+
+  - id: rainstick
+    name: Rainstick
+    family: metal
+    sub: Rattle
+    status: wanted
+    traits: { pitched: "no", sustain: held, attack: [soft], tone: [noisy], register: [high] }
+    summary: A long tube with pins inside and pebbles that trickle through. The sound of falling rain.
+    listen: ["A long cascade of tiny ticks"]
+    confusions:
+      - { id: ocean-drum, cue: "Ocean drum is a smoother, bigger wash." }
+      - { id: shaker, cue: "Shaker is rhythmic." }
+
+  - id: pan-flute
+    name: Pan flute
+    family: woodwind
+    sub: Flute
+    status: wanted
+    aliases: [pan pipes, panpipes, zampoña, siku, nai]
+    traits: { pitched: "yes", sustain: held, attack: [soft], tone: [breathy, pure], register: [mid, high] }
+    summary: A row of pipes blown across the top. Very breathy, hollow notes, often with a chiff.
+    listen: ["A breathy, hollow tone with air noise", "A puff at the start of each note"]
+    confusions:
+      - { id: flute, cue: "Flute is smoother, with less air around the note." }
+      - { id: ocarina, cue: "Ocarina is purer and rounder." }
+      - { id: recorder, cue: "Recorder is cleaner, with less breath." }

@@ -1,0 +1,11 @@
+{
+  "name": "Instrumedia",
+  "short_name": "Instrumedia",
+  "description": "Identify musical instruments by ear.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#1c1a17",
+  "theme_color": "#1c1a17",
+  "icons": [{ "src": "assets/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }]
+}

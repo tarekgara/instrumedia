@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Instrumedia</title>
+  <meta name="description" content="Identify musical instruments by ear: browse reference recordings, narrow down when you're unsure, and compare any recording against the candidates.">
+  <meta name="author" content="Tarek Gara">
+  <meta name="theme-color" content="#1c1a17" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f5f1ea" media="(prefers-color-scheme: light)">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="assets/fonts/instrument-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/app.css">
+  <script>
+    // Apply the saved theme before first paint to avoid a flash.
+    try { var t = localStorage.getItem('im.theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <div class="shell">
+    <aside class="rail" aria-label="Primary">
+      <a class="brand" href="#/" aria-label="Instrumedia home">
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><use href="#i-mark"/></svg>
+        <span class="brand-word">Instrumedia</span>
+      </a>
+
+      <button class="search-trigger" type="button" data-action="search">
+        <svg aria-hidden="true"><use href="#i-search"/></svg>
+        <span>Search</span>
+        <kbd>/</kbd>
+      </button>
+
+      <nav class="nav">
+        <a href="#/" data-nav="library"><svg aria-hidden="true"><use href="#i-library"/></svg>Library</a>
+        <a href="#/identify" data-nav="identify"><svg aria-hidden="true"><use href="#i-identify"/></svg>Not sure?</a>
+        <a href="#/quiz" data-nav="quiz"><svg aria-hidden="true"><use href="#i-quiz"/></svg>Quiz</a>
+        <a href="#/compare" data-nav="compare"><svg aria-hidden="true"><use href="#i-compare"/></svg>Compare<span class="nav-count" data-compare-count hidden></span></a>
+      </nav>
+
+      <div class="rail-section">
+        <div class="rail-label">Families</div>
+        <ul class="fam-list" data-families></ul>
+      </div>
+
+      <div class="rail-foot">
+        <button class="clip-slot" type="button" data-action="load-clip" data-clip-slot>
+          <span class="clip-slot-key"><kbd>0</kbd></span>
+          <span class="clip-slot-text">
+            <strong data-clip-name>Your recording</strong>
+            <span data-clip-hint>Optional · drop audio or video</span>
+          </span>
+        </button>
+        <div class="rail-tools">
+          <button class="icon-btn" type="button" data-action="theme" aria-label="Toggle light and dark theme"><svg aria-hidden="true"><use href="#i-theme"/></svg></button>
+          <button class="icon-btn" type="button" data-action="offline" aria-label="Save library for offline use" data-offline-btn><svg aria-hidden="true"><use href="#i-download"/></svg></button>
+          <a class="icon-btn" href="#/about" aria-label="About and credits"><svg aria-hidden="true"><use href="#i-info"/></svg></a>
+        </div>
+      </div>
+    </aside>
+
+    <main id="main" class="main" tabindex="-1"></main>
+  </div>
+
+  <footer class="transport" data-transport aria-label="Player">
+    <button class="t-play" type="button" data-action="toggle" aria-label="Play or stop">
+      <svg class="when-stopped" aria-hidden="true"><use href="#i-play"/></svg>
+      <svg class="when-playing" aria-hidden="true"><use href="#i-stop"/></svg>
+    </button>
+    <div class="t-now">
+      <div class="t-title" data-t-title>Nothing playing</div>
+      <div class="t-sub" data-t-sub>Press a play button, or a number key in Compare</div>
+    </div>
+    <canvas class="t-wave" data-t-wave aria-hidden="true"></canvas>
+    <div class="t-time" data-t-time>0:00</div>
+    <button class="t-toggle" type="button" data-action="loop" aria-pressed="false" aria-label="Loop playback">
+      <svg aria-hidden="true"><use href="#i-loop"/></svg>
+    </button>
+    <label class="t-vol" aria-label="Volume">
+      <svg aria-hidden="true"><use href="#i-volume"/></svg>
+      <input type="range" min="0" max="1" step="0.01" value="0.9" data-volume>
+    </label>
+  </footer>
+
+  <div class="drop-veil" data-drop-veil hidden>
+    <div class="drop-veil-inner">
+      <svg aria-hidden="true"><use href="#i-wave"/></svg>
+      <p>Drop to load as <strong>your recording</strong></p>
+      <span>Audio or video. It stays on this device.</span>
+    </div>
+  </div>
+
+  <div class="palette" data-palette hidden>
+    <div class="palette-scrim" data-action="close-palette"></div>
+    <div class="palette-box" role="dialog" aria-modal="true" aria-label="Search instruments">
+      <div class="palette-input">
+        <svg aria-hidden="true"><use href="#i-search"/></svg>
+        <input type="text" placeholder="Instrument, alias or texture: “reedy”, “hammond”, “upright bass”" autocomplete="off" spellcheck="false" data-palette-input aria-controls="palette-results">
+        <kbd>esc</kbd>
+      </div>
+      <ul class="palette-results" id="palette-results" role="listbox" data-palette-results></ul>
+      <div class="palette-foot"><span><kbd>↑</kbd><kbd>↓</kbd> move</span><span><kbd>↵</kbd> open</span><span><kbd>space</kbd> listen</span><span><kbd>shift</kbd>+<kbd>↵</kbd> add to compare</span></div>
+    </div>
+  </div>
+
+  <div class="toast" data-toast role="status" aria-live="polite"></div>
+  <input type="file" accept="audio/*,video/*" data-clip-input hidden>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-mark" viewBox="0 0 32 32"><path fill="currentColor" d="M3 17.5h2.4v-3H3zM7.6 22h2.4V10H7.6zm4.6 5h2.4V5h-2.4zm4.6-4h2.4V9h-2.4zm4.6-3h2.4v-8h-2.4zm4.6-1h2.4v-6h-2.4z"/></symbol>
+      <symbol id="i-search" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15zm5.3-2.2L21 21"/></symbol>
+      <symbol id="i-library" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M4 5v14M8.5 5v14M13 6l4 13M19.5 5v14"/></symbol>
+      <symbol id="i-identify" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M7 12h10M10 18h4"/></symbol>
+      <symbol id="i-compare" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M3 8h2m2-3v6m2-8v10m2-7v4M13 16h2m2-3v6m2-8v10m2-7v4"/></symbol>
+      <symbol id="i-play" viewBox="0 0 24 24"><path fill="currentColor" d="M8 5.5v13a1 1 0 0 0 1.5.86l10.4-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></symbol>
+      <symbol id="i-stop" viewBox="0 0 24 24"><rect fill="currentColor" x="6.5" y="6.5" width="11" height="11" rx="1.5"/></symbol>
+      <symbol id="i-loop" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M17 3l3 3-3 3M20 6H8a4 4 0 0 0-4 4v1M7 21l-3-3 3-3M4 18h12a4 4 0 0 0 4-4v-1"/></symbol>
+      <symbol id="i-volume" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M4 9.5h3.5L12 5.5v13l-4.5-4H4zM16 9a4 4 0 0 1 0 6m2.5-8.5a7.5 7.5 0 0 1 0 11"/></symbol>
+      <symbol id="i-theme" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M12 3a9 9 0 1 0 0 18z"/><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+      <symbol id="i-download" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 4v11m-4.5-4.5L12 15l4.5-4.5M5 19.5h14"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+      <symbol id="i-x" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M6 6l12 12M18 6L6 18"/></symbol>
+      <symbol id="i-plus" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M12 5v14M5 12h14"/></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-5-5 5 5-5 5"/></symbol>
+      <symbol id="i-back" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M19 12H5m5-5-5 5 5 5"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path fill="none" stroke="currentColor" stroke-width="1.8" d="M16 8V5.5A1.5 1.5 0 0 0 14.5 4h-9A1.5 1.5 0 0 0 4 5.5v9A1.5 1.5 0 0 0 5.5 16H8"/></symbol>
+      <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M12 11v5.5M12 7.5v.5"/></symbol>
+      <symbol id="i-wave" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M3 12h1m3-4v8m3-11v14m3-10v6m3-9v12m3-8v4m3-1v-2"/></symbol>
+      <symbol id="i-quiz" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .9-1 1.6v.3M12 17v.2"/></symbol>
+      <symbol id="i-flip" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M7 4v16M7 4 4 7m3-3 3 3m7 13V4m0 16-3-3m3 3 3-3"/></symbol>
+    </defs>
+  </svg>
+
+  <script src="js/data.js"></script>
+  <script src="js/dsp.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/views.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
