@@ -149,7 +149,7 @@ instruments:
       - { id: erhu, cue: "Erhu slides constantly between notes and has a nasal, hollow tone with no string-body warmth." }
       - { id: flute, cue: "Flute is airier with no bow grain. Violin notes carry a buzzy rosin texture." }
     samples:
-      notes: { src: vsco, dir: Strings/Solo Violin/Arco Vib, prefer: [_f] }
+      notes: { src: vsco, dir: Strings/Solo Violin/Arco Vib, prefer: [_f], phrase: true }
       variants:
         - { label: Pizzicato (plucked), src: vsco, dir: Strings/Solo Violin/Pizz, prefer: [_f_] }
         - { label: Tremolo, src: vsco, dir: Strings/Solo Violin/Trem }
@@ -168,7 +168,7 @@ instruments:
       - { id: synth-pad, cue: "Synth strings and pads hold perfectly even. Real sections breathe, with bow changes and tiny pitch drift." }
       - { id: viola, cue: "Violas sit lower and sound darker, more covered." }
     samples:
-      notes: { src: vsco, dir: Strings/Violin Section/susVib, prefer: [_v2] }
+      notes: { src: vsco, dir: Strings/Violin Section/susVib, prefer: [_v2], phrase: true }
       variants:
         - { label: Pizzicato, src: vsco, dir: Strings/Violin Section/Pizz, prefer: [_v2] }
         - { label: Tremolo, src: vsco, dir: Strings/Violin Section/Trem, prefer: [_v2] }
@@ -186,7 +186,7 @@ instruments:
       - { id: violin, cue: "Violin is brighter and sits higher. Viola sounds as if a blanket were draped over a violin." }
       - { id: cello, cue: "Cello goes much deeper and has a rounder, chestier resonance." }
     samples:
-      notes: { src: vsco, dir: Strings/Viola Section/susvib, prefer: [_v2] }
+      notes: { src: vsco, dir: Strings/Viola Section/susvib, prefer: [_v2], phrase: true }
       variants:
         - { label: Pizzicato, src: vsco, dir: Strings/Viola Section/pizz, prefer: [_v2] }
         - { label: Tremolo, src: vsco, dir: Strings/Viola Section/trem }
@@ -207,7 +207,7 @@ instruments:
       - { id: bassoon, cue: "Bassoon is reedy with a dry buzz. Cello has bow grain and a resonant wooden body." }
       - { id: french-horn, cue: "Horn is round and brassy-soft with no bow texture." }
     samples:
-      notes: { src: vsco, dir: Strings/Cello Section/susvib, prefer: [_v2] }
+      notes: { src: vsco, dir: Strings/Cello Section/susvib, prefer: [_v2], phrase: true }
       variants:
         - { label: Pizzicato, src: vsco, dir: Strings/Cello Section/pizzT, prefer: [_v2] }
         - { label: Tremolo, src: vsco, dir: Strings/Cello Section/trem }
@@ -227,7 +227,7 @@ instruments:
       - { id: tuba, cue: "Tuba is a smooth brass tone with no bow grit." }
       - { id: synth-bass, cue: "Synth bass is perfectly even and often filtered. Upright bass has wood and finger noise." }
     samples:
-      notes: { src: vsco, dir: Strings/Solo Contrabass/SusVib, prefer: [_v2] }
+      notes: { src: vsco, dir: Strings/Solo Contrabass/SusVib, prefer: [_v2], phrase: true }
       variants:
         - { label: Pizzicato (jazz-style pluck), src: vsco, dir: Strings/Solo Contrabass/Pizz, prefer: [_v2], phrase: true }
         - { label: Non-vibrato, src: vsco, dir: Strings/Solo Contrabass/SusNV, prefer: [_v2] }
@@ -585,7 +585,7 @@ instruments:
     name: Accordion
     family: organ
     sub: Free reed
-    aliases: [button accordion, squeezebox, bandoneon, concertina]
+    aliases: [button accordion, squeezebox]
     traits: { pitched: "yes", sustain: held, attack: [soft, sharp], tone: [reedy, buzzy], register: [mid] }
     summary: Metal reeds driven by bellows. Reedy, buzzy, with a wavering chorus of slightly detuned reeds.
     listen: ["A reedy buzz with a slow beating shimmer", "Swells and pulses from the bellows"]
@@ -677,7 +677,7 @@ instruments:
       - { id: tin-whistle, cue: "Tin whistle is folkier and simpler, with ornamented cuts." }
       - { id: glockenspiel, cue: "Glockenspiel is struck metal and decays." }
     samples:
-      notes: { src: vsco, dir: Woodwinds/Piccolo/Sus, count: 4 }
+      notes: { src: vsco, dir: Woodwinds/Piccolo/Sus, count: 4, phrase: true }
       variants:
         - { label: Staccato, src: vsco, dir: Woodwinds/Piccolo/Stac }
 
@@ -862,7 +862,7 @@ instruments:
     name: Trumpet
     family: brass
     sub: Trumpet
-    aliases: [cornet, flugelhorn]
+    aliases: [cornet]
     traits: { pitched: "yes", sustain: held, attack: [sharp, soft], tone: [brassy], register: [mid, high] }
     summary: The highest common brass. Bright, bold, fanfare-like. Mutes make it nasal or buzzy.
     listen: ["A bright, bold blare", "Crisp tongued attacks"]

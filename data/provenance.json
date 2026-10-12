@@ -44,6 +44,106 @@
    "credit": "Versilian Studios"
   }
  ],
+ "violin/scale": [
+  {
+   "source": "vsco",
+   "file": "Strings/Solo Violin/Arco Vib/LLVln_ArcoVib_G3_f.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Strings/Solo%20Violin/Arco%20Vib/LLVln_ArcoVib_G3_f.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  }
+ ],
+ "violin/range": [
+  {
+   "source": "vsco",
+   "file": "Strings/Solo Violin/Arco Vib/LLVln_ArcoVib_G3_f.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Strings/Solo%20Violin/Arco%20Vib/LLVln_ArcoVib_G3_f.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  }
+ ],
+ "violin/phrase": [
+  {
+   "source": "vsco",
+   "file": "Strings/Solo Violin/Arco Vib/LLVln_ArcoVib_C5_f.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Strings/Solo%20Violin/Arco%20Vib/LLVln_ArcoVib_C5_f.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  },
+  {
+   "source": "vsco",
+   "file": "Strings/Solo Violin/Arco Vib/LLVln_ArcoVib_E5_f.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Strings/Solo%20Violin/Arco%20Vib/LLVln_ArcoVib_E5_f.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  },
+  {
+   "source": "vsco",
+   "file": "Strings/Solo Violin/Arco Vib/LLVln_ArcoVib_G5_f.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Strings/Solo%20Violin/Arco%20Vib/LLVln_ArcoVib_G5_f.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  }
+ ],
+ "violin/mix": [
+  {
+   "source": "vsco",
+   "file": "Strings/Solo Violin/Arco Vib/LLVln_ArcoVib_C5_f.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Strings/Solo%20Violin/Arco%20Vib/LLVln_ArcoVib_C5_f.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  },
+  {
+   "source": "vsco",
+   "file": "Strings/Solo Violin/Arco Vib/LLVln_ArcoVib_E5_f.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Strings/Solo%20Violin/Arco%20Vib/LLVln_ArcoVib_E5_f.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  },
+  {
+   "source": "vsco",
+   "file": "Strings/Solo Violin/Arco Vib/LLVln_ArcoVib_G5_f.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Strings/Solo%20Violin/Arco%20Vib/LLVln_ArcoVib_G5_f.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  },
+  {
+   "source": "freepats",
+   "bank": "MuldjordKit",
+   "file": "drum groove (kick, snare, hi-hat)",
+   "license": "CC-BY-4.0",
+   "credit": "MuldjordKit by Lars Muldjord (FreePats stereo version)"
+  },
+  {
+   "source": "generated",
+   "preset": "speech-shaped noise and room reverb",
+   "license": "CC0-1.0",
+   "credit": "Generated in code for this library"
+  }
+ ],
+ "violin/phone": [
+  {
+   "source": "vsco",
+   "file": "Strings/Solo Violin/Arco Vib/LLVln_ArcoVib_C5_f.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Strings/Solo%20Violin/Arco%20Vib/LLVln_ArcoVib_C5_f.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  },
+  {
+   "source": "vsco",
+   "file": "Strings/Solo Violin/Arco Vib/LLVln_ArcoVib_E5_f.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Strings/Solo%20Violin/Arco%20Vib/LLVln_ArcoVib_E5_f.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  },
+  {
+   "source": "vsco",
+   "file": "Strings/Solo Violin/Arco Vib/LLVln_ArcoVib_G5_f.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Strings/Solo%20Violin/Arco%20Vib/LLVln_ArcoVib_G5_f.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  }
+ ],
  "violin/v-pizzicato-plucked": [
   {
    "source": "vsco",
@@ -135,6 +235,106 @@
    "source": "vsco",
    "file": "Strings/Violin Section/susVib/VlnEns_susVib_B4_v2.wav",
    "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Strings/Violin%20Section/susVib/VlnEns_susVib_B4_v2.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  }
+ ],
+ "violin-section/scale": [
+  {
+   "source": "vsco",
+   "file": "Strings/Violin Section/susVib/VlnEns_susVib_G2_v2.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Strings/Violin%20Section/susVib/VlnEns_susVib_G2_v2.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  }
+ ],
+ "violin-section/range": [
+  {
+   "source": "vsco",
+   "file": "Strings/Violin Section/susVib/VlnEns_susVib_G2_v2.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Strings/Violin%20Section/susVib/VlnEns_susVib_G2_v2.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  }
+ ],
+ "violin-section/phrase": [
+  {
+   "source": "vsco",
+   "file": "Strings/Violin Section/susVib/VlnEns_susVib_A3_v2.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Strings/Violin%20Section/susVib/VlnEns_susVib_A3_v2.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  },
+  {
+   "source": "vsco",
+   "file": "Strings/Violin Section/susVib/VlnEns_susVib_C4_v2.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Strings/Violin%20Section/susVib/VlnEns_susVib_C4_v2.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  },
+  {
+   "source": "vsco",
+   "file": "Strings/Violin Section/susVib/VlnEns_susVib_E4_v2.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Strings/Violin%20Section/susVib/VlnEns_susVib_E4_v2.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  }
+ ],
+ "violin-section/mix": [
+  {
+   "source": "vsco",
+   "file": "Strings/Violin Section/susVib/VlnEns_susVib_A3_v2.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Strings/Violin%20Section/susVib/VlnEns_susVib_A3_v2.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  },
+  {
+   "source": "vsco",
+   "file": "Strings/Violin Section/susVib/VlnEns_susVib_C4_v2.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Strings/Violin%20Section/susVib/VlnEns_susVib_C4_v2.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  },
+  {
+   "source": "vsco",
+   "file": "Strings/Violin Section/susVib/VlnEns_susVib_E4_v2.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Strings/Violin%20Section/susVib/VlnEns_susVib_E4_v2.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  },
+  {
+   "source": "freepats",
+   "bank": "MuldjordKit",
+   "file": "drum groove (kick, snare, hi-hat)",
+   "license": "CC-BY-4.0",
+   "credit": "MuldjordKit by Lars Muldjord (FreePats stereo version)"
+  },
+  {
+   "source": "generated",
+   "preset": "speech-shaped noise and room reverb",
+   "license": "CC0-1.0",
+   "credit": "Generated in code for this library"
+  }
+ ],
+ "violin-section/phone": [
+  {
+   "source": "vsco",
+   "file": "Strings/Violin Section/susVib/VlnEns_susVib_A3_v2.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Strings/Violin%20Section/susVib/VlnEns_susVib_A3_v2.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  },
+  {
+   "source": "vsco",
+   "file": "Strings/Violin Section/susVib/VlnEns_susVib_C4_v2.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Strings/Violin%20Section/susVib/VlnEns_susVib_C4_v2.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  },
+  {
+   "source": "vsco",
+   "file": "Strings/Violin Section/susVib/VlnEns_susVib_E4_v2.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Strings/Violin%20Section/susVib/VlnEns_susVib_E4_v2.wav",
    "license": "CC0-1.0",
    "credit": "Versilian Studios"
   }
@@ -234,6 +434,106 @@
    "credit": "Versilian Studios"
   }
  ],
+ "viola/scale": [
+  {
+   "source": "vsco",
+   "file": "Strings/Viola Section/susvib/ViolaEns_susvib_C2_v2_1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Strings/Viola%20Section/susvib/ViolaEns_susvib_C2_v2_1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  }
+ ],
+ "viola/range": [
+  {
+   "source": "vsco",
+   "file": "Strings/Viola Section/susvib/ViolaEns_susvib_C2_v2_1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Strings/Viola%20Section/susvib/ViolaEns_susvib_C2_v2_1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  }
+ ],
+ "viola/phrase": [
+  {
+   "source": "vsco",
+   "file": "Strings/Viola Section/susvib/ViolaEns_susvib_F3_v2_1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Strings/Viola%20Section/susvib/ViolaEns_susvib_F3_v2_1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  },
+  {
+   "source": "vsco",
+   "file": "Strings/Viola Section/susvib/ViolaEns_susvib_A3_v2_1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Strings/Viola%20Section/susvib/ViolaEns_susvib_A3_v2_1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  },
+  {
+   "source": "vsco",
+   "file": "Strings/Viola Section/susvib/ViolaEns_susvib_C4_v2_1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Strings/Viola%20Section/susvib/ViolaEns_susvib_C4_v2_1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  }
+ ],
+ "viola/mix": [
+  {
+   "source": "vsco",
+   "file": "Strings/Viola Section/susvib/ViolaEns_susvib_F3_v2_1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Strings/Viola%20Section/susvib/ViolaEns_susvib_F3_v2_1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  },
+  {
+   "source": "vsco",
+   "file": "Strings/Viola Section/susvib/ViolaEns_susvib_A3_v2_1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Strings/Viola%20Section/susvib/ViolaEns_susvib_A3_v2_1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  },
+  {
+   "source": "vsco",
+   "file": "Strings/Viola Section/susvib/ViolaEns_susvib_C4_v2_1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Strings/Viola%20Section/susvib/ViolaEns_susvib_C4_v2_1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  },
+  {
+   "source": "freepats",
+   "bank": "MuldjordKit",
+   "file": "drum groove (kick, snare, hi-hat)",
+   "license": "CC-BY-4.0",
+   "credit": "MuldjordKit by Lars Muldjord (FreePats stereo version)"
+  },
+  {
+   "source": "generated",
+   "preset": "speech-shaped noise and room reverb",
+   "license": "CC0-1.0",
+   "credit": "Generated in code for this library"
+  }
+ ],
+ "viola/phone": [
+  {
+   "source": "vsco",
+   "file": "Strings/Viola Section/susvib/ViolaEns_susvib_F3_v2_1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Strings/Viola%20Section/susvib/ViolaEns_susvib_F3_v2_1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  },
+  {
+   "source": "vsco",
+   "file": "Strings/Viola Section/susvib/ViolaEns_susvib_A3_v2_1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Strings/Viola%20Section/susvib/ViolaEns_susvib_A3_v2_1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  },
+  {
+   "source": "vsco",
+   "file": "Strings/Viola Section/susvib/ViolaEns_susvib_C4_v2_1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Strings/Viola%20Section/susvib/ViolaEns_susvib_C4_v2_1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  }
+ ],
  "viola/v-pizzicato": [
   {
    "source": "vsco",
@@ -329,6 +629,106 @@
    "credit": "Versilian Studios"
   }
  ],
+ "cello/scale": [
+  {
+   "source": "vsco",
+   "file": "Strings/Cello Section/susvib/susvib_C1_v1_1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Strings/Cello%20Section/susvib/susvib_C1_v1_1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  }
+ ],
+ "cello/range": [
+  {
+   "source": "vsco",
+   "file": "Strings/Cello Section/susvib/susvib_C1_v1_1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Strings/Cello%20Section/susvib/susvib_C1_v1_1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  }
+ ],
+ "cello/phrase": [
+  {
+   "source": "vsco",
+   "file": "Strings/Cello Section/susvib/susvib_F2_v1_1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Strings/Cello%20Section/susvib/susvib_F2_v1_1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  },
+  {
+   "source": "vsco",
+   "file": "Strings/Cello Section/susvib/susvib_A2_v1_1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Strings/Cello%20Section/susvib/susvib_A2_v1_1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  },
+  {
+   "source": "vsco",
+   "file": "Strings/Cello Section/susvib/susvib_C3_v1_1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Strings/Cello%20Section/susvib/susvib_C3_v1_1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  }
+ ],
+ "cello/mix": [
+  {
+   "source": "vsco",
+   "file": "Strings/Cello Section/susvib/susvib_F2_v1_1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Strings/Cello%20Section/susvib/susvib_F2_v1_1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  },
+  {
+   "source": "vsco",
+   "file": "Strings/Cello Section/susvib/susvib_A2_v1_1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Strings/Cello%20Section/susvib/susvib_A2_v1_1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  },
+  {
+   "source": "vsco",
+   "file": "Strings/Cello Section/susvib/susvib_C3_v1_1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Strings/Cello%20Section/susvib/susvib_C3_v1_1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  },
+  {
+   "source": "freepats",
+   "bank": "MuldjordKit",
+   "file": "drum groove (kick, snare, hi-hat)",
+   "license": "CC-BY-4.0",
+   "credit": "MuldjordKit by Lars Muldjord (FreePats stereo version)"
+  },
+  {
+   "source": "generated",
+   "preset": "speech-shaped noise and room reverb",
+   "license": "CC0-1.0",
+   "credit": "Generated in code for this library"
+  }
+ ],
+ "cello/phone": [
+  {
+   "source": "vsco",
+   "file": "Strings/Cello Section/susvib/susvib_F2_v1_1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Strings/Cello%20Section/susvib/susvib_F2_v1_1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  },
+  {
+   "source": "vsco",
+   "file": "Strings/Cello Section/susvib/susvib_A2_v1_1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Strings/Cello%20Section/susvib/susvib_A2_v1_1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  },
+  {
+   "source": "vsco",
+   "file": "Strings/Cello Section/susvib/susvib_C3_v1_1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Strings/Cello%20Section/susvib/susvib_C3_v1_1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  }
+ ],
  "cello/v-pizzicato": [
   {
    "source": "vsco",
@@ -420,6 +820,127 @@
    "source": "vsco",
    "file": "Strings/Solo Contrabass/SusVib/BKCtbss_SusVib_G#2_v1_rr1.wav",
    "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Strings/Solo%20Contrabass/SusVib/BKCtbss_SusVib_G%232_v1_rr1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  }
+ ],
+ "double-bass/scale": [
+  {
+   "source": "vsco",
+   "file": "Strings/Solo Contrabass/SusVib/BKCtbss_SusVib_F#0_v1_rr1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Strings/Solo%20Contrabass/SusVib/BKCtbss_SusVib_F%230_v1_rr1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  }
+ ],
+ "double-bass/range": [
+  {
+   "source": "vsco",
+   "file": "Strings/Solo Contrabass/SusVib/BKCtbss_SusVib_F#0_v1_rr1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Strings/Solo%20Contrabass/SusVib/BKCtbss_SusVib_F%230_v1_rr1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  }
+ ],
+ "double-bass/phrase": [
+  {
+   "source": "vsco",
+   "file": "Strings/Solo Contrabass/SusVib/BKCtbss_SusVib_F#1_v1_rr1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Strings/Solo%20Contrabass/SusVib/BKCtbss_SusVib_F%231_v1_rr1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  },
+  {
+   "source": "vsco",
+   "file": "Strings/Solo Contrabass/SusVib/BKCtbss_SusVib_G#1_v1_rr1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Strings/Solo%20Contrabass/SusVib/BKCtbss_SusVib_G%231_v1_rr1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  },
+  {
+   "source": "vsco",
+   "file": "Strings/Solo Contrabass/SusVib/BKCtbss_SusVib_A1_v1_rr1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Strings/Solo%20Contrabass/SusVib/BKCtbss_SusVib_A1_v1_rr1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  },
+  {
+   "source": "vsco",
+   "file": "Strings/Solo Contrabass/SusVib/BKCtbss_SusVib_C#2_v1_rr1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Strings/Solo%20Contrabass/SusVib/BKCtbss_SusVib_C%232_v1_rr1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  }
+ ],
+ "double-bass/mix": [
+  {
+   "source": "vsco",
+   "file": "Strings/Solo Contrabass/SusVib/BKCtbss_SusVib_F#1_v1_rr1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Strings/Solo%20Contrabass/SusVib/BKCtbss_SusVib_F%231_v1_rr1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  },
+  {
+   "source": "vsco",
+   "file": "Strings/Solo Contrabass/SusVib/BKCtbss_SusVib_G#1_v1_rr1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Strings/Solo%20Contrabass/SusVib/BKCtbss_SusVib_G%231_v1_rr1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  },
+  {
+   "source": "vsco",
+   "file": "Strings/Solo Contrabass/SusVib/BKCtbss_SusVib_A1_v1_rr1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Strings/Solo%20Contrabass/SusVib/BKCtbss_SusVib_A1_v1_rr1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  },
+  {
+   "source": "vsco",
+   "file": "Strings/Solo Contrabass/SusVib/BKCtbss_SusVib_C#2_v1_rr1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Strings/Solo%20Contrabass/SusVib/BKCtbss_SusVib_C%232_v1_rr1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  },
+  {
+   "source": "freepats",
+   "bank": "MuldjordKit",
+   "file": "drum groove (kick, snare, hi-hat)",
+   "license": "CC-BY-4.0",
+   "credit": "MuldjordKit by Lars Muldjord (FreePats stereo version)"
+  },
+  {
+   "source": "generated",
+   "preset": "speech-shaped noise and room reverb",
+   "license": "CC0-1.0",
+   "credit": "Generated in code for this library"
+  }
+ ],
+ "double-bass/phone": [
+  {
+   "source": "vsco",
+   "file": "Strings/Solo Contrabass/SusVib/BKCtbss_SusVib_F#1_v1_rr1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Strings/Solo%20Contrabass/SusVib/BKCtbss_SusVib_F%231_v1_rr1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  },
+  {
+   "source": "vsco",
+   "file": "Strings/Solo Contrabass/SusVib/BKCtbss_SusVib_G#1_v1_rr1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Strings/Solo%20Contrabass/SusVib/BKCtbss_SusVib_G%231_v1_rr1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  },
+  {
+   "source": "vsco",
+   "file": "Strings/Solo Contrabass/SusVib/BKCtbss_SusVib_A1_v1_rr1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Strings/Solo%20Contrabass/SusVib/BKCtbss_SusVib_A1_v1_rr1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  },
+  {
+   "source": "vsco",
+   "file": "Strings/Solo Contrabass/SusVib/BKCtbss_SusVib_C#2_v1_rr1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Strings/Solo%20Contrabass/SusVib/BKCtbss_SusVib_C%232_v1_rr1.wav",
    "license": "CC0-1.0",
    "credit": "Versilian Studios"
   }
@@ -579,6 +1100,33 @@
    "source": "freepats",
    "bank": "SpanishClassicalGuitar",
    "file": "samples/A5.flac",
+   "license": "CC0-1.0",
+   "credit": "FreePats Spanish Classical Guitar"
+  }
+ ],
+ "acoustic-guitar-nylon/scale": [
+  {
+   "source": "freepats",
+   "bank": "SpanishClassicalGuitar",
+   "file": "samples/G1.flac",
+   "license": "CC0-1.0",
+   "credit": "FreePats Spanish Classical Guitar"
+  }
+ ],
+ "acoustic-guitar-nylon/range": [
+  {
+   "source": "freepats",
+   "bank": "SpanishClassicalGuitar",
+   "file": "samples/G1.flac",
+   "license": "CC0-1.0",
+   "credit": "FreePats Spanish Classical Guitar"
+  }
+ ],
+ "acoustic-guitar-nylon/chords": [
+  {
+   "source": "freepats",
+   "bank": "SpanishClassicalGuitar",
+   "file": "samples/G1.flac",
    "license": "CC0-1.0",
    "credit": "FreePats Spanish Classical Guitar"
   }
@@ -789,6 +1337,33 @@
    "credit": "FSS Steel-String Guitar, Gary Campion (FlameStudios), adapted by FreePats"
   }
  ],
+ "acoustic-guitar-steel/scale": [
+  {
+   "source": "freepats",
+   "bank": "FSS-SteelStringGuitar",
+   "file": "samples/HV_40.wav",
+   "license": "GPL-3.0-or-later WITH FreePats exception",
+   "credit": "FSS Steel-String Guitar, Gary Campion (FlameStudios), adapted by FreePats"
+  }
+ ],
+ "acoustic-guitar-steel/range": [
+  {
+   "source": "freepats",
+   "bank": "FSS-SteelStringGuitar",
+   "file": "samples/HV_40.wav",
+   "license": "GPL-3.0-or-later WITH FreePats exception",
+   "credit": "FSS Steel-String Guitar, Gary Campion (FlameStudios), adapted by FreePats"
+  }
+ ],
+ "acoustic-guitar-steel/chords": [
+  {
+   "source": "freepats",
+   "bank": "FSS-SteelStringGuitar",
+   "file": "samples/HV_40.wav",
+   "license": "GPL-3.0-or-later WITH FreePats exception",
+   "credit": "FSS Steel-String Guitar, Gary Campion (FlameStudios), adapted by FreePats"
+  }
+ ],
  "acoustic-guitar-steel/mix": [
   {
    "source": "freepats",
@@ -921,6 +1496,33 @@
    "credit": "FreePats Electric Guitar FSBS (clean)"
   }
  ],
+ "electric-guitar-clean/scale": [
+  {
+   "source": "freepats",
+   "bank": "EGuitarFSBS-clean-bridge-small",
+   "file": "samples/bridge/small/C2_s1_01.flac",
+   "license": "CC0-1.0",
+   "credit": "FreePats Electric Guitar FSBS (clean)"
+  }
+ ],
+ "electric-guitar-clean/range": [
+  {
+   "source": "freepats",
+   "bank": "EGuitarFSBS-clean-bridge-small",
+   "file": "samples/bridge/small/C2_s1_01.flac",
+   "license": "CC0-1.0",
+   "credit": "FreePats Electric Guitar FSBS (clean)"
+  }
+ ],
+ "electric-guitar-clean/chords": [
+  {
+   "source": "freepats",
+   "bank": "EGuitarFSBS-clean-bridge-small",
+   "file": "samples/bridge/small/C2_s1_01.flac",
+   "license": "CC0-1.0",
+   "credit": "FreePats Electric Guitar FSBS (clean)"
+  }
+ ],
  "electric-guitar-clean/phrase": [
   {
    "source": "freepats",
@@ -1048,6 +1650,33 @@
    "credit": "FreePats Electric Guitar FSBS (distortion 1)"
   }
  ],
+ "electric-guitar-distorted/scale": [
+  {
+   "source": "freepats",
+   "bank": "EGuitarFSBS-dist1",
+   "file": "samples/bridge/C2_s1_01.flac",
+   "license": "CC0-1.0",
+   "credit": "FreePats Electric Guitar FSBS (distortion 1)"
+  }
+ ],
+ "electric-guitar-distorted/range": [
+  {
+   "source": "freepats",
+   "bank": "EGuitarFSBS-dist1",
+   "file": "samples/bridge/C2_s1_01.flac",
+   "license": "CC0-1.0",
+   "credit": "FreePats Electric Guitar FSBS (distortion 1)"
+  }
+ ],
+ "electric-guitar-distorted/chords": [
+  {
+   "source": "freepats",
+   "bank": "EGuitarFSBS-dist1",
+   "file": "samples/bridge/C2_s1_01.flac",
+   "license": "CC0-1.0",
+   "credit": "FreePats Electric Guitar FSBS (distortion 1)"
+  }
+ ],
  "electric-guitar-distorted/phrase": [
   {
    "source": "freepats",
@@ -1171,6 +1800,24 @@
    "source": "freepats",
    "bank": "FingerBassYR",
    "file": "samples/finger/D.flac",
+   "license": "CC0-1.0",
+   "credit": "FreePats Finger Bass YR"
+  }
+ ],
+ "electric-bass/scale": [
+  {
+   "source": "freepats",
+   "bank": "FingerBassYR",
+   "file": "samples/finger/E.flac",
+   "license": "CC0-1.0",
+   "credit": "FreePats Finger Bass YR"
+  }
+ ],
+ "electric-bass/range": [
+  {
+   "source": "freepats",
+   "bank": "FingerBassYR",
+   "file": "samples/finger/E.flac",
    "license": "CC0-1.0",
    "credit": "FreePats Finger Bass YR"
   }
@@ -1344,6 +1991,33 @@
    "credit": "FreePats Ukulele"
   }
  ],
+ "ukulele/scale": [
+  {
+   "source": "freepats",
+   "bank": "Ukulele",
+   "file": "samples/body-tap.flac",
+   "license": "CC0-1.0",
+   "credit": "FreePats Ukulele"
+  }
+ ],
+ "ukulele/range": [
+  {
+   "source": "freepats",
+   "bank": "Ukulele",
+   "file": "samples/body-tap.flac",
+   "license": "CC0-1.0",
+   "credit": "FreePats Ukulele"
+  }
+ ],
+ "ukulele/chords": [
+  {
+   "source": "freepats",
+   "bank": "Ukulele",
+   "file": "samples/body-tap.flac",
+   "license": "CC0-1.0",
+   "credit": "FreePats Ukulele"
+  }
+ ],
  "ukulele/phrase": [
   {
    "source": "freepats",
@@ -1513,6 +2187,33 @@
    "credit": "Versilian Studios and contributors"
   }
  ],
+ "harp/scale": [
+  {
+   "source": "vcsl",
+   "file": "Chordophones/Composite Chordophones/Concert Harp/KSHarp_E1_f1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Chordophones/Composite%20Chordophones/Concert%20Harp/KSHarp_E1_f1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios and contributors"
+  }
+ ],
+ "harp/range": [
+  {
+   "source": "vcsl",
+   "file": "Chordophones/Composite Chordophones/Concert Harp/KSHarp_E1_f1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Chordophones/Composite%20Chordophones/Concert%20Harp/KSHarp_E1_f1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios and contributors"
+  }
+ ],
+ "harp/chords": [
+  {
+   "source": "vcsl",
+   "file": "Chordophones/Composite Chordophones/Concert Harp/KSHarp_E1_f1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Chordophones/Composite%20Chordophones/Concert%20Harp/KSHarp_E1_f1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios and contributors"
+  }
+ ],
  "harp/phrase": [
   {
    "source": "vcsl",
@@ -1645,6 +2346,33 @@
    "source": "vcsl",
    "file": "Chordophones/Zithers/Dan Tranh/Normal/G#4_f_1.wav",
    "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Chordophones/Zithers/Dan%20Tranh/Normal/G%234_f_1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios and contributors"
+  }
+ ],
+ "dan-tranh/scale": [
+  {
+   "source": "vcsl",
+   "file": "Chordophones/Zithers/Dan Tranh/Normal/B1_f_1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Chordophones/Zithers/Dan%20Tranh/Normal/B1_f_1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios and contributors"
+  }
+ ],
+ "dan-tranh/range": [
+  {
+   "source": "vcsl",
+   "file": "Chordophones/Zithers/Dan Tranh/Normal/B1_f_1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Chordophones/Zithers/Dan%20Tranh/Normal/B1_f_1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios and contributors"
+  }
+ ],
+ "dan-tranh/chords": [
+  {
+   "source": "vcsl",
+   "file": "Chordophones/Zithers/Dan Tranh/Normal/B1_f_1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Chordophones/Zithers/Dan%20Tranh/Normal/B1_f_1.wav",
    "license": "CC0-1.0",
    "credit": "Versilian Studios and contributors"
   }
@@ -2021,6 +2749,33 @@
    "credit": "Versilian Studios and contributors"
   }
  ],
+ "grand-piano/scale": [
+  {
+   "source": "vcsl",
+   "file": "Chordophones/Zithers/Grand Piano, Steinway B/Sus/JHPiano_Sus_Close_A#0_vl3_rr1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/Sus/JHPiano_Sus_Close_A%230_vl3_rr1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios and contributors"
+  }
+ ],
+ "grand-piano/range": [
+  {
+   "source": "vcsl",
+   "file": "Chordophones/Zithers/Grand Piano, Steinway B/Sus/JHPiano_Sus_Close_A#0_vl3_rr1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/Sus/JHPiano_Sus_Close_A%230_vl3_rr1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios and contributors"
+  }
+ ],
+ "grand-piano/chords": [
+  {
+   "source": "vcsl",
+   "file": "Chordophones/Zithers/Grand Piano, Steinway B/Sus/JHPiano_Sus_Close_A#0_vl3_rr1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/Sus/JHPiano_Sus_Close_A%230_vl3_rr1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios and contributors"
+  }
+ ],
  "grand-piano/mix": [
   {
    "source": "vcsl",
@@ -2157,6 +2912,33 @@
    "credit": "Versilian Studios and contributors"
   }
  ],
+ "upright-piano/scale": [
+  {
+   "source": "vcsl",
+   "file": "Chordophones/Zithers/Upright Piano, Yamaha/Sustains/Upright1_Sus_C0_vl2_rr1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Chordophones/Zithers/Upright%20Piano%2C%20Yamaha/Sustains/Upright1_Sus_C0_vl2_rr1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios and contributors"
+  }
+ ],
+ "upright-piano/range": [
+  {
+   "source": "vcsl",
+   "file": "Chordophones/Zithers/Upright Piano, Yamaha/Sustains/Upright1_Sus_C0_vl2_rr1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Chordophones/Zithers/Upright%20Piano%2C%20Yamaha/Sustains/Upright1_Sus_C0_vl2_rr1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios and contributors"
+  }
+ ],
+ "upright-piano/chords": [
+  {
+   "source": "vcsl",
+   "file": "Chordophones/Zithers/Upright Piano, Yamaha/Sustains/Upright1_Sus_C0_vl2_rr1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Chordophones/Zithers/Upright%20Piano%2C%20Yamaha/Sustains/Upright1_Sus_C0_vl2_rr1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios and contributors"
+  }
+ ],
  "upright-piano/phrase": [
   {
    "source": "vcsl",
@@ -2259,6 +3041,33 @@
    "source": "vcsl",
    "file": "Chordophones/Zithers/Harpsichord, French/Sustains/Harpsi2_Normal_G#4_rr1_Main.wav",
    "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Chordophones/Zithers/Harpsichord%2C%20French/Sustains/Harpsi2_Normal_G%234_rr1_Main.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios and contributors"
+  }
+ ],
+ "harpsichord/scale": [
+  {
+   "source": "vcsl",
+   "file": "Chordophones/Zithers/Harpsichord, French/Sustains/Harpsi2_Normal_D0_rr1_Main.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Chordophones/Zithers/Harpsichord%2C%20French/Sustains/Harpsi2_Normal_D0_rr1_Main.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios and contributors"
+  }
+ ],
+ "harpsichord/range": [
+  {
+   "source": "vcsl",
+   "file": "Chordophones/Zithers/Harpsichord, French/Sustains/Harpsi2_Normal_D0_rr1_Main.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Chordophones/Zithers/Harpsichord%2C%20French/Sustains/Harpsi2_Normal_D0_rr1_Main.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios and contributors"
+  }
+ ],
+ "harpsichord/chords": [
+  {
+   "source": "vcsl",
+   "file": "Chordophones/Zithers/Harpsichord, French/Sustains/Harpsi2_Normal_D0_rr1_Main.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Chordophones/Zithers/Harpsichord%2C%20French/Sustains/Harpsi2_Normal_D0_rr1_Main.wav",
    "license": "CC0-1.0",
    "credit": "Versilian Studios and contributors"
   }
@@ -2416,6 +3225,33 @@
    "source": "vcsl",
    "file": "Electrophones/TX81Z/FM Piano/FMPiano_G#6_vl3.wav",
    "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Electrophones/TX81Z/FM%20Piano/FMPiano_G%236_vl3.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios and contributors"
+  }
+ ],
+ "fm-electric-piano/scale": [
+  {
+   "source": "vcsl",
+   "file": "Electrophones/TX81Z/FM Piano/FMPiano_C0_vl3.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Electrophones/TX81Z/FM%20Piano/FMPiano_C0_vl3.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios and contributors"
+  }
+ ],
+ "fm-electric-piano/range": [
+  {
+   "source": "vcsl",
+   "file": "Electrophones/TX81Z/FM Piano/FMPiano_C0_vl3.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Electrophones/TX81Z/FM%20Piano/FMPiano_C0_vl3.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios and contributors"
+  }
+ ],
+ "fm-electric-piano/chords": [
+  {
+   "source": "vcsl",
+   "file": "Electrophones/TX81Z/FM Piano/FMPiano_C0_vl3.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Electrophones/TX81Z/FM%20Piano/FMPiano_C0_vl3.wav",
    "license": "CC0-1.0",
    "credit": "Versilian Studios and contributors"
   }
@@ -2639,6 +3475,33 @@
    "credit": "Versilian Studios and contributors"
   }
  ],
+ "pipe-organ/scale": [
+  {
+   "source": "vcsl",
+   "file": "Aerophones/Edge-blown Aerophones/Pipe Organ/Loud/Rode_Man3Open_C1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Aerophones/Edge-blown%20Aerophones/Pipe%20Organ/Loud/Rode_Man3Open_C1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios and contributors"
+  }
+ ],
+ "pipe-organ/range": [
+  {
+   "source": "vcsl",
+   "file": "Aerophones/Edge-blown Aerophones/Pipe Organ/Loud/Rode_Man3Open_C1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Aerophones/Edge-blown%20Aerophones/Pipe%20Organ/Loud/Rode_Man3Open_C1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios and contributors"
+  }
+ ],
+ "pipe-organ/chords": [
+  {
+   "source": "vcsl",
+   "file": "Aerophones/Edge-blown Aerophones/Pipe Organ/Loud/Rode_Man3Open_C1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Aerophones/Edge-blown%20Aerophones/Pipe%20Organ/Loud/Rode_Man3Open_C1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios and contributors"
+  }
+ ],
  "pipe-organ/phrase": [
   {
    "source": "vcsl",
@@ -2789,6 +3652,33 @@
    "source": "freepats",
    "bank": "DrawbarOrganEmulation",
    "file": "samples/G#6.wav",
+   "license": "CC0-1.0",
+   "credit": "FreePats Drawbar Organ Emulation"
+  }
+ ],
+ "drawbar-organ/scale": [
+  {
+   "source": "freepats",
+   "bank": "DrawbarOrganEmulation",
+   "file": "samples/C2.wav",
+   "license": "CC0-1.0",
+   "credit": "FreePats Drawbar Organ Emulation"
+  }
+ ],
+ "drawbar-organ/range": [
+  {
+   "source": "freepats",
+   "bank": "DrawbarOrganEmulation",
+   "file": "samples/C2.wav",
+   "license": "CC0-1.0",
+   "credit": "FreePats Drawbar Organ Emulation"
+  }
+ ],
+ "drawbar-organ/chords": [
+  {
+   "source": "freepats",
+   "bank": "DrawbarOrganEmulation",
+   "file": "samples/C2.wav",
    "license": "CC0-1.0",
    "credit": "FreePats Drawbar Organ Emulation"
   }
@@ -2950,6 +3840,33 @@
    "credit": "FreePats Button Accordion HN (michael02022)"
   }
  ],
+ "accordion/scale": [
+  {
+   "source": "freepats",
+   "bank": "ButtonAccordionHN",
+   "file": "Button Accordion HN B3.flac",
+   "license": "CC0-1.0",
+   "credit": "FreePats Button Accordion HN (michael02022)"
+  }
+ ],
+ "accordion/range": [
+  {
+   "source": "freepats",
+   "bank": "ButtonAccordionHN",
+   "file": "Button Accordion HN B3.flac",
+   "license": "CC0-1.0",
+   "credit": "FreePats Button Accordion HN (michael02022)"
+  }
+ ],
+ "accordion/chords": [
+  {
+   "source": "freepats",
+   "bank": "ButtonAccordionHN",
+   "file": "Button Accordion HN B3.flac",
+   "license": "CC0-1.0",
+   "credit": "FreePats Button Accordion HN (michael02022)"
+  }
+ ],
  "accordion/mix": [
   {
    "source": "freepats",
@@ -3064,6 +3981,24 @@
    "source": "vcsl",
    "file": "Aerophones/Free Aerophones/Harmonica-Hohner-Special20-C/Sustains/Normal/Hohner-Special20_Normal_C6.wav",
    "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Aerophones/Free%20Aerophones/Harmonica-Hohner-Special20-C/Sustains/Normal/Hohner-Special20_Normal_C6.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios and contributors"
+  }
+ ],
+ "harmonica/scale": [
+  {
+   "source": "vcsl",
+   "file": "Aerophones/Free Aerophones/Harmonica-Hohner-Special20-C/Sustains/Normal/Hohner-Special20_Normal_C3.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Aerophones/Free%20Aerophones/Harmonica-Hohner-Special20-C/Sustains/Normal/Hohner-Special20_Normal_C3.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios and contributors"
+  }
+ ],
+ "harmonica/range": [
+  {
+   "source": "vcsl",
+   "file": "Aerophones/Free Aerophones/Harmonica-Hohner-Special20-C/Sustains/Normal/Hohner-Special20_Normal_C3.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Aerophones/Free%20Aerophones/Harmonica-Hohner-Special20-C/Sustains/Normal/Hohner-Special20_Normal_C3.wav",
    "license": "CC0-1.0",
    "credit": "Versilian Studios and contributors"
   }
@@ -3316,6 +4251,24 @@
    "credit": "Versilian Studios"
   }
  ],
+ "flute/scale": [
+  {
+   "source": "vsco",
+   "file": "Woodwinds/Flute/susvib/LDFlute_susvib_C3_v1_1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Woodwinds/Flute/susvib/LDFlute_susvib_C3_v1_1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  }
+ ],
+ "flute/range": [
+  {
+   "source": "vsco",
+   "file": "Woodwinds/Flute/susvib/LDFlute_susvib_C3_v1_1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Woodwinds/Flute/susvib/LDFlute_susvib_C3_v1_1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  }
+ ],
  "flute/phrase": [
   {
    "source": "vsco",
@@ -3475,6 +4428,85 @@
    "credit": "Versilian Studios"
   }
  ],
+ "piccolo/scale": [
+  {
+   "source": "vsco",
+   "file": "Woodwinds/Piccolo/Sus/piccolo_G4_sustain1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Woodwinds/Piccolo/Sus/piccolo_G4_sustain1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  }
+ ],
+ "piccolo/range": [
+  {
+   "source": "vsco",
+   "file": "Woodwinds/Piccolo/Sus/piccolo_G4_sustain1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Woodwinds/Piccolo/Sus/piccolo_G4_sustain1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  }
+ ],
+ "piccolo/phrase": [
+  {
+   "source": "vsco",
+   "file": "Woodwinds/Piccolo/Sus/piccolo_G5_sustain1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Woodwinds/Piccolo/Sus/piccolo_G5_sustain1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  },
+  {
+   "source": "vsco",
+   "file": "Woodwinds/Piccolo/Sus/piccolo_C6_sustain1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Woodwinds/Piccolo/Sus/piccolo_C6_sustain1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  }
+ ],
+ "piccolo/mix": [
+  {
+   "source": "vsco",
+   "file": "Woodwinds/Piccolo/Sus/piccolo_G5_sustain1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Woodwinds/Piccolo/Sus/piccolo_G5_sustain1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  },
+  {
+   "source": "vsco",
+   "file": "Woodwinds/Piccolo/Sus/piccolo_C6_sustain1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Woodwinds/Piccolo/Sus/piccolo_C6_sustain1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  },
+  {
+   "source": "freepats",
+   "bank": "MuldjordKit",
+   "file": "drum groove (kick, snare, hi-hat)",
+   "license": "CC-BY-4.0",
+   "credit": "MuldjordKit by Lars Muldjord (FreePats stereo version)"
+  },
+  {
+   "source": "generated",
+   "preset": "speech-shaped noise and room reverb",
+   "license": "CC0-1.0",
+   "credit": "Generated in code for this library"
+  }
+ ],
+ "piccolo/phone": [
+  {
+   "source": "vsco",
+   "file": "Woodwinds/Piccolo/Sus/piccolo_G5_sustain1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Woodwinds/Piccolo/Sus/piccolo_G5_sustain1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  },
+  {
+   "source": "vsco",
+   "file": "Woodwinds/Piccolo/Sus/piccolo_C6_sustain1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Woodwinds/Piccolo/Sus/piccolo_C6_sustain1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  }
+ ],
  "piccolo/v-staccato": [
   {
    "source": "vsco",
@@ -3525,6 +4557,24 @@
    "source": "vcsl",
    "file": "Aerophones/Edge-blown Aerophones/Baroque Alto Recorder/Sustain/AltRecorder_Sus_D5_rr1_Main.wav",
    "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Aerophones/Edge-blown%20Aerophones/Baroque%20Alto%20Recorder/Sustain/AltRecorder_Sus_D5_rr1_Main.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios and contributors"
+  }
+ ],
+ "recorder/scale": [
+  {
+   "source": "vcsl",
+   "file": "Aerophones/Edge-blown Aerophones/Baroque Alto Recorder/Sustain/AltRecorder_Sus_F3_rr1_Main.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Aerophones/Edge-blown%20Aerophones/Baroque%20Alto%20Recorder/Sustain/AltRecorder_Sus_F3_rr1_Main.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios and contributors"
+  }
+ ],
+ "recorder/range": [
+  {
+   "source": "vcsl",
+   "file": "Aerophones/Edge-blown Aerophones/Baroque Alto Recorder/Sustain/AltRecorder_Sus_F3_rr1_Main.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Aerophones/Edge-blown%20Aerophones/Baroque%20Alto%20Recorder/Sustain/AltRecorder_Sus_F3_rr1_Main.wav",
    "license": "CC0-1.0",
    "credit": "Versilian Studios and contributors"
   }
@@ -3730,6 +4780,24 @@
    "source": "vcsl",
    "file": "Aerophones/Edge-blown Aerophones/Ocarina, Typical/Sustains/Sus/StdOcarina_Sus_C5.wav",
    "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Aerophones/Edge-blown%20Aerophones/Ocarina%2C%20Typical/Sustains/Sus/StdOcarina_Sus_C5.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios and contributors"
+  }
+ ],
+ "ocarina/scale": [
+  {
+   "source": "vcsl",
+   "file": "Aerophones/Edge-blown Aerophones/Ocarina, Typical/Sustains/Sus/StdOcarina_Sus_A3.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Aerophones/Edge-blown%20Aerophones/Ocarina%2C%20Typical/Sustains/Sus/StdOcarina_Sus_A3.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios and contributors"
+  }
+ ],
+ "ocarina/range": [
+  {
+   "source": "vcsl",
+   "file": "Aerophones/Edge-blown Aerophones/Ocarina, Typical/Sustains/Sus/StdOcarina_Sus_A3.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Aerophones/Edge-blown%20Aerophones/Ocarina%2C%20Typical/Sustains/Sus/StdOcarina_Sus_A3.wav",
    "license": "CC0-1.0",
    "credit": "Versilian Studios and contributors"
   }
@@ -3958,6 +5026,24 @@
    "credit": "Versilian Studios"
   }
  ],
+ "oboe/scale": [
+  {
+   "source": "vsco",
+   "file": "Woodwinds/Oboe/Sus/Oboe_Sus_A#2_v1_Main.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Woodwinds/Oboe/Sus/Oboe_Sus_A%232_v1_Main.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  }
+ ],
+ "oboe/range": [
+  {
+   "source": "vsco",
+   "file": "Woodwinds/Oboe/Sus/Oboe_Sus_A#2_v1_Main.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Woodwinds/Oboe/Sus/Oboe_Sus_A%232_v1_Main.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  }
+ ],
  "oboe/phrase": [
   {
    "source": "vsco",
@@ -4126,6 +5212,24 @@
    "credit": "Versilian Studios"
   }
  ],
+ "clarinet/scale": [
+  {
+   "source": "vsco",
+   "file": "Woodwinds/Clarinet/susLong/DCClar_susLong_D2_v2_rr1_sum.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Woodwinds/Clarinet/susLong/DCClar_susLong_D2_v2_rr1_sum.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  }
+ ],
+ "clarinet/range": [
+  {
+   "source": "vsco",
+   "file": "Woodwinds/Clarinet/susLong/DCClar_susLong_D2_v2_rr1_sum.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Woodwinds/Clarinet/susLong/DCClar_susLong_D2_v2_rr1_sum.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  }
+ ],
  "clarinet/phrase": [
   {
    "source": "vsco",
@@ -4253,6 +5357,24 @@
    "source": "vsco",
    "file": "Woodwinds/Bassoon/sus/PSBassoon_C4_v2_1.wav",
    "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Woodwinds/Bassoon/sus/PSBassoon_C4_v2_1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  }
+ ],
+ "bassoon/scale": [
+  {
+   "source": "vsco",
+   "file": "Woodwinds/Bassoon/sus/PSBassoon_A#0_v2_1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Woodwinds/Bassoon/sus/PSBassoon_A%230_v2_1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  }
+ ],
+ "bassoon/range": [
+  {
+   "source": "vsco",
+   "file": "Woodwinds/Bassoon/sus/PSBassoon_A#0_v2_1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Woodwinds/Bassoon/sus/PSBassoon_A%230_v2_1.wav",
    "license": "CC0-1.0",
    "credit": "Versilian Studios"
   }
@@ -4407,6 +5529,24 @@
    "source": "vcsl",
    "file": "Aerophones/Reed Aerophones/Tenor Saxophone/Non-Vibrato/BrettTenor_NV_Main_D5_vl2_rr1.wav",
    "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Aerophones/Reed%20Aerophones/Tenor%20Saxophone/Non-Vibrato/BrettTenor_NV_Main_D5_vl2_rr1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios and contributors"
+  }
+ ],
+ "tenor-sax/scale": [
+  {
+   "source": "vcsl",
+   "file": "Aerophones/Reed Aerophones/Tenor Saxophone/Non-Vibrato/BrettTenor_NV_Main_G#1_vl2_rr1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Aerophones/Reed%20Aerophones/Tenor%20Saxophone/Non-Vibrato/BrettTenor_NV_Main_G%231_vl2_rr1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios and contributors"
+  }
+ ],
+ "tenor-sax/range": [
+  {
+   "source": "vcsl",
+   "file": "Aerophones/Reed Aerophones/Tenor Saxophone/Non-Vibrato/BrettTenor_NV_Main_G#1_vl2_rr1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Aerophones/Reed%20Aerophones/Tenor%20Saxophone/Non-Vibrato/BrettTenor_NV_Main_G%231_vl2_rr1.wav",
    "license": "CC0-1.0",
    "credit": "Versilian Studios and contributors"
   }
@@ -4607,6 +5747,24 @@
    "credit": "Versilian Studios and contributors"
   }
  ],
+ "soprano-sax/scale": [
+  {
+   "source": "vcsl",
+   "file": "Aerophones/Reed Aerophones/Saxello/Non-Vibrato/BrettSaxello_SusNV_MainSpirit_A#2_vl2_rr2.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Aerophones/Reed%20Aerophones/Saxello/Non-Vibrato/BrettSaxello_SusNV_MainSpirit_A%232_vl2_rr2.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios and contributors"
+  }
+ ],
+ "soprano-sax/range": [
+  {
+   "source": "vcsl",
+   "file": "Aerophones/Reed Aerophones/Saxello/Non-Vibrato/BrettSaxello_SusNV_MainSpirit_A#2_vl2_rr2.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Aerophones/Reed%20Aerophones/Saxello/Non-Vibrato/BrettSaxello_SusNV_MainSpirit_A%232_vl2_rr2.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios and contributors"
+  }
+ ],
  "soprano-sax/phrase": [
   {
    "source": "vcsl",
@@ -4789,6 +5947,24 @@
    "credit": "FreePats Bagpipe"
   }
  ],
+ "bagpipe/scale": [
+  {
+   "source": "freepats",
+   "bank": "Bagpipe-small",
+   "file": "samples/small/drone_G2_1.flac",
+   "license": "CC0-1.0",
+   "credit": "FreePats Bagpipe"
+  }
+ ],
+ "bagpipe/range": [
+  {
+   "source": "freepats",
+   "bank": "Bagpipe-small",
+   "file": "samples/small/drone_G2_1.flac",
+   "license": "CC0-1.0",
+   "credit": "FreePats Bagpipe"
+  }
+ ],
  "bagpipe/phrase": [
   {
    "source": "freepats",
@@ -4891,6 +6067,24 @@
    "source": "vsco",
    "file": "Brass/Trumpet/sus/Sum_SHTrumpet_sus_A4_v1_rr1.wav",
    "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Brass/Trumpet/sus/Sum_SHTrumpet_sus_A4_v1_rr1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  }
+ ],
+ "trumpet/scale": [
+  {
+   "source": "vsco",
+   "file": "Brass/Trumpet/sus/Sum_SHTrumpet_sus_F2_v1_rr1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Brass/Trumpet/sus/Sum_SHTrumpet_sus_F2_v1_rr1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  }
+ ],
+ "trumpet/range": [
+  {
+   "source": "vsco",
+   "file": "Brass/Trumpet/sus/Sum_SHTrumpet_sus_F2_v1_rr1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Brass/Trumpet/sus/Sum_SHTrumpet_sus_F2_v1_rr1.wav",
    "license": "CC0-1.0",
    "credit": "Versilian Studios"
   }
@@ -5081,6 +6275,24 @@
    "credit": "Versilian Studios"
   }
  ],
+ "french-horn/scale": [
+  {
+   "source": "vsco",
+   "file": "Brass/F Horn/sus/MOHorn_sus_A0_v1_1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Brass/F%20Horn/sus/MOHorn_sus_A0_v1_1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  }
+ ],
+ "french-horn/range": [
+  {
+   "source": "vsco",
+   "file": "Brass/F Horn/sus/MOHorn_sus_A0_v1_1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Brass/F%20Horn/sus/MOHorn_sus_A0_v1_1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  }
+ ],
  "french-horn/phrase": [
   {
    "source": "vsco",
@@ -5245,6 +6457,24 @@
    "source": "vsco",
    "file": "Brass/Tenor Trombone/sus/tenortbn_sus_D#3_v2_1.wav",
    "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Brass/Tenor%20Trombone/sus/tenortbn_sus_D%233_v2_1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  }
+ ],
+ "trombone/scale": [
+  {
+   "source": "vsco",
+   "file": "Brass/Tenor Trombone/sus/tenortbn_sus_A#0_v2_1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Brass/Tenor%20Trombone/sus/tenortbn_sus_A%230_v2_1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  }
+ ],
+ "trombone/range": [
+  {
+   "source": "vsco",
+   "file": "Brass/Tenor Trombone/sus/tenortbn_sus_A#0_v2_1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Brass/Tenor%20Trombone/sus/tenortbn_sus_A%230_v2_1.wav",
    "license": "CC0-1.0",
    "credit": "Versilian Studios"
   }
@@ -5428,6 +6658,24 @@
    "credit": "Versilian Studios"
   }
  ],
+ "tuba/scale": [
+  {
+   "source": "vsco",
+   "file": "Brass/Tuba/sus/Tuba3_sus_F0_v1_rr1_Mid.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Brass/Tuba/sus/Tuba3_sus_F0_v1_rr1_Mid.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  }
+ ],
+ "tuba/range": [
+  {
+   "source": "vsco",
+   "file": "Brass/Tuba/sus/Tuba3_sus_F0_v1_rr1_Mid.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Brass/Tuba/sus/Tuba3_sus_F0_v1_rr1_Mid.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios"
+  }
+ ],
  "tuba/phrase": [
   {
    "source": "vsco",
@@ -5593,6 +6841,24 @@
    "credit": "Versilian Studios and contributors"
   }
  ],
+ "glockenspiel/scale": [
+  {
+   "source": "vcsl",
+   "file": "Idiophones/Struck Idiophones/Glockenspiel/glock_loud_G4_01.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Idiophones/Struck%20Idiophones/Glockenspiel/glock_loud_G4_01.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios and contributors"
+  }
+ ],
+ "glockenspiel/range": [
+  {
+   "source": "vcsl",
+   "file": "Idiophones/Struck Idiophones/Glockenspiel/glock_loud_G4_01.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Idiophones/Struck%20Idiophones/Glockenspiel/glock_loud_G4_01.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios and contributors"
+  }
+ ],
  "glockenspiel/phrase": [
   {
    "source": "vcsl",
@@ -5704,6 +6970,33 @@
    "source": "vcsl",
    "file": "Idiophones/Struck Idiophones/Vibraphone/Hard Mallets/Vibes_hard_C5_v2_rr1_Main.wav",
    "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Idiophones/Struck%20Idiophones/Vibraphone/Hard%20Mallets/Vibes_hard_C5_v2_rr1_Main.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios and contributors"
+  }
+ ],
+ "vibraphone/scale": [
+  {
+   "source": "vcsl",
+   "file": "Idiophones/Struck Idiophones/Vibraphone/Hard Mallets/Vibes_hard_F2_v2_rr1_Main.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Idiophones/Struck%20Idiophones/Vibraphone/Hard%20Mallets/Vibes_hard_F2_v2_rr1_Main.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios and contributors"
+  }
+ ],
+ "vibraphone/range": [
+  {
+   "source": "vcsl",
+   "file": "Idiophones/Struck Idiophones/Vibraphone/Hard Mallets/Vibes_hard_F2_v2_rr1_Main.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Idiophones/Struck%20Idiophones/Vibraphone/Hard%20Mallets/Vibes_hard_F2_v2_rr1_Main.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios and contributors"
+  }
+ ],
+ "vibraphone/chords": [
+  {
+   "source": "vcsl",
+   "file": "Idiophones/Struck Idiophones/Vibraphone/Hard Mallets/Vibes_hard_F2_v2_rr1_Main.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Idiophones/Struck%20Idiophones/Vibraphone/Hard%20Mallets/Vibes_hard_F2_v2_rr1_Main.wav",
    "license": "CC0-1.0",
    "credit": "Versilian Studios and contributors"
   }
@@ -5853,6 +7146,33 @@
    "credit": "Versilian Studios and contributors"
   }
  ],
+ "marimba/scale": [
+  {
+   "source": "vcsl",
+   "file": "Idiophones/Struck Idiophones/Marimba/Marimba_hit_Outrigger_F1_loud_01.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Idiophones/Struck%20Idiophones/Marimba/Marimba_hit_Outrigger_F1_loud_01.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios and contributors"
+  }
+ ],
+ "marimba/range": [
+  {
+   "source": "vcsl",
+   "file": "Idiophones/Struck Idiophones/Marimba/Marimba_hit_Outrigger_F1_loud_01.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Idiophones/Struck%20Idiophones/Marimba/Marimba_hit_Outrigger_F1_loud_01.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios and contributors"
+  }
+ ],
+ "marimba/chords": [
+  {
+   "source": "vcsl",
+   "file": "Idiophones/Struck Idiophones/Marimba/Marimba_hit_Outrigger_F1_loud_01.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Idiophones/Struck%20Idiophones/Marimba/Marimba_hit_Outrigger_F1_loud_01.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios and contributors"
+  }
+ ],
  "marimba/phrase": [
   {
    "source": "vcsl",
@@ -5955,6 +7275,24 @@
    "source": "vcsl",
    "file": "Idiophones/Struck Idiophones/Xylophone/Hard Mallets/Xylo_Hard_C7_ff_01_far.wav",
    "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Idiophones/Struck%20Idiophones/Xylophone/Hard%20Mallets/Xylo_Hard_C7_ff_01_far.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios and contributors"
+  }
+ ],
+ "xylophone/scale": [
+  {
+   "source": "vcsl",
+   "file": "Idiophones/Struck Idiophones/Xylophone/Hard Mallets/Xylo_Hard_G3_ff_01_far.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Idiophones/Struck%20Idiophones/Xylophone/Hard%20Mallets/Xylo_Hard_G3_ff_01_far.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios and contributors"
+  }
+ ],
+ "xylophone/range": [
+  {
+   "source": "vcsl",
+   "file": "Idiophones/Struck Idiophones/Xylophone/Hard Mallets/Xylo_Hard_G3_ff_01_far.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Idiophones/Struck%20Idiophones/Xylophone/Hard%20Mallets/Xylo_Hard_G3_ff_01_far.wav",
    "license": "CC0-1.0",
    "credit": "Versilian Studios and contributors"
   }
@@ -6070,6 +7408,24 @@
    "source": "vcsl",
    "file": "Idiophones/Struck Idiophones/Tubular Bells 2/TB_hit_E5_v2_1.wav",
    "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Idiophones/Struck%20Idiophones/Tubular%20Bells%202/TB_hit_E5_v2_1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios and contributors"
+  }
+ ],
+ "tubular-bells/scale": [
+  {
+   "source": "vcsl",
+   "file": "Idiophones/Struck Idiophones/Tubular Bells 2/TB_hit_C4_v2_1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Idiophones/Struck%20Idiophones/Tubular%20Bells%202/TB_hit_C4_v2_1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios and contributors"
+  }
+ ],
+ "tubular-bells/range": [
+  {
+   "source": "vcsl",
+   "file": "Idiophones/Struck Idiophones/Tubular Bells 2/TB_hit_C4_v2_1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Idiophones/Struck%20Idiophones/Tubular%20Bells%202/TB_hit_C4_v2_1.wav",
    "license": "CC0-1.0",
    "credit": "Versilian Studios and contributors"
   }
@@ -6243,6 +7599,24 @@
    "credit": "Versilian Studios and contributors"
   }
  ],
+ "hand-chimes/scale": [
+  {
+   "source": "vcsl",
+   "file": "Idiophones/Struck Idiophones/Hand Chimes/sus_C3_r01_main.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Idiophones/Struck%20Idiophones/Hand%20Chimes/sus_C3_r01_main.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios and contributors"
+  }
+ ],
+ "hand-chimes/range": [
+  {
+   "source": "vcsl",
+   "file": "Idiophones/Struck Idiophones/Hand Chimes/sus_C3_r01_main.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Idiophones/Struck%20Idiophones/Hand%20Chimes/sus_C3_r01_main.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios and contributors"
+  }
+ ],
  "hand-chimes/phrase": [
   {
    "source": "vcsl",
@@ -6412,6 +7786,33 @@
    "credit": "Versilian Studios and contributors"
   }
  ],
+ "kalimba/scale": [
+  {
+   "source": "vcsl",
+   "file": "Idiophones/Plucked Idiophones/Kalimba, Tanzania/MBira3_pluck_Main_G1_k12_50_100_rr2.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Idiophones/Plucked%20Idiophones/Kalimba%2C%20Tanzania/MBira3_pluck_Main_G1_k12_50_100_rr2.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios and contributors"
+  }
+ ],
+ "kalimba/range": [
+  {
+   "source": "vcsl",
+   "file": "Idiophones/Plucked Idiophones/Kalimba, Tanzania/MBira3_pluck_Main_G1_k12_50_100_rr2.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Idiophones/Plucked%20Idiophones/Kalimba%2C%20Tanzania/MBira3_pluck_Main_G1_k12_50_100_rr2.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios and contributors"
+  }
+ ],
+ "kalimba/chords": [
+  {
+   "source": "vcsl",
+   "file": "Idiophones/Plucked Idiophones/Kalimba, Tanzania/MBira3_pluck_Main_G1_k12_50_100_rr2.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Idiophones/Plucked%20Idiophones/Kalimba%2C%20Tanzania/MBira3_pluck_Main_G1_k12_50_100_rr2.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios and contributors"
+  }
+ ],
  "kalimba/phrase": [
   {
    "source": "vcsl",
@@ -6565,6 +7966,33 @@
    "source": "freepats",
    "bank": "Hang-D-minor",
    "file": "samples/D5_01.flac",
+   "license": "CC0-1.0",
+   "credit": "FreePats Hang in D minor"
+  }
+ ],
+ "hang/scale": [
+  {
+   "source": "freepats",
+   "bank": "Hang-D-minor",
+   "file": "samples/A3_01.flac",
+   "license": "CC0-1.0",
+   "credit": "FreePats Hang in D minor"
+  }
+ ],
+ "hang/range": [
+  {
+   "source": "freepats",
+   "bank": "Hang-D-minor",
+   "file": "samples/A3_01.flac",
+   "license": "CC0-1.0",
+   "credit": "FreePats Hang in D minor"
+  }
+ ],
+ "hang/chords": [
+  {
+   "source": "freepats",
+   "bank": "Hang-D-minor",
+   "file": "samples/A3_01.flac",
    "license": "CC0-1.0",
    "credit": "FreePats Hang in D minor"
   }
@@ -6738,6 +8166,24 @@
    "credit": "Versilian Studios and contributors"
   }
  ],
+ "balafon/scale": [
+  {
+   "source": "vcsl",
+   "file": "Idiophones/Struck Idiophones/Balafon/Traditional Mallet/EthnicXylo_tradM_C#3_vl2_rr1_Mid.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Idiophones/Struck%20Idiophones/Balafon/Traditional%20Mallet/EthnicXylo_tradM_C%233_vl2_rr1_Mid.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios and contributors"
+  }
+ ],
+ "balafon/range": [
+  {
+   "source": "vcsl",
+   "file": "Idiophones/Struck Idiophones/Balafon/Traditional Mallet/EthnicXylo_tradM_C#3_vl2_rr1_Mid.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Idiophones/Struck%20Idiophones/Balafon/Traditional%20Mallet/EthnicXylo_tradM_C%233_vl2_rr1_Mid.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios and contributors"
+  }
+ ],
  "balafon/phrase": [
   {
    "source": "vcsl",
@@ -6822,6 +8268,24 @@
    "source": "vcsl",
    "file": "Idiophones/Friction Idiophones/Wine Glasses/Sustains/Slow/glass4_D5_Slow_2_Main.wav",
    "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Idiophones/Friction%20Idiophones/Wine%20Glasses/Sustains/Slow/glass4_D5_Slow_2_Main.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios and contributors"
+  }
+ ],
+ "wine-glasses/scale": [
+  {
+   "source": "vcsl",
+   "file": "Idiophones/Friction Idiophones/Wine Glasses/Sustains/Slow/glass1_D#4_Slow_1_Main.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Idiophones/Friction%20Idiophones/Wine%20Glasses/Sustains/Slow/glass1_D%234_Slow_1_Main.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios and contributors"
+  }
+ ],
+ "wine-glasses/range": [
+  {
+   "source": "vcsl",
+   "file": "Idiophones/Friction Idiophones/Wine Glasses/Sustains/Slow/glass1_D#4_Slow_1_Main.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Idiophones/Friction%20Idiophones/Wine%20Glasses/Sustains/Slow/glass1_D%234_Slow_1_Main.wav",
    "license": "CC0-1.0",
    "credit": "Versilian Studios and contributors"
   }
@@ -7598,6 +9062,22 @@
    "credit": "Generated in code for this library"
   }
  ],
+ "synth-bass/scale": [
+  {
+   "source": "generated",
+   "preset": "synth-bass",
+   "license": "CC0-1.0",
+   "credit": "Generated in code for this library"
+  }
+ ],
+ "synth-bass/range": [
+  {
+   "source": "generated",
+   "preset": "synth-bass",
+   "license": "CC0-1.0",
+   "credit": "Generated in code for this library"
+  }
+ ],
  "synth-bass/mix": [
   {
    "source": "generated",
@@ -7660,6 +9140,22 @@
   }
  ],
  "sub-808/note-5": [
+  {
+   "source": "generated",
+   "preset": "sub-808",
+   "license": "CC0-1.0",
+   "credit": "Generated in code for this library"
+  }
+ ],
+ "sub-808/scale": [
+  {
+   "source": "generated",
+   "preset": "sub-808",
+   "license": "CC0-1.0",
+   "credit": "Generated in code for this library"
+  }
+ ],
+ "sub-808/range": [
   {
    "source": "generated",
    "preset": "sub-808",
@@ -7744,6 +9240,22 @@
    "credit": "Generated in code for this library"
   }
  ],
+ "synth-lead-saw/scale": [
+  {
+   "source": "generated",
+   "preset": "synth-lead-saw",
+   "license": "CC0-1.0",
+   "credit": "Generated in code for this library"
+  }
+ ],
+ "synth-lead-saw/range": [
+  {
+   "source": "generated",
+   "preset": "synth-lead-saw",
+   "license": "CC0-1.0",
+   "credit": "Generated in code for this library"
+  }
+ ],
  "synth-lead-saw/phrase": [
   {
    "source": "generated",
@@ -7814,6 +9326,22 @@
   }
  ],
  "synth-lead-square/note-5": [
+  {
+   "source": "generated",
+   "preset": "synth-lead-square",
+   "license": "CC0-1.0",
+   "credit": "Generated in code for this library"
+  }
+ ],
+ "synth-lead-square/scale": [
+  {
+   "source": "generated",
+   "preset": "synth-lead-square",
+   "license": "CC0-1.0",
+   "credit": "Generated in code for this library"
+  }
+ ],
+ "synth-lead-square/range": [
   {
    "source": "generated",
    "preset": "synth-lead-square",
@@ -7898,6 +9426,30 @@
    "credit": "Generated in code for this library"
   }
  ],
+ "synth-pad/scale": [
+  {
+   "source": "generated",
+   "preset": "synth-pad",
+   "license": "CC0-1.0",
+   "credit": "Generated in code for this library"
+  }
+ ],
+ "synth-pad/range": [
+  {
+   "source": "generated",
+   "preset": "synth-pad",
+   "license": "CC0-1.0",
+   "credit": "Generated in code for this library"
+  }
+ ],
+ "synth-pad/chords": [
+  {
+   "source": "generated",
+   "preset": "synth-pad",
+   "license": "CC0-1.0",
+   "credit": "Generated in code for this library"
+  }
+ ],
  "synth-pad/phrase": [
   {
    "source": "generated",
@@ -7968,6 +9520,22 @@
   }
  ],
  "synth-pluck/note-5": [
+  {
+   "source": "generated",
+   "preset": "synth-pluck",
+   "license": "CC0-1.0",
+   "credit": "Generated in code for this library"
+  }
+ ],
+ "synth-pluck/scale": [
+  {
+   "source": "generated",
+   "preset": "synth-pluck",
+   "license": "CC0-1.0",
+   "credit": "Generated in code for this library"
+  }
+ ],
+ "synth-pluck/range": [
   {
    "source": "generated",
    "preset": "synth-pluck",
@@ -8097,6 +9665,33 @@
    "credit": "FreePats Old Piano FB"
   }
  ],
+ "honky-tonk-piano/scale": [
+  {
+   "source": "freepats",
+   "bank": "PianoFB-small",
+   "file": "samples/small/A0.flac",
+   "license": "CC0-1.0",
+   "credit": "FreePats Old Piano FB"
+  }
+ ],
+ "honky-tonk-piano/range": [
+  {
+   "source": "freepats",
+   "bank": "PianoFB-small",
+   "file": "samples/small/A0.flac",
+   "license": "CC0-1.0",
+   "credit": "FreePats Old Piano FB"
+  }
+ ],
+ "honky-tonk-piano/chords": [
+  {
+   "source": "freepats",
+   "bank": "PianoFB-small",
+   "file": "samples/small/A0.flac",
+   "license": "CC0-1.0",
+   "credit": "FreePats Old Piano FB"
+  }
+ ],
  "honky-tonk-piano/phrase": [
   {
    "source": "freepats",
@@ -8220,6 +9815,24 @@
    "source": "vcsl",
    "file": "Chordophones/Zithers/Psaltery, Bowed and Plucked/LongBow/BowedPsaltery_E5_Main_LongBow_rr2.wav",
    "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Chordophones/Zithers/Psaltery%2C%20Bowed%20and%20Plucked/LongBow/BowedPsaltery_E5_Main_LongBow_rr2.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios and contributors"
+  }
+ ],
+ "bowed-psaltery/scale": [
+  {
+   "source": "vcsl",
+   "file": "Chordophones/Zithers/Psaltery, Bowed and Plucked/LongBow/BowedPsaltery_A#3_Main_LongBow_rr2.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Chordophones/Zithers/Psaltery%2C%20Bowed%20and%20Plucked/LongBow/BowedPsaltery_A%233_Main_LongBow_rr2.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios and contributors"
+  }
+ ],
+ "bowed-psaltery/range": [
+  {
+   "source": "vcsl",
+   "file": "Chordophones/Zithers/Psaltery, Bowed and Plucked/LongBow/BowedPsaltery_A#3_Main_LongBow_rr2.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Chordophones/Zithers/Psaltery%2C%20Bowed%20and%20Plucked/LongBow/BowedPsaltery_A%233_Main_LongBow_rr2.wav",
    "license": "CC0-1.0",
    "credit": "Versilian Studios and contributors"
   }
@@ -8377,6 +9990,33 @@
    "source": "vcsl",
    "file": "Chordophones/Composite Chordophones/Strumstick/Finger/Strumstick_Finger_Str3_Main_G4_vl2_rr2.wav",
    "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Chordophones/Composite%20Chordophones/Strumstick/Finger/Strumstick_Finger_Str3_Main_G4_vl2_rr2.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios and contributors"
+  }
+ ],
+ "strumstick/scale": [
+  {
+   "source": "vcsl",
+   "file": "Chordophones/Composite Chordophones/Strumstick/Finger/Strumstick_Finger_Str1_Main_D2_vl2_rr1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Chordophones/Composite%20Chordophones/Strumstick/Finger/Strumstick_Finger_Str1_Main_D2_vl2_rr1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios and contributors"
+  }
+ ],
+ "strumstick/range": [
+  {
+   "source": "vcsl",
+   "file": "Chordophones/Composite Chordophones/Strumstick/Finger/Strumstick_Finger_Str1_Main_D2_vl2_rr1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Chordophones/Composite%20Chordophones/Strumstick/Finger/Strumstick_Finger_Str1_Main_D2_vl2_rr1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios and contributors"
+  }
+ ],
+ "strumstick/chords": [
+  {
+   "source": "vcsl",
+   "file": "Chordophones/Composite Chordophones/Strumstick/Finger/Strumstick_Finger_Str1_Main_D2_vl2_rr1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Chordophones/Composite%20Chordophones/Strumstick/Finger/Strumstick_Finger_Str1_Main_D2_vl2_rr1.wav",
    "license": "CC0-1.0",
    "credit": "Versilian Studios and contributors"
   }
@@ -8546,6 +10186,24 @@
    "source": "freepats",
    "bank": "Glass",
    "file": "samples/E6_01.flac",
+   "license": "CC0-1.0",
+   "credit": "FreePats Glasses of Water"
+  }
+ ],
+ "glasses-of-water/scale": [
+  {
+   "source": "freepats",
+   "bank": "Glass",
+   "file": "samples/A#4-B4_01.flac",
+   "license": "CC0-1.0",
+   "credit": "FreePats Glasses of Water"
+  }
+ ],
+ "glasses-of-water/range": [
+  {
+   "source": "freepats",
+   "bank": "Glass",
+   "file": "samples/A#4-B4_01.flac",
    "license": "CC0-1.0",
    "credit": "FreePats Glasses of Water"
   }
@@ -9151,6 +10809,33 @@
    "credit": "FreePats Synth Strings 1"
   }
  ],
+ "synth-strings/scale": [
+  {
+   "source": "freepats",
+   "bank": "SynthStrings1",
+   "file": "samples/F#1.flac",
+   "license": "CC0-1.0",
+   "credit": "FreePats Synth Strings 1"
+  }
+ ],
+ "synth-strings/range": [
+  {
+   "source": "freepats",
+   "bank": "SynthStrings1",
+   "file": "samples/F#1.flac",
+   "license": "CC0-1.0",
+   "credit": "FreePats Synth Strings 1"
+  }
+ ],
+ "synth-strings/chords": [
+  {
+   "source": "freepats",
+   "bank": "SynthStrings1",
+   "file": "samples/F#1.flac",
+   "license": "CC0-1.0",
+   "credit": "FreePats Synth Strings 1"
+  }
+ ],
  "synth-strings/phrase": [
   {
    "source": "freepats",
@@ -9257,6 +10942,33 @@
    "credit": "FreePats Synth Brass 1"
   }
  ],
+ "synth-brass/scale": [
+  {
+   "source": "freepats",
+   "bank": "SynthBrass1",
+   "file": "samples/F#1.flac",
+   "license": "CC0-1.0",
+   "credit": "FreePats Synth Brass 1"
+  }
+ ],
+ "synth-brass/range": [
+  {
+   "source": "freepats",
+   "bank": "SynthBrass1",
+   "file": "samples/F#1.flac",
+   "license": "CC0-1.0",
+   "credit": "FreePats Synth Brass 1"
+  }
+ ],
+ "synth-brass/chords": [
+  {
+   "source": "freepats",
+   "bank": "SynthBrass1",
+   "file": "samples/F#1.flac",
+   "license": "CC0-1.0",
+   "credit": "FreePats Synth Brass 1"
+  }
+ ],
  "synth-brass/phrase": [
   {
    "source": "freepats",
@@ -9358,6 +11070,22 @@
    "credit": "Generated in code for this library"
   }
  ],
+ "acid-bass/scale": [
+  {
+   "source": "generated",
+   "preset": "acid-bass",
+   "license": "CC0-1.0",
+   "credit": "Generated in code for this library"
+  }
+ ],
+ "acid-bass/range": [
+  {
+   "source": "generated",
+   "preset": "acid-bass",
+   "license": "CC0-1.0",
+   "credit": "Generated in code for this library"
+  }
+ ],
  "acid-bass/phrase": [
   {
    "source": "generated",
@@ -9428,6 +11156,22 @@
   }
  ],
  "supersaw/note-5": [
+  {
+   "source": "generated",
+   "preset": "supersaw",
+   "license": "CC0-1.0",
+   "credit": "Generated in code for this library"
+  }
+ ],
+ "supersaw/scale": [
+  {
+   "source": "generated",
+   "preset": "supersaw",
+   "license": "CC0-1.0",
+   "credit": "Generated in code for this library"
+  }
+ ],
+ "supersaw/range": [
   {
    "source": "generated",
    "preset": "supersaw",
@@ -9512,6 +11256,22 @@
    "credit": "Generated in code for this library"
   }
  ],
+ "fm-bell/scale": [
+  {
+   "source": "generated",
+   "preset": "fm-bell",
+   "license": "CC0-1.0",
+   "credit": "Generated in code for this library"
+  }
+ ],
+ "fm-bell/range": [
+  {
+   "source": "generated",
+   "preset": "fm-bell",
+   "license": "CC0-1.0",
+   "credit": "Generated in code for this library"
+  }
+ ],
  "fm-bell/phrase": [
   {
    "source": "generated",
@@ -9582,6 +11342,22 @@
   }
  ],
  "theremin/note-5": [
+  {
+   "source": "generated",
+   "preset": "theremin",
+   "license": "CC0-1.0",
+   "credit": "Generated in code for this library"
+  }
+ ],
+ "theremin/scale": [
+  {
+   "source": "generated",
+   "preset": "theremin",
+   "license": "CC0-1.0",
+   "credit": "Generated in code for this library"
+  }
+ ],
+ "theremin/range": [
   {
    "source": "generated",
    "preset": "theremin",

@@ -128,6 +128,8 @@
     let current = sample(inst, params.get('s')) || canonical(inst);
 
     const groups = [
+      ['Real performances', s => s.group === 'performance'],
+      ['Scales, range and chords', s => s.group === 'lines'],
       ['Phrases and context', s => s.group === 'phrase' || s.group === 'context'],
       ['Techniques', s => s.group === 'technique'],
       ['Hits', s => s.group === 'hits'],
@@ -195,6 +197,12 @@
               </div></section>`;
             }).join('')}
           </div>
+
+          ${inst.how || inst.why ? `<section class="explain">
+            <h2 class="explain-title">How it sounds, and why</h2>
+            ${[['How it works', inst.how], ['Why it sounds like this', inst.why], ['Where you hear it', inst.music], ['Low to high', inst.rangeText]]
+              .filter(([, t]) => t).map(([h, t]) => `<div class="explain-item"><h3 class="section-title">${h}</h3><p>${esc(t)}</p></div>`).join('')}
+          </section>` : ''}
         </div>
 
         <aside class="side">
@@ -229,7 +237,7 @@
         return `<div class="conf" data-fam="${o.family}">
           ${playBtn(o, s)}
           <div class="conf-name"><a href="#/i/${o.id}">${esc(o.name)}</a><span>${esc(famById.get(o.family).name)}${o.samples.length ? '' : ' · no recording yet'}</span></div>
-          <p class="conf-cue">${esc(c.cue)}</p>
+          <div class="conf-cue">${c.why ? `<p>${esc(c.why)}</p>` : ''}<p class="conf-tell"><b>Quick tell:</b> ${esc(c.cue)}</p></div>
           <div class="conf-actions">${o.samples.length && inst.samples.length ? `<button class="btn btn-sm" type="button" data-versus="${o.id}">${icon('flip')}Compare</button>` : ''}</div>
         </div>`;
       }).join('');
@@ -852,8 +860,8 @@
       const s = inst.samples;
       const by = g => s.filter(x => x.group === g);
       let pool;
-      if (level === 'easy') pool = s.filter(x => x.key === 'phrase' || x.key === 'groove');
-      else if (level === 'normal') pool = [...by('register'), ...s.filter(x => x.key === 'phrase' || x.key === 'groove'), ...by('hits')];
+      if (level === 'easy') pool = s.filter(x => x.group === 'performance' || x.key === 'phrase' || x.key === 'groove');
+      else if (level === 'normal') pool = [...by('register'), ...by('performance'), ...by('lines'), ...s.filter(x => x.key === 'phrase' || x.key === 'groove'), ...by('hits')];
       else pool = [...by('context'), ...by('register'), ...by('technique'), ...by('hits')];
       return pickOne(pool.length ? pool : s);
     }

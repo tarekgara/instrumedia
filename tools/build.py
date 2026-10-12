@@ -45,7 +45,7 @@ ROOT = Path(__file__).resolve().parent.parent
 CACHE = ROOT / ".cache"
 AUDIO = ROOT / "audio"
 SR = 44100
-BUILD_VERSION = 8  # bump to invalidate every cached instrument
+BUILD_VERSION = 9  # bump to invalidate every cached instrument
 
 REPOS = {"vcsl": "sgossner/VCSL/master", "vsco": "sgossner/VSCO-2-CE/master"}
 
@@ -242,6 +242,17 @@ def commons_key(title):
     return f"{stem or 'file'}-{hashlib.sha1(title.encode()).hexdigest()[:8]}{ext}"
 
 
+def fetch_url(spec):
+    url = spec["url"]
+    ext = Path(urllib.parse.urlparse(url).path).suffix.lower() or ".bin"
+    dest = CACHE / "url" / (hashlib.sha1(url.encode()).hexdigest()[:10] + ext)
+    if not dest.exists():
+        http_get(url, dest)
+    return dest, {"source": "url", "file": Path(urllib.parse.urlparse(url).path).name,
+                  "url": spec.get("page") or url, "license": spec["license"],
+                  "artist": spec.get("author", "Unknown author")}
+
+
 def commons(title):
     """Download a Wikimedia Commons file (cached) and return (path, metadata)."""
     key = commons_key(title)
@@ -315,7 +326,7 @@ def load(path, loop=None, min_len=None):
 def encode(x, dest):
     dest.parent.mkdir(parents=True, exist_ok=True)
     subprocess.run([FFMPEG, "-v", "error", "-y", "-f", "f32le", "-ar", str(SR), "-ac", "1", "-i", "-",
-                    "-c:a", "libmp3lame", "-q:a", "4", str(dest)],
+                    "-c:a", "libmp3lame", "-q:a", "2", str(dest)],
                    input=np.ascontiguousarray(x, dtype=np.float32).tobytes(), check=True)
 
 
@@ -575,7 +586,7 @@ def candidates(spec):
         base, regions = parse_sfz(spec["bank"], spec.get("sfz"))
         for r in regions:
             rel = r["file"].relative_to(freepats_dir(spec["bank"])).as_posix()
-            out[r["key"]] = (lambda r=r: load(r["file"], r["loop"], min_len=4.0),
+            out[r["key"]] = (lambda r=r: load(r["file"]),
                              {"source": "freepats", "bank": spec["bank"], "file": rel})
     elif src == "generated":
         _, notes = synth.PRESETS[spec["preset"]]
@@ -639,38 +650,103 @@ def phrase_notes(keys, pattern):
 
 
 def repitch(x, semitones):
-    """Sampler-style transposition by resampling (fine for the few semitones between recorded notes)."""
+    """Sampler-style transposition with a band-limited polyphase resampler. Linear
+    interpolation aliases and dulls the tone, which is what made some phrases sound
+    digital. Shifts stay small (at most the gap between recorded notes)."""
     if abs(semitones) < 0.01:
         return x
-    ratio = 2 ** (semitones / 12)
-    idx = np.arange(0, len(x) - 1, ratio)
-    return np.interp(idx, np.arange(len(x)), x).astype(np.float32)
+    from fractions import Fraction
+    frac = Fraction(2 ** (-semitones / 12)).limit_denominator(512)
+    return signal.resample_poly(x, frac.numerator, frac.denominator, window=("kaiser", 8.0)).astype(np.float32)
 
 
-def assemble(parts, held, beat):
-    """parts: list of (audio, beats). Returns one phrase."""
+def assemble(parts, held, beat, seed=0):
+    """parts: list of (audio, beats). Returns one musical line.
+
+    Held notes overlap slightly into the next (legato) and end with a natural
+    exponential release; decaying notes ring under the next one, as on a real
+    instrument. Timing and loudness vary a little, like a player rather than a
+    sequencer; the first beat of each group is a touch stronger."""
+    rng = np.random.default_rng(seed + len(parts))
     slots = [int(b * beat * SR) for _, b in parts]
-    total = sum(slots) + int((2.2 if not held else 0.6) * SR)
+    total = sum(slots) + int((2.4 if not held else 0.9) * SR)
     out = np.zeros(total, dtype=np.float32)
     pos = 0
-    for (x, b), slot in zip(parts, slots):
-        x = trim(x, 6.0)
+    for k, ((x, b), slot) in enumerate(zip(parts, slots)):
+        x = trim(x, 8.0)
         if held:
-            L = min(len(x), slot + int(0.05 * SR))
+            L = min(len(x), slot + int(0.09 * SR))
             seg = x[:L].copy()
-            r = min(L, int(0.07 * SR))
-            seg[-r:] *= np.linspace(1, 0, r)
+            r = min(L, int(0.16 * SR))
+            seg[-r:] *= np.exp(-np.linspace(0, 5, r))
         else:
-            L = min(len(x), slot + int(1.6 * SR))
+            L = min(len(x), slot + int(2.0 * SR))
             seg = x[:L].copy()
-            r = min(L, int(0.35 * SR))
+            r = min(L, int(0.4 * SR))
             seg[-r:] *= np.linspace(1, 0, r) ** 2
-        # level each note so the phrase is even
+        # even out the recorded levels, then add a little musical variation
         seg = seg / (np.max(np.abs(seg[:int(0.3 * SR)])) or 1)
-        end = min(total, pos + len(seg))
-        out[pos:end] += seg[:end - pos]
+        accent = 1.0 if k % 4 == 0 else 0.86
+        seg = seg * accent * 10 ** (rng.normal(0, 0.8) / 20)
+        start = max(0, pos + int(rng.normal(0, 0.008) * SR))
+        end = min(total, start + len(seg))
+        out[start:end] += seg[:end - start]
         pos += slot
-    return trim(out, 20)
+    return trim(out, 30)
+
+
+# ------------------------------------------------------------------ scales, runs, chords
+
+SCALE = [0, 2, 4, 5, 7, 9, 11, 12, 11, 9, 7, 5, 4, 2, 0]
+# Instruments that commonly play chords.
+POLYPHONIC = {"grand-piano", "upright-piano", "honky-tonk-piano", "harpsichord", "fm-electric-piano",
+              "acoustic-guitar-nylon", "acoustic-guitar-steel", "electric-guitar-clean", "electric-guitar-distorted",
+              "ukulele", "harp", "pipe-organ", "drawbar-organ", "accordion", "synth-pad", "synth-strings",
+              "synth-brass", "vibraphone", "marimba", "hang", "kalimba", "dan-tranh", "strumstick"}
+
+
+def lines_from_notes(inst, ns, cands, loaded, held, emit):
+    """Scale up and down, a run across the whole range, and (for chord instruments)
+    an arpeggio and block chords. Built from the recorded notes; any repitching is
+    within the gap between neighbouring recorded notes."""
+    keys = sorted(cands)
+    if len(keys) < 3:
+        return
+    gen = ns["src"] == "generated"
+
+    def note(m, beats):
+        if gen:
+            return synth.render(ns["preset"], m, gate=beats * 0.3 * 0.9)
+        near = min(keys, key=lambda k: abs(k - m))
+        if near not in loaded:
+            loaded[near] = cands[near][0]()
+        return repitch(loaded[near], m - near)
+
+    lo, hi = keys[0], keys[-1]
+    root = min(keys, key=lambda k: abs(k - (lo + (hi - lo) * 0.3)))
+    if root + 12 > hi + 1:
+        root = min(keys, key=lambda k: abs(k - (hi - 12)))
+    origin = [cands[keys[0]][1]]
+    beat = 0.3 if held else 0.26
+
+    scale = [(note(root + d, 1), 1) for d in SCALE[:-1]] + [(note(root, 3), 3)]
+    emit("scale", "Scale, up and down", "lines", assemble(scale, held, beat, seed=1), origin)
+
+    picks = keys if len(keys) <= 14 else [keys[int(round(i))] for i in np.linspace(0, len(keys) - 1, 14)]
+    run = [(note(m, 1), 1) for m in picks] + [(note(picks[-1], 2), 2)]
+    emit("range", "Lowest to highest", "lines", assemble(run, held, 0.36, seed=2), origin)
+
+    if inst["id"] in POLYPHONIC:
+        arp = [(note(root + d, 1), 1) for d in (0, 4, 7, 12, 7, 4)]
+        line = assemble(arp, held, beat, seed=3)
+        chords = []
+        for shape in ((0, 4, 7), (9, 12, 16), (5, 9, 12), (7, 11, 14)):
+            notes = [trim(note(root + d, 4), 3.0) for d in shape]
+            n = max(len(x) for x in notes)
+            chords.append((sum(np.pad(x, (0, n - len(x))) for x in notes), 4))
+        block = assemble(chords, held, 0.42, seed=4)
+        gap = np.zeros(int(0.35 * SR), dtype=np.float32)
+        emit("chords", "Arpeggio, then chords", "lines", np.concatenate([line, gap, block]), origin)
 
 
 # ------------------------------------------------------------------ per instrument
@@ -729,6 +805,8 @@ def build_instrument(inst):
         for i, m in enumerate(sorted(chosen), 1):
             emit(f"note-{i}", note_name(m + offset), "register", trim(loaded[m], max_note), cands[m][1], midi=m + offset)
 
+        if chosen:
+            lines_from_notes(inst, ns, cands, loaded, held, emit)
         if ns.get("phrase") and len(cands) >= 3 and chosen:
             if ns["src"] == "generated" and ns["preset"] == "synth-pad":
                 chords = [[0, 4, 7], [-3, 0, 4], [-7, -3, 0], [-5, -1, 2]]
@@ -761,6 +839,26 @@ def build_instrument(inst):
                  origin + [{"source": "freepats", "bank": "MuldjordKit", "file": "drum groove (kick, snare, hi-hat)"},
                            {"source": "generated", "preset": "speech-shaped noise and room reverb"}])
             emit("phone", "Through a small speaker", "context", small_speaker(phrase), origin)
+
+    for k, pf in enumerate(spec.get("performances", []), 1):
+        if "url" in pf:
+            path, meta = fetch_url(pf)
+        else:
+            path, meta = commons(pf["file"])
+        full = load(path)
+        dur = pf.get("dur", 14.0)
+        start = pf["start"] if "start" in pf else best_window(full, dur)
+        x = full[int(start * SR): int((start + dur) * SR)].copy()
+        fi, fo = min(len(x), int(0.02 * SR)), min(len(x), int(0.4 * SR))
+        x[:fi] *= np.linspace(0, 1, fi)
+        x[-fo:] *= np.linspace(1, 0, fo) ** 2
+        origin = {**meta, "excerpt": f"{start:.1f}-{start + dur:.1f}s"}
+        emit(f"perf-{k}", pf.get("label", "Performance"), "performance", x, origin)
+        if not any(s["key"] == "mix" for s in samples):
+            emit("mix", "Buried in a busy mix", "context", busy_mix(x[: int(8 * SR)]),
+                 [origin, {"source": "freepats", "bank": "MuldjordKit", "file": "drum groove (kick, snare, hi-hat)"},
+                  {"source": "generated", "preset": "speech-shaped noise and room reverb"}])
+            emit("phone", "Through a small speaker", "context", small_speaker(x[: int(8 * SR)]), origin)
 
     for k, ex in enumerate(spec.get("excerpts", []), 1):
         path, meta = commons(ex["file"])
@@ -889,6 +987,8 @@ def license_for(origin, lib):
     src = origin["source"]
     if src == "commons":
         return origin["license"], f"{origin['artist']} (Wikimedia Commons)", origin["url"]
+    if src == "url":
+        return origin["license"], origin["artist"], origin["url"]
     if src == "freepats":
         lic, credit, url = FREEPATS[origin["bank"]]
         return lic, credit, url
@@ -953,6 +1053,14 @@ def main():
         for b, cue in list(conf[a].items()):
             if a not in conf[b]:
                 conf[b][a] = cue
+    # Explanatory text (how it works, why it sounds that way, why look-alikes differ).
+    context = {}
+    for f in sorted((ROOT / "data" / "context").glob("*.yaml")):
+        context.update(yaml.safe_load(f.read_text(encoding="utf-8")) or {})
+
+    def why_differ(a, b):
+        return ((context.get(a) or {}).get("vs") or {}).get(b) or ((context.get(b) or {}).get("vs") or {}).get(a)
+
     provenance = {}
     out_insts = []
     for i in insts:
@@ -967,7 +1075,7 @@ def main():
         slim = [{k: v for k, v in s.items() if k != "origin"} for s in samples]
         for s, full in zip(slim, samples):
             s["credit"] = sorted({license_for(o, lib)[1] for o in full["origin"]})
-            link = next((o["url"] for o in full["origin"] if o.get("source") == "commons"), None)
+            link = next((o["url"] for o in full["origin"] if o.get("source") in ("commons", "url")), None)
             if link:
                 s["link"] = link
         mids = [s["midi"] for s in samples if s.get("midi") is not None and s["group"] == "register"]
@@ -976,7 +1084,11 @@ def main():
             "aliases": i.get("aliases", []), "status": i.get("status", "ready"),
             "traits": {k: (v if isinstance(v, list) else [v]) for k, v in i["traits"].items()},
             "summary": i.get("summary", ""), "listen": i.get("listen", []), "note": i.get("note"),
-            "confusions": [{"id": k, "cue": v} for k, v in conf[i["id"]].items()],
+            "confusions": [{"id": k, "cue": v, "why": why_differ(i["id"], k)} for k, v in conf[i["id"]].items()],
+            "how": (context.get(i["id"]) or {}).get("how"),
+            "why": (context.get(i["id"]) or {}).get("why"),
+            "music": (context.get(i["id"]) or {}).get("music"),
+            "rangeText": (context.get(i["id"]) or {}).get("range"),
             "range": [min(mids), max(mids)] if mids else None,
             "samples": slim,
         })

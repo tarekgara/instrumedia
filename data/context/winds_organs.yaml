@@ -1,0 +1,1223 @@
+# Explanatory context for organs and free reeds, woodwinds and brass.
+# How each instrument makes its sound, why it sounds the way it does,
+# where you hear it, how it changes across its range, and why it differs
+# from the instruments it is most often confused with.
+
+# ---------------------------------------------------------------------------
+# Organs and free reeds
+# ---------------------------------------------------------------------------
+
+pipe-organ:
+  how: >-
+    A blower fills a wind chest with steady air, and each key opens valves
+    that let that air into pipes. Most pipes work like giant whistles, with
+    air striking an edge at the mouth; some contain a vibrating brass reed
+    that makes a buzzier, trumpet-like sound.
+  why: >-
+    Because the wind comes from a machine and not from lungs, a pipe sounds
+    at a fixed loudness for as long as the key is held and stops when it is
+    released, with no breath swell or vibrato unless a special effect is
+    switched on. Each stop (a named set of pipes) has its own colour, from
+    soft flute-like tones to bright reedy ones, and the player combines them,
+    so the same organ can sound gentle or overwhelming. Whistle-type pipes
+    often give a small puff of air noise, called chiff, at the start of a
+    note before the tone settles. Organs are usually built into large stone
+    buildings, so much of what you hear is the room ringing on for seconds
+    after the pipes stop.
+  music: >-
+    Heard mostly in churches, cathedrals and concert halls, playing hymns,
+    weddings, funerals and solo repertoire such as Bach. Film and TV use it
+    for grandeur, religion or horror.
+  range: >-
+    The lowest pipes produce a deep rumble you feel as much as hear, the
+    middle is full and singing, and the smallest pipes give thin, bright,
+    whistling tones.
+  vs:
+    drawbar-organ: >-
+      A drawbar organ makes its tones electrically and plays them through a
+      speaker, so it has no air noise and a sharp click as each key closes.
+      Listen for a whirling, rotating-speaker shimmer and a tight, close
+      sound, against the pipe organ's airy start and long room echo.
+    accordion: >-
+      An accordion uses small metal reeds pushed by bellows the player
+      squeezes by hand, so its tone is buzzier and its loudness swells and
+      dips with the bellows. A pipe organ's wind is machine-steady, so held
+      notes do not breathe.
+    synth-pad: >-
+      A synth pad is designed in software and usually fades in and out
+      slowly. Organ pipes speak as soon as the valve opens and stop when it
+      closes, so organ chords switch on and off rather than swelling.
+    harmonica: >-
+      A harmonica is a handful of tiny reeds blown by one person's mouth, so
+      it is small, breathy and usually plays one melody line with bends. The
+      pipe organ is huge, steady and plays full chords and bass lines at once.
+
+drawbar-organ:
+  how: >-
+    In the classic design, spinning metal tone wheels pass near magnetic
+    pickups and each produces a smooth, almost pure electrical tone; the
+    drawbars (sliding volume controls) mix several of these pitches together
+    for each key. The signal is played through an amplifier, often a
+    rotating speaker cabinet.
+  why: >-
+    Each tone wheel gives a nearly pure pitch, and the drawbars stack them
+    like building blocks, which is why the sound is clean yet bright and a
+    little hollow or buzzy depending on the mix. When a key goes down, its
+    electrical contacts produce a short click at the start of the note, and
+    notes stop dead on release because nothing keeps ringing. A rotating
+    speaker sweeps the sound around the room, so the pitch and loudness
+    wobble slightly, giving the swirling shimmer that speeds up or slows down
+    as the player switches speeds. Pushed through an overdriven amplifier,
+    it turns gritty and growling.
+  music: >-
+    Central to gospel, soul, blues, jazz organ trios and classic rock,
+    where it plays sustained chords, riffs, bass lines and screaming solos.
+    These clips come from a software emulation of the instrument.
+  range: >-
+    Low notes are warm and round, the middle is the familiar punchy comping
+    zone, and high notes become piercing and whistle-like, especially with
+    the upper drawbars pulled out.
+  vs:
+    pipe-organ: >-
+      A pipe organ makes sound with air in real pipes, so notes start with a
+      breath of air and are heard in a large reverberant room. Listen for the
+      drawbar organ's key click, rotating-speaker swirl and dry, close sound.
+    accordion: >-
+      An accordion's reeds are driven by bellows, so its tone breathes and
+      swells, and the reeds give a dense buzz. The drawbar organ is
+      electrically steady, with a cleaner tone and no bellows pulse.
+    harmonium: >-
+      A harmonium is a reed organ pumped by hand or foot, so it sounds soft,
+      reedy and slightly uneven. The drawbar organ has no reeds and no
+      pumping: it is purer, brighter and switches on with a click.
+    synth-lead-square: >-
+      A square-wave synth lead is a single electronic waveform, hollow and
+      usually played one note at a time. The drawbar organ often plays
+      chords, has key click and usually the moving shimmer of a rotating
+      speaker.
+
+accordion:
+  how: >-
+    Squeezing and pulling the bellows forces air through slots in metal
+    plates, each fitted with a thin brass or steel tongue (a free reed) that
+    swings back and forth through its slot. Keys or buttons choose which
+    reeds get air.
+  why: >-
+    A free reed chops the airflow into sharp pulses, which produces a tone
+    rich in upper overtones (higher hidden pitches), so the accordion sounds
+    reedy and buzzy rather than smooth. Many accordions sound two or three
+    reeds per note, tuned very slightly apart, and the small mismatch makes
+    the sound beat or waver, the shimmering musette effect. There is no
+    breath noise because the player's mouth is not involved, but the
+    bellows shape loudness, so you hear swells, pulses and sharp accents.
+    Notes start fairly quickly and hold steadily until the button is
+    released or the bellows stop.
+  music: >-
+    Common in folk and dance music across Europe and the Americas: French
+    musette, polka, Irish and Cajun music, Mexican norteño and Colombian
+    vallenato. It often plays melody with its own chord and bass
+    accompaniment.
+  range: >-
+    Bass buttons give a dense, buzzy low pulse, the middle is warm and full,
+    and the top notes get thin, bright and penetrating.
+  vs:
+    harmonica: >-
+      Both use free reeds, but a harmonica is blown by mouth, so breath
+      noise, bends and mouth shaping are part of its sound, and it usually
+      plays a single line. The accordion is bigger and fuller, plays chords
+      with bass, and swells with the bellows instead of the breath.
+    drawbar-organ: >-
+      A drawbar organ makes its tone electrically, so it is cleaner and
+      perfectly steady, often with a rotating-speaker swirl. The accordion
+      has reed buzz and the push and pull of bellows in its loudness.
+    harmonium: >-
+      Both are bellows-fed reed instruments, but the harmonium's reeds are
+      usually voiced more gently and sound from inside a wooden case, so it
+      is softer and rounder. The accordion is brighter, buzzier and more
+      agile, with sharp bellows accents.
+    bagpipe: >-
+      Bagpipes have drones, extra pipes holding one low chord all the time,
+      and a loud, piercing melody pipe that never stops between notes. The
+      accordion plays changing chords and its sound breathes with the
+      bellows.
+
+harmonica:
+  how: >-
+    The player blows into or sucks air out of small holes; each hole leads to
+    metal free reeds, one that sounds on the blow and one on the draw. The
+    player's mouth, throat and cupped hands form the space around the reeds.
+  why: >-
+    The reeds are tiny and close to the mouth, so you hear breath noise in
+    and around the reedy tone, and the player shapes the sound with the
+    mouth like a voice. By changing the shape of the mouth and throat,
+    players can pull some notes down in pitch, the bluesy bends the
+    instrument is known for. Cupping and opening the hands around it filters
+    the sound, giving a wah-wah effect and a muffled-to-open change.
+    Loudness follows the breath, so notes can start with a soft puff or a
+    hard, punchy attack.
+  music: >-
+    Central to blues and heard in folk, country, rock and singer-songwriter
+    music, often as a lead line between vocal phrases or a chugging rhythm
+    of in-and-out breaths.
+  range: >-
+    Low holes are thick and warm and bend the most, the middle is the
+    expressive core, and the top holes get thin, bright and squeaky.
+  vs:
+    accordion: >-
+      An accordion uses the same kind of free reed but is fed by bellows, so
+      it has no breath noise and plays full chords with bass. The harmonica
+      is smaller, breathier and usually plays a single line with bends.
+    melodica: >-
+      A melodica also has free reeds blown by mouth, but notes are chosen
+      on a keyboard and the reeds sit inside a closed case, so notes are
+      cleaner and bend far less. Listen for the harmonica's bent notes,
+      hand-cupping wah and chugging in-and-out breaths.
+    oboe: >-
+      An oboe sounds through a double reed into a long wooden tube, giving a
+      focused, nasal tone and long, smooth melodic lines. A harmonica's
+      reeds give a breathier, buzzier sound with slight chord-like clusters
+      from neighbouring holes and bends that slide in and out of pitch.
+
+harmonium:
+  how: >-
+    The player pumps bellows, by hand on Indian harmoniums or by foot on
+    Western reed organs, to supply air to free metal reeds. A keyboard opens
+    the valves that let air reach each reed.
+  why: >-
+    Like the accordion, it uses free reeds, so the tone is reedy and steady
+    with no breath noise. The reeds are usually voiced more gently and sound
+    from inside a wooden case, which softens the buzz and gives a rounder,
+    warmer chord. Because the air supply comes from pumping, loudness can
+    swell and sag slightly with each stroke of the hand or foot. Notes start
+    softly and hold for as long as keys are down.
+  music: >-
+    The hand-pumped harmonium accompanies singing in Indian classical,
+    devotional and qawwali music and Sikh kirtan; the foot-pumped reed
+    organ was common in homes and small churches for hymns.
+  range: >-
+    Low notes are soft and murmuring, the middle is warm and reedy, and high
+    notes become thinner and more nasal.
+  vs:
+    accordion: >-
+      Both are bellows-fed free reeds, but the accordion's reeds are voiced
+      brighter, often doubled with slightly detuned reeds, and played with
+      sharp bellows accents. Listen for the harmonium's softer, rounder
+      chord and slow pumped swells.
+
+melodica:
+  how: >-
+    The player blows through a mouthpiece or tube into a small plastic case
+    holding a row of free metal reeds. Pressing a key on the attached
+    keyboard opens a valve so air reaches that note's reed.
+  why: >-
+    The free reeds give it the same reedy family sound as the harmonica and
+    accordion, but thinner and brighter, because the reeds are small and the
+    case is small. Loudness follows the player's breath, so notes can swell
+    and fade, yet the keyboard selects pitch, so it plays clean, separate
+    notes and simple chords with little bending. There is some breath noise
+    at the mouthpiece, but less than a harmonica.
+  music: >-
+    Used in school music classes, in reggae and dub, in indie pop and folk,
+    and occasionally in film music for a quirky, wistful colour.
+  range: >-
+    Lower notes are fuller and more accordion-like, and higher notes get
+    thin, bright and a little piercing.
+  vs:
+    harmonica: >-
+      Both are mouth-blown free reeds, but on the harmonica the mouth sits
+      right at the reeds and can bend their pitch, while the melodica's
+      keyboard and closed case keep notes stable. Listen for bends and
+      in-and-out breath rhythm on the harmonica and steady keyboard melodies
+      on the melodica.
+
+bandoneon:
+  how: >-
+    A squeezebox played with buttons on both ends: bellows push and pull air
+    through metal free reeds, with each button often giving a different
+    note on the push than on the pull.
+  why: >-
+    Its free reeds give the reedy, steady tone of the accordion family with
+    no breath noise. Bandoneon reeds are usually paired in octaves rather
+    than in slightly detuned pairs, so the sound lacks the accordion's
+    wavering shimmer and comes across darker and more plaintive. The player
+    can snap the bellows to make hard, percussive accents, a defining part
+    of tango rhythm.
+  music: >-
+    The signature instrument of Argentine and Uruguayan tango, playing both
+    melancholy melodies and driving rhythmic accompaniment; also heard in
+    some German and Lithuanian folk music.
+  range: >-
+    Low notes are dark and somewhat gruff, the middle is the warm, sighing
+    melodic core, and high notes become thin and keening.
+  vs:
+    accordion: >-
+      An accordion often sounds slightly detuned reeds together, giving a
+      wavering musette shimmer and a brighter tone. The bandoneon is drier
+      and darker, with sharp bellows accents in tango rhythms.
+    harmonium: >-
+      A harmonium is pumped steadily from a keyboard instrument, so it holds
+      soft, even chords. The bandoneon breathes with the player's bellows
+      and uses sharp, rhythmic attacks.
+    harmonica: >-
+      A harmonica is blown by mouth, so it has breath noise and bends and
+      usually plays one line. The bandoneon is bellows-fed, has no breath
+      noise and plays bass and chords along with the melody.
+
+# ---------------------------------------------------------------------------
+# Woodwinds
+# ---------------------------------------------------------------------------
+
+flute:
+  how: >-
+    The player blows a thin stream of air across a hole near one end, and
+    the stream flips back and forth over the far edge of the hole. That
+    flickering edge tone sets the air in the metal tube vibrating, and keys
+    change the tube's sounding length.
+  why: >-
+    No reed or lips vibrate; the sound starts in moving air, so some of that
+    air escapes as a soft hiss around the note, especially at low volume.
+    The tube is open at both ends, which produces a fairly simple tone with
+    few strong upper overtones (higher hidden pitches), heard as pure and
+    rounded. Notes start softly unless tongued crisply, and players add a
+    gentle breath vibrato, a slow wobble in loudness and pitch. Blowing
+    harder jumps notes up an octave, and the high register grows brighter
+    and louder.
+  music: >-
+    A regular voice in orchestras, wind bands, chamber music, jazz and
+    Latin music, and film scores, where it often carries graceful melodies,
+    birdlike runs and decorative trills.
+  range: >-
+    The lowest notes are soft, breathy and husky, the middle is sweet and
+    clear, and the top is brilliant and penetrating.
+  vs:
+    recorder: >-
+      A recorder has a built-in windway that shapes the air stream for the
+      player, so its tone is simpler and the player has little control over
+      loudness and colour. Listen for the flute's wider dynamics, vibrato
+      and airy halo against the recorder's plain, whistle-like sound.
+    piccolo: >-
+      The piccolo is a flute half the length, so it plays an octave higher.
+      If the sound is shrill and sits above everything else, it is likely
+      the piccolo; the flute is lower, warmer and airier.
+    ocarina: >-
+      An ocarina is an enclosed vessel, not a tube, and it has almost no
+      overtones, so it sounds like a hollow, nearly pure sine tone. The flute
+      has a breathier edge and more brightness, especially as it gets louder.
+    clarinet: >-
+      A clarinet's sound comes from a vibrating cane reed, which adds a
+      woody, reedy colour, and its tube makes low notes hollow. The flute
+      has no reed: listen for air hiss around the tone and a lighter,
+      floating quality.
+    synth-lead-square: >-
+      A square-wave synth lead is generated electronically, so it has no
+      breath and stays perfectly steady unless programmed otherwise. A flute
+      has air noise, small natural fluctuations and a breath-driven vibrato.
+
+piccolo:
+  how: >-
+    It works exactly like the flute, with an air stream blown across an
+    edge, but the tube is about half the length, so every note is an octave
+    higher.
+  why: >-
+    The short tube puts its notes in the very high range where the ear is
+    most sensitive, so even moderate playing sounds shrill and cuts through
+    a full band. The edge-tone production still gives a breathy start and
+    some air noise, but at high pitch the tone reads mainly as a bright
+    whistle. Players use crisp tonguing and fast trills, which come across
+    as sparkling or piercing.
+  music: >-
+    Used in orchestras and wind bands to add sparkle on top, in marching
+    bands and military fife-style music, and in film for birdsong, magic or
+    military colour.
+  range: >-
+    The lowest notes are thin and quiet, the middle is bright and sweet,
+    and the top is piercing enough to stand out over a whole orchestra.
+  vs:
+    flute: >-
+      Same mechanism, but the flute's longer tube sits an octave lower, with
+      a warmer, airier tone. If you can hear a soft, husky low register, it
+      is the flute.
+    tin-whistle: >-
+      A tin whistle has a built-in windway like a recorder and a simple
+      six-hole tube, so it is folkier, thinner and less controlled in tone.
+      Listen for its quick flicked ornaments, the cuts and rolls of Irish
+      music, versus the piccolo's polished, orchestral brilliance.
+    glockenspiel: >-
+      A glockenspiel is a set of metal bars struck with mallets, so each note
+      has a hard ping and then dies away. A piccolo note is blown and holds
+      steady as long as the breath lasts.
+
+recorder:
+  how: >-
+    Air blown into the mouthpiece passes through a narrow channel (the duct)
+    that aims it at a sharp edge, where it splits and sets the air in the
+    wooden or plastic tube vibrating. Finger holes change the tube's length.
+  why: >-
+    Because the duct shapes the air stream, the player cannot change tone
+    colour much, and blowing harder mainly pushes the pitch sharp, so the
+    recorder has a narrow dynamic range and a plain, whistle-like sound.
+    Notes often begin with a small chiff, a puff of air noise as the edge
+    tone settles. Players use little or no vibrato, so held notes sound
+    straight and simple.
+  music: >-
+    Prominent in Renaissance and Baroque music and modern early-music
+    groups, and widely taught in schools as a first instrument; it also
+    appears in folk and film music for a pastoral or old-world feel.
+  range: >-
+    The lowest notes are soft and round, the middle is sweet and clear, and
+    the highest notes become shrill and strained.
+  vs:
+    flute: >-
+      On the flute the player's own lips shape the air stream, so they can
+      vary loudness, colour and vibrato much more. Listen for the flute's
+      airy halo, wider swells and vibrato against the recorder's even,
+      straight tone.
+    ocarina: >-
+      An ocarina is an enclosed vessel rather than a tube, so it produces an
+      almost pure tone with nearly no overtones. The recorder has more edge
+      and a chiffy start, while the ocarina is rounder and hollower.
+    tin-whistle: >-
+      Both have a built-in windway, but the tin whistle's tube is narrower
+      and usually metal, giving a thinner, brighter tone. The recorder is
+      softer and sweeter, and tin whistle players use more quick flicked
+      ornaments.
+
+ocarina:
+  how: >-
+    Air blown into the mouthpiece passes through a windway and strikes an
+    edge, as in a recorder, but the air that vibrates is inside a closed,
+    rounded chamber of clay or plastic. Uncovering finger holes raises the
+    pitch.
+  why: >-
+    A rounded chamber resonates at essentially one frequency, unlike a tube,
+    which supports a whole series of overtones (higher hidden pitches). That
+    is why the ocarina sounds hollow and almost like a pure sine tone, with
+    little brightness or edge. It cannot jump to higher registers by
+    overblowing, so its range is short, usually around an octave and a bit.
+    Breath noise is small, and notes start softly.
+  music: >-
+    Heard in folk traditions from several continents, in video game music
+    and as a novelty or melody instrument in amateur and children's music.
+  range: >-
+    Low notes are dark, soft and very hollow, and higher notes become
+    brighter and a little more whistle-like, but the colour changes less
+    than on most winds.
+  vs:
+    recorder: >-
+      A recorder is a tube, so its notes carry some overtones and a clearer
+      edge, and notes often start with a chiff. The ocarina is rounder,
+      softer and more hollow.
+    flute: >-
+      The flute is an open tube blown across an edge, which adds breath
+      noise and brightness that grows with loudness. The ocarina is purer
+      and hollower, with almost no air hiss.
+    wine-glasses: >-
+      Glass harp notes come from glass rims rubbed by wet fingers, so they
+      fade in slowly and shimmer with a ringing, slightly metallic quality.
+      Ocarina notes are blown, start more directly and sound hollow rather
+      than glassy.
+
+tin-whistle:
+  how: >-
+    A simple duct flute: breath goes through a fixed windway in the
+    mouthpiece onto an edge, setting the air in a narrow metal tube
+    vibrating. Six finger holes choose the notes.
+  why: >-
+    The narrow tube and small windway give a thin, bright tone with a little
+    breath around it, and the fixed windway means loudness changes little.
+    Instead of tonguing every note, Irish players often separate and
+    decorate notes with quick finger flicks: cuts (a very short higher note
+    before the main one) and rolls (a quick turn around a note), which give
+    the music its lilting, clicking ornamentation. Blowing harder jumps to
+    the upper octave, which sounds shrill.
+  music: >-
+    Most associated with Irish and other Celtic traditional music, playing
+    jigs, reels and airs in sessions; also heard in film scores for a Celtic
+    or rustic feel.
+  range: >-
+    The lower octave is soft and breathy, and the upper octave is bright,
+    piercing and shrill.
+  vs:
+    recorder: >-
+      The recorder has a wider tube and a thumb hole, giving a softer,
+      sweeter, rounder tone. The tin whistle is thinner and brighter, and
+      players fill melodies with quick flicked ornaments.
+
+oboe:
+  how: >-
+    Two thin blades of cane tied together (a double reed) vibrate against
+    each other as the player blows between them. They feed a narrow, cone-
+    shaped wooden tube.
+  why: >-
+    The two blades slap shut and open many times a second, chopping the air
+    into sharp pulses rich in high overtones (higher hidden pitches). The
+    narrow bore and reed emphasise a band of these overtones, which the ear
+    hears as nasal, focused and penetrating, a bit like a voice singing
+    through the nose. The player controls the tiny reed with the lips, so
+    the tone can be shaped expressively and carries vibrato, and the sound
+    projects clearly over an orchestra. Notes can be gently started or
+    crisply tongued.
+  music: >-
+    A core orchestral woodwind, often given plaintive or pastoral solos, and
+    it gives the tuning note at the start of orchestra concerts; also heard
+    in chamber music and film scores.
+  range: >-
+    Low notes are thick, reedy and slightly honking, the middle is sweet and
+    singing, and the top becomes thin and pinched.
+  vs:
+    english-horn: >-
+      The English horn is a larger oboe with a bulb-shaped bell, so it sounds
+      lower, darker and more veiled. If the tone is bright, pinched and
+      sitting higher, it is the oboe.
+    clarinet: >-
+      A clarinet uses a single reed on a cylindrical tube, which favours
+      odd-numbered overtones and sounds hollow and smooth. The oboe is more
+      nasal, focused and penetrating.
+    soprano-sax: >-
+      A soprano sax has a single reed and a wide metal cone with a flared
+      bell, so it is louder, brighter and brassier, usually with a wider
+      vibrato. The oboe is more nasal and narrowly focused.
+    bagpipe: >-
+      A bagpipe's melody pipe also uses a double reed, but it is fed from a
+      bag and sounds over continuous drones, so the sound never stops
+      between notes. Oboe notes can start and stop freely, with silence
+      between phrases and no drone underneath.
+
+english-horn:
+  how: >-
+    An alto member of the oboe family: a double reed on a bent metal tube
+    called a bocal, feeding a longer cone-shaped wooden body that ends in a
+    pear-shaped bulb instead of an open flare.
+  why: >-
+    The double reed gives it the oboe's reedy, vocal character, but the
+    longer tube puts it lower, and the bulb-shaped bell softens the brightest
+    overtones. That is why it sounds darker, more veiled and more
+    melancholic than the oboe. Like the oboe, it uses vibrato and is played
+    with smooth, singing phrasing.
+  music: >-
+    Used in orchestras and film scores for slow, lonely or wistful solos,
+    and sometimes in chamber music.
+  range: >-
+    Low notes are dark and rich, the middle is warm and mournful, and the
+    top becomes thinner and closer to the oboe.
+  vs:
+    oboe: >-
+      The oboe is smaller and has an open bell, so it is higher, brighter and
+      more pinched. Listen for the English horn's darker, softer, veiled
+      tone in a lower range.
+
+clarinet:
+  how: >-
+    A single flat cane reed beats against a mouthpiece, opening and closing
+    the airflow into a tube with a mostly cylindrical (straight, even-width)
+    bore. Keys and holes change the sounding length.
+  why: >-
+    A cylindrical tube that is closed at the reed end strongly favours odd
+    harmonics (every other overtone), which is why the low notes sound
+    hollow and woody. Higher up, the overtone balance evens out and the
+    tone turns sweet and clear. Overblowing jumps not an octave but about an
+    octave and a half, so the instrument has a register break, a point
+    where fingerings change and a skilled player hides the seam. Notes can
+    begin from almost nothing, and many classical players use little or no
+    vibrato, while jazz and klezmer players add bends, wails and vibrato.
+  music: >-
+    A mainstay of orchestras, wind bands and chamber music, early jazz and
+    swing, and klezmer, where it carries melodies, fast runs and expressive
+    solos.
+  range: >-
+    The low register is dark and hollow, the middle is smooth and round, and
+    the top is bright, clear and, at the very top, shrill.
+  vs:
+    oboe: >-
+      An oboe uses a double reed on a cone-shaped tube, giving a bright,
+      nasal tone rich in high overtones. The clarinet is smoother and
+      rounder, and its low notes sound hollow rather than nasal.
+    soprano-sax: >-
+      A soprano sax has a single reed too, but its wide metal cone supports
+      all overtones and its bell projects strongly, so it is brighter and
+      brassier with more bite. The clarinet is darker and hollower.
+    flute: >-
+      A flute has no reed; its tone comes from air striking an edge, so it is
+      airy with audible breath hiss. The clarinet has a reedy, woody core and
+      a more solid start to notes.
+    french-horn: >-
+      A horn's sound comes from the player's buzzing lips in a long brass
+      tube, giving a warm, brassy glow that blooms when played louder. The
+      clarinet stays reedy and woody, without that brassy swell.
+
+bassoon:
+  how: >-
+    A double reed on a curved metal tube (the bocal) feeds a long cone-
+    shaped wooden tube folded back on itself, so the instrument is shorter
+    than its sounding length.
+  why: >-
+    The double reed chops the air into sharp pulses rich in overtones,
+    giving a reedy, buzzy tone, while the long, narrow cone keeps it dry
+    rather than booming. Its notes can be very short and bouncy, which is
+    why it is often used for comic or clumsy characters. In its high range
+    the tone becomes tight and plaintive, and players add vibrato on held
+    melodies.
+  music: >-
+    The bass of the orchestral woodwind section and a staple of wind bands
+    and chamber music; it often plays bass lines, bouncy staccato figures
+    and occasional melancholy solos.
+  range: >-
+    Low notes are dry, buzzy and gruff, the middle is warm and reedy, and
+    the highest notes sound strained, thin and plaintive.
+  vs:
+    cello: >-
+      A cello is a bowed string on a large wooden body, so it has bow grain
+      and a rich, resonant ring. The bassoon is drier and reedier, with no
+      bow noise and a slightly buzzy core.
+    tenor-sax: >-
+      A tenor sax has a single reed and a wide metal cone with a flared
+      bell, so it is louder, brassier and breathier. The bassoon is thinner,
+      drier and more nasal.
+    trombone: >-
+      A trombone's sound comes from buzzing lips in a brass tube, so it is
+      round and brassy, getting brighter as it gets louder, and it can slide
+      between notes. The bassoon is reedy and dry.
+
+tenor-sax:
+  how: >-
+    A single cane reed beats against a mouthpiece, as on a clarinet, but it
+    feeds a wide, cone-shaped brass tube that ends in a flared bell. Large
+    keys open and close tone holes.
+  why: >-
+    The cone shape supports all overtones (higher hidden pitches), and the
+    wide bore and bell radiate them strongly, so the tone is full, loud and
+    edged with brassiness, even though it is a reed instrument. The player
+    can let air leak around the reed for a breathy, smoky subtone, or hum
+    while playing for a growl. Pitch is flexible, so players scoop into
+    notes and use a wide, expressive vibrato. Played harder, the tone gets
+    much brighter and rougher.
+  music: >-
+    One of the main solo voices of jazz, R&B, soul, rock and roll and funk,
+    playing melodies and improvised solos and riffing in horn sections.
+  range: >-
+    Low notes are thick, honking and breathy, the middle is warm and
+    smoky, and high notes become bright, edgy and sometimes screaming.
+  vs:
+    alto-sax: >-
+      The alto is a smaller saxophone, so it sits higher and sounds brighter
+      and more cutting. The tenor is lower, thicker and smokier.
+    trombone: >-
+      A trombone is brass: its sound comes from buzzing lips, and its slide
+      lets notes glide smoothly from one to the next. Listen for the sax's
+      reedy edge and breath noise against the trombone's rounder tone and
+      slide glissandos.
+    bassoon: >-
+      A bassoon has a double reed on a narrow wooden tube, giving a drier,
+      thinner, more nasal tone. The tenor sax is louder and brassier, with a
+      breathy, smoky edge.
+    clarinet: >-
+      A clarinet has a single reed too, but its narrow cylindrical tube
+      favours odd overtones, so it sounds hollow and smooth. The tenor sax is
+      lower, breathier and brassier.
+
+soprano-sax:
+  how: >-
+    The smallest common saxophone: a single cane reed on a mouthpiece feeds
+    a short, cone-shaped brass tube, usually straight. The clips here are
+    of a saxello, a curved soprano saxophone with an almost identical tone.
+  why: >-
+    The cone-shaped bore supports all overtones, so the tone is brighter and
+    more brassy than a clarinet's, while the small size puts it in the oboe's
+    range, with a sweet, singing quality. It is notoriously hard to play in
+    tune, and players shape pitch with the lips, so you often hear scoops
+    into notes and a fairly wide vibrato. Pushed harder, it turns edgy and
+    nasal.
+  music: >-
+    Heard in jazz, from early New Orleans styles to modern, and widely in
+    smooth jazz and pop instrumentals, usually as a lead melody voice.
+  range: >-
+    Low notes are reedy and slightly nasal, the middle is sweet and
+    singing, and the top becomes thin and piercing.
+  vs:
+    oboe: >-
+      An oboe's double reed and narrow bore give a more nasal, focused and
+      pinched tone. The soprano sax is broader, louder and more brassy, with
+      a wider vibrato.
+    clarinet: >-
+      A clarinet's cylindrical tube favours odd overtones, so it sounds
+      rounder and hollower. The soprano sax has more brightness and brassy
+      edge, and players scoop into notes more.
+
+alto-sax:
+  how: >-
+    A single cane reed on a mouthpiece feeds a cone-shaped brass tube with a
+    curved neck and an upturned bell, sized between the soprano and tenor.
+  why: >-
+    The cone-shaped bore supports all overtones, and the flared bell
+    projects them, so it is bright and brassy, with an edge that cuts
+    through a band. Its smaller size makes it higher and tighter than a
+    tenor, and it gets noticeably more cutting as the player blows harder.
+    Like other saxophones, it is easy to bend, so bluesy scoops, falls and
+    vibrato are common.
+  music: >-
+    A key voice in jazz, from bebop to big bands, as well as in soul, funk,
+    pop and concert bands, playing solos and section lines.
+  range: >-
+    Low notes are reedy and honking, the middle is bright and singing, and
+    the top becomes thin and piercing.
+  vs:
+    tenor-sax: >-
+      The tenor is a larger saxophone, so it is lower and thicker, with a
+      smokier, breathier sound. The alto is higher and brighter, with a more
+      cutting edge.
+
+bagpipe:
+  how: >-
+    The player blows into a bag (or pumps it with a bellows on some types)
+    and squeezes it to keep air flowing continuously. The bag feeds a
+    melody pipe, the chanter, with a double reed, and several drone pipes,
+    each with its own reed, sounding fixed low notes.
+  why: >-
+    Because the air supply comes from the bag, the sound never stops, so
+    pipers cannot separate notes with silence; instead they use very fast
+    grace notes (tiny flicked notes) to break up and accent the melody.
+    The chanter's reed and cone-shaped bore give a loud, piercing, buzzy
+    tone, and the drones hold steady low notes underneath, tuned to the
+    keynote of the melody. There is no dynamic control, so the volume is
+    constant throughout.
+  music: >-
+    Most associated with Scottish and Irish music, military pipe bands,
+    parades and funerals; related bagpipes exist across Europe, North Africa
+    and Asia.
+  range: >-
+    The range is narrow, about nine notes on the Highland pipes, moving from
+    a full reedy low end to a shrill, piercing top over an unchanging drone.
+  vs:
+    oboe: >-
+      An oboe also uses a double reed, but the player blows directly, so it
+      can stop between notes, vary loudness and use vibrato. Listen for the
+      bagpipe's constant drone and unbroken stream of sound.
+    accordion: >-
+      An accordion plays changing chords and swells with the bellows. The
+      bagpipe holds the same drone throughout, with a loud melody that never
+      pauses and rapid grace-note ornaments.
+
+whistle:
+  how: >-
+    Breath is forced through a short mouthpiece onto an edge, making the air
+    in a small round chamber ring, and a small ball (the pea) inside is
+    blown around the chamber.
+  why: >-
+    The edge-tone mechanism gives a single loud, high pitch, in the range
+    where the ear is most sensitive. The spinning pea repeatedly disturbs
+    the airflow, which makes the pitch and loudness flutter rapidly, the
+    familiar trilling warble. Blowing harder makes it louder and slightly
+    higher, and short sharp blasts are made with the tongue.
+  music: >-
+    Used as a signal in sports, policing and traffic, and as a rhythmic,
+    signalling instrument by samba band leaders and in carnival music.
+  range: >-
+    It has essentially one pitch, which rises a little and becomes harsher
+    as it is blown harder.
+  vs:
+    piccolo: >-
+      A piccolo has finger holes and keys, so it plays melodies with clean
+      changes of pitch. The pea whistle stays on one note, with a rapid
+      trill caused by the pea.
+    siren-whistle: >-
+      A siren whistle's pitch sweeps up and down as its rotor speeds up and
+      slows down. The pea whistle stays on one pitch and trills.
+
+siren-whistle:
+  how: >-
+    Blowing into it spins a small rotor that repeatedly chops the airflow
+    through slots, producing a tone. The faster the rotor spins, the higher
+    the pitch.
+  why: >-
+    The pitch is set by how many times per second the airflow is
+    interrupted, so as the player's breath speeds the rotor up and lets it
+    slow down, the note glides up and down in a wailing siren shape. Air
+    rushes through the device continuously, so there is plenty of breath
+    noise around the tone. It cannot jump between notes; every change is a
+    slide.
+  music: >-
+    Heard in samba and carnival bands, party and dance music, sound systems
+    and as a toy or novelty effect.
+  range: >-
+    It starts low and breathy as the rotor spins up, climbs to a shriller
+    tone at full speed, and slides back down as it slows.
+  vs:
+    whistle: >-
+      A pea whistle sits on one pitch and trills rapidly because of the ball
+      inside. The siren whistle sweeps smoothly up and down.
+    theremin: >-
+      A theremin is an electronic instrument played by moving the hands near
+      antennas, giving a pure, steady tone that can play melodies with
+      vibrato. The siren whistle is breathy and only sweeps up and down
+      without a melody.
+
+train-whistle:
+  how: >-
+    Several small whistle pipes of different lengths are joined together and
+    blown at once, each with air striking an edge, so they sound several
+    pitches together.
+  why: >-
+    Each chamber produces its own pitch, so one breath gives a chord of two
+    or three notes, often a slightly sour cluster that mimics the steam
+    whistle of a locomotive. The edge-tone mechanism adds plenty of breath
+    noise, and the chord swells and fades with the strength of the breath.
+  music: >-
+    Used as a toy, as a sound effect in cartoons, theatre and children's
+    music, and in novelty songs about trains.
+  range: >-
+    It sounds a fixed chord; blowing harder makes it louder, brighter and
+    slightly sharper rather than changing the notes.
+  vs:
+    harmonica: >-
+      A harmonica uses metal reeds, which give a reedy buzz and allow
+      changing chords and melodies. The train whistle is airy and hollow,
+      with one fixed chord.
+    pan-flute: >-
+      A pan flute is a row of pipes blown one at a time to play a melody.
+      The train whistle sounds all its pipes at once as a single fixed
+      chord.
+
+pan-flute:
+  how: >-
+    A row of pipes of different lengths, closed at the bottom, bound
+    together. The player blows across the open top of each pipe, splitting
+    the air on the rim, and moves along the row to play different notes.
+  why: >-
+    Each pipe is closed at the bottom, which favours odd harmonics (every
+    other overtone), so the notes sound hollow and soft. The player's lips
+    aim an open air stream across the rim with no channel to guide it, so a
+    lot of breath escapes as audible air noise. Notes often start with a
+    puff or chiff, and players add vibrato and slight pitch bends by tilting
+    the pipes.
+  music: >-
+    Central to Andean music (siku, zampoña) and Romanian folk music (nai),
+    and common in world-music, new age and film soundtracks for a pastoral or
+    exotic feel.
+  range: >-
+    Low pipes are deep, breathy and husky, and the shortest pipes are
+    bright, airy and whistle-like.
+  vs:
+    flute: >-
+      On the concert flute one tube plays all notes and the player's lips
+      shape the air stream finely, so the tone is smoother and less airy.
+      Listen for the pan flute's thick air noise and puffed note starts.
+    ocarina: >-
+      An ocarina's enclosed chamber gives an almost pure, round tone with
+      very little breath noise. The pan flute is much breathier, with a
+      puff at the start of notes.
+    recorder: >-
+      A recorder's windway guides the air for the player, so its tone is
+      cleaner, with less breath and more consistent starts. The pan flute is
+      hollow and very airy.
+
+shakuhachi:
+  how: >-
+    An end-blown bamboo flute: the player blows across a sharpened edge cut
+    into the top end of the tube, with no windway, and changes notes with
+    five finger holes.
+  why: >-
+    The edge-tone mechanism without a guiding channel lets a lot of air
+    noise through, and players use this deliberately, from a soft rush of
+    breath to explosive air bursts. Changing the angle of the head and
+    partly covering holes bends the pitch, so notes can slide, dip and
+    swell. Long held notes often grow from silence, swell and fade, with
+    vibrato added by moving the head.
+  music: >-
+    Traditional Japanese music, especially meditative solo pieces and
+    chamber music with koto, and widely used in film and game scores for a
+    Japanese or contemplative atmosphere.
+  range: >-
+    Low notes are dark, breathy and rough, the middle is warm and vocal,
+    and the top becomes piercing and intense.
+  vs:
+    flute: >-
+      The concert flute's keys and refined embouchure (lip shaping) give a
+      cleaner, steadier tone with less air noise. The shakuhachi uses breath
+      noise, swells and pitch bends as part of the music.
+    pan-flute: >-
+      Pan flute players move between separate pipes, so melodies are made
+      of quick, distinct notes with less bending. The shakuhachi lingers on
+      notes, sliding and swelling them with bursts of air.
+    bansuri: >-
+      Both are bamboo flutes, but the bansuri is side-blown and played with
+      smooth Indian slides and ornaments, giving a sweeter tone. The
+      shakuhachi is harsher and uses dramatic breath bursts.
+
+bansuri:
+  how: >-
+    A side-blown bamboo flute: the player blows across a hole near one end,
+    splitting the air on its edge, and plays with six or seven open finger
+    holes and no keys.
+  why: >-
+    Like the Western flute, the tone comes from an air stream striking an
+    edge, so it is pure and airy. Because the holes are open and covered
+    directly by the fingers, players can gradually slide a finger off a hole
+    to glide smoothly between pitches, which gives the instrument its
+    fluid, singing quality. Fast ornaments and gentle breath vibrato decorate
+    held notes. The clip here is a bass bansuri, which is lower and
+    breathier than the common size.
+  music: >-
+    Heard in Hindustani (North Indian) classical music, in Indian folk and
+    devotional music, and in Indian film soundtracks, usually playing
+    flowing melodies.
+  range: >-
+    Low notes are soft, husky and breathy, the middle is sweet and warm,
+    and high notes become bright and clear.
+  vs:
+    flute: >-
+      The Western flute uses metal keys that close holes cleanly, so notes
+      change in steps with a brighter, more even tone. The bansuri slides
+      between notes and sounds softer and airier.
+    shakuhachi: >-
+      The shakuhachi is end-blown and uses sharp breath bursts and harsh
+      tone colours. The bansuri is sweeter and smoother, with fluid slides.
+
+duduk:
+  how: >-
+    A large, flattened cane double reed feeds a short cylindrical tube of
+    apricot wood with finger holes. The player controls the reed with the
+    lips to shape pitch and tone.
+  why: >-
+    The big, soft reed and narrow wooden tube produce fewer piercing high
+    overtones than an oboe, so the tone is soft, velvety and dark. Players
+    adjust pitch with their lips, so notes slide and swell in a very
+    vocal, mournful way. It is often played over a drone, a single long
+    note held by a second duduk player.
+  music: >-
+    The national instrument of Armenia, used in folk and sacred music, and
+    widely in film and game soundtracks for a sorrowful or ancient feel.
+  range: >-
+    Its range is only about an octave and a half; the low notes are dark and
+    velvety, and the top notes become more intense and reedy.
+  vs:
+    oboe: >-
+      An oboe has a small, stiff double reed and a cone-shaped bore, giving a
+      brighter, more nasal and piercing tone. The duduk is softer and
+      darker, with more sliding.
+    clarinet: >-
+      A clarinet's single reed and keyed tube give a hollow tone and clean,
+      steady notes. The duduk is reedier and more vocal, with slides and
+      swells into notes.
+    english-horn: >-
+      Both have a dark, melancholy double-reed sound, but the English horn
+      is more focused and projects more. The duduk is softer and more
+      velvety, often with a drone underneath.
+
+kazoo:
+  how: >-
+    The player hums or sings into a small tube; a thin membrane over a side
+    hole buzzes in response, adding a buzz to the voice.
+  why: >-
+    The pitch comes entirely from the player's voice, so the kazoo follows
+    every vocal slide, vibrato and rhythm. The membrane flaps against the
+    air flow and adds a raspy, nasal buzz full of high overtones. Because it
+    is a voice in disguise, you can often hear vowel-like changes and
+    consonants in its sound.
+  music: >-
+    Used in jug bands, novelty songs, comedy, children's music and
+    occasionally in pop and rock for a cheeky colour.
+  range: >-
+    Its range is the player's own humming range; low notes are buzzy and
+    rough, and high notes get thin and nasal.
+  vs:
+    harmonica: >-
+      A harmonica's pitch comes from metal reeds, so it is reedy and steady,
+      with breath noise and bends. The kazoo has a strong membrane buzz and
+      clearly follows a human voice.
+    comb-and-paper: >-
+      Comb and paper uses the same idea: the voice makes paper buzz against
+      a comb. It is usually softer, thinner and more papery than the kazoo.
+    electric-guitar-distorted: >-
+      A distorted electric guitar has a picked attack on each note and a
+      dense, sustained buzz from an amplifier. A kazoo starts softly, with a
+      voice's natural slides and breaks.
+
+comb-and-paper:
+  how: >-
+    The player holds a piece of thin paper against the teeth of a comb,
+    presses lips to it and hums, making the paper buzz.
+  why: >-
+    As with the kazoo, the pitch comes from the voice, and the paper adds a
+    buzz. The paper is soft and loosely held, so the buzz is thinner,
+    raspier and quieter than a kazoo's. Players often feel their lips
+    tickle, and the sound follows every vocal inflection.
+  music: >-
+    A homemade folk and novelty instrument, heard in early jug band and
+    skiffle music, children's play and comedy.
+  range: >-
+    Its range is the player's humming range; low notes are faint and raspy,
+    and higher notes get a sharper buzz.
+  vs:
+    kazoo: >-
+      A kazoo uses a tuned tube and membrane, so it is louder and more
+      nasal. Comb and paper is softer, with a thinner, papery rasp.
+
+bass-clarinet:
+  how: >-
+    A larger, lower clarinet: a single reed on a mouthpiece feeds a long
+    cylindrical tube with a curved metal neck and an upturned bell.
+  why: >-
+    Like the clarinet, its cylindrical bore favours odd harmonics (every
+    other overtone), so its low notes sound dark, hollow and woody. Because
+    it is much longer, it plays about an octave lower than the regular
+    clarinet. The tone is smooth and round, not buzzy, and its lowest notes
+    often have a breathy, mysterious quality. You can sometimes hear the
+    clicking of its large keys.
+  music: >-
+    Used in orchestras and wind bands for bass lines and dark solos, in
+    film scores for mystery or menace, and in jazz.
+  range: >-
+    Low notes are dark and velvety, the middle is woody and warm, and high
+    notes become thinner and more reedy.
+  vs:
+    clarinet: >-
+      The regular clarinet has a shorter tube, so it plays an octave higher
+      and sounds brighter. The bass clarinet is darker, deeper and more
+      hollow.
+    bassoon: >-
+      A bassoon has a double reed on a cone-shaped tube, which makes it drier,
+      buzzier and more nasal. The bass clarinet is smoother and hollower.
+    tenor-sax: >-
+      A tenor sax has a wide, cone-shaped metal bore and flared bell, so it
+      is brassier, brighter and breathier. The bass clarinet is darker and
+      smoother.
+
+contrabassoon:
+  how: >-
+    A bassoon twice as long: a large double reed feeds a long cone-shaped
+    tube folded several times, playing about an octave below the bassoon.
+  why: >-
+    The notes are so low that the reed flaps only a few dozen times per
+    second, so you can almost hear the individual pulses as a gravelly
+    rattle under the pitch. The double reed's rich overtones keep the tone
+    buzzy and reedy rather than smooth. Notes take a moment to start and
+    are rarely very fast.
+  music: >-
+    The deepest woodwind in orchestras and large wind bands, used to deepen
+    bass lines and for dark, grotesque or comic effects in orchestral and
+    film music.
+  range: >-
+    The lowest notes are a rattling growl, the middle is gruff and reedy,
+    and the upper notes sound like a hoarse bassoon.
+  vs:
+    bassoon: >-
+      The bassoon is half the length, so it plays an octave higher and its
+      tone is smoother and more singing. The contrabassoon is deeper, with an
+      audible rattle in its low notes.
+    tuba: >-
+      A tuba is brass, played with buzzing lips in a wide bore, so its low
+      notes are round, smooth and full. The contrabassoon is reedy, buzzy and
+      rattly.
+    double-bass: >-
+      A double bass is a bowed or plucked string, so it has bow grain, or a
+      woody pluck that dies away. The contrabassoon is a continuous reedy
+      buzz with no pluck or bow noise.
+
+# ---------------------------------------------------------------------------
+# Brass and lip-buzzed instruments
+# ---------------------------------------------------------------------------
+
+trumpet:
+  how: >-
+    The player buzzes the lips into a cup-shaped mouthpiece, and the buzzing
+    sets the air in a mostly cylindrical brass tube vibrating. The tube ends
+    in a flared bell, and three valves add extra tubing to reach notes in
+    between.
+  why: >-
+    Tight, fast lip buzzing creates a tone rich in overtones, and the flared
+    bell radiates the high ones efficiently, so the trumpet sounds bright and
+    bold. As the player blows harder, the sound gets brighter as well as
+    louder, which gives loud passages their blaring, brassy edge. The lips
+    pick which of the tube's natural notes sounds, so notes can be crisply
+    tongued, smeared, shaken or bent. Mutes placed in the bell change the
+    tone, from nasal and pinched to buzzy or wah-wah.
+  music: >-
+    Heard in orchestras, brass bands, military and ceremonial music, jazz,
+    mariachi, salsa, ska and pop horn sections, often playing fanfares, lead
+    melodies and solos.
+  range: >-
+    Low notes are dark and soft, the middle is rich and bright, and the top
+    becomes brilliant, piercing and strained.
+  vs:
+    french-horn: >-
+      A horn has a longer, narrower tube with a wide bell pointing backwards,
+      often with the player's hand inside it, which softens the high
+      overtones. Listen for the horn's rounder, darker, more distant tone
+      against the trumpet's direct brightness.
+    trombone: >-
+      A trombone has a longer tube and a slide, so it plays lower and can
+      glide between notes. The trumpet is higher and brighter, with crisp
+      separated notes from its valves.
+    soprano-sax: >-
+      A soprano sax makes its sound with a cane reed, not lips, giving a
+      reedy, breathier edge and usually a wider vibrato. The trumpet's
+      buzzed lips and bell give a cleaner, more ringing blare.
+    synth-lead-saw: >-
+      A sawtooth synth lead is a steady electronic waveform, unchanging
+      unless programmed. A trumpet's attack has a tiny burst of lip buzz,
+      its brightness rises with loudness, and held notes waver naturally.
+
+french-horn:
+  how: >-
+    The player buzzes the lips into a small, funnel-shaped mouthpiece that
+    feeds a very long, narrow, mostly cone-shaped tube coiled in a circle,
+    ending in a wide bell. Valves add tubing, and the right hand sits inside
+    the bell.
+  why: >-
+    The funnel-shaped mouthpiece and the hand in the bell soften the highest
+    overtones, so the tone is round, warm and mellow. The bell points
+    backwards, so much of the sound reaches the audience after bouncing off
+    walls, which adds to its distant, blended quality. Played softly it is
+    smooth and noble; played hard, it brightens and turns brassy and heroic.
+    It plays high up its tube's series of natural notes, where they are
+    close together, so slips and cracked notes are more common than on
+    other brass.
+  music: >-
+    A core sound of the orchestra, wind band and brass quintet, and central
+    to film and game scores for heroic, noble or pastoral themes, often
+    playing broad melodies and harmonies.
+  range: >-
+    Low notes are dark and growly, the middle is warm and singing, and high
+    notes become bright, ringing and strained.
+  vs:
+    trumpet: >-
+      A trumpet has a shorter, mostly cylindrical tube and a bell facing
+      forward, so it is brighter and more direct. The horn is rounder,
+      softer and more covered.
+    trombone: >-
+      A trombone has a wider, more cylindrical bore and a slide, so it is
+      brassier when loud, plays lower and can glide between notes. The horn
+      is mellower and more distant.
+    cello: >-
+      A cello is a bowed string, so its tone has a grainy bow texture and a
+      resonant wooden ring. The horn sounds like smooth, warm air with no
+      bow grain, and its notes bloom rather than start with a scrape.
+    tuba: >-
+      A tuba has a much wider and longer bore, so it lives in the bass range
+      with a deep, round tone. The horn sits mostly in the middle range.
+
+trombone:
+  how: >-
+    The player buzzes the lips into a cup-shaped mouthpiece that feeds a
+    mostly cylindrical brass tube ending in a flared bell. A telescoping
+    slide changes the tube's length smoothly.
+  why: >-
+    Because the slide changes length continuously, the trombone can glide
+    smoothly from one note to another, the slide glissando. Lip buzzing in a
+    wide tube gives a round, full tone at soft volumes, and as it is
+    blown harder the bell radiates more high overtones, so the sound becomes
+    much brighter and more blaring. Players can also use mutes and growls
+    for comic, vocal or jazzy effects.
+  music: >-
+    Heard in orchestras, brass and wind bands, jazz big bands, salsa, ska,
+    funk and pop horn sections, playing harmony, bass lines, solos and slide
+    effects.
+  range: >-
+    Low notes are dark, deep and growly, the middle is full and round, and
+    the top becomes bright, singing and intense.
+  vs:
+    french-horn: >-
+      A horn has a narrower, cone-shaped tube and a backwards-facing bell
+      with the player's hand inside, so it is softer and more covered. The
+      trombone is brassier and more direct, with slide glides.
+    tuba: >-
+      A tuba has a much larger, wider tube, so it is deeper and softer-edged.
+      The trombone is higher and brighter, and turns blaring when loud.
+    tenor-sax: >-
+      A tenor sax has a cane reed, so it has a reedy buzz and breath noise.
+      The trombone's buzzed lips and slide give a rounder, brass tone and
+      smooth slide glissandos.
+    bassoon: >-
+      A bassoon is a double reed on a narrow wooden tube, so it is thinner,
+      drier and reedier. The trombone is fuller, rounder and brassier.
+
+tuba:
+  how: >-
+    The player buzzes the lips into a large cup-shaped mouthpiece that feeds
+    a long, wide, cone-shaped brass tube ending in a large bell; valves add
+    extra tubing. The sousaphone is a version wrapped around the player for
+    marching.
+  why: >-
+    The very wide, cone-shaped bore and big mouthpiece produce a deep, round
+    tone with softer edges than the narrower brass. Its low notes need a lot
+    of air, so they often have a soft, slightly delayed start. Played
+    louder, it gains a brassy buzz, but rarely the piercing blare of a
+    trumpet or trombone.
+  music: >-
+    The bass of orchestras, brass and wind bands, marching bands and New
+    Orleans brass bands, and the oom-pah bass of polka and folk dance music.
+  range: >-
+    The lowest notes are deep, soft and rumbling, the middle is round and
+    full, and the top becomes horn-like and warm.
+  vs:
+    trombone: >-
+      A trombone has a narrower, more cylindrical bore and sits higher, so
+      it is brighter and more blaring when loud. The tuba is deeper and
+      softer-edged.
+    electric-bass: >-
+      A bass guitar's notes are plucked strings that start with a clear
+      attack and then fade. Tuba notes are blown, start more softly and hold
+      at a steady level as long as the breath lasts.
+    double-bass: >-
+      A double bass is a string instrument, so it has a bowed grain or a
+      woody pluck that dies away. The tuba is a smooth, round, brass tone with
+      breath behind it.
+
+didgeridoo:
+  how: >-
+    The player buzzes relaxed lips into one end of a long wooden tube,
+    traditionally a eucalyptus branch hollowed by termites, producing a
+    low drone. Circular breathing (inhaling through the nose while pushing
+    air out with the cheeks) keeps the sound going without a break.
+  why: >-
+    The tube is wide and long and has no holes, so it drones mostly on one
+    deep pitch. The player shapes the mouth, tongue and throat like a
+    vowel, which emphasises different overtones and makes the wah-like,
+    talking changes in tone. Adding the voice, barks and sharp bursts of
+    breath creates rhythmic pulses and calls on top of the drone. The quick
+    snatched breaths of circular breathing often become part of the rhythm.
+  music: >-
+    An instrument of Aboriginal peoples of northern Australia, used in
+    ceremony and song, and widely heard in world music, ambient and film
+    soundtracks.
+  range: >-
+    It mostly holds one low drone, while the colour shifts from dark and
+    muffled to bright and buzzy as the player changes the mouth shape; a
+    higher, trumpet-like overblown note is sometimes added.
+  vs:
+    jaw-harp: >-
+      A jaw harp is a small metal tongue plucked in front of the mouth, so
+      every note starts with a twangy pluck. The didgeridoo is a continuous,
+      breathy lip-buzzed drone, much deeper.
+    synth-bass: >-
+      A filtered synth bass can mimic the wah-like shaping, but it has no
+      breath, no barks and none of the uneven pulse of circular breathing.
+      The didgeridoo has organic air noise and vocal accents.
+
+flugelhorn:
+  how: >-
+    A cousin of the trumpet: the player buzzes the lips into a deep,
+    mouthpiece feeding a mostly cone-shaped brass tube, wider
+    than a trumpet's, that ends in a large bell. It uses valves like a
+    trumpet.
+  why: >-
+    The wider, cone-shaped bore and deeper mouthpiece soften the highest
+    overtones, so the tone is darker, rounder and more velvety than the
+    trumpet, with less bite. It still brightens when blown harder, but much
+    less than a trumpet. Notes start more softly, so it suits smooth,
+    lyrical playing.
+  music: >-
+    Popular in jazz, especially ballads and soft solos, in brass bands, and
+    in film and pop arrangements for a warm, mellow brass colour.
+  range: >-
+    Low notes are dark and furry, the middle is warm and velvety, and the
+    top becomes brighter but stays softer than a trumpet's.
+  vs:
+    trumpet: >-
+      The trumpet has a narrower, mostly cylindrical bore and a shallower
+      mouthpiece, so it is brighter and more piercing. The flugelhorn is
+      darker and rounder.
+    french-horn: >-
+      A horn has a much longer tube, a hand in the bell and a backwards-facing
+      bell, so it sounds more distant and covered. The flugelhorn is warm but
+      closer and more direct.

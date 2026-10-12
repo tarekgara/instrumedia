@@ -1,0 +1,2005 @@
+# Instrumedia explanatory context: how each sound is made, why it sounds the
+# way it does, where it is heard, and why it differs from its common confusions.
+# Covers the families: mallet, drums, metal, electronic.
+
+# ---------------------------------------------------------------- mallet
+
+music-box:
+  how: >-
+    A rotating cylinder or disc studded with small pins plucks the teeth of a
+    tuned steel comb. The comb is usually screwed to a wooden base or box that
+    helps radiate the sound.
+  why: >-
+    The teeth are tiny and stiff, so they vibrate very fast, which is why every
+    note is high and plinky. Each pluck is a sharp flick of steel, giving a
+    bright click at the start, and the short teeth lose their energy within a
+    second or so. Because the pins are fixed in place, the rhythm is perfectly
+    regular and every note has the same strength, which is the mechanical,
+    clockwork feel you hear.
+  music: >-
+    Heard in toys, jewellery boxes and keepsakes, and in film and TV to suggest
+    childhood, memory or something eerie. Its job is almost always a small,
+    delicate melody or a nostalgic colour.
+  range: >-
+    The longer, weighted low teeth give a slightly rounder plunk, while the
+    shortest high teeth are thin, glassy and very brief.
+  vs:
+    celesta: >-
+      A celesta strikes steel bars with felt hammers, and each bar sits over a
+      wooden resonator box, so its notes are softer-edged and fuller. A music
+      box plucks bare teeth, so it is thinner, clickier and plays with rigid,
+      even timing.
+    kalimba: >-
+      A kalimba's tines are longer, tuned lower and plucked by soft thumbs
+      over a wooden body, which gives a rounder, woodier plink, often with a
+      faint buzz. A music box is higher, tinier and machine-even.
+
+glockenspiel:
+  how: >-
+    Steel bars laid out like a piano keyboard are struck with hard mallets of
+    plastic, rubber or metal. Most glockenspiels have no resonator tubes, so
+    the bars themselves do the ringing.
+  why: >-
+    Steel loses very little energy as it vibrates, so a struck bar keeps
+    ringing long after the hit unless it is damped. Hard mallets excite many
+    high overtones (fainter, higher pitches inside a note), and the bars are
+    small, so the sound is piercing and twinkly. A plain steel bar's overtones
+    are not neat multiples of its main pitch, which adds a bell-like sparkle
+    on top of a clear melody.
+  music: >-
+    Used in orchestras, marching bands and film scores for magical or
+    wintry colour, and in pop and indie songs to double a melody so it
+    sparkles. It usually adds brightness to a tune rather than carrying the
+    bass or harmony.
+  range: >-
+    It sits very high throughout; the lowest bars have a slightly warmer
+    ping, while the top bars are so high and bright they sound almost like
+    tiny bells.
+  vs:
+    celesta: >-
+      Both use steel bars, but a celesta plays them with felt hammers from a
+      keyboard, and each bar sits over a wooden resonator, so the attack is
+      soft and the tone round. A glockenspiel's hard mallets give a harder
+      ping and a brighter, longer ring.
+    vibraphone: >-
+      A vibraphone has larger aluminium bars over tuned resonator tubes and is
+      played with soft yarn mallets, so it is lower, mellower and often has a
+      motor-driven wobble. A glockenspiel is higher, harder and steady.
+    music-box: >-
+      A music box plucks tiny comb teeth with pins, so notes are thinner,
+      shorter and mechanically even. A glockenspiel is struck by a player, so
+      its notes are louder, ring longer and vary in strength.
+    triangle: >-
+      A triangle is a bent steel rod whose many overtones clash, so no single
+      note stands out. A glockenspiel bar is tuned so its main pitch is clear,
+      which is why it can play a recognisable melody.
+
+vibraphone:
+  how: >-
+    Aluminium bars are struck with yarn-wrapped mallets, and a tuned tube
+    hangs under each bar to amplify it. Small discs inside the tops of the
+    tubes can be spun by an electric motor, and a foot pedal lifts a damper
+    off the bars.
+  why: >-
+    Metal bars lose little energy, so with the pedal down a note rings for
+    several seconds, which is why the vibraphone sustains where a marimba
+    knocks. The bars are shaped so their strongest overtone falls two octaves
+    above the main note, and soft mallets keep the upper overtones quiet,
+    leaving a smooth, pure, slightly hollow tone. When the motor runs, the
+    spinning discs open and close the tubes, so the loudness pulses up and
+    down: that is the wobble you hear.
+  music: >-
+    Most at home in jazz, where it plays melodies, solos and chords, and also
+    heard in film music, lounge and exotica, and modern classical works. It
+    often adds a cool, glowing colour to a band.
+  range: >-
+    Low notes are warm and round with a long ring, and the top notes are
+    brighter, shorter and closer to a glockenspiel.
+  vs:
+    glockenspiel: >-
+      The glockenspiel's steel bars are smaller and hit with hard mallets, so
+      it is higher, harder and more piercing. The vibraphone is lower and
+      softer, and its pulsing tremolo is the clearest tell.
+    marimba: >-
+      A marimba has wooden bars, and wood soaks up vibration quickly, so each
+      note thuds and fades within a moment. A vibraphone's metal bars ring on
+      for seconds, so held notes blur together.
+    rhodes: >-
+      An electric piano strikes thin metal tines with hammers from a keyboard
+      and amplifies them with a pickup, giving a bell-like attack that turns
+      into a warm, slightly growly body. A vibraphone has a mallet knock, an
+      airy acoustic tone and usually a slower, deeper pulse.
+    celesta: >-
+      The celesta's steel bars are smaller and damped by the keyboard action
+      when the key is released, so it is higher with a shorter ring. The
+      vibraphone sits lower and can ring for seconds.
+
+marimba:
+  how: >-
+    Wooden bars, traditionally rosewood, are struck with yarn or rubber
+    mallets, and a tuned tube under each bar amplifies the main pitch.
+  why: >-
+    Wood absorbs vibration much faster than metal, so each note gives a round
+    knock and dies within a second or so; players roll (alternate mallets
+    quickly) to fake a long note. The underside of each bar is carved so its
+    first overtone sits two octaves above the main pitch, which blends
+    smoothly and keeps the tone warm. Soft mallets and the resonator tubes
+    favour the low, fundamental (main) pitch, giving a mellow, almost woody
+    hum.
+  music: >-
+    Heard in concert percussion music, Central American folk ensembles,
+    contemporary classical pieces and film scores, and in pop as a gentle
+    melodic hook. It plays melodies, rolled chords and soft bass lines.
+  range: >-
+    The low end is deep, dark and resonant, almost like a soft bass, while
+    the top is drier, shorter and more percussive.
+  vs:
+    xylophone: >-
+      A xylophone's bars are tuned so the first overtone is an octave and a
+      fifth up, and it is played with hard mallets, so it sounds brighter and
+      more piercing. A marimba sounds lower and rounder, with a softer knock.
+    balafon: >-
+      A balafon's gourd resonators have thin membranes over holes that buzz
+      when the note sounds. A marimba's tube resonators are open, so its tone
+      is clean, with no buzz.
+    vibraphone: >-
+      A vibraphone's aluminium bars lose energy slowly and ring for seconds,
+      often with a pulsing wobble. A marimba's wooden bars stop almost at
+      once, so you hear a knock and a quick fade.
+    kalimba: >-
+      A kalimba plucks thin metal tines with the thumbs, giving a quick plink
+      and sometimes a buzz. A marimba is struck wood with a soft mallet, so it
+      is warmer and rounder, with no pluck.
+
+xylophone:
+  how: >-
+    Hard wooden or synthetic bars are struck with hard mallets of plastic,
+    rubber or wood, usually over tuned resonator tubes.
+  why: >-
+    Wood damps vibration quickly, so each note is a short, dry knock. The bars
+    are carved so their first overtone sits an octave and a fifth above the
+    main pitch, and hard mallets bring out these upper tones, so the sound is
+    bright and penetrating rather than mellow. The quick, hard attack and very
+    short ring give it its clacky, cartoonish character.
+  music: >-
+    Heard in orchestras, cartoons and animation scores (often for bones or
+    comic chases) and in percussion ensembles. It plays fast melodies and
+    sharp accents that cut through a large group.
+  range: >-
+    Lower bars have a slightly rounder knock, while the top bars are tiny,
+    hard clicks with almost no ring.
+  vs:
+    marimba: >-
+      A marimba uses larger bars, softer mallets and an overtone tuned two
+      octaves up, so it is lower, warmer and rounder. A xylophone is higher,
+      drier and clicky.
+    glockenspiel: >-
+      Glockenspiel bars are steel, which keeps ringing after the hit. A
+      xylophone's wooden bars stop almost at once, so you hear a dry knock,
+      not a ringing ping.
+    woodblock: >-
+      A woodblock is a single hollow block, so it gives the same knock every
+      time with no melody. A xylophone has a row of tuned bars, so you hear a
+      tune.
+
+tubular-bells:
+  how: >-
+    A set of long brass tubes hangs from a frame, and each tube is struck
+    near its top end with a rawhide or plastic hammer. A foot pedal controls
+    a damper that stops the ringing.
+  why: >-
+    A metal tube's overtones are not neat multiples of its lowest frequency,
+    so the strike gives a clangy cluster of tones, much like a church bell.
+    The pitch you hear is a "strike note" that the ear assembles from the
+    higher overtones, which is why it can sound slightly out of tune or
+    ambiguous. Brass loses energy slowly, so after the clang there is a long,
+    singing ring.
+  music: >-
+    Used in orchestras and film or TV scores to imitate church bells, for
+    tolling, ceremonial or ominous moments, and in some rock and progressive
+    music. Its job is usually a few important, slow notes rather than a fast
+    melody.
+  range: >-
+    Longer, lower tubes sound heavy and solemn with a long ring, while the
+    shorter tubes are brighter, clangier and a little shorter.
+  vs:
+    vibraphone: >-
+      Vibraphone bars are shaped and played with soft mallets so the main
+      pitch dominates, giving a soft, pure tone. Tubular bells are hit with a
+      hard hammer and have mismatched overtones, so they clang.
+    hand-chimes: >-
+      Hand chimes are struck by a soft, spring-mounted clapper and tuned for a
+      clean main note, so they are gentle and round. Tubular bells are larger
+      and hit with a hammer, giving a louder, clangier strike.
+    gong: >-
+      A large flat gong has so many tangled overtones that no pitch emerges,
+      and its sound swells after the hit. Tubular bells give a recognisable
+      note that starts loudest and then fades.
+
+hand-chimes:
+  how: >-
+    Each chime is a tuned metal tube with a slot cut into it, held in the
+    hand, with a spring-mounted clapper that strikes the tube when it is
+    flicked.
+  why: >-
+    The clapper head is soft, so it excites mostly the main pitch and few
+    harsh high overtones, which gives the gentle, pure centre. The metal
+    tube loses energy slowly, so the note rings long and fades smoothly. The
+    attack can be soft or crisp depending on how hard the player flicks.
+  music: >-
+    Played by handbell and hand chime choirs in churches and schools, each
+    player covering a few notes. They are used for melodies, chords and soft,
+    shimmering backgrounds.
+  range: >-
+    Large low chimes have a deep, warm hum, while small high ones are sweet
+    and bright with a shorter ring.
+  vs:
+    tubular-bells: >-
+      Tubular bells are long tubes hit with a hard hammer, which brings out
+      their clashing overtones, so they are louder and clangier. Hand chimes
+      are softer and rounder.
+    vibraphone: >-
+      A vibraphone is struck with mallets, so each note has a small knock, and
+      its motor often adds a pulsing wobble. Hand chimes begin more gently and
+      ring evenly.
+
+kalimba:
+  how: >-
+    Thin metal tines are fixed over a bridge on a wooden board or hollow box,
+    and the player plucks their free ends with the thumbs. Some versions have
+    added rattles, or loose parts, that buzz.
+  why: >-
+    A tine is a small metal tongue clamped at one end; its overtones are not
+    multiples of the main pitch, but they die away fast, leaving a soft,
+    rounded plink with a clear note. Thumbs are soft, so the attack is gentle
+    compared to a pick or mallet, and the short tines lose their energy
+    within a second or two. Any buzz you hear comes from rattles or loose
+    tines vibrating against the frame.
+  music: >-
+    Rooted in the mbira family of southern and eastern Africa, and now common
+    in folk, ambient, lullaby and pop recordings. It usually plays repeating
+    melodic patterns that act as both tune and rhythm.
+  range: >-
+    The longest tines give a rounder, slightly buzzy low tone, while the
+    shortest tines are higher, thinner and shorter.
+  vs:
+    music-box: >-
+      A music box plucks tiny steel comb teeth with pins, so it is higher and
+      completely regular. A kalimba is lower, rounder and played by hand, so
+      timing and loudness vary.
+    marimba: >-
+      A marimba is struck wood with a resonator tube, so it is warmer, with a
+      soft knock and no pluck. A kalimba plucks metal, so it has a twangier
+      start and sometimes a buzz.
+    hang: >-
+      A handpan is a large struck steel shell with a tuned air chamber, so its
+      notes are rounder, louder and ring much longer, with a halo of
+      overtones. A kalimba's notes are short plucks.
+
+hang:
+  how: >-
+    Two hammered steel shells are joined into a hollow, UFO-like body, and
+    the player taps tuned dimples ("tone fields") on the top with fingers and
+    palms. The air inside, which escapes through a hole underneath, adds a
+    low resonance.
+  why: >-
+    Each tone field is hammered so its main pitch, its octave and one more
+    overtone line up in neat, musical ratios, which gives a clear, sweet,
+    bell-like note. Soft finger strikes keep the attack gentle, and steel
+    loses little energy, so notes ring on and the other tone fields hum along
+    in sympathy, producing the glowing halo. The sound is rounder and darker
+    than a steel pan because it is hit with skin, not sticks.
+  music: >-
+    Heard in ambient, meditation, world fusion and street performance, and
+    in film and online video soundtracks. It plays slow melodies and gentle
+    repeating patterns.
+  range: >-
+    The large central note is deep and humming, while the smaller fields
+    around it get progressively brighter and shorter.
+  vs:
+    steel-drum: >-
+      A steel pan is hit with rubber-tipped sticks and its notes are tuned
+      for a punchy, bright sound, so it is louder and more "boing". A handpan
+      is played with fingers and sounds softer and more glowing.
+    kalimba: >-
+      A kalimba plucks small tines, so notes are short and plinky. A handpan's
+      steel shell rings on for seconds with a broad halo.
+    vibraphone: >-
+      Vibraphone bars give a single, even, pure tone that is the same on every
+      note. A handpan's notes bloom with sympathetic ringing from the other
+      fields, so they sound richer and less uniform.
+
+steel-drum:
+  how: >-
+    The top of a steel oil drum is sunk into a bowl and hammered into many
+    separate note areas, which are struck with rubber-tipped sticks.
+  why: >-
+    Each note area is tuned so its overtones line up with the main pitch,
+    often an octave and higher harmonics, which gives a clear note with a
+    bright, almost vocal colour. The stick strike gives a quick, punchy
+    attack, and the rising and settling of the overtones produces the "boing"
+    shape. Notes fade fairly quickly, so long notes are played as fast rolls.
+  music: >-
+    Central to the music of Trinidad and Tobago, including calypso and soca,
+    played by steel bands of many pans, and borrowed by pop and film for a
+    sunny, tropical colour. It plays melodies, chords and bass parts.
+  range: >-
+    Small high pans are bright and pingy for melody, while large bass pans,
+    made from whole drums, give a deeper, rounder "bong".
+  vs:
+    hang: >-
+      A handpan is hit with bare fingers and rings longer with a soft glow, so
+      it sounds gentle and ethereal. A steel pan's stick attack and shorter
+      notes make it brighter and bouncier.
+
+balafon:
+  how: >-
+    Wooden bars rest on a frame over gourds of different sizes, and the bars
+    are struck with padded sticks. Each gourd has a hole covered by a thin
+    membrane, traditionally spider egg-sac silk or a modern substitute, that
+    buzzes.
+  why: >-
+    Like any wooden bar, each note is a short knock that dies quickly. The
+    gourd acts as a resonator that boosts the note, and as the air inside
+    pumps in and out the membrane flaps against its hole, adding a nasal,
+    kazoo-like buzz. That buzz makes the instrument louder and rougher than a
+    clean wooden bar.
+  music: >-
+    Played across West Africa, especially in Mande music, often by griot
+    musicians, and in modern African pop and world music. It plays fast,
+    interlocking melodic patterns that also drive the rhythm.
+  range: >-
+    Low bars over large gourds have a deep, buzzy hum, while high bars are
+    shorter, drier knocks with less buzz.
+  vs:
+    marimba: >-
+      A marimba's resonators are open tubes with no membranes, so its tone is
+      clean and warm. A balafon has the same woody knock plus a clear buzz.
+    xylophone: >-
+      A xylophone is played with hard mallets and has clean tubes, so it is
+      bright and clicky without buzz. A balafon is rougher and more nasal.
+
+wine-glasses:
+  how: >-
+    A wet finger is rubbed around the rim of a glass, and the rapid grip and
+    slip of the skin keeps the glass wall vibrating, much as a bow drives a
+    violin string. Each glass is tuned by its size or by adding water.
+  why: >-
+    The rubbing feeds energy in continuously, so the note swells up slowly
+    and holds as long as the finger moves. One vibration pattern of the glass
+    dominates, so the tone is very pure with few overtones, which sounds
+    ghostly. Tiny unevenness in the glass splits that pattern into two very
+    close pitches, which beat against each other and create the slow shimmer.
+  music: >-
+    Heard from street performers and novelty concerts, and in film, TV and
+    ambient music for eerie or dreamlike moments. It usually plays slow
+    melodies or held chords.
+  range: >-
+    Large or fuller glasses give lower, softer, smoother tones, while small
+    or emptier glasses are higher, thinner and more piercing.
+  vs:
+    ocarina: >-
+      An ocarina is blown, so its notes have breath noise and start and stop
+      cleanly with each tongue stroke. A glass harp has no breath and fades in
+      gradually.
+    synth-pad: >-
+      A synth pad stacks several oscillators and effects, so it sounds richer
+      and more even. A glass harp is a single pure tone with a natural, slow
+      beating.
+
+glasses-of-water:
+  how: >-
+    Drinking glasses holding different amounts of water are tapped with a
+    spoon, pencil or stick. More water adds mass to the vibrating wall,
+    which lowers the pitch.
+  why: >-
+    A struck glass rings with a fairly pure main tone, giving a clear, slightly
+    hollow ping. The water inside and the base resting on a table soak up
+    energy, so the ring is shorter than a steel bar's. A metal spoon gives a
+    sharper, brighter tap than a wooden stick.
+  music: >-
+    Mostly a party trick, music-class demonstration and novelty or home
+    recording effect. It plays simple melodies.
+  range: >-
+    Fuller glasses sound lower and duller with a shorter ring, while emptier
+    glasses are higher and brighter.
+  vs:
+    glockenspiel: >-
+      Steel bars lose energy very slowly and are hit with hard mallets, so a
+      glockenspiel is harder, brighter and rings longer. Water glasses give a
+      gentler ping that fades sooner.
+    wine-glasses: >-
+      Rubbing a rim feeds energy in continuously, so the note swells and holds.
+      Tapping gives one burst of energy, so the note pings and fades.
+    celesta: >-
+      A celesta's steel bars are struck by felt hammers over wooden
+      resonators, so every note is sweet, even and well tuned. Tapped glasses
+      are less even in tone and tuning, with a glassy edge.
+
+# ---------------------------------------------------------------- drums
+
+timpani:
+  how: >-
+    A calfskin or plastic head is stretched over a large copper bowl and
+    struck with felt mallets, usually a short way in from the rim. A pedal
+    changes the head's tension, and so its pitch.
+  why: >-
+    A plain drumhead's overtones are not neat multiples of its main pitch,
+    which is why most drums sound pitchless. On timpani, the weight of the air
+    and the enclosed bowl pull the main overtones into near-musical ratios,
+    and striking off-centre avoids the dull thud of the centre, so you hear a
+    definite note. The large head and felt mallets give a deep, soft-edged
+    boom that rings for a few seconds.
+  music: >-
+    A core part of the symphony orchestra, also heard in film scores, brass
+    bands and some rock and pop. It reinforces bass notes, marks big accents
+    and plays rolls that build tension.
+  range: >-
+    The largest drum and slack tunings are dark and thunderous, while smaller
+    drums and tight tunings give a higher, more focused, slightly ringing
+    note.
+  vs:
+    toms: >-
+      Toms lack the sealed bowl that tunes a timpani's overtones, so their
+      pitch is vaguer, and stick hits make them shorter and punchier. Timpani
+      sing a recognisable note and can even glide between notes.
+    concert-bass-drum: >-
+      A concert bass drum is bigger and tuned loose, so its tone is a low,
+      pitchless rumble. Timpani give a clear note that fits the harmony.
+    kick-drum: >-
+      A kick drum is muffled and hit by a pedal beater, so it is a tight,
+      dry thud with no clear note. Timpani ring for longer with a definite
+      pitch.
+
+kick-drum:
+  how: >-
+    A large drum lies on its side and a foot pedal swings a felt or plastic
+    beater into the head. The drum is often muffled with a pillow or blanket
+    inside and may have a hole in the front head.
+  why: >-
+    The big head and body produce low frequencies you feel in the chest. The
+    hard beater gives a short click at the start, and the damping inside
+    stops the head ringing, so the sound is a tight thud rather than a boom.
+    Its vibrations are too irregular to form a clear note, so it has no
+    definite pitch.
+  music: >-
+    The foundation of the drum kit in rock, pop, funk, jazz, metal and most
+    band music. It marks the main beats and locks in with the bass.
+  range: >-
+    Larger or looser drums give a deeper, longer boom, while smaller, tighter
+    or heavily muffled drums give a short, punchy knock; hard beaters add more
+    click.
+  vs:
+    concert-bass-drum: >-
+      An orchestral bass drum is larger, tuned looser and left unmuffled, and
+      it is hit with a soft mallet, so it booms and rumbles for seconds. A
+      kick drum is short and punchy.
+    drum-machine: >-
+      Machine kicks are electronic tones, often a sine wave with a quick pitch
+      drop, so they are smooth, identical on every hit and can be very long.
+      An acoustic kick varies slightly each hit and has a beater click and
+      some wooden body noise.
+    toms: >-
+      A floor tom is smaller and usually left to ring, so it is higher and has
+      a sustained, tonal boom. A kick is lower and cut short by damping.
+
+concert-bass-drum:
+  how: >-
+    A very large, deep drum, often hung in a tilting frame, is struck on its
+    head with a big, soft felt mallet.
+  why: >-
+    The huge, loosely tuned head moves a lot of air very slowly, giving a
+    deep boom more felt than heard. Nothing damps it, so it rumbles on for
+    several seconds unless the player muffles it with a hand. Its overtones
+    are scattered and low, so no clear pitch emerges.
+  music: >-
+    Used in orchestras, concert bands, marching bands and film scores. It
+    adds weight to climaxes, single dramatic hits, and soft rolls that sound
+    like distant thunder.
+  range: >-
+    Centre strikes are drier and punchier, while strikes a bit off-centre
+    ring longer and boom more; loud hits roar, soft ones rumble.
+  vs:
+    kick-drum: >-
+      A kick is smaller, muffled and hit by a hard pedal beater, so it is a
+      short, punchy thud. The concert bass drum blooms and lingers.
+    timpani: >-
+      Timpani have a bowl that pulls their overtones into a musical pattern,
+      so they sound a definite note. The bass drum is a pitchless rumble.
+    sub-808: >-
+      An 808 bass is an electronic sine-like tone, so it is very clean and sits
+      on a clear note. A concert bass drum is noisier and pitchless, with the
+      texture of a struck skin.
+
+snare-drum:
+  how: >-
+    A drum with heads on both sides is struck with sticks on the top head,
+    and a set of coiled metal wires (the snares) is stretched across the
+    bottom head.
+  why: >-
+    The stick hit gives a sharp crack from the tightly tuned top head. That
+    burst of air drives the bottom head, which slaps against the wires, and
+    their rattling adds the noisy sizzle just after the crack. Because so much
+    of the sound is noise, it has no clear pitch, and the decay is short
+    unless the drum is tuned to ring.
+  music: >-
+    Central in rock, pop, funk, hip hop, jazz and marching music. In most pop
+    and rock it plays the backbeat on beats two and four, plus fills, rolls
+    and ghost notes (very quiet in-between hits).
+  range: >-
+    Hits in the centre are fat and full, hits near the edge thinner and
+    ringier, and rimshots (head and rim together) give a loud, cutting crack.
+  vs:
+    toms: >-
+      Toms have no wires, so after the hit they ring with a booming tone
+      instead of a rattle. A snare has that sizzle on every hit.
+    claps: >-
+      A hand clap is a pop of air between palms with no drum body, so it is
+      drier and shorter. A snare has a wooden or metal shell and the rattle of
+      wires.
+    drum-machine: >-
+      Machine snares are built from a short tone mixed with filtered noise or
+      from a fixed sample, so they sound thinner and identical on every hit.
+      An acoustic snare changes with every stroke.
+    cajon: >-
+      A cajón's slap is a hand on a wooden plate, with wires or strings inside
+      giving a softer, woodier buzz. A snare's stick on a tight drumhead gives
+      a harder crack and a crisper rattle.
+
+toms:
+  how: >-
+    Cylindrical drums of several sizes, with one or two heads and no snare
+    wires, are struck with drumsticks. Tom-toms mount above the kick drum and
+    floor toms stand on legs.
+  why: >-
+    With no wires and little damping, the head is left to ring, so each hit
+    is a boom with a rough sense of pitch. The overtones are not neatly
+    related, so the note is less definite than on timpani. Sticks give a sharp
+    attack, then a decay of under a second or so.
+  music: >-
+    Part of the drum kit in rock, pop, jazz and metal, and heard in film
+    scores. They play fills, often stepping down from high to low, and
+    tribal-style rhythms.
+  range: >-
+    Small toms are higher, punchier and shorter, while large floor toms are
+    deep and rumble longer.
+  vs:
+    timpani: >-
+      Timpani have a bowl that tunes their overtones and soft mallets, so they
+      sing a clear note and ring longer. Toms are punchier with vaguer pitch.
+    snare-drum: >-
+      A snare has wires under its bottom head that add a rattle to every hit.
+      Toms just boom.
+    congas: >-
+      Congas are struck with hands, which gives soft open tones and sharp
+      slaps of very different colour. Toms are hit with sticks, so each hit
+      has a harder, more uniform attack.
+
+bongos:
+  how: >-
+    A pair of small, joined drums, open at the bottom, held between the knees
+    and played with the fingers and palms.
+  why: >-
+    The heads are small and tuned tight, so they vibrate fast and give high,
+    cracking pops. Light finger strikes and a short body keep each note very
+    short, which suits fast patterns. The smaller drum is tuned higher than
+    the larger one, so you hear two contrasting tones.
+  music: >-
+    Central in Cuban son and salsa, also heard in Latin jazz, pop, funk and
+    exotica. They play fast, chattering patterns and improvised fills.
+  range: >-
+    The larger drum gives a slightly deeper tone, and the small drum a higher,
+    sharper crack; fingertip edge strokes are thin and tight, palm strokes
+    fuller.
+  vs:
+    congas: >-
+      Congas are tall drums with large heads, so they are lower and boomier
+      with a singing tone. Bongos are small and high.
+    darbuka: >-
+      A darbuka is one goblet-shaped drum with a deep "doum" in the centre and
+      a ringing "tek" at the edge. Bongos are two small drums with dry, high
+      pops.
+
+congas:
+  how: >-
+    Tall, barrel-shaped drums with a skin head and an open bottom are played
+    with the hands, using open tones, slaps, bass strokes and muted tones.
+  why: >-
+    The long body holds a column of air that reinforces the low frequencies,
+    so open tones sing with a warm, round note. A slap with cupped fingers
+    excites the high overtones and gives a sharp crack, while a palm in the
+    centre gives a dull bass thump. Hand contact makes every stroke slightly
+    different in colour.
+  music: >-
+    Core to Afro-Cuban music, salsa, rumba and Latin jazz, and common in
+    funk, soul and pop. They play repeating grooves, often on two or three
+    drums tuned to different pitches.
+  range: >-
+    Large drums (tumbadoras) are deep and boomy, small ones (quintos) high and
+    cutting; open tones ring, slaps crack, bass strokes thud.
+  vs:
+    bongos: >-
+      Bongos are much smaller and tuned higher, so they pop rather than sing.
+      Congas are bigger and lower.
+    toms: >-
+      Toms are hit with sticks, giving a hard, uniform attack. Conga strokes
+      vary from singing tones to cracking slaps because they are played with
+      hands.
+    djembe: >-
+      A djembe's goblet shape lets the air in the bowl resonate through the
+      narrow stem, giving a deep bass, and its very tight head makes slaps
+      sharp and high. Congas are mellower and more even.
+
+djembe:
+  how: >-
+    A goblet-shaped wooden drum with a goatskin head, tightened very hard by
+    ropes, is played with bare hands.
+  why: >-
+    A palm in the centre makes the air in the bowl pump through the narrow
+    stem, a resonance like blowing over a bottle, which gives the deep bass.
+    The very tight skin gives a ringing tone at the edge and a sharp, high
+    slap when the fingers snap off. The contrast between these three strokes
+    is what you hear in its patterns.
+  music: >-
+    From West Africa, especially Mande music, and now heard worldwide in drum
+    circles, Afro-pop and world fusion. It plays solo improvisation and
+    interlocking rhythms with other drums.
+  range: >-
+    Centre bass strokes are deep and boomy, edge tones ring with a clear
+    pitch, and slaps are sharp, high and cutting.
+  vs:
+    congas: >-
+      Congas have a straight, tall body without the djembe's narrow-stem
+      bass resonance, and a less tightly tuned head, so they sound mellower.
+      A djembe's bass is deeper and its slap is sharper.
+
+cajon:
+  how: >-
+    A wooden box with a thin front plate (the tapa) and a hole in the back is
+    sat on and slapped. Snare wires or guitar strings inside often touch the
+    front plate.
+  why: >-
+    A hit in the middle of the plate pumps the air inside through the hole,
+    giving a low, woody bass thump. Hits near the top corners make the plate
+    flex and the wires rattle, giving a snare-like slap. Wood damps quickly,
+    so both sounds are short.
+  music: >-
+    From Afro-Peruvian music and used in flamenco, then widely adopted in
+    acoustic pop, folk and unplugged rock. It often stands in for a whole
+    drum kit, covering kick and snare roles.
+  range: >-
+    Centre hits are deep and thumpy, while corner hits are high, snappy and
+    buzzy.
+  vs:
+    kick-drum: >-
+      A kick is a stretched drumhead hit by a pedal beater, giving a rounder,
+      deeper thud with a click. A cajón's bass is woodier and shorter.
+    snare-drum: >-
+      A snare is hit with sticks on a tight drumhead and has wire snares on
+      the bottom, so it cracks harder and rattles more crisply. A cajón's slap
+      is softer and woodier.
+
+darbuka:
+  how: >-
+    A goblet-shaped drum of metal or clay with a thin, tight head is held
+    under the arm and played with the fingers. The main strokes are the deep
+    "doum" in the centre and the sharp "tek" and "ka" at the rim.
+  why: >-
+    A centre hit makes the air in the body pump through the narrow neck,
+    giving a deep, short doum. Rim strokes with fingertips excite the higher,
+    tighter vibrations of the head, so the tek is crisp and ringing. Metal
+    bodies add a brighter ring than clay ones, and finger rolls create rapid,
+    fluttering sounds.
+  music: >-
+    Central in Middle Eastern, North African, Turkish and Balkan music,
+    including belly dance music. It plays driving rhythmic cycles and fast,
+    ornamented fills.
+  range: >-
+    Centre strokes are deep and round, while rim strokes are high, sharp and
+    snappy.
+  vs:
+    bongos: >-
+      Bongos are two small drums struck in the middle of the head with dry,
+      high pops. A darbuka alternates a deep doum with a crisp, ringing tek
+      on one drum.
+    tabla: >-
+      Tabla heads carry a black weighted patch that tunes their overtones
+      into a clear musical note, and the bass drum can slide in pitch. A
+      darbuka's strokes have no fixed note and do not bend.
+
+frame-drum:
+  how: >-
+    A skin is stretched over a wide, shallow wooden hoop, and the drum is
+    played with hands and fingers, or with a beater.
+  why: >-
+    The head is large but the frame encloses little air, so there is no
+    strong body resonance to give punch; the result is a soft, wide boom.
+    Finger strokes near the edge give higher, ringing taps, while centre
+    strokes are deep and resonant. Without wires or jingles, the sound is
+    smooth and pitchless.
+  music: >-
+    Found in many traditions across the Middle East, North Africa, Europe and
+    Asia, and in folk, ritual and meditative music. It keeps a steady pulse
+    and accompanies singing.
+  range: >-
+    Centre strokes are deep and booming, edge strokes are thin, high and
+    ringing.
+  vs:
+    tambourine: >-
+      A tambourine is a frame fitted with metal jingles, so every hit or shake
+      jingles. A frame drum is only skin and wood, so it booms or taps.
+    concert-bass-drum: >-
+      A concert bass drum has a far bigger, deeper body and a heavy mallet,
+      so its rumble is lower and longer. A frame drum is lighter and softer.
+
+tabla:
+  how: >-
+    A pair of hand drums: a small wooden drum (dayan) played with the right
+    hand and a larger metal or clay bass drum (bayan) played with the left.
+    Each head carries a black patch made from a paste of iron filings and
+    other ingredients.
+  why: >-
+    The black patch adds weight to the middle of the head, which pulls its
+    overtones into neat musical ratios, so the dayan sings a clear, tuned
+    note. On the bayan, the heel of the hand presses into the head, raising
+    its tension so the bass note slides upward. Different finger strokes
+    damp or free parts of the head, giving a wide range of ringing tones and
+    dry clicks.
+  music: >-
+    The main drum of North Indian classical music, and heard in devotional
+    music, film songs, fusion and electronic music. It keeps rhythmic cycles
+    (tala) and plays virtuosic solos.
+  range: >-
+    The bayan's strokes are deep and can glide upward, while the dayan's are
+    higher, ringing and tuned to a specific note.
+  vs:
+    darbuka: >-
+      A darbuka has a plain head without a weighted patch, so its doum and
+      tek have no clear note and cannot bend. Tabla strokes ring with pitch and
+      the bass slides.
+
+brushes:
+  how: >-
+    Fans of thin steel wires, or nylon strands, on a handle are swept and
+    tapped on a snare drum head.
+  why: >-
+    Sweeping drags many fine wires across the head, producing continuous
+    friction noise, a soft swish with no sharp attack. Taps spread the
+    impact over many wires, so they are gentle rather than cracking. If the
+    snare wires are on, they add a faint buzz under the swish.
+  music: >-
+    Most common in jazz ballads, swing, and quiet acoustic pop, country and
+    folk. They keep time softly behind singers and soloists.
+  range: >-
+    Wide, slow sweeps give a smooth, long swish, while quick taps and short
+    strokes are more percussive and brighter.
+  vs:
+    shaker: >-
+      A shaker is many small grains hitting a container wall at the end of
+      each shake, so it gives grainy, rhythmic pulses. Brushes give a smoother,
+      continuous swish on a drumhead.
+
+slit-drum:
+  how: >-
+    A hollowed log or box has a long slot cut into it, leaving two tongues of
+    wood (lips) which are struck with sticks or mallets.
+  why: >-
+    The two tongues have different thicknesses or lengths, so they sound two
+    or more different pitches. The hollow body resonates with each strike,
+    giving a deep, round wooden bonk. Wood damps quickly, so the notes are
+    short but hollow.
+  music: >-
+    Found in traditional music of Africa, Southeast Asia, Oceania and
+    Mesoamerica, and in modern percussion and educational instruments. Used
+    for rhythmic patterns, signals and simple melodies.
+  range: >-
+    Larger drums and thicker tongues are deep and resonant, while smaller
+    ones are higher and drier.
+  vs:
+    woodblock: >-
+      A woodblock is small with a tiny cavity, so it gives a high, dry tock.
+      A slit drum is larger and deeper, with a resonant hollow bonk.
+    marimba: >-
+      A marimba has a full row of tuned bars, so it plays melodies with many
+      notes. A slit drum has only a few pitches on one body.
+    cajon: >-
+      A cajón is slapped by hand and has wires inside, so it has a snare-like
+      buzz. A slit drum is struck with sticks and gives a clean, hollow tone.
+
+ocean-drum:
+  how: >-
+    A double-headed frame drum is filled with small steel beads, and the
+    player tilts it slowly so the beads roll across the inside of the head.
+  why: >-
+    Thousands of tiny impacts from rolling beads blend into a continuous
+    hiss, with no single attack. Because the motion is slow, the sound
+    swells and recedes like a wave washing in and out. The heads amplify the
+    hiss and add a soft drum resonance underneath.
+  music: >-
+    Used in film and theatre sound design, meditation and relaxation music,
+    and in school and children's music. It adds a wash of texture rather
+    than rhythm.
+  range: >-
+    Faster tilting gives a louder, brighter rush, while slow tilting gives a
+    soft, distant hiss.
+  vs:
+    shaker: >-
+      A shaker is moved in short, sharp strokes, so it produces rhythmic
+      pulses. An ocean drum's beads roll slowly, so it sounds like continuous
+      surf.
+    rainstick: >-
+      A rainstick's pebbles fall through pins inside a tube, so you hear a
+      trickle of separate tiny ticks. An ocean drum is a smoother, bigger wash.
+
+marching-snare:
+  how: >-
+    A deep snare drum with a very high-tension head, often Kevlar or another
+    tough synthetic, is struck with heavy sticks. Snare wires or cables press
+    against the bottom head.
+  why: >-
+    The head is cranked extremely tight, so it vibrates fast and barely
+    rings, giving a high, whip-like crack. The snares are tightly adjusted,
+    so the rattle is crisp, dry and short. Each stroke is articulate enough
+    to hear clearly in fast rudiments (set sticking patterns) and rolls.
+  music: >-
+    Heard in drumlines, marching bands, drum corps and military bands, and
+    sometimes in pop and film. It leads the drumline with rhythms, rolls and
+    show pieces.
+  range: >-
+    Centre hits are full and loud, edge hits are thinner and higher, and
+    rimshots give an extremely loud crack.
+  vs:
+    snare-drum: >-
+      A kit snare is tuned lower and looser, so its crack is fatter and its
+      rattle longer. A marching snare is higher, tighter and drier.
+    marching-tenors: >-
+      Tenor drums have no snare wires and are tuned to several pitches, so
+      they ring with tones and sweeps. A marching snare has a rattle on every
+      hit.
+
+marching-tenors:
+  how: >-
+    A rack of four to six single-headed drums of different sizes is carried
+    on a harness and struck with sticks or hard mallets.
+  why: >-
+    Each drum is tuned very tight, so the tone is high and ringing. With only
+    one head and no snare wires, the drum rings clearly with a rough pitch,
+    giving a pingy tom sound. Sweeps across several drums of different sizes
+    produce a melodic run.
+  music: >-
+    Part of marching bands and drumlines. They add rhythmic counter-parts
+    and showy runs between the snares and bass drums.
+  range: >-
+    Large drums give lower, rounder pings, while small drums are higher and
+    sharper.
+  vs:
+    toms: >-
+      Kit toms are tuned lower and looser with a softer feel, so they are
+      deeper and fatter. Tenors are tight and pingy.
+    marching-snare: >-
+      A snare has wires under the bottom head that add a rattle. Tenors have
+      none and play pitched runs.
+
+taiko:
+  how: >-
+    A large barrel drum carved from a tree trunk, with cowhide heads tacked
+    on both ends, is struck with thick wooden sticks (bachi). Players also
+    click the sticks on the wooden rim.
+  why: >-
+    The heavy hide and large air volume give a very deep boom that you feel
+    in the body. Hard wooden sticks add a crack at the start, and the
+    resonant barrel lets the boom ring on. Rim clicks are pure wood, so they
+    give a dry, short knock between the big hits.
+  music: >-
+    Heard in Japanese festival and ritual music, and in modern taiko
+    ensembles, film scores and trailers. It drives rhythm with dramatic,
+    powerful patterns.
+  range: >-
+    Large drums give deep booms and smaller drums higher, sharper hits;
+    centre strikes are fuller, rim clicks dry.
+  vs:
+    concert-bass-drum: >-
+      A concert bass drum is hit with a soft, padded mallet, so it booms with
+      a soft edge. Taiko sticks are hard wood, so the boom starts with a
+      crack.
+    timpani: >-
+      Timpani have a bowl that tunes their overtones to a clear note. Taiko
+      have no such tuning, so they are pitchless booms.
+    toms: >-
+      Toms are much smaller, so they are higher and shorter. Taiko are larger,
+      deeper and more powerful.
+
+# ---------------------------------------------------------------- metal
+
+hi-hat:
+  how: >-
+    Two cymbals face each other on a stand, and a foot pedal opens and closes
+    them. They are struck with sticks, or clapped together with the pedal for
+    a "chick" sound.
+  why: >-
+    A thin bronze cymbal vibrates in so many overlapping patterns that the
+    result is bright, metallic noise with no clear pitch. When the cymbals
+    are closed, they press against each other and stop the vibration almost
+    at once, giving a short, tight "tss". Opening them lets them ring into a
+    sizzle, and closing them again cuts it off abruptly.
+  music: >-
+    Part of nearly every drum kit in rock, pop, funk, jazz, disco and hip hop.
+    It keeps a steady pulse, often eighth or sixteenth notes, and adds open
+    accents.
+  range: >-
+    Closed hits are short, tight ticks, half-open hits sizzle, and fully open
+    hits wash; the edge is louder and brighter than the top.
+  vs:
+    shaker: >-
+      A shaker is many grains hitting a wall, giving soft noise with no
+      metallic ring. A hi-hat is two cymbals, so even closed it has a metallic
+      edge.
+    ride-cymbal: >-
+      A ride is a single, heavier cymbal left free, so it pings and builds a
+      sustained wash. A hi-hat is choked between two plates, so it is tighter
+      and has a foot "chick".
+    drum-machine: >-
+      Machine hats are made from filtered noise or clusters of square waves,
+      or from fixed samples, so they are thinner and identical every hit. A
+      real hi-hat varies with every stroke and rings with metal.
+
+crash-cymbal:
+  how: >-
+    A thin bronze cymbal on a stand is struck on its edge with the shoulder of
+    a drumstick.
+  why: >-
+    A hard edge hit throws the cymbal into large, wobbly motion, and the
+    energy quickly spreads into thousands of overlapping vibrations, so the
+    sound explodes into a bright, hissing wash. Bronze loses energy slowly,
+    so the wash fades over several seconds. Its overtones are too many and
+    too uneven to give a clear pitch.
+  music: >-
+    Used in rock, pop, metal, jazz and film scores to mark the start of a
+    section, big accents and endings. It adds impact and excitement.
+  range: >-
+    Small, thin crashes are fast, bright and short (splashy), while large,
+    thick crashes are louder, darker and last longer.
+  vs:
+    ride-cymbal: >-
+      A ride is thicker and is played with the stick tip on the top, so each
+      hit is a clear ping in a steady pattern. A crash is hit on the edge and
+      explodes into a wash.
+    clash-cymbals: >-
+      Orchestral clash cymbals are two large, heavy plates struck together,
+      so the crash is bigger, longer and more metallic. A kit crash is a
+      single thin cymbal, splashier and shorter.
+    gong: >-
+      A large gong is a bigger, heavier disc whose sound blooms after the
+      hit, growing louder before fading. A crash is brightest at the moment
+      of impact and then fades.
+
+ride-cymbal:
+  how: >-
+    A large, relatively thick cymbal on a stand is struck on its upper
+    surface with the tip of a stick, and sometimes on its raised centre (the
+    bell).
+  why: >-
+    The heavier metal does not break into a big wash as easily, so each tip
+    stroke gives a clear, bell-like ping. The cymbal keeps ringing under
+    repeated strokes, building a soft, sustained shimmer. The bell gives a
+    louder, more pitched clang because it is thick and stiff.
+  music: >-
+    Central in jazz (the "spang-a-lang" time pattern) and used in rock, pop
+    and metal for steady patterns in louder sections. It keeps the pulse.
+  range: >-
+    Tip strokes near the centre give clear pings, edge strokes add more wash,
+    and the bell gives a bright, clangy note.
+  vs:
+    hi-hat: >-
+      A hi-hat is two cymbals pressed together, so its sounds are tighter and
+      shorter, with foot "chick" sounds. A ride rings freely and pings.
+    crash-cymbal: >-
+      A crash is thinner and hit on the edge, so it explodes into a wash. A
+      ride is heavier and played with the tip, giving controlled pings.
+    cowbell: >-
+      A cowbell is a small hollow bell with a quick, dry clonk and no wash. A
+      ride pings with a shimmering wash underneath.
+
+clash-cymbals:
+  how: >-
+    Two large, heavy cymbals, one in each hand, are struck together with a
+    glancing motion.
+  why: >-
+    Both plates are set into motion at once, and their large size and weight
+    give a fuller, more metallic sound than a single kit cymbal. Energy
+    spreads into many overlapping vibrations, producing a wide, bright wash.
+    The player can let them ring for a long time, or stop them against the
+    chest.
+  music: >-
+    Used in orchestras, concert bands, marching bands and film scores for big
+    climaxes and accents.
+  range: >-
+    Larger, heavier pairs give a deeper, longer crash, while smaller pairs
+    are brighter and shorter.
+  vs:
+    crash-cymbal: >-
+      A kit crash is a single, thinner cymbal hit with a stick, so it is
+      thinner and splashier. Clash cymbals are bigger and fuller.
+    suspended-cymbal: >-
+      A suspended cymbal is often rolled with soft mallets, so its sound swells
+      in gradually. Clash cymbals start with a hit at full force.
+
+suspended-cymbal:
+  how: >-
+    A single cymbal on a stand is played with soft mallets, sticks or a bow.
+    Rolls with two yarn mallets at the edge are the most common technique.
+  why: >-
+    Soft mallets excite the low vibrations first, and as the roll continues
+    energy spreads into higher ones, so the sound swells from a soft hum to a
+    bright shimmer. A bow drawn across the edge sticks and slips like a violin
+    bow, setting off high, squealing tones. A stick hit gives a crash.
+  music: >-
+    Used in orchestras, concert bands and film scores for swells into
+    climaxes and eerie textures.
+  range: >-
+    Larger cymbals give deeper, darker swells, while smaller ones are
+    brighter and higher.
+  vs:
+    gong: >-
+      A gong is larger, heavier and lower, so it gives a darker, deeper roar. A
+      suspended cymbal is brighter and hissier.
+    synth-pad: >-
+      Electronic swells and risers are made from noise and oscillators, so they
+      can be smoother and more even. A suspended cymbal roll has the grain of
+      mallets and a metallic edge.
+
+gong:
+  how: >-
+    A large bronze disc hung on a frame is struck with a big padded beater.
+    The flat, unpitched orchestral kind is often called a tam-tam.
+  why: >-
+    The first hit sets the disc moving in low vibrations, and over the next
+    second or two the energy spreads into higher ones, so the sound blooms,
+    growing louder and brighter after the hit. Its overtones are far too many
+    and uneven for a clear pitch. Bronze loses energy slowly, so the roar can
+    last a long time.
+  music: >-
+    Used in orchestras, film and trailer music, ritual and meditation music,
+    and many Asian musical traditions. It marks dramatic moments and adds dark,
+    roaring colour.
+  range: >-
+    Soft hits give a low, dark hum, while hard hits roar and build a bright
+    wash.
+  vs:
+    suspended-cymbal: >-
+      A cymbal is smaller and thinner, so it is higher and hissier. A gong is
+      lower and darker, and it swells after the hit.
+    tubular-bells: >-
+      Tubular bells give a recognisable note that is loudest at the strike.
+      A gong has no clear pitch and grows after the hit.
+
+triangle:
+  how: >-
+    A steel rod bent into a triangle, with one open corner, hangs from a
+    string and is struck with a steel beater.
+  why: >-
+    The rod vibrates in many patterns whose pitches are not neatly related,
+    so you hear a bright "ting" without a definite note. Steel loses little
+    energy, and hanging from a string barely damps it, so the ring lasts
+    several seconds. Fast rolls between two sides blend into a continuous
+    shimmer.
+  music: >-
+    Used in orchestras, concert bands, folk music and Brazilian forró,
+    and in film scores for sparkle. It adds accents and a glittering top
+    layer.
+  range: >-
+    Larger triangles are lower and have a longer ring, while smaller ones
+    are higher and shorter.
+  vs:
+    glockenspiel: >-
+      A glockenspiel's bars are tuned to clear notes, so it plays real
+      melodies. A triangle is a single, unpitched ting.
+    cowbell: >-
+      A cowbell is a hollow bell with a dull, short clonk. A triangle is a thin
+      rod that rings high and long.
+    finger-cymbals: >-
+      Finger cymbals are small discs struck together, so they give a ringing
+      clink with a warmer tone. A triangle is brighter and more piercing.
+
+tambourine:
+  how: >-
+    A wooden or plastic frame is fitted with pairs of metal jingles (zils)
+    and sometimes a skin head. It is shaken or struck with the hand.
+  why: >-
+    Each jingle pair collides and rattles, and many pairs together create a
+    bright, noisy jingle with no clear pitch. A hit on the head adds a soft
+    thump under the jingles. The jingles stop quickly, so each stroke is
+    short.
+  music: >-
+    Heard in pop, rock, gospel, folk and Latin music. It reinforces the
+    pulse, often on the backbeat or with constant shaking.
+  range: >-
+    Shakes give a continuous jingle, while hits give a sharp accent; brass
+    jingles are warmer and steel ones brighter.
+  vs:
+    sleigh-bells: >-
+      Sleigh bells are closed bells with loose pellets, so they give a
+      tinkly, ringing cloud. Tambourine jingles are flat discs, so they rattle
+      with a sharper, flatter sound.
+    shaker: >-
+      A shaker has grains inside, so it is grainy and smooth without
+      jingles. A tambourine jingles with metal.
+
+shaker:
+  how: >-
+    A container of plastic, metal, wood or a seed pod, filled with beads,
+    seeds or sand, is shaken back and forth.
+  why: >-
+    Thousands of grains hit the walls at once at the end of each stroke,
+    producing a burst of noise with no pitch. Between strokes, the grains
+    slide and settle with a soft hiss. The material of the container and
+    grains decides how bright or dark the noise is.
+  music: >-
+    Heard in pop, rock, Latin music, acoustic and dance music. It keeps a
+    steady fast pulse, often sixteenth notes.
+  range: >-
+    Small shakers with fine grains give a soft, high hiss, while larger ones
+    with heavier grains give a fuller, louder "chk".
+  vs:
+    hi-hat: >-
+      A hi-hat is two metal cymbals, so it has a metallic ring. A shaker is
+      softer and grainy.
+    brushes: >-
+      Brushes are wires swept on a drumhead, so the sound is a smooth,
+      continuous swish. A shaker is grainier and more rhythmic.
+    tambourine: >-
+      A tambourine has metal jingles that ring. A shaker has grains that
+      hiss.
+
+sleigh-bells:
+  how: >-
+    Many small, closed metal bells (crotals), each with a loose metal ball
+    inside, are mounted on a strap or handle and shaken.
+  why: >-
+    The ball strikes the inside of each bell, which rings with a high,
+    metallic tone. Many bells with slightly different pitches sound together,
+    creating a tinkly cloud rather than a clear note. The bells keep ringing
+    briefly after each shake.
+  music: >-
+    Strongly associated with Christmas songs, and used in pop, rock, film and
+    orchestras for wintry or festive colour. It adds a steady rhythmic
+    sparkle.
+  range: >-
+    Small bells give a high, tinkly tone, while larger bells are lower and
+    rounder.
+  vs:
+    tambourine: >-
+      A tambourine has flat jingles and sometimes a skin head, so it is
+      flatter, rattlier and can thump. Sleigh bells are rounder and tinklier.
+    mark-tree: >-
+      A mark tree is a row of hanging rods brushed in a sweep, so it gives a
+      cascading glissando. Sleigh bells jingle together on each shake, in
+      rhythm.
+
+mark-tree:
+  how: >-
+    Rows of short metal rods of graded length hang from a bar, and the player
+    sweeps a finger or stick across them.
+  why: >-
+    Each rod rings with its own high, metallic tone, and the graded lengths
+    mean the pitches rise or fall as the sweep moves along. The many small
+    impacts overlap into a cascading shimmer. The rods are thin and light, so
+    the ring is delicate and fades in a few seconds.
+  music: >-
+    Used in film and TV scores, pop and jazz recordings, and children's music
+    to signal magic, dreams or transitions.
+  range: >-
+    Short rods ring higher and tinklier, long rods lower and softer; the sweep
+    direction sets whether the cascade rises or falls.
+  vs:
+    sleigh-bells: >-
+      Sleigh bells are closed bells shaken together in rhythm. A mark tree is
+      a sweep of chimes across a range of pitches.
+    glockenspiel: >-
+      A glockenspiel plays tuned notes in a melody. A mark tree is an
+      unpitched shimmer of many tiny rods.
+
+finger-cymbals:
+  how: >-
+    Two tiny cymbals, worn on the thumb and finger or held by cords, are
+    clinked together.
+  why: >-
+    Small, thick brass discs vibrate at high frequencies and lose little
+    energy, so they give a sweet, ringing clink that lasts several seconds.
+    Their overtones are not neatly related, so there is no clear note. Edges
+    struck together give a brighter sound than flat faces.
+  music: >-
+    Used in Middle Eastern and North African music, belly dance, ritual music
+    and orchestral pieces for exotic colour.
+  range: >-
+    Larger cymbals sound lower and warmer, while smaller ones are higher and
+    brighter.
+  vs:
+    triangle: >-
+      A triangle is a steel rod with a high, piercing ting. Finger cymbals
+      are small brass discs with a warmer, rounder ring.
+
+cowbell:
+  how: >-
+    A clapperless, open metal bell is struck with a stick, often held in the
+    hand or mounted on a stand.
+  why: >-
+    The bell's shape gives it a few strong vibrations, so it has a hollow,
+    almost pitched tone. Holding the bell or mounting it damps the vibration
+    quickly, which makes the clonk short and dry. Hitting near the mouth
+    gives a deeper tone and near the closed end a higher one.
+  music: >-
+    Used in Latin music, salsa, funk, rock and disco. It keeps a steady,
+    cutting pulse that the rest of the band locks to.
+  range: >-
+    Large bells are lower and hollow, small bells are higher and sharper;
+    open strokes ring more than damped ones.
+  vs:
+    woodblock: >-
+      A woodblock is hollowed wood, so it gives a dry wooden knock. A cowbell
+      is metal and has a hollow ring.
+    triangle: >-
+      A triangle rings high and long. A cowbell is lower and short.
+    drum-machine: >-
+      The TR-808 cowbell is two square-wave tones through a filter, so it
+      sounds like a synthetic, two-note clank. A real cowbell has a single,
+      hollow metal tone.
+
+woodblock:
+  how: >-
+    A rectangular block of hardwood with a slot cut into it is struck with a
+    stick or mallet.
+  why: >-
+    The hollow slot gives a small cavity that resonates briefly, so the knock
+    has a hollow quality. Wood damps vibration quickly, so the sound is very
+    short. The pitch is vague, though larger blocks sound lower.
+  music: >-
+    Used in orchestras, children's music, film and cartoon music, and Latin
+    percussion, often to imitate ticking clocks or hoofbeats.
+  range: >-
+    Large blocks give a deeper, rounder tock, while small blocks are higher
+    and sharper.
+  vs:
+    claves: >-
+      Claves are solid hardwood sticks, so they give a brighter, higher click.
+      A woodblock is hollow and lower.
+    xylophone: >-
+      A xylophone has many tuned bars that play melodies. A woodblock is one
+      block with a single knock.
+    cowbell: >-
+      A cowbell is metal, so it has a ringing clonk. A woodblock is a dry
+      wooden tock.
+
+claves:
+  how: >-
+    Two thick hardwood sticks are struck together, with one held loosely
+    over a cupped hand that acts as a small resonator.
+  why: >-
+    Dense hardwood gives a very bright, high click. The cupped hand forms a
+    small air chamber that adds a brief, almost pitched ring. The sound is
+    short and penetrating, cutting through a band.
+  music: >-
+    Central to Afro-Cuban music, salsa and son, where they play the clave
+    pattern that structures the rhythm.
+  range: >-
+    Thicker sticks give a slightly lower, fuller click; a tight cupped hand
+    adds more ring.
+  vs:
+    woodblock: >-
+      A woodblock has a hollow slot that gives a lower, hollow tock. Claves
+      are higher and brighter.
+    claps: >-
+      Claps are skin on skin, so they are fleshy and noisy. Claves are a
+      pure wooden click.
+
+guiro:
+  how: >-
+    A hollow gourd or wooden body with notches cut across it is scraped with
+    a stick.
+  why: >-
+    Each notch gives a tiny click, and a fast scrape merges these into a
+    ratchety "zzzip". The hollow body amplifies the clicks. Long scrapes give
+    a sustained rasp, while short flicks give sharp accents.
+  music: >-
+    Used in Latin music, salsa, cumbia and merengue, and in orchestras for
+    special effects.
+  range: >-
+    Slow scrapes give separate clicks, fast scrapes a smooth zip; larger
+    bodies are deeper and louder.
+  vs:
+    shaker: >-
+      A shaker makes smooth grainy noise. A güiro makes a ratchety, regularly
+      clicking scrape.
+
+claps:
+  how: >-
+    Two hands are struck together, often by several people at once.
+  why: >-
+    The palms trap and expel a puff of air, producing a short burst of noise
+    with no pitch. Cupped hands give a lower, hollower clap, and flat hands a
+    sharper, higher crack. Skin and flesh absorb energy, so there is no ring.
+  music: >-
+    Heard in pop, gospel, flamenco, folk and dance music, often on the
+    backbeat.
+  range: >-
+    Cupped hands sound lower and rounder, flat hands higher and sharper; many
+    clappers together sound wider and noisier.
+  vs:
+    snare-drum: >-
+      A snare has a drum body and a wire rattle. Claps are drier and
+      shorter.
+    drum-machine: >-
+      Machine claps are noise bursts repeated quickly to imitate several people
+      clapping, so they are thin and identical. Real claps vary.
+
+
+castanets:
+  how: >-
+    Two cupped shells of hardwood, tied together by a cord, are clicked
+    together by the fingers. Orchestral players often use a pair mounted on
+    a handle.
+  why: >-
+    The hard wooden faces strike each other and squeeze out the air trapped
+    between the cups, giving a bright, dry click with almost no ring. The
+    cupped shape adds a little hollowness, but there is no clear pitch.
+    Rolling the fingers in turn produces rapid, chattering clicks.
+  music: >-
+    Famous in Spanish flamenco and Spanish-influenced classical music, and
+    used in orchestras and film for Spanish colour. They add rhythmic
+    accents and rolls.
+  range: >-
+    Larger, deeper pairs give a slightly lower, hollower click, while smaller
+    pairs are higher and sharper.
+  vs:
+    claves: >-
+      Claves are solid sticks struck over a cupped hand, giving one bright
+      click with a short, almost pitched ring. Castanets are hollow shells
+      that click in quick doubles and rolls.
+    woodblock: >-
+      A woodblock is a larger block with a slotted cavity, so it gives a
+      lower, hollower tock. Castanets are higher and drier.
+    claps: >-
+      Claps are skin on skin, so they are softer, fleshier and noisier.
+      Castanets give a hard, wooden click.
+
+maracas:
+  how: >-
+    Hollow gourds or shells on handles, filled with seeds or beads, are
+    shaken in pairs with short flicks of the wrist.
+  why: >-
+    At the end of each flick the seeds hit the wall together, producing a
+    crisp burst of noise with no pitch. Because the seeds are thrown in a
+    tight bunch, each stroke is a sharper "chk" than a slowly shaken
+    container. The hollow body brightens the sound.
+  music: >-
+    Heard in Latin music, salsa, cumbia, rock and pop. They keep a steady,
+    bright rhythmic pulse.
+  range: >-
+    Large maracas with heavy seeds are fuller and lower, while small ones
+    with fine beads are lighter and higher.
+  vs:
+    shaker: >-
+      An egg or tube shaker is moved more smoothly and its grains are finer,
+      so it gives a softer hiss. Maracas are flicked hard, so each stroke is
+      crisp.
+    cabasa: >-
+      A cabasa has steel bead chains scraped against a textured surface, so it
+      sounds raspy and metallic. Maracas rattle with seeds and sound grainier.
+
+cabasa:
+  how: >-
+    Loops of steel ball chain are wrapped around a textured cylinder on a
+    handle; the player presses a hand on the chains and twists the cylinder.
+  why: >-
+    The steel balls scrape across the ridged surface, producing a dry,
+    raspy noise with a metallic edge. Twisting back and forth gives short,
+    rhythmic strokes, and the noise has no clear pitch.
+  music: >-
+    Used in Latin music, bossa nova, samba and pop. It plays steady rhythmic
+    patterns.
+  range: >-
+    Light pressure gives a soft hiss, firm pressure a sharper, louder rasp.
+  vs:
+    shaker: >-
+      A shaker's grains hit its walls, so it is softer and grainier. A cabasa
+      scrapes metal against metal for a raspier tone.
+    guiro: >-
+      A güiro is a notched wooden body scraped with a stick, giving a
+      ratchety wooden zip. A cabasa is a metallic rasp.
+
+agogo:
+  how: >-
+    Two cone-shaped metal bells of different sizes, joined by a curved
+    handle, are struck with a stick.
+  why: >-
+    Each bell vibrates in a few strong patterns, giving a hollow, metallic
+    clank with a rough sense of pitch. The two sizes produce a high and a low
+    tone, so patterns alternate between them. The bells are thin, so the
+    tone is brighter and rings longer than a cowbell.
+  music: >-
+    Central in Brazilian samba and in West African and Afro-Brazilian music.
+    It plays repeating two-tone patterns that guide the rhythm.
+  range: >-
+    The larger bell is lower and rounder, the smaller one higher and
+    brighter.
+  vs:
+    cowbell: >-
+      A cowbell is a single, larger, heavier bell, so it gives one dull,
+      lower clonk. Agogô bells give two contrasting, brighter tones.
+    triangle: >-
+      A triangle rings high and thin for seconds. Agogô bells are
+      shorter, lower and hollower.
+
+bell-tree:
+  how: >-
+    A stack of small, nested bowl-shaped bells of graded size is mounted on a
+    vertical rod, and a beater is slid along them.
+  why: >-
+    Each bell rings with its own high, metallic tone, and the graded sizes
+    mean the pitch rises or falls as the beater moves. The overlapping rings
+    create a glittering cascade. Thin metal bells ring for several seconds.
+  music: >-
+    Used in orchestras, film and TV scores and pop for magical or dreamy
+    effects and transitions.
+  range: >-
+    The large bells at the bottom ring lower and longer, while the small top
+    bells are bright and tinkly.
+  vs:
+    mark-tree: >-
+      A mark tree is a row of thin rods, so its cascade is tinier and more
+      tinkly. A bell tree has fuller, more bell-like tones.
+    glockenspiel: >-
+      A glockenspiel plays clean, tuned scales. A bell tree's bells are not
+      tuned to a scale, so the run is a glitter rather than a melody.
+
+nepalese-bells:
+  how: >-
+    Small metal bells or bell-like discs from Nepal are held in the hand and
+    struck, either with a beater or against each other.
+  why: >-
+    Thick, cast metal loses energy slowly, so the strike gives a bright, clear
+    tone that rings for a long time. Slight unevenness in the casting, or two
+    bells tuned slightly apart, produces two close pitches that beat (pulse
+    slowly in loudness) as the sound fades. Its overtones are not neatly
+    related, so there is no definite musical note.
+  music: >-
+    Used in Buddhist and Hindu ritual, meditation and yoga, and in ambient
+    music. It marks the start or end of a practice and adds a calm, ringing
+    colour.
+  range: >-
+    Larger bells ring lower and longer, while smaller ones are higher and
+    sharper.
+  vs:
+    finger-cymbals: >-
+      Finger cymbals are thin, flat discs, so they give a lighter clink. These
+      bells are thicker and ring with a fuller, more sustained tone.
+    hand-chimes: >-
+      Hand chimes are tuned to clear musical notes and struck by a soft
+      clapper. Nepalese bells are brighter and unpitched, with slow beating.
+
+anvil:
+  how: >-
+    A blacksmith's steel anvil, or in orchestras often a steel bar or plate
+    standing in for one, is struck with a metal hammer.
+  why: >-
+    Hard steel struck by a hard hammer gives an intense, bright clang with
+    many high, unrelated overtones and no clear pitch. The massive block
+    barely moves, so the sound is concentrated in high frequencies. How long
+    it rings depends on how it is supported.
+  music: >-
+    Used in opera and orchestral pieces, film scores and some rock and metal.
+    It adds hard metallic accents and rhythms.
+  range: >-
+    Larger blocks give a deeper clang, and smaller bars or plates a higher,
+    thinner ping.
+  vs:
+    brake-drum: >-
+      A brake drum is cast iron, which damps vibration faster than steel, so
+      it is duller and more hollow. An anvil is brighter and more piercing.
+    cowbell: >-
+      A cowbell is a hollow, thin bell, so it gives a shorter, hollower clonk.
+      An anvil is a solid, hard clang.
+
+brake-drum:
+  how: >-
+    A cast-iron brake drum from a car is struck with metal beaters or sticks.
+  why: >-
+    Cast iron damps vibration faster than steel, so the ring is short and
+    dull. The heavy, thick shape gives a clanky, metallic tone with no clear
+    pitch. Hard beaters bring out more high frequencies.
+  music: >-
+    Used in contemporary orchestral and percussion ensemble music, film and
+    industrial music. It adds heavy metallic accents.
+  range: >-
+    Hitting the rim gives a brighter clank, the flat face a duller thud.
+  vs:
+    anvil: >-
+      An anvil is solid steel and rings brighter and more piercing. A brake
+      drum is duller and more hollow.
+    cowbell: >-
+      A cowbell is a thin, hollow bell with a more defined pitch. A brake drum
+      is heavier and clankier.
+
+flexatone:
+  how: >-
+    A thin, flexible steel sheet is mounted in a wire frame between two
+    wooden knobs on springs. Shaking the frame makes the knobs strike the
+    sheet rapidly, while thumb pressure bends the sheet.
+  why: >-
+    Each knob strike makes the sheet ring with a clear, metallic tone, and
+    rapid strikes create a continuous warble. Bending the sheet changes its
+    stiffness, which raises or lowers the pitch, so the tone swoops up and
+    down. The wire frame and knobs add a slight rattle.
+  music: >-
+    Used in orchestras, film and cartoon scores, and comedy for spooky or
+    comic swoops.
+  range: >-
+    Light pressure gives a lower, softer warble, firm pressure a higher,
+    tighter one.
+  vs:
+    theremin: >-
+      A theremin is an electronic oscillator, so it gives a smooth, pure tone
+      without any rattle. A flexatone warbles with metallic strikes.
+    vibraslap: >-
+      A vibraslap is a box with rattling metal teeth, so it buzzes without
+      pitch. A flexatone has a clear, bending pitch.
+
+vibraslap:
+  how: >-
+    A wooden ball is joined by a bent steel wire to a hollow wooden box
+    holding loose metal teeth. Striking the ball shakes the box, making the
+    teeth rattle.
+  why: >-
+    The sharp hit gives a crack, then the teeth rattle inside the box,
+    creating a buzzing "brrrrr" that fades. The box amplifies the rattle, and
+    there is no clear pitch.
+  music: >-
+    Used in Latin music, film and cartoon scores, and comedy for accents and
+    sound effects.
+  range: >-
+    Hard hits give a louder, longer rattle, soft hits a short, quieter buzz.
+  vs:
+    guiro: >-
+      A güiro is scraped, so its sound is a continuous zip. A vibraslap is
+      struck and rattles.
+    ratchet: >-
+      A ratchet clatters for as long as its handle is cranked. A vibraslap's
+      rattle is one hit that fades.
+
+ratchet:
+  how: >-
+    A wooden cog is turned by a handle, and flexible wooden tongues snap from
+    tooth to tooth.
+  why: >-
+    Each snap is a dry, wooden click, and rapid turning blends these into a
+    fast, clattering rattle. The sound lasts as long as the handle turns. The
+    wooden frame amplifies the clatter.
+  music: >-
+    Used in orchestras, film and comedy, and as a noisemaker at celebrations.
+    It adds clattering sound effects.
+  range: >-
+    Slow turning gives separate clicks, fast turning a continuous rattle.
+  vs:
+    guiro: >-
+      A güiro is a single scrape, rougher and more continuous. A ratchet
+      clatters with separate clicks.
+    castanets: >-
+      Castanets are separate hand-played clicks. A ratchet is a mechanical,
+      machine-gun clatter.
+
+slapstick:
+  how: >-
+    Two hinged wooden boards are slapped together.
+  why: >-
+    The boards trap and expel air, producing a very sharp, loud crack with
+    almost no ring. Wood damps quickly, so the sound is extremely short and
+    has no pitch.
+  music: >-
+    Used in orchestras, film and comedy for whip cracks and accents.
+  range: >-
+    Larger boards are louder and deeper, smaller ones sharper.
+  vs:
+    claps: >-
+      Claps are skin on skin, so they are softer and fleshier. A slapstick is
+      a harder, louder crack.
+    snare-drum: >-
+      A snare has a drum body and a wire rattle. A slapstick is a single, dry
+      crack.
+
+rainstick:
+  how: >-
+    A long tube, often a dried cactus, is lined with pins or spines inside
+    and filled with pebbles or seeds. Tilting it makes them trickle down.
+  why: >-
+    Each pebble hitting a pin gives a tiny tick, and many ticks overlap into a
+    soft cascade like rain. The sound lasts as long as the pebbles fall and
+    has no clear pitch.
+  music: >-
+    Used in folk, ambient, meditation and children's music, and in film for
+    rain sounds.
+  range: >-
+    Steep tilting gives a fast, loud rush, shallow tilting a slow trickle.
+  vs:
+    ocean-drum: >-
+      An ocean drum has beads rolling on a drumhead, giving a smoother, bigger
+      wash. A rainstick is a trickle of tiny ticks.
+    shaker: >-
+      A shaker is moved in short strokes, so it gives rhythmic pulses. A
+      rainstick is a continuous cascade.
+
+
+# ---------------------------------------------------------------- electronic
+
+synth-bass:
+  how: >-
+    One or more oscillators (electronic tone generators) produce sawtooth or
+    square waves, which pass through a low-pass filter (a control that cuts
+    the high frequencies) and an amplifier, both shaped over time by
+    envelopes.
+  why: >-
+    Saw and square waves are packed with overtones, so the raw sound is
+    buzzy and bright. The filter trims those highs, and its envelope usually
+    closes it a little as the note holds, so you hear the note start bright
+    and get darker. With resonance turned up, a filter sweeping down adds a
+    vowel-like "wow". There is no finger noise or string decay, so every note
+    starts the same way and can hold for as long as the key is down.
+  music: >-
+    Heard in synth-pop, funk, house, techno, drum and bass, hip hop and film
+    and game music. Its job is the bass line, often locked tightly to the kick
+    drum.
+  range: >-
+    Low notes are deep and round with the buzz mostly felt as growl, while
+    higher notes expose more of the bright, buzzy edge.
+  vs:
+    electric-bass: >-
+      A bass guitar's string is plucked, so each note starts with finger or
+      pick noise and then fades as the string loses energy. A synth bass can
+      hold at a constant level and has no string or fret noise.
+    sub-808: >-
+      An 808 bass is close to a pure sine wave, a tone with almost no
+      overtones, so it is a smooth boom. A synth bass uses overtone-rich waves,
+      so it sounds buzzy and growly.
+    didgeridoo: >-
+      A didgeridoo is a long tube driven by the player's buzzing lips, so its
+      drone shifts with breath, mouth shape and voice, including barks and
+      whoops. A synth bass is steady and mechanically even.
+
+sub-808:
+  how: >-
+    Originally the bass drum of the Roland TR-808 drum machine, a circuit that
+    rings at a set pitch when triggered and then dies away. Today it is
+    usually a sample or synth patch, tuned to musical notes and given a long
+    decay so it works as a bass line.
+  why: >-
+    The tone is close to a sine wave, the purest possible tone, so it sounds
+    deep, smooth and clean, more felt than heard on big speakers. A quick
+    downward pitch dip at the start gives each note its punch. Producers
+    often add distortion, which creates overtones so the bass can still be
+    heard on phones and small speakers.
+  music: >-
+    Central to trap, hip hop, drill, Miami bass and much modern pop and R&B.
+    It plays the bass line and often doubles as the kick drum.
+  range: >-
+    The lowest notes are a rumble you feel more than hear, while higher notes
+    sound clearer, more like a pitched boom.
+  vs:
+    kick-drum: >-
+      An acoustic kick is a muffled drumhead, so it is a short, pitchless thud
+      with a beater click. An 808 is a sustained, clearly tuned note that can
+      follow a melody.
+    synth-bass: >-
+      A synth bass is built from saw or square waves full of overtones, so it
+      buzzes. An 808 is a near-sine, so it is smooth and round.
+    electric-bass: >-
+      A bass guitar has plucked string grit, finger noise and a tone rich in
+      overtones. An 808 is smooth, clean and electronic, with a little pitch
+      dip on each note.
+
+synth-lead-saw:
+  how: >-
+    An oscillator produces a sawtooth wave, usually shaped by a filter and
+    played as single melodic notes, often with glide (sliding smoothly from
+    one note to the next).
+  why: >-
+    A sawtooth wave contains every harmonic, overtones at every whole-number
+    multiple of the note, which makes it bright, buzzy and close to the
+    colour of brass. The level and tone stay perfectly steady while the key
+    is held, with no breath or bow noise. Glide makes the pitch slide between
+    notes rather than jump.
+  music: >-
+    Heard in synth-pop, electronic dance music, progressive rock, funk and
+    film and game scores. Its job is the lead melody or solo.
+  range: >-
+    Low notes are fat and growly, while high notes become piercing and thin.
+  vs:
+    electric-guitar-distorted: >-
+      A distorted guitar starts each note with a pick attack and adds string
+      bends, vibrato and sometimes squealing feedback. A saw lead holds an
+      unchanging buzz.
+    trumpet: >-
+      A trumpet is played with breath and buzzing lips, so notes start with a
+      small blip, carry breath noise and wobble slightly in pitch. A saw lead
+      starts cleanly and holds perfectly steady.
+    synth-lead-square: >-
+      A square wave has only odd-numbered harmonics, so it is hollow and
+      woody. A saw wave has them all, so it is brighter and buzzier.
+
+synth-lead-square:
+  how: >-
+    An oscillator produces a square or pulse wave (a wave that flips between
+    two levels), usually played as single melodic notes.
+  why: >-
+    A square wave has only odd-numbered harmonics, which gives a hollow,
+    reedy tone similar to a clarinet's low register, since a clarinet also
+    favours odd harmonics. The sound starts instantly and stays steady with
+    no breath. Changing the pulse width (how long the wave spends high versus
+    low) makes it thinner and more nasal or fuller and rounder.
+  music: >-
+    Famous as the sound of early video game consoles and chiptune music, and
+    heard in synth-pop and electronic music. It plays melodies and very fast
+    arpeggios (chords played one note at a time).
+  range: >-
+    Low notes are hollow and woody, while high notes become thin, whistly
+    and piercing.
+  vs:
+    clarinet: >-
+      A clarinet's reed and breath make each note start softly and carry a
+      slight airiness and natural wobble. A square lead switches on instantly
+      and stays perfectly steady.
+    drawbar-organ: >-
+      A drawbar organ mixes many pure tones at different pitches and often
+      plays through a rotating speaker, so it sounds fuller and whirls. A
+      square lead is one hollow wave without that movement.
+    flute: >-
+      A flute is mostly a pure tone wrapped in breath noise, so it sounds
+      airy. A square lead has no air and a buzzier, hollow edge.
+
+synth-pad:
+  how: >-
+    Several oscillators, slightly detuned from each other, play together
+    through a filter, with a slow attack envelope and usually chorus or
+    reverb effects.
+  why: >-
+    Oscillators set a few cents (hundredths of a semitone) apart drift in and
+    out of step, so the sound pulses gently and seems wide and shimmering. The
+    slow attack makes chords fade in rather than start with a hit, and reverb
+    smears the ends of notes, so the sound feels like a soft, continuous
+    bed. A filter usually keeps the brightness low and warm.
+  music: >-
+    Heard in ambient, synth-pop, trance, film and TV scores and game music.
+    Its job is background harmony and atmosphere under melodies and vocals.
+  range: >-
+    Low pads are warm and thick, while high pads are airy, glassy and
+    shimmering.
+  vs:
+    violin-section: >-
+      A real string section has bow changes, vibrato and dozens of players
+      slightly out of step, so it has grain and life. A pad is smoother and
+      more uniform.
+    pipe-organ: >-
+      Organ pipes speak as soon as the key opens the valve, so notes start
+      almost instantly and stop abruptly. A pad usually swells in and fades
+      out.
+    wine-glasses: >-
+      A glass harp is a single pure tone with a natural slow beat. A pad
+      blends several richer waves, so it sounds thicker and more even.
+
+synth-pluck:
+  how: >-
+    A synthesizer note whose filter opens for an instant and then closes
+    quickly, while the volume also decays fast. Some plucks instead use a
+    short delay line fed with a burst of noise to model a string.
+  why: >-
+    The fast filter envelope makes each note bright at the very start and
+    darker almost immediately, which the ear reads as a pluck. The quick
+    volume decay keeps notes short, so fast patterns stay clear. Every note
+    is identical in shape, giving a tight, machine-even sound.
+  music: >-
+    Heard in EDM, tropical house, pop and game music. It plays rhythmic
+    arpeggios, riffs and short melodic hooks.
+  range: >-
+    Low plucks are rounder and more like a muted bass, while high plucks are
+    short, bright blips.
+  vs:
+    electric-guitar-clean: >-
+      A guitar string carries pick and fret noise, and every stroke differs a
+      little in loudness and tone. A synth pluck repeats the same shape
+      exactly.
+    marimba: >-
+      A marimba is struck wood over a tube, giving a round knock with a woody
+      hum. A synth pluck is electronic, with a filter "snap" from bright to
+      dark.
+    harpsichord: >-
+      A harpsichord plucks real metal strings, so notes ring with many
+      overtones and a mechanical jangle from the action. A synth pluck is
+      cleaner and dies faster.
+
+drum-machine:
+  how: >-
+    An electronic instrument that plays kick, snare, clap, hi-hat and other
+    sounds from analogue circuits or recorded samples, triggered by a
+    programmed step sequencer.
+  why: >-
+    Every hit of a given sound is identical, because the circuit or sample
+    produces it the same way each time. Classic analogue kicks are near-sine
+    tones with a quick pitch drop, snares mix short tones with filtered noise,
+    claps repeat a noise burst several times in quick succession to imitate
+    a group, and hi-hats use noise or clusters of square waves. The result is
+    clean, steady and often very deep in the low end.
+  music: >-
+    Central to hip hop, house, techno, electro, synth-pop, R&B and much modern
+    pop. Its job is the beat.
+  range: >-
+    Kicks are deep and booming, snares and claps sit in the middle as noisy
+    snaps, and hats are high, thin hisses.
+  vs:
+    kick-drum: >-
+      An acoustic kick varies slightly with every hit and starts with a
+      beater click. A machine kick is identical every time and often longer
+      and smoother.
+    snare-drum: >-
+      An acoustic snare has a resonant shell and real wires rattling against
+      the bottom head. A machine snare is a tone plus filtered noise or a fixed
+      sample, so it sounds thinner and never changes.
+    hi-hat: >-
+      Real hats are bronze cymbals that ring with complex metal overtones and
+      change with every stroke. Machine hats are thin, hissy noise or
+      square-wave clusters, identical every hit.
+
+synth-strings:
+  how: >-
+    Sawtooth-like oscillators, often one per key, are softened by a filter and
+    a slow attack, then thickened with a chorus or "ensemble" effect that
+    imitates many players.
+  why: >-
+    A bowed string pulls the bridge in a sawtooth-like pattern, so a filtered
+    saw wave gets close to string colour. The ensemble effect constantly
+    shifts copies of the sound slightly in pitch and time, giving a silky,
+    lush sheen. Without bow changes or individual players, the sound is
+    smoother and more uniform than real strings.
+  music: >-
+    Heard in disco, 1970s and 1980s pop and rock, synth-pop, film and TV,
+    and ballads. It plays held chords and soft swells behind melodies.
+  range: >-
+    Low notes are warm and full, while high notes are thin, silky and
+    sometimes a little glassy.
+  vs:
+    violin-section: >-
+      Real strings have bow noise, vibrato and small tuning drift between
+      players, so they sound textured and alive. Synth strings are perfectly
+      even.
+    synth-pad: >-
+      A pad has no string character at all, often with a slower, more washy
+      swell. Synth strings keep the bright, bowed edge of a saw wave.
+
+synth-brass:
+  how: >-
+    Several sawtooth oscillators pass through a low-pass filter whose
+    envelope opens quickly at the start of each note, imitating brass
+    players.
+  why: >-
+    Real brass gets brighter as it gets louder, and the filter envelope
+    copies that, giving each chord a bright "blat" at the start. Saw waves
+    contain all harmonics, which gives the brassy colour. There is no breath
+    or lip noise, so notes are clean and even.
+  music: >-
+    Heard in 1980s pop, synth-pop, funk and film and TV scores. It plays
+    bold chord stabs and fanfares.
+  range: >-
+    Low notes are fat and growling, while high notes are bright and cutting.
+  vs:
+    trumpet: >-
+      A real trumpet has breath, lip flutter and slight pitch scoops at the
+      start of notes. Synth brass is clean and even.
+    synth-lead-saw: >-
+      A saw lead usually plays one note at a time with a thinner, more
+      steady tone. Synth brass plays chords with a filter "blat" on each
+      stab.
+
+acid-bass:
+  how: >-
+    A single sawtooth or square oscillator passes through a resonant
+    low-pass filter that is swept by an envelope, in the style of the Roland
+    TB-303. Accented notes and slides between notes are programmed into a
+    sequencer.
+  why: >-
+    Turning the filter's resonance high makes it emphasise the frequencies
+    right at its cutoff point, so each sweep sounds like a squelchy, rubbery
+    "wow" or a scream. The envelope moves quickly, so each note snaps open and
+    closes. Slides between notes give rubbery glides.
+  music: >-
+    The defining sound of acid house and acid techno. It plays fast,
+    repeating bass sequences.
+  range: >-
+    Low notes are rubbery and squelchy, while higher notes and more
+    resonance give a piercing, screaming tone.
+  vs:
+    synth-bass: >-
+      A standard synth bass uses a gentler, less resonant filter, so it is
+      rounder and more stable. Acid bass squelches.
+    jaw-harp: >-
+      A jaw harp is a metal reed plucked in front of the mouth, and its "wah"
+      comes from the player changing mouth shape. Acid bass is an electronic
+      filter sweep, with a buzzier, more aggressive tone.
+
+supersaw:
+  how: >-
+    Several sawtooth oscillators, often seven, are detuned slightly from
+    each other and stacked, usually with stereo spread and reverb.
+  why: >-
+    The slight detuning makes the waves drift in and out of step, so the
+    sound beats and shimmers, like many instruments playing together. The
+    saw waves give a bright buzz, and the spread across the speakers makes
+    it sound huge and wide.
+  music: >-
+    The defining sound of trance and big-room festival EDM, also common in
+    pop. It plays big lead melodies and chords.
+  range: >-
+    Low notes are thick and powerful, while high notes are bright and
+    shimmering.
+  vs:
+    synth-lead-saw: >-
+      A single saw lead has one oscillator, so it is narrower and thinner. A
+      supersaw is wide and shimmering.
+    violin-section: >-
+      A real string section is softer, with bow texture and natural
+      vibrato. A supersaw is brighter, buzzier and more even.
+
+fm-bell:
+  how: >-
+    Made by frequency modulation (FM) synthesis: one oscillator wobbles the
+    pitch of another so fast that new overtones appear, as on the Yamaha DX7.
+  why: >-
+    When the two oscillators run at a ratio that is not a whole number, the
+    new overtones are not neat multiples of the note, which gives a glassy,
+    clangy, bell-like tone. The amount of modulation usually falls over the
+    note, so the clang fades and the sound settles into a purer tone. The
+    attack is instant and sharp.
+  music: >-
+    Heard in 1980s pop, electronic music, film and TV, and video game music.
+    It plays melodies and chimes.
+  range: >-
+    Low notes are dark and clangy, while high notes are glassy and bright.
+  vs:
+    celesta: >-
+      A celesta is acoustic, with felt hammers on steel bars, so it is softer
+      and rounder. An FM bell is glassier and clangier.
+    tubular-bells: >-
+      Tubular bells are large brass tubes struck with a hammer, giving a
+      heavy strike and long, complex ring. An FM bell is lighter and
+      electronic.
+    fm-electric-piano: >-
+      FM electric piano uses a similar method but is tuned for a hammer-like
+      attack and a warmer body. An FM bell is clangier and more metallic.
+
+theremin:
+  how: >-
+    Two radio-frequency oscillators run at nearly the same frequency, and
+    the difference between them is the audible tone. The player's hand near
+    the pitch antenna shifts one oscillator, and the other hand near a
+    second antenna controls volume.
+  why: >-
+    Because the hands never touch the instrument, the pitch glides smoothly
+    and continuously between notes, and wobbling the hand gives a wide
+    vibrato. The tone is close to a sine wave, with few overtones, so it
+    sounds pure and voice-like. Notes can fade in softly or swell.
+  music: >-
+    Famous in 1950s science-fiction film scores, and heard in classical
+    concertos, rock and experimental music. It plays eerie, singing
+    melodies.
+  range: >-
+    Low notes are dark and cello-like, while high notes are piercing and
+    voice-like.
+  vs:
+    flexatone: >-
+      A flexatone is a struck steel sheet, so it warbles with a metallic
+      rattle. A theremin is smooth and pure.
+    siren-whistle: >-
+      A siren whistle is blown, so it is breathy. A theremin is electronic and
+      has no breath noise.
+    violin: >-
+      A high violin has bow grain and a rich tone with many overtones. A
+      theremin is purer, closer to a sine.
+    wine-glasses: >-
+      A glass harp's notes are fixed by each glass, so it cannot glide. A
+      theremin slides smoothly between notes.

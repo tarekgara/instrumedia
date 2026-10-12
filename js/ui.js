@@ -13,7 +13,7 @@
   /** The one clip that best represents an instrument at a glance. */
   function canonical(inst) {
     if (!inst || !inst.samples.length) return null;
-    return sample(inst, 'phrase') || sample(inst, 'groove') || sample(inst, 'note-3') || inst.samples[0];
+    return sample(inst, 'perf-1') || sample(inst, 'phrase') || sample(inst, 'groove') || sample(inst, 'note-3') || inst.samples[0];
   }
 
   /** Nearest single-note sample to a MIDI pitch, or the canonical clip. */

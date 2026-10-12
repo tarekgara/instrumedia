@@ -10,24 +10,24 @@ to about -20 LUFS, encoded as MP3. Phrases are assembled from individual recorde
 
 | Source | License | Clips |
 | --- | --- | ---: |
-| Versilian Studios and contributors | CC0-1.0 | 481 |
-| Versilian Studios | CC0-1.0 | 205 |
-| Generated in code for this library | CC0-1.0 | 170 |
-| MuldjordKit by Lars Muldjord (FreePats stereo version) | CC-BY-4.0 | 91 |
-| FreePats Spanish Classical Guitar | CC0-1.0 | 20 |
-| FSS Steel-String Guitar, Gary Campion (FlameStudios), adapted by FreePats | GPL-3.0-or-later WITH FreePats exception | 20 |
-| FreePats Finger Bass YR | CC0-1.0 | 20 |
-| FreePats Ukulele | CC0-1.0 | 20 |
-| FreePats Hang in D minor | CC0-1.0 | 20 |
-| FreePats Glasses of Water | CC0-1.0 | 20 |
-| FreePats Button Accordion HN (michael02022) | CC0-1.0 | 17 |
-| FreePats Electric Guitar FSBS (clean) | CC0-1.0 | 14 |
-| FreePats Electric Guitar FSBS (distortion 1) | CC0-1.0 | 14 |
-| FreePats Drawbar Organ Emulation | CC0-1.0 | 14 |
-| FreePats Old Piano FB | CC0-1.0 | 14 |
-| FreePats Bagpipe | CC0-1.0 | 11 |
-| FreePats Synth Strings 1 | CC0-1.0 | 11 |
-| FreePats Synth Brass 1 | CC0-1.0 | 11 |
+| Versilian Studios and contributors | CC0-1.0 | 538 |
+| Versilian Studios | CC0-1.0 | 287 |
+| Generated in code for this library | CC0-1.0 | 197 |
+| MuldjordKit by Lars Muldjord (FreePats stereo version) | CC-BY-4.0 | 97 |
+| FreePats Spanish Classical Guitar | CC0-1.0 | 23 |
+| FSS Steel-String Guitar, Gary Campion (FlameStudios), adapted by FreePats | GPL-3.0-or-later WITH FreePats exception | 23 |
+| FreePats Ukulele | CC0-1.0 | 23 |
+| FreePats Hang in D minor | CC0-1.0 | 23 |
+| FreePats Finger Bass YR | CC0-1.0 | 22 |
+| FreePats Glasses of Water | CC0-1.0 | 22 |
+| FreePats Button Accordion HN (michael02022) | CC0-1.0 | 20 |
+| FreePats Electric Guitar FSBS (clean) | CC0-1.0 | 17 |
+| FreePats Electric Guitar FSBS (distortion 1) | CC0-1.0 | 17 |
+| FreePats Drawbar Organ Emulation | CC0-1.0 | 17 |
+| FreePats Old Piano FB | CC0-1.0 | 17 |
+| FreePats Synth Strings 1 | CC0-1.0 | 14 |
+| FreePats Synth Brass 1 | CC0-1.0 | 14 |
+| FreePats Bagpipe | CC0-1.0 | 13 |
 | Poniol60 (Wikimedia Commons) | CC BY-SA 3.0 | 6 |
 | FreePats World Percussion | CC0-1.0 | 6 |
 | Folk tune, re-arranged by 黃海懷, record by: David290, performed by :Zhang Peijian (Wikimedia Commons) | CC BY-SA 4.0 | 3 |

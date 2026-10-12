@@ -1,0 +1,1191 @@
+# Explanatory context for bowed, plucked and keyboard instruments.
+# Keys match instrument ids in data/library.yaml.
+
+# ---------------------------------------------------------------- bowed
+
+violin:
+  how: >-
+    A bow strung with rosined horsehair is drawn across one of four strings,
+    making it vibrate. The bridge passes that vibration into a hollow wooden
+    body, which shakes the air far more than the thin string could alone.
+  why: >-
+    Rosin makes the hair grip the string, drag it sideways, then let it slip
+    back, hundreds of times a second. Because the bow keeps feeding the string
+    energy, a note can start softly, swell and hold for as long as the bow
+    lasts, unlike a plucked note that only fades. That repeated catch-and-slip
+    produces a strong set of high overtones (the faint higher pitches inside
+    every note), which is why the violin sounds bright and can cut through an
+    orchestra, and why hard playing adds a gritty rosin edge. Players rock a
+    finger on the string to make vibrato, a slight regular wobble in pitch,
+    and you can often hear small scrapes when the bow changes direction.
+  music: >-
+    The lead voice of the orchestra and string quartet, and central to fiddle
+    music in folk, country, bluegrass and Irish traditions. It usually carries
+    the melody, but also plays fast runs, held harmony notes and plucked
+    accompaniment.
+  range: >-
+    Dark and slightly gritty on the lowest string, warm and singing in the
+    middle, and thin, glittering and piercing at the very top.
+  vs:
+    viola: >-
+      Both are bowed the same way, but the viola is larger with thicker
+      strings tuned a fifth lower, so its body resonates lower and the sound
+      has fewer bright overtones. Listen for brightness: the violin cuts and
+      climbs high, the viola sounds husky and covered.
+    violin-section: >-
+      A section is many violins playing the same line, each with slightly
+      different pitch, timing and vibrato, so the details average out into a
+      smooth sheen. One violin has a single clear vibrato you can follow and
+      audible bow noise on note starts.
+    erhu: >-
+      The erhu has two strings, no fingerboard and a small sound box covered
+      in snakeskin rather than a large wooden body, so it has less warmth and
+      a more nasal, hollow tone. Listen for slides: the erhu glides between
+      almost every note, the violin mostly steps.
+    flute: >-
+      A flute has no string or bow: the sound comes from a stream of breath
+      split on the edge of a hole, which gives a purer tone with breath noise
+      around it. Listen for texture: the violin has a buzzy bow grain, the
+      flute sounds airy and smooth.
+
+violin-section:
+  how: >-
+    Many violinists play the same part at once, each bowing a string whose
+    vibration is amplified by the wooden body of their own instrument. The
+    room then blends all those instruments into one sound.
+  why: >-
+    No two players are perfectly in tune or in time with each other, and each
+    has their own vibrato, so the tiny differences smear together into a
+    wide, shimmering wash, the same effect a chorus pedal imitates. Bow
+    scrapes and string noise from individual players mostly blur away, which
+    makes the section softer-edged than a solo violin. Players also change
+    bow direction at slightly different moments, so long notes sound
+    seamless. The sound still moves: you hear gentle swells, small pitch
+    drift and the reverb of a large hall.
+  music: >-
+    The backbone of orchestral and film music, and the lush strings behind
+    many pop ballads, soul and disco records. Sections carry soaring melodies,
+    hold sustained chords, or add tension with tremolo, a rapid back-and-forth
+    bowing.
+  range: >-
+    Warm and rich low down, full and glowing in the middle, and silvery and
+    airy, sometimes slightly strained, at the very top.
+  vs:
+    violin: >-
+      One violin has one vibrato and one bow, so every scrape and pitch bend
+      is exposed, while a section averages those details out. Listen for a
+      single, followable wobble and bow grain: that is a solo violin.
+    synth-pad: >-
+      A synthesizer pad is generated electronically and can hold a perfectly
+      steady tone, while a real section is made of people who breathe, change
+      bow and drift slightly. Listen for movement inside long notes: real
+      strings swell and shift, a pad stays even.
+    viola: >-
+      Violas are larger and tuned lower, so a viola section sits lower and
+      sounds darker and more veiled. Listen for height and brightness: violins
+      shine above the texture, violas fill the middle.
+
+viola:
+  how: >-
+    Like the violin, a rosined bow sets a string vibrating and the bridge
+    passes that vibration into a hollow wooden body. The viola is somewhat
+    larger, with thicker strings tuned a fifth lower.
+  why: >-
+    The bow's catch-and-slip motion lets notes swell and hold, just as on a
+    violin. But the viola's body is small for how low it plays, so its lowest
+    notes are not strongly supported by the body and come out with a husky,
+    slightly nasal color rather than a full boom. Thicker strings and a lower
+    body resonance also mean fewer bright overtones, so the whole instrument
+    sounds warmer and more veiled than a violin.
+  music: >-
+    Found in orchestras and string quartets, usually playing harmony and inner
+    lines between the violins and cellos, with occasional solo melodies. It
+    appears less often in popular music than violin or cello.
+  range: >-
+    Husky, dark and slightly nasal on the low C string, warm and mellow in the
+    middle, and brighter and more strained as it climbs toward violin
+    territory.
+  vs:
+    violin: >-
+      The violin is smaller with thinner, higher strings, so it has more
+      bright overtones and a more focused, cutting tone. Listen for a veiled
+      quality: the viola sounds like a violin heard through a curtain.
+    cello: >-
+      The cello is much larger, tuned an octave below the viola, and its big
+      body supports deep notes with a full, chesty resonance. Listen for
+      depth: if the bowed notes reach well below a male speaking voice with a
+      round boom, it is a cello.
+
+cello:
+  how: >-
+    The player sits with the cello between the knees and draws a bow across
+    one of four long, thick strings. A large hollow wooden body, resting on a
+    spike on the floor, amplifies the vibration.
+  why: >-
+    The bow keeps the string vibrating, so notes can swell, hold and shape a
+    phrase like a voice. The large body has resonances low enough to support
+    the bass notes, giving them a rich, woody warmth rather than the husky
+    edge of the viola. Its main range lines up with the adult male voice, and
+    with a wide, slow vibrato it can sound strikingly vocal. Low notes carry
+    an audible bow grain, a buzzy texture from the string catching on the
+    hair.
+  music: >-
+    Heard in orchestras, string quartets and solo concert music, and
+    frequently in film scores and some pop and indie arrangements. It plays
+    bass lines, warm counter-melodies and expressive solo melodies.
+  range: >-
+    Deep, dark and resonant at the bottom, singing and tenor-like in the
+    middle, and intense and slightly strained at the top.
+  vs:
+    double-bass: >-
+      The double bass is even larger and plays about an octave lower, and its
+      low notes are so deep that the bow's rasp is as noticeable as the pitch.
+      Listen for a singing core: cello low notes still sound like a melody,
+      bass notes sound like a gruff foundation.
+    viola: >-
+      The viola is smaller and cannot reach the cello's lowest octave, so its
+      tone is thinner and more nasal. Listen for depth and roundness: the
+      cello has a chesty resonance the viola lacks.
+    bassoon: >-
+      The bassoon covers a similar range but its sound comes from breath
+      vibrating a double reed, which gives a dry, buzzy, reedy tone. Listen
+      for bow grain and woody ring after notes: that is the cello; a dry,
+      nasal buzz with breath behind it is the bassoon.
+    french-horn: >-
+      The horn's sound comes from the player's buzzing lips in a long coiled
+      brass tube, partly muffled by a hand in the bell, giving a round, soft
+      brassy tone. Listen for texture: the horn is smooth and blended, the
+      cello has bow grain and sharper note starts.
+
+double-bass:
+  how: >-
+    The largest bowed string instrument: thick strings are either bowed or
+    plucked with the fingers, and a big hollow wooden body amplifies them.
+    The player stands or sits on a tall stool.
+  why: >-
+    Bowed, the thick heavy strings respond slowly, so notes have a soft start
+    and a grainy rasp from the bow that you hear almost as much as the pitch.
+    Plucked, the string gives a woody thump, the body rings briefly, and the
+    note fades fairly quickly, a quick bloom then decay, because the large
+    body draws energy out of the string fast. Its notes are so low that small
+    speakers may only reproduce their overtones, so it is often felt as much
+    as heard.
+  music: >-
+    Bowed, it provides the bass of the orchestra. Plucked, it is the walking
+    bass line of jazz and a staple of rockabilly, bluegrass and folk.
+  range: >-
+    Rumbling and grainy at the bottom, firm and woody in the middle, and
+    surprisingly cello-like and singing high up the neck.
+  vs:
+    electric-bass: >-
+      Both play the same notes, but the electric bass has a solid body and a
+      magnetic pickup, so less energy leaks out of the string and the note
+      lasts longer and more evenly. Listen to the decay: the upright thumps,
+      blooms and fades; the electric holds a smooth, steady tone.
+    cello: >-
+      The cello is smaller and sits about an octave higher, where the body
+      supports a vocal, singing tone. Listen for whether the line sounds like
+      a melody (cello) or a deep, gruff foundation (bass).
+    tuba: >-
+      The tuba is brass: the player buzzes their lips into a wide tube, so
+      the tone is smooth and round with breath, not bow rasp. Listen for
+      grit: a grainy, scratchy edge on low notes means bowed bass.
+    synth-bass: >-
+      A synth bass is generated electronically, so every note can be identical
+      and is often shaped by a filter sweep. Listen for finger noise, wood
+      resonance and small variations between notes: those mean a real upright
+      bass.
+
+erhu:
+  how: >-
+    A two-string Chinese fiddle: the bow hair passes between the two strings,
+    and the strings press on a small wooden sound box covered with snakeskin,
+    which acts like a drumhead and amplifies the sound.
+  why: >-
+    The skin-covered box is small and taut, so it boosts a narrow band of
+    middle frequencies, giving the erhu its nasal, hollow, almost vocal
+    color instead of the broad warmth of a wooden violin body. There is no
+    fingerboard: the player presses the strings in mid-air, which makes it
+    easy to slide smoothly between pitches, so you hear constant glides,
+    bends and wide vibrato. As with all bowed instruments, the bow keeps
+    notes sustained so they can swell and fade like a voice.
+  music: >-
+    Central to Chinese traditional and folk music, both solo and in
+    ensembles, and often heard in film and TV scores to evoke China. It
+    usually carries a plaintive, expressive melody.
+  range: >-
+    Soft and husky low down, nasal and singing in the middle, and thin,
+    keening and bright at the top.
+  vs:
+    violin: >-
+      The violin has a large wooden body and four strings over a fingerboard,
+      which gives a fuller tone and encourages clear steps between notes. The
+      erhu's small skin-topped box sounds thinner and more nasal, and its lack
+      of fingerboard invites sliding. Listen for glides: an erhu bends into
+      almost every note.
+
+bowed-psaltery:
+  how: >-
+    A flat triangular wooden box with metal strings fanned along its two
+    sides; the player draws a small bow across the string ends near the edge.
+    The hollow box amplifies the strings.
+  why: >-
+    Each string plays only one pitch, since nothing presses it shorter, so
+    there is no finger vibrato and notes stay steady. The strings are thin
+    metal and bowed close to where they are anchored, which brings out high,
+    silvery overtones and gives a sweet, airy, glassy tone with little body.
+    Because nothing damps the strings, a note keeps ringing after the bow
+    moves on, so consecutive notes overlap into a soft halo.
+  music: >-
+    Used mainly in folk and early-music settings, ambient and meditative
+    music, and by hobbyists. It usually plays simple, slow melodies.
+  range: >-
+    Soft and breathy on the longer strings, clear and sweet in the middle,
+    and thin and whistling on the shortest strings.
+  vs:
+    violin: >-
+      The violin's strings run over a fingerboard so the player can shape
+      each note with vibrato and pressure, and its larger body gives a fuller,
+      more focused tone. Listen for vibrato and overlap: the psaltery is
+      steady and its notes ring into each other.
+    wine-glasses: >-
+      A glass harp is played by rubbing wet fingertips around glass rims, so
+      there is no bow hair and no string, just a very pure, ghostly tone.
+      Listen for grain: even the gentle psaltery has a slight bow texture on
+      each note.
+
+# ---------------------------------------------------------------- plucked
+
+acoustic-guitar-nylon:
+  how: >-
+    Six strings, the higher three of nylon and the lower three of metal wound
+    over a nylon core, are plucked with the fingers or nails. A hollow wooden
+    body amplifies the sound through its soundhole.
+  why: >-
+    A pluck gives a clear start then a steady fade, since nothing feeds the
+    string after it is released. Nylon is softer and absorbs vibration more
+    than steel, so the high overtones die quickly and what remains is round,
+    warm and mellow. Plucking with the flesh of the finger softens the attack
+    further, while the nail adds a little click and brightness. The wooden
+    body adds a woody resonance, and you can often hear fingers squeak on the
+    wound strings as they shift.
+  music: >-
+    The guitar of classical music, flamenco, bossa nova and much Latin
+    American music, and common in folk and gentle pop. It plays melody,
+    chords and fingerpicked accompaniment, often all at once.
+  range: >-
+    Warm and slightly boomy on the low strings, sweet and rounded in the
+    middle, and thin and delicate high up the neck.
+  vs:
+    acoustic-guitar-steel: >-
+      Steel strings are stiffer and under higher tension, so they keep their
+      high overtones longer and sound bright, metallic and jangly. Listen for
+      shimmer: steel sparkles, nylon sounds soft-edged and round.
+    harp: >-
+      Harp strings are open (no fingers press them against frets) and nothing
+      damps them, so notes ring longer and cleaner. Listen for finger noise,
+      frets and a boxy wooden tone: those mean guitar; long bell-like ringing
+      means harp.
+    ukulele: >-
+      The ukulele also uses nylon strings, but its tiny body and short strings
+      put it higher, with a brief, boxy plink and no bass. Listen for low
+      notes: if there are bass notes under the melody, it is a guitar.
+    electric-guitar-clean: >-
+      A clean electric is a solid body read by a magnetic pickup and played
+      through an amplifier, so there is no wooden body resonance and the tone
+      is smoother and more even. Listen for the hollow, woody bloom of an
+      acoustic body.
+
+acoustic-guitar-steel:
+  how: >-
+    Six steel strings are plucked with a pick or fingers, or strummed across
+    all at once. A large hollow wooden body amplifies them through the
+    soundhole.
+  why: >-
+    Steel strings are stiff and tightly stretched, so they produce and hold
+    many bright overtones: each note has a crisp, metallic sparkle. A plastic
+    pick adds a sharp click at the start. Notes fade after the pluck, but
+    the big body adds a woody boom in the low end, and in strummed chords the
+    overtones of six strings blend into a bright, shimmering wash.
+  music: >-
+    The core instrument of singer-songwriters, folk, country, bluegrass and
+    much rock and pop. It mostly strums chords and rhythm, but also plays
+    fingerpicked patterns and lead lines.
+  range: >-
+    Boomy and full on the low strings, bright and jangly in the middle, and
+    thin and glassy high up the neck.
+  vs:
+    acoustic-guitar-nylon: >-
+      Nylon strings are softer and lose their high overtones quickly, so they
+      sound rounder and warmer. Listen for metallic sparkle and jangle: that
+      is steel.
+    electric-guitar-clean: >-
+      The clean electric is heard through a pickup and amplifier rather than
+      a hollow body, so it lacks the woody boom and much of the string and
+      pick noise. Listen for body resonance and a slightly rough, airy attack:
+      those mean acoustic.
+    mandolin: >-
+      The mandolin is smaller, with short paired strings tuned much higher,
+      so it sounds thin and chiming and decays fast, with long notes played as
+      rapid repeated picking. Listen for that tremolo, a fast repeated
+      picking, and the lack of low notes.
+    banjo: >-
+      The banjo's strings rest on a drumhead instead of a wooden top, which
+      responds quickly and then lets the sound die fast. Listen for a papery,
+      twangy snap and very short notes.
+    harpsichord: >-
+      A harpsichord also plucks metal strings, but with a hard quill and a
+      keyboard, so every note has the same snappy attack and volume and the
+      pitch cannot bend. Listen for brassy, even, very regular plucks and
+      ornamented runs: that is harpsichord.
+
+electric-guitar-clean:
+  how: >-
+    Steel strings over a mostly solid body are picked or plucked, and magnetic
+    pickups under the strings turn their vibration into an electrical signal.
+    An amplifier and speaker make the sound, with no distortion added.
+  why: >-
+    The solid body barely vibrates, so the string loses energy slowly and
+    notes decay smoothly and evenly, with no woody boom. The pickup only hears
+    the string, not the body, which gives a clean, glassy tone. A pickup near
+    the bridge sounds thinner and more nasal or quacky, one near the neck
+    rounder and warmer. The amplifier and effects such as reverb or tremolo
+    add their own color.
+  music: >-
+    Heard in jazz, funk, soul, indie, country, surf and many pop and rock
+    songs. It plays chords and rhythm parts, choppy funk strumming, arpeggios
+    (chord notes played one at a time) and melodies.
+  range: >-
+    Round and warm on the low strings, clear and glassy in the middle, and
+    thin and bell-like at the top.
+  vs:
+    acoustic-guitar-steel: >-
+      An acoustic guitar's hollow body vibrates and adds woody resonance and
+      more string and pick noise. Listen for that airy body sound: if the
+      notes sound smooth and come through an amp, it is electric.
+    electric-guitar-distorted: >-
+      Distortion squashes and clips the signal, adding grit and making notes
+      hold almost indefinitely. Listen for crunch: if there is none and notes
+      fade naturally, it is clean.
+    rhodes: >-
+      A Rhodes is a keyboard whose hammers strike metal tines, so notes start
+      with a soft bell rather than a pick click and never bend. Listen for
+      pick attack and string bends: those mean guitar.
+    harp: >-
+      A harp is acoustic, with open strings that ring freely through a wooden
+      soundboard. Listen for amplifier color and fretted, picked notes: that
+      is the electric; a clean bloom with sweeping runs is harp.
+
+electric-guitar-distorted:
+  how: >-
+    An electric guitar's pickup signal is pushed into an overdriven amplifier
+    or a distortion or fuzz pedal, which deliberately overloads it. The
+    overloaded signal is played through a speaker.
+  why: >-
+    Overloading flattens the tops of the sound wave, which adds many new
+    overtones and gives every note a buzzing, saturated edge. It also
+    squeezes loud and quiet parts toward the same level, so as the string
+    fades the sound stays loud, which is why notes sustain far longer than a
+    clean guitar. At high volume the speaker can feed vibration back into
+    the strings and hold a note indefinitely, often with a wobble or a howl.
+    Full chords can turn muddy under heavy distortion, so players often use
+    simpler two-note chords.
+  music: >-
+    The defining sound of rock, metal, punk and grunge, and common in blues
+    and pop. It plays riffs (short repeated patterns), heavy chords and
+    soaring solos.
+  range: >-
+    Chunky and growling on the low strings, thick and crunchy in the middle,
+    and singing and sometimes screaming high up the neck.
+  vs:
+    synth-lead-saw: >-
+      A sawtooth synth lead is an electronic waveform that is already buzzy
+      and can be held perfectly steady. Listen for the human details of a
+      guitar: pick attacks, string bends and squeals or feedback wobble.
+    electric-guitar-clean: >-
+      Same instrument, without the overloaded signal. Listen for grit: no
+      crunch and naturally fading notes mean clean.
+    bagpipe: >-
+      Bagpipes are reed pipes fed from an air bag, so they never stop between
+      notes and always have a steady drone underneath. Listen for pick
+      attacks and silences: the guitar has them, the bagpipe does not.
+
+electric-bass:
+  how: >-
+    Four thick steel strings on a long solid-bodied neck are plucked with the
+    fingers or a pick, or slapped with the thumb. Magnetic pickups send the
+    signal to an amplifier.
+  why: >-
+    Long heavy strings vibrate slowly, giving low notes, and the solid body
+    holds the energy in the string so notes decay smoothly and evenly. The
+    finger or pick gives a clear, punchy start; slapping the string against
+    the frets adds a bright, percussive click. Because the pickup reads the
+    string directly, the tone is smooth and focused, without the woody thump
+    of an upright bass.
+  music: >-
+    The foundation of most pop, rock, funk, soul, reggae and R&B. It plays
+    the bass line, linking the drums to the chords, and sometimes riffs and
+    fills.
+  range: >-
+    Deep and round at the bottom, punchy and present in the middle, and
+    clearer and more guitar-like high up the neck.
+  vs:
+    double-bass: >-
+      The upright bass has a large hollow wooden body that draws energy out of
+      the string fast, so plucked notes thump, bloom and fade. Listen to the
+      decay: the electric holds a smooth, steady tone.
+    synth-bass: >-
+      A synth bass is electronic, so notes can be perfectly identical and are
+      often shaped by a filter that sweeps the brightness up or down. Listen
+      for finger noise, small timing and tone variations and fret buzz: those
+      mean a bass guitar.
+    sub-808: >-
+      An 808 bass is a near-pure electronic tone, often with a quick downward
+      pitch drop at the start and a long boom. Listen for the attack: a bass
+      guitar has a finger or pick pluck with some brightness, the 808 is a
+      smooth thud.
+    tuba: >-
+      The tuba is brass: lip buzzing in a wide tube, so notes can swell and
+      have a breathy, round tone. Listen for whether notes start with a
+      pluck and fade (bass) or start with breath and can grow (tuba).
+
+ukulele:
+  how: >-
+    Four nylon strings on a very small hollow wooden body are strummed or
+    plucked with the fingers. The small body amplifies them through a
+    soundhole.
+  why: >-
+    The short nylon strings and tiny body produce short notes with a boxy,
+    plinky character and a quick fade. Nylon loses its high overtones fast,
+    so the tone is sweet rather than metallic. On the usual tuning the fourth
+    string is tuned high rather than low, so there are no bass notes and
+    strummed chords sound bright and compact.
+  music: >-
+    Associated with Hawaiian music, and widely used in light pop, indie,
+    folk and children's music and advertising. It mostly strums rhythmic
+    chords, with some melody.
+  range: >-
+    It has a narrow range: mellow and soft on its lowest notes, sweet and
+    bright in the middle, and thin and tinny high up the short neck.
+  vs:
+    acoustic-guitar-nylon: >-
+      The classical guitar has longer strings, a much bigger body and bass
+      strings, so it reaches lower and rings longer. Listen for low notes and
+      sustain: the ukulele has neither.
+    mandolin: >-
+      The mandolin has paired steel strings, which are brighter and thinner,
+      and long notes are played as rapid repeated picking. Listen for a
+      metallic chime and tremolo: that is mandolin.
+
+harp:
+  how: >-
+    Dozens of strings stretched across an open frame are plucked with the
+    fingertips. A soundboard at the base of the strings, backed by a hollow
+    box, amplifies them.
+  why: >-
+    The strings are open, with no frets or fingers pressing them, and nothing
+    damps them unless the harpist touches them, so notes ring long and clear
+    with a bell-like bloom. Fingertip plucking gives a soft, rounded attack
+    compared with a pick. Each string plays its own note, so the harpist can
+    sweep a hand across many strings in a glissando, a rapid sliding run,
+    one of the instrument's most recognizable sounds.
+  music: >-
+    A regular member of the orchestra and common in film scores, also in
+    Celtic and Latin American folk music and some pop. It plays arpeggios
+    (chord notes one after another), shimmering glissandos and gentle
+    melodies.
+  range: >-
+    Deep, warm and long-ringing in the bass, round and clear in the middle,
+    and short, bright and crystalline in the top strings.
+  vs:
+    acoustic-guitar-nylon: >-
+      Guitar strings are pressed against frets and the sound comes from a
+      small boxy body, so notes are drier and shorter and you hear finger and
+      fret noise. Listen for long, open ringing and sweeping runs: that is
+      harp.
+    celesta: >-
+      The celesta is a keyboard whose hammers strike metal bars, so its tone
+      is a metallic bell, not a string. Listen for a music-box sparkle
+      (celesta) versus a warm, plucked string (harp).
+    dan-tranh: >-
+      The đàn tranh is a zither with steel strings and movable bridges; the
+      player presses the string beside the bridge to bend notes after
+      plucking. Listen for pitch bends and a brighter, metallic twang: the
+      harp never bends.
+    kalimba: >-
+      A kalimba is a set of metal tongues plucked by the thumbs, with a short
+      sustain and a slightly buzzy metallic tone. Listen for long-ringing
+      string tones and wide range: that is harp.
+
+dan-tranh:
+  how: >-
+    A long wooden zither with steel strings, each resting on its own movable
+    bridge, is plucked with finger picks by the right hand. The left hand
+    presses or releases the strings on the far side of the bridges to change
+    their pitch.
+  why: >-
+    Steel strings plucked with picks give a bright, metallic twang with a
+    clear attack. Pressing the string beyond the bridge tightens it, so the
+    player can bend the pitch up after the pluck or add a vibrato, which is
+    why notes often wobble or slide while they ring. The long hollow body
+    sustains notes so cascading glissandos (rapid sweeps across strings) and
+    fast tremolos blend into a shimmer.
+  music: >-
+    A traditional Vietnamese instrument, heard solo, in folk and court music
+    ensembles and accompanying song. It plays ornamented melodies with
+    cascading runs.
+  range: >-
+    Warm and resonant on the long low strings, bright and twangy in the
+    middle, and thin and sparkling on the short high strings.
+  vs:
+    harp: >-
+      The harp's strings have no bridge to press behind, so they cannot be
+      bent and ring with a rounder, softer tone. Listen for a note rising or
+      wobbling after it is plucked: that is the zither.
+    sitar: >-
+      The sitar's main strings run over a broad, flat bridge that makes them
+      buzz, and extra sympathetic strings ring along with them. Listen for a
+      sizzling halo around each note: that is sitar; the zither is cleaner.
+
+jaw-harp:
+  how: >-
+    A small frame holds a thin metal or bamboo tongue; the frame is held
+    against the player's teeth or lips and the tongue is plucked with a
+    finger. The player's mouth is the resonator.
+  why: >-
+    The vibrating tongue makes one fixed low note full of overtones, which is
+    why you hear a steady buzzing drone. Changing the shape of the mouth and
+    throat, as if saying different vowels, makes different overtones louder,
+    so a melody of whistly higher tones seems to move around above the drone
+    with a "wah" or "boing" quality. Breathing in and out through the
+    instrument also changes the tone and adds rhythm.
+  music: >-
+    Found in folk traditions across many parts of the world, and in film and
+    cartoons as a twangy or comic effect. It plays rhythmic patterns and
+    overtone melodies over its drone.
+  range: >-
+    The basic pitch never changes; what moves is the overtone melody, from a
+    dull, nasal buzz with the mouth closed to a bright, whistling twang with
+    an open mouth.
+  vs:
+    didgeridoo: >-
+      The didgeridoo is a long wooden tube blown with buzzing lips, so its
+      drone is continuous and much deeper. Listen for plucks: the jaw harp
+      twangs in rhythmic strokes, while the didgeridoo is a steady breathy
+      drone.
+
+mandolin:
+  how: >-
+    Four pairs of steel strings, each pair tuned to the same note, are played
+    with a pick on a small hollow wooden body.
+  why: >-
+    The strings are short and thin, so notes are high, bright and thin, and
+    die away quickly. Each pick stroke hits both strings of a pair, and their
+    slight tuning differences add a chiming shimmer. Because a single note
+    fades so fast, players hold long notes by picking them very rapidly, a
+    tremolo, which gives the mandolin its characteristic trembling sound.
+  music: >-
+    Central to bluegrass and Italian folk music, and common in Irish music,
+    country and some folk-rock. It plays fast melodies and solos, and short,
+    choppy offbeat chords in bluegrass.
+  range: >-
+    Woody and somewhat full on the low strings, bright and chiming in the
+    middle, and thin and piercing at the top.
+  vs:
+    acoustic-guitar-steel: >-
+      The guitar has longer strings, single rather than paired, and a much
+      larger body, so it reaches lower and sounds fuller. Listen for bass
+      notes and longer sustain: that is guitar.
+    banjo: >-
+      The banjo's strings sit on a drumhead, which gives a twangier,
+      snappier attack. Listen for a papery snap and rolling patterns (banjo)
+      versus a woody chime and tremolo (mandolin).
+
+banjo:
+  how: >-
+    Strings run over a bridge that sits on a tightly stretched drumhead
+    mounted in a round frame. The strings are usually fingerpicked with metal
+    or plastic picks.
+  why: >-
+    A drumhead is light and taut, so it turns string vibration into sound
+    very efficiently: the banjo is loud and bright, but the energy is spent
+    quickly and notes die away fast. The head also adds a dry, papery snap to
+    every attack. Because notes are short, players fill the time with rapid
+    rolling patterns, and the common five-string banjo has a short extra
+    string that rings a high repeated drone note.
+  music: >-
+    The signature instrument of bluegrass and old-time music, also heard in
+    Dixieland jazz, folk and some country and pop. It plays fast rolling
+    accompaniment patterns and lead breaks.
+  range: >-
+    Plunky and twangy on the low strings, bright and snappy in the middle,
+    and sharp and tinny high up the neck.
+  vs:
+    acoustic-guitar-steel: >-
+      The guitar has a wooden top and a large body, which hold notes longer
+      and add a woody boom. Listen for decay: banjo notes snap and vanish,
+      guitar notes ring.
+
+sitar:
+  how: >-
+    A long-necked lute with a gourd body: the main strings are plucked with a
+    wire pick worn on the finger, and they pass over a broad, slightly curved
+    bridge. A second set of thin strings under the frets is never plucked but
+    vibrates in sympathy.
+  why: >-
+    The wide, flat bridge lets each vibrating string brush against its
+    surface, which creates the sitar's buzzing, sizzling tone (called
+    jawari) and keeps notes ringing. The sympathetic strings, tuned to the
+    notes of the raga (the melodic framework being played), ring whenever a
+    matching note is played, adding a shimmering halo. The frets are curved
+    and raised, so the player can pull a string sideways to bend a note
+    smoothly over a wide range, and drone strings are struck between melody
+    notes.
+  music: >-
+    The leading melodic instrument of North Indian classical music, also
+    heard in Bollywood film music and in 1960s psychedelic rock and pop. It
+    plays long, improvised melodic lines over a drone.
+  range: >-
+    Deep, growling and buzzing on the low strings, singing and vocal in the
+    middle, and bright and sizzling at the top.
+  vs:
+    dan-tranh: >-
+      The zither's steel strings rest on simple bridges with no buzzing
+      surface and no sympathetic strings. Listen for a sizzle and a ringing
+      halo around each note: that is sitar.
+
+strumstick:
+  how: >-
+    A small, light three-string instrument with a narrow hollow wooden body,
+    plucked or strummed with a pick or fingers. Its frets are spaced so that
+    only the notes of one scale can be played.
+  why: >-
+    Thin steel strings on a small body give bright, thin plucks with modest
+    bass and a fairly quick fade. Because the frets only allow the notes of a
+    single scale, the open strings fit with almost any melody note, so they
+    are often left ringing as a drone, a steady background note, under the
+    tune. The small body gives a simple, light tone rather than the full boom
+    of a guitar.
+  music: >-
+    Used mostly in informal folk playing, at home and in campfire or
+    beginner settings. It plays simple melodies over droning open strings,
+    or basic strummed chords.
+  range: >-
+    A short range: plunky and light at the bottom, bright and clear in the
+    middle, thin and tinny at the top.
+  vs:
+    acoustic-guitar-steel: >-
+      The guitar has six strings including real bass strings and a much
+      larger body, so it sounds fuller and deeper. Listen for low notes and
+      chord richness: that is guitar.
+    banjo: >-
+      The banjo's strings rest on a drumhead, which adds a papery snap and
+      makes notes die faster. Listen for that snap: the strumstick sounds
+      woodier and simpler.
+    ukulele: >-
+      The ukulele uses nylon strings, which lose their high overtones quickly
+      and sound softer and rounder. Listen for metallic brightness: steel
+      strings on the strumstick give a thinner, brighter pluck.
+
+koto:
+  how: >-
+    A long wooden zither, laid on the floor, with thirteen strings each
+    resting on its own movable bridge. The player plucks with picks on the
+    thumb and first two fingers of the right hand.
+  why: >-
+    Picks give a clear, bright attack, and the long hollow body lets notes
+    ring for a while before fading. The left hand presses a string on the
+    far side of its bridge to tighten it, which raises the pitch, so you hear
+    notes bend upward after the pluck or wobble with vibrato. The strings are
+    traditionally silk and today usually synthetic, which gives a slightly
+    softer tone than steel.
+  music: >-
+    A central instrument of Japanese traditional music, solo and in
+    ensembles, and used in film and games to evoke Japan. It plays melodies,
+    often on five-note scales, with ornaments, bends and arpeggios.
+  range: >-
+    Soft and resonant on the long low strings, clear and bright in the
+    middle, and crisp and delicate on the short high strings.
+  vs:
+    dan-tranh: >-
+      Both are zithers with movable bridges, but the đàn tranh has steel
+      strings, which sound thinner and more metallic, and players often use
+      quicker vibrato. Listen for brightness: the koto is fuller and less
+      metallic.
+    harp: >-
+      The harp has no bridges to press behind, so its notes never bend after
+      the pluck. Listen for a pitch rising or wobbling while the note rings:
+      that is koto.
+    shamisen: >-
+      The shamisen is a three-string lute whose large plectrum strikes both
+      string and skin, so it sounds snappy, percussive and buzzy. Listen for a
+      sharp percussive slap (shamisen) versus a clean, ringing pluck (koto).
+
+shamisen:
+  how: >-
+    A three-string Japanese lute with a long fretless neck and a small square
+    body covered in stretched skin on both sides. It is struck with a large
+    flat plectrum called a bachi.
+  why: >-
+    The plectrum often hits the skin as well as the string, so each note
+    starts with a dry, percussive snap, like a small drum. The skin top
+    responds quickly and lets notes fade fairly fast. The lowest string is
+    arranged to touch a small ridge near the top of the neck, which makes it
+    buzz (called sawari), and this buzz also rings when other strings play
+    matching notes. With no frets, players slide between pitches.
+  music: >-
+    Heard in Japanese traditional theatre such as kabuki and bunraku, in folk
+    music and in modern fusion styles. It plays rhythmic, driving melodies
+    and accompanies singing.
+  range: >-
+    Thick, buzzy and percussive on the low string, sharp and twangy in the
+    middle, and thin and piercing at the top.
+  vs:
+    banjo: >-
+      Both have skin-topped bodies, but the banjo is fingerpicked in fast,
+      rolling patterns with a bright, even tone. Listen for hard, single
+      plectrum strikes and slides: that is shamisen.
+    koto: >-
+      The koto is a zither with long strings plucked by finger picks, so it
+      rings longer and more softly. Listen for the snap of plectrum on skin:
+      that is shamisen.
+    sitar: >-
+      The sitar also buzzes, but it has many sympathetic strings that ring
+      after every note, creating a lush halo. Listen for that ringing cloud:
+      the shamisen sounds drier and more percussive.
+
+oud:
+  how: >-
+    A short-necked, fretless lute with a large, rounded, bowl-shaped wooden
+    back and paired strings, plucked with a long, flexible plectrum.
+  why: >-
+    The big, deep wooden bowl gives a warm, dark resonance with a strong low
+    end, and the plectrum produces a soft but clear attack. With no frets,
+    the player's finger glides freely on the neck, so you hear slides and the
+    small in-between pitches (quarter tones) that Arabic, Turkish and Persian
+    scales use. Notes fade fairly quickly, so melodies are often ornamented
+    with quick repeated notes and runs.
+  music: >-
+    A leading instrument of Arabic, Turkish, Persian and wider Middle Eastern
+    and North African music, solo and in ensembles. It plays ornamented
+    melodies, improvisations and accompaniment for singers.
+  range: >-
+    Deep, warm and dark on the low strings, woody and round in the middle,
+    and clearer and more nasal up the neck.
+  vs:
+    acoustic-guitar-nylon: >-
+      The guitar has frets and a flat back, so its notes step cleanly from
+      one pitch to the next and sound a little brighter. Listen for slides
+      and between-the-notes pitches: those mean oud.
+    bouzouki: >-
+      The bouzouki has frets and paired steel strings, which sound bright and
+      metallic. Listen for warmth: the oud is darker and woodier and slides.
+    sitar: >-
+      The sitar's flat bridge makes strings buzz and ring for a long time,
+      with sympathetic strings adding a halo. Listen for that buzz and long
+      sustain: the oud is clean and fades sooner.
+
+bouzouki:
+  how: >-
+    A long-necked lute with frets and four or so pairs of steel strings,
+    played with a pick over a hollow wooden body.
+  why: >-
+    Paired steel strings, struck together by the pick, are never exactly in
+    tune with each other, so every note has a shimmering, chorused jangle.
+    Steel and a pick give a bright, metallic attack, and the long neck lets
+    it play quick melodies across a wide range. On many instruments some
+    pairs are tuned an octave apart, adding a high sparkle above the low
+    notes.
+  music: >-
+    The Greek bouzouki is central to Greek popular music; the Irish
+    bouzouki, a related flat-backed design, is common in Irish and Celtic
+    folk. It plays fast picked melodies and chordal accompaniment.
+  range: >-
+    Fairly full and ringing on the low pairs, jangly and bright in the
+    middle, and thin and chiming at the top.
+  vs:
+    mandolin: >-
+      The mandolin has much shorter strings tuned about an octave higher, so
+      it sounds thinner and decays faster. Listen for depth: the bouzouki has
+      more body and longer notes.
+    acoustic-guitar-steel: >-
+      The guitar has six single strings and a larger body, so it sounds
+      fuller and plainer, without the doubled-string shimmer. Listen for a
+      chorused jangle on single notes: that is bouzouki.
+    oud: >-
+      The oud is fretless with a deep bowl body, so it sounds darker and
+      slides between notes. Listen for brightness and clean, fretted steps:
+      that is bouzouki.
+
+pedal-steel:
+  how: >-
+    Steel strings on a horizontal neck mounted on legs are plucked with
+    finger picks while a smooth steel bar slides along them instead of
+    fingers pressing frets. Pedals and knee levers change the pitch of
+    selected strings, and pickups send the sound to an amplifier.
+  why: >-
+    Because the bar can stop anywhere on the string, pitch glides smoothly
+    between notes, and pedals can bend some notes of a chord while others
+    hold, which produces its characteristic crying, sliding harmonies.
+    Players usually work a volume pedal too, so a note can be plucked with
+    the volume down and then swelled in, hiding the attack and making notes
+    seem to grow and weep. The steel bar also adds a gentle vibrato when
+    rocked.
+  music: >-
+    The signature lead and fill instrument of classic country music and
+    western swing, also used in Hawaiian-influenced, gospel, Americana and
+    some rock and pop. It plays sliding fills between vocal lines, swelling
+    chords and solos.
+  range: >-
+    Warm and full on the low strings, sweet and crying in the middle, and
+    thin and glassy at the top.
+  vs:
+    electric-guitar-clean: >-
+      A regular guitar is played with fingers pressing frets, so notes step
+      from one pitch to the next. Listen for smooth glides and chords that
+      bend: that is pedal steel.
+    theremin: >-
+      The theremin glides too, but it is purely electronic, played by moving
+      a hand near an antenna, so it has no plucks at all and a smooth, voice-
+      or whistle-like tone. Listen for a pluck or swell at each note: that is
+      pedal steel.
+    erhu: >-
+      The erhu also slides, but it is a bowed fiddle with a skin-covered box,
+      so it sounds nasal and continuous. Listen for chords and amplified,
+      plucked notes: that is pedal steel.
+
+twelve-string:
+  how: >-
+    A steel-string acoustic guitar with six pairs of strings instead of six
+    single strings. The lower four pairs combine a normal string with a
+    thinner one tuned an octave higher; the top two pairs are tuned the same.
+  why: >-
+    Each pick stroke sounds both strings of a pair, so every low note has a
+    bright, higher octave shadow above it. The two strings of a pair are
+    never perfectly in tune, and the slight mismatch makes a gentle wobble,
+    which gives the shimmering, chorus-like jangle. More strings also mean a
+    louder, denser wash of sound when strummed.
+  music: >-
+    Heard in folk, folk-rock, 1960s pop and rock and some blues. It mostly
+    strums chords and plays ringing arpeggios (chord notes played one after
+    another).
+  range: >-
+    Full and jangly on the low pairs, with the octave strings adding sparkle,
+    rich and shimmering in the middle, and bright and glassy at the top.
+  vs:
+    acoustic-guitar-steel: >-
+      A six-string guitar has one string per note, so there is no octave
+      shadow or chorus wobble. Listen for that shimmer: a plainer, more
+      focused sound is a six-string.
+    bouzouki: >-
+      The bouzouki has a smaller body and shorter range, so it sits higher
+      and sounds thinner, and it is more often used for picked melodies. Listen
+      for depth: the 12-string has a fuller low end.
+    harpsichord: >-
+      The harpsichord also jangles, but it is a keyboard that plucks with
+      quills, so every note has the same snap and loudness and pitches cannot
+      bend. Listen for strumming, bends and varying loudness: those mean
+      guitar.
+
+santur:
+  how: >-
+    A trapezoid wooden box strung with many metal strings, grouped several
+    to a note across small movable bridges. The player strikes them with two
+    light wooden hammers.
+  why: >-
+    Striking gives a sharp, bright attack, and since there are no dampers
+    the strings keep ringing, so notes overlap into a shimmering, metallic
+    wash. Each note has several strings that are slightly out of tune with
+    one another, adding a chorus-like shimmer. Notes fade fairly quickly up
+    close, so long notes are played as fast tremolos, rapidly repeated
+    strikes, and runs cascade across the strings.
+  music: >-
+    A central instrument of Persian classical music; related hammered
+    dulcimers are heard in Central European, Chinese, Indian and American
+    folk music. It plays melodies, tremolos and fast, rippling runs.
+  range: >-
+    Warm and resonant on the low strings, bright and ringing in the middle,
+    and glassy and bell-like at the top.
+  vs:
+    harpsichord: >-
+      The harpsichord plucks its strings and has dampers that silence each
+      note when the key is released, so it sounds dry and precise. Listen for
+      a ringing wash that keeps going under new notes: that is santur.
+    dan-tranh: >-
+      The zither is plucked rather than struck, and the player bends notes by
+      pressing behind the bridges. Listen for bends (zither) versus hammered
+      tremolos with no bends (santur).
+    harp: >-
+      The harp is plucked with the fingertips and its strings are mostly
+      nylon or gut, so it sounds softer and rounder. Listen for metallic
+      shimmer and hammered tremolo: that is santur.
+
+# ---------------------------------------------------------------- keys
+
+grand-piano:
+  how: >-
+    Pressing a key throws a felt-covered hammer against steel strings, then
+    lets it bounce off. A large wooden soundboard under the strings amplifies
+    them inside a horizontal case.
+  why: >-
+    The hammer strike gives a clear attack with a soft thud, then the note
+    decays slowly and smoothly since nothing keeps feeding the strings. Most
+    notes have two or three strings tuned together, and their tiny
+    differences give a rich, shifting shimmer. Striking harder makes the
+    tone louder and also brighter, and the sustain pedal lifts all the
+    dampers so other strings ring in sympathy, adding a halo. A grand's long
+    bass strings and large soundboard give deep, full low notes with long
+    tails.
+  music: >-
+    Heard almost everywhere: classical concerts, jazz, pop, film scores and
+    accompaniment for singers. It plays melody, chords and bass at once, so
+    it can carry a piece alone.
+  range: >-
+    Deep, booming and rumbling in the bass, warm and singing in the middle,
+    and bright, thin and quickly fading at the very top.
+  vs:
+    upright-piano: >-
+      An upright has shorter bass strings and a smaller soundboard set
+      vertically in a box, so its tone is boxier and more mid-heavy with less
+      bass bloom. Listen for long, deep bass notes and a spacious ring: those
+      mean grand.
+    fm-electric-piano: >-
+      An FM electric piano is synthesized, with no strings or hammer, so its
+      tone is smooth, glassy and bell-like. Listen for the soft hammer thud
+      and the rich shimmer of strings: those mean piano.
+    harpsichord: >-
+      A harpsichord plucks its strings with quills, so every note has the same
+      jangly snap and volume. Listen for loud and soft notes and a rounder
+      hammer attack: those mean piano.
+    vibraphone: >-
+      The vibraphone is metal bars hit with soft mallets, with tubes below
+      that are often fitted with spinning fans, so it has a pure, metallic
+      tone that often wobbles. Listen for a complex, string-like tone with no
+      wobble: that is piano.
+
+upright-piano:
+  how: >-
+    Hammers strike steel strings when keys are pressed, as in a grand, but
+    the strings and soundboard stand vertically inside a tall case against
+    the wall.
+  why: >-
+    The upright is shorter, so its bass strings are shorter and stiffer and
+    its soundboard smaller, which makes the low notes less full and slightly
+    clangy and the overall sound boxier and more mid-heavy. The player sits
+    close to the mechanism, so recordings often pick up key clicks, pedal
+    thumps and felt noise. Many home uprights are tuned less often, so notes
+    may sound slightly sour.
+  music: >-
+    The piano of homes, schools, pubs and rehearsal rooms, and heard on many
+    pop, folk, indie and older jazz and blues records. It plays chords,
+    melody and bass, often as accompaniment for singing.
+  range: >-
+    Thick and somewhat tubby in the bass, warm and honky in the middle, and
+    bright and plinky at the top.
+  vs:
+    grand-piano: >-
+      The grand's long strings and large horizontal soundboard give a deeper
+      bass and a longer, richer sustain. Listen for intimacy and boxiness:
+      a drier, more closed-in sound means upright.
+    harpsichord: >-
+      The harpsichord plucks its strings, so notes jangle and every key
+      sounds at the same volume. Listen for a hammer thud and changes in
+      loudness: those mean piano.
+
+honky-tonk-piano:
+  how: >-
+    A piano, usually an upright, whose hammers strike strings as normal, but
+    with the two or three strings for each note deliberately or carelessly
+    left slightly out of tune with one another.
+  why: >-
+    When two strings meant to play the same note are slightly mistuned, their
+    sound waves drift in and out of step, which you hear as a regular wobble
+    or wavering shimmer on every note. This beating makes the piano sound
+    jangly and slightly sour, like an old instrument in a bar. Many such
+    pianos are older uprights with worn or hardened hammers, so the tone is
+    also thinner and brighter than a concert grand.
+  music: >-
+    Associated with ragtime, saloon and western-film scenes, early jazz and
+    barrelhouse blues, and novelty or comic settings. It plays bouncy chords
+    and melodies, often with a striding left hand.
+  range: >-
+    Clunky and murky in the bass, jangly and wobbly in the middle, and thin
+    and tinny at the top.
+  vs:
+    upright-piano: >-
+      A well-kept upright has its strings for each note tuned together, so
+      notes sound steady. Listen for a wobble within a single note: that
+      means honky-tonk.
+    harpsichord: >-
+      The harpsichord plucks its strings, so there is no hammer thud and no
+      change in loudness between notes. Listen for a hammer attack and a
+      wobble: honky-tonk.
+
+harpsichord:
+  how: >-
+    Pressing a key raises a small wooden jack fitted with a hard plectrum,
+    originally a quill, which plucks a thin metal string. A wooden
+    soundboard amplifies it; when the key is released, a damper silences the
+    string.
+  why: >-
+    The plectrum always plucks with the same force no matter how hard the key
+    is pressed, so every note comes out at the same volume. A thin wire
+    plucked by a hard point produces many high overtones, which gives the
+    bright, jangly, slightly brassy snap. Notes fade fairly quickly and stop
+    when the key is released, so players add trills and ornaments to keep the
+    sound going. Many harpsichords have several sets of strings that can be
+    switched in for a fuller or different-colored sound.
+  music: >-
+    The keyboard of Baroque music, used for solos and for continuo (the
+    chord-and-bass backing in Baroque ensembles), and sometimes in film,
+    pop and rock for an old or ornate feel. It plays ornamented melodies,
+    running lines and chordal accompaniment.
+  range: >-
+    Buzzy and resonant in the bass, bright and crisp in the middle, and thin
+    and silvery at the top.
+  vs:
+    acoustic-guitar-steel: >-
+      Both pluck metal strings, but the guitar's player controls each pluck,
+      so notes vary in loudness and can bend, and a large wooden body adds
+      warmth. Listen for perfectly even snaps and keyboard-style runs: that
+      is harpsichord.
+    grand-piano: >-
+      The piano strikes its strings with soft felt hammers, so notes start
+      with a thud and can be soft or loud. Listen for a hard, uniform snap:
+      that is harpsichord.
+    harp: >-
+      The harp is plucked with fingertips and its strings ring freely, so the
+      tone is softer and rounder. Listen for a bright, hard pluck that stops
+      cleanly: that is harpsichord.
+
+fm-electric-piano:
+  how: >-
+    A synthesizer generates the sound electronically using FM synthesis, in
+    which one electronic tone rapidly bends the pitch of another to create a
+    complex tone. It is heard through an amplifier or speakers.
+  why: >-
+    FM easily makes bell-like overtones that do not line up neatly with the
+    main note, which gives the glassy, chiming "tine" on each attack. In the
+    classic sound those bright overtones fade quickly, leaving a clean,
+    smooth, hollow sustain. Because it is generated rather than played on a
+    physical object, there is no hammer thud, string shimmer or mechanical
+    noise, and notes are very even. It is most famously associated with the
+    Yamaha DX7 synthesizer.
+  music: >-
+    The sound of many 1980s pop ballads, soft rock, R&B, TV themes and
+    smooth jazz, and revived in synth-pop and lo-fi. It usually plays soft
+    chords under a vocal or gentle melodies.
+  range: >-
+    Warm and somewhat hollow low down, glassy and bell-like in the middle,
+    and thin and chiming at the top.
+  vs:
+    rhodes: >-
+      A Rhodes makes its sound from real metal tines struck by hammers, so it
+      is warmer, and hard playing makes it growl or bark. Listen for
+      glassiness and very even, clean notes: that is FM.
+    vibraphone: >-
+      The vibraphone is real metal bars hit with soft mallets, so the attack
+      is softer and the tone is often wobbled by spinning fans in its tubes.
+      Listen for a crisp, glassy attack and no wobble: that is FM.
+    grand-piano: >-
+      An acoustic piano has a hammer thud and the rich, shifting tone of real
+      strings. Listen for those: the FM piano is cleaner and simpler.
+    celesta: >-
+      The celesta is an acoustic keyboard of small steel bars, higher and
+      more delicate, like a music box. Listen for range and body: the FM piano
+      has a lower, fuller middle register.
+
+rhodes:
+  how: >-
+    Each key throws a hammer against a thin metal rod called a tine, which is
+    attached to a heavier bar that helps it ring like a tuning fork. A
+    pickup beside each tine turns the vibration into an electrical signal
+    sent to an amplifier.
+  why: >-
+    The struck tine gives a soft bell-like ping on the attack, and the
+    tone-bar keeps the note ringing with a warm, round body underneath. When
+    played hard, the tine swings close to the pickup and the signal distorts
+    a little, producing a growl or "bark". Many Rhodes pianos have a built-in
+    tremolo that swings the sound between the left and right speakers, the
+    stereo wobble heard on many records.
+  music: >-
+    Heard throughout jazz fusion, soul, funk, R&B, hip-hop, neo-soul and
+    1970s pop and rock. It mostly plays lush chords and smooth accompaniment,
+    sometimes solos.
+  range: >-
+    Thick, warm and round in the bass, bell-like and mellow in the middle,
+    and thin and glassy at the top.
+  vs:
+    fm-electric-piano: >-
+      FM pianos are synthesized, so they are cleaner and glassier and never
+      growl. Listen for warmth and bark on loud notes: that is Rhodes.
+    vibraphone: >-
+      The vibraphone is a set of metal bars struck by mallets with no pickup,
+      so its tone is purer and rings longer, and its wobble comes from fans in
+      the tubes rather than a stereo effect. Listen for a warm, slightly
+      electric body under the bell: that is Rhodes.
+
+wurlitzer:
+  how: >-
+    Each key throws a hammer against a flat steel reed, a small metal
+    tongue. A pickup senses the reed's vibration and sends it to an
+    amplifier and built-in speakers.
+  why: >-
+    A struck reed vibrates with a strong set of overtones, which makes the
+    tone reedy and nasal rather than bell-like. The attack is quick and
+    punchy, and notes fade faster than on a Rhodes. Played hard, the reed
+    swings further and the signal distorts into a growl or bark, so dynamics
+    change the character as well as the volume. Many models have a built-in
+    tremolo that adds a pulsing wobble.
+  music: >-
+    Heard on many 1960s and 1970s soul, pop and rock records, and in modern
+    indie and R&B. It plays chords and rhythmic accompaniment, sometimes
+    riffs and short solos.
+  range: >-
+    Thick and buzzy in the bass, nasal and punchy in the middle, and thin and
+    bright at the top.
+  vs:
+    rhodes: >-
+      The Rhodes uses tines and tone-bars that act like a tuning fork, so it
+      sounds rounder and more bell-like. Listen for a reedy, nasal bite on
+      each note: that is Wurlitzer.
+    fm-electric-piano: >-
+      FM pianos are synthesized and clean, with a glassy bell and no growl.
+      Listen for grit on loud notes and a reedy tone: that is Wurlitzer.
+    upright-piano: >-
+      An acoustic piano has strings and a soundboard, so notes sustain longer
+      with a rich, shimmering decay. Listen for a short, electric, nasal note:
+      that is Wurlitzer.
+
+celesta:
+  how: >-
+    A small keyboard whose felt hammers strike steel bars, each mounted over
+    a wooden box that resonates and amplifies its note. A pedal can lift the
+    dampers to let notes ring.
+  why: >-
+    Soft felt hammers on metal bars give a gentle, bell-like attack without a
+    hard click. The wooden resonators boost the main note, so the tone is
+    sweet and pure, and notes ring briefly then fade, like a music box. The
+    instrument plays high, which adds to its delicate, sparkling quality.
+  music: >-
+    Used in orchestras and film scores for magical, wintry or childlike
+    moods, most famously in Tchaikovsky's "Dance of the Sugar Plum Fairy",
+    and occasionally in pop. It plays delicate melodies and sparkling
+    decorations.
+  range: >-
+    Soft and round in its lowest notes, sweet and bell-like in the middle,
+    and tiny, tinkling and quick to fade at the top.
+  vs:
+    glockenspiel: >-
+      The glockenspiel's steel bars are struck directly with hard mallets and
+      have no resonator boxes or felt hammers, so it is harder, brighter and
+      rings longer. Listen for a soft, rounded attack: that is celesta.
+    vibraphone: >-
+      The vibraphone has larger aluminum bars and plays lower, and spinning
+      fans in its tubes often add a wobbling vibrato. Listen for height and
+      steadiness: the celesta is higher and has no wobble.
+    music-box: >-
+      A music box plucks the teeth of a small steel comb with pins on a
+      turning cylinder, so it is tinier and plinkier, often with a mechanical
+      tick. Listen for a fuller, softer bell and human phrasing: that is
+      celesta.
