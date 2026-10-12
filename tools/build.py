@@ -301,7 +301,8 @@ def best_window(x, dur):
 def probe_sr(path):
     out = subprocess.run([FFPROBE, "-v", "error", "-select_streams", "a:0", "-show_entries", "stream=sample_rate",
                           "-of", "csv=p=0", str(path)], capture_output=True, text=True)
-    return int(out.stdout.strip() or SR)
+    m = re.search(r"\d+", out.stdout)  # some containers print "44100," or several lines
+    return int(m.group()) if m else SR
 
 
 def load(path, loop=None, min_len=None):
@@ -1020,7 +1021,12 @@ def main():
     for src in REPOS:
         tree(src)
     # Wikimedia rate-limits parallel downloads, so fetch Commons files one at a time up front.
-    titles = [ex["file"] for i in todo for ex in i.get("samples", {}).get("excerpts", [])]
+    titles = [ex["file"] for i in todo for key in ("excerpts", "performances")
+              for ex in (i.get("samples") or {}).get(key, []) if "file" in ex]
+    for i in todo:  # performances hosted elsewhere (archive.org) are fetched up front too
+        for pf in (i.get("samples") or {}).get("performances", []):
+            if "url" in pf:
+                fetch_url(pf)
     missing = [t for t in titles if not (CACHE / "commons" / commons_key(t)).exists()]
     for n, t in enumerate(missing, 1):
         log(f"  fetching from Commons ({n}/{len(missing)}): {t}")
@@ -1111,12 +1117,31 @@ def main():
     (ROOT / "js" / "data.js").write_text(js, encoding="utf-8")
     (ROOT / "data" / "provenance.json").write_text(json.dumps(provenance, indent=1, ensure_ascii=False), encoding="utf-8")
     write_sources_md(lib, provenance)
+    stamp_assets()
     ready = sum(1 for i in out_insts if i["samples"])
     clips = sum(len(i["samples"]) for i in out_insts)
     log(f"\n{ready} instruments with audio, {clips} clips, {len(out_insts) - ready} listed without audio.")
     if failures:
         log(f"{len(failures)} failed: " + ", ".join(f for f, _ in failures))
         sys.exit(1)
+
+
+def stamp_assets():
+    """Add a content hash to every script and stylesheet link in index.html, so
+    browsers never mix new data with cached old code after an update."""
+    index = ROOT / "index.html"
+    html = index.read_text(encoding="utf-8")
+
+    def stamp(m):
+        path = ROOT / m.group(2)
+        if not path.exists():
+            return m.group(0)
+        digest = hashlib.sha1(path.read_bytes()).hexdigest()[:10]
+        return f'{m.group(1)}{m.group(2)}?v={digest}"'
+
+    new = re.sub(r'((?:src|href)=")((?:js|css)/[^"?]+\.(?:js|css))(?:\?v=[^"]*)?"', stamp, html)
+    if new != html:
+        index.write_text(new, encoding="utf-8")
 
 
 def write_sources_md(lib, provenance):

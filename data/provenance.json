@@ -144,6 +144,17 @@
    "credit": "Versilian Studios"
   }
  ],
+ "violin/perf-1": [
+  {
+   "source": "commons",
+   "file": "File:Bach Partita 2 - Allemanda - 18-04-2013.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Bach_Partita_2_-_Allemanda_-_18-04-2013.ogg",
+   "license": "CC0",
+   "artist": "Unknown authorUnknown author",
+   "excerpt": "0.0-16.0s",
+   "credit": "Unknown authorUnknown author (Wikimedia Commons)"
+  }
+ ],
  "violin/v-pizzicato-plucked": [
   {
    "source": "vsco",
@@ -534,6 +545,28 @@
    "credit": "Versilian Studios"
   }
  ],
+ "viola/perf-1": [
+  {
+   "source": "commons",
+   "file": "File:Viola-walshimprov.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Viola-walshimprov.ogg",
+   "license": "CC BY-SA 3.0",
+   "artist": "Kat Walsh",
+   "excerpt": "2.3-16.3s",
+   "credit": "Kat Walsh (Wikimedia Commons)"
+  }
+ ],
+ "viola/perf-2": [
+  {
+   "source": "commons",
+   "file": "File:Viola.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Viola.ogg",
+   "license": "CC BY-SA 2.5",
+   "artist": "Unknown author",
+   "excerpt": "5.7-19.7s",
+   "credit": "Unknown author (Wikimedia Commons)"
+  }
+ ],
  "viola/v-pizzicato": [
   {
    "source": "vsco",
@@ -727,6 +760,28 @@
    "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Strings/Cello%20Section/susvib/susvib_C3_v1_1.wav",
    "license": "CC0-1.0",
    "credit": "Versilian Studios"
+  }
+ ],
+ "cello/perf-1": [
+  {
+   "source": "commons",
+   "file": "File:Bach Cello Suite 1 Prelude (BWV 1007) Played by Chris.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Bach_Cello_Suite_1_Prelude_(BWV_1007)_Played_by_Chris.ogg",
+   "license": "CC0",
+   "artist": "Fopseh",
+   "excerpt": "0.0-16.0s",
+   "credit": "Fopseh (Wikimedia Commons)"
+  }
+ ],
+ "cello/perf-2": [
+  {
+   "source": "commons",
+   "file": "File:Bach Cello Suite BWV 1008 Gigue.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Bach_Cello_Suite_BWV_1008_Gigue.ogg",
+   "license": "CC BY-SA 3.0",
+   "artist": "Pierre-Etienne Mélet (Pemelet)",
+   "excerpt": "99.2-113.2s",
+   "credit": "Pierre-Etienne Mélet (Pemelet) (Wikimedia Commons)"
   }
  ],
  "cello/v-pizzicato": [
@@ -943,6 +998,17 @@
    "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Strings/Solo%20Contrabass/SusVib/BKCtbss_SusVib_C%232_v1_rr1.wav",
    "license": "CC0-1.0",
    "credit": "Versilian Studios"
+  }
+ ],
+ "double-bass/perf-1": [
+  {
+   "source": "commons",
+   "file": "File:Jazz walking bass on double bass.oga",
+   "url": "https://commons.wikimedia.org/wiki/File:Jazz_walking_bass_on_double_bass.oga",
+   "license": "CC BY 2.5",
+   "artist": "Serolillo",
+   "excerpt": "2.5-16.5s",
+   "credit": "Serolillo (Wikimedia Commons)"
   }
  ],
  "double-bass/v-pizzicato-jazz-style-pluck": [
@@ -1255,6 +1321,28 @@
    "credit": "FreePats Spanish Classical Guitar"
   }
  ],
+ "acoustic-guitar-nylon/perf-1": [
+  {
+   "source": "commons",
+   "file": "File:Romance Anónimo (Jeux interdits).ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Romance_An%C3%B3nimo_(Jeux_interdits).ogg",
+   "license": "CC0",
+   "artist": "composer unknown; performed by Jim Greeninger",
+   "excerpt": "0.0-16.0s",
+   "credit": "composer unknown; performed by Jim Greeninger (Wikimedia Commons)"
+  }
+ ],
+ "acoustic-guitar-nylon/perf-2": [
+  {
+   "source": "commons",
+   "file": "File:Recuerdos de la Alhambra.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Recuerdos_de_la_Alhambra.ogg",
+   "license": "CC BY-SA 3.0",
+   "artist": "Carlo Alberto Boni",
+   "excerpt": "204.4-218.4s",
+   "credit": "Carlo Alberto Boni (Wikimedia Commons)"
+  }
+ ],
  "acoustic-guitar-steel/note-1": [
   {
    "source": "freepats",
@@ -1300,6 +1388,33 @@
    "credit": "FSS Steel-String Guitar, Gary Campion (FlameStudios), adapted by FreePats"
   }
  ],
+ "acoustic-guitar-steel/scale": [
+  {
+   "source": "freepats",
+   "bank": "FSS-SteelStringGuitar",
+   "file": "samples/HV_40.wav",
+   "license": "GPL-3.0-or-later WITH FreePats exception",
+   "credit": "FSS Steel-String Guitar, Gary Campion (FlameStudios), adapted by FreePats"
+  }
+ ],
+ "acoustic-guitar-steel/range": [
+  {
+   "source": "freepats",
+   "bank": "FSS-SteelStringGuitar",
+   "file": "samples/HV_40.wav",
+   "license": "GPL-3.0-or-later WITH FreePats exception",
+   "credit": "FSS Steel-String Guitar, Gary Campion (FlameStudios), adapted by FreePats"
+  }
+ ],
+ "acoustic-guitar-steel/chords": [
+  {
+   "source": "freepats",
+   "bank": "FSS-SteelStringGuitar",
+   "file": "samples/HV_40.wav",
+   "license": "GPL-3.0-or-later WITH FreePats exception",
+   "credit": "FSS Steel-String Guitar, Gary Campion (FlameStudios), adapted by FreePats"
+  }
+ ],
  "acoustic-guitar-steel/phrase": [
   {
    "source": "freepats",
@@ -1333,33 +1448,6 @@
    "source": "freepats",
    "bank": "FSS-SteelStringGuitar",
    "file": "samples/HV_65.wav",
-   "license": "GPL-3.0-or-later WITH FreePats exception",
-   "credit": "FSS Steel-String Guitar, Gary Campion (FlameStudios), adapted by FreePats"
-  }
- ],
- "acoustic-guitar-steel/scale": [
-  {
-   "source": "freepats",
-   "bank": "FSS-SteelStringGuitar",
-   "file": "samples/HV_40.wav",
-   "license": "GPL-3.0-or-later WITH FreePats exception",
-   "credit": "FSS Steel-String Guitar, Gary Campion (FlameStudios), adapted by FreePats"
-  }
- ],
- "acoustic-guitar-steel/range": [
-  {
-   "source": "freepats",
-   "bank": "FSS-SteelStringGuitar",
-   "file": "samples/HV_40.wav",
-   "license": "GPL-3.0-or-later WITH FreePats exception",
-   "credit": "FSS Steel-String Guitar, Gary Campion (FlameStudios), adapted by FreePats"
-  }
- ],
- "acoustic-guitar-steel/chords": [
-  {
-   "source": "freepats",
-   "bank": "FSS-SteelStringGuitar",
-   "file": "samples/HV_40.wav",
    "license": "GPL-3.0-or-later WITH FreePats exception",
    "credit": "FSS Steel-String Guitar, Gary Campion (FlameStudios), adapted by FreePats"
   }
@@ -1449,6 +1537,28 @@
    "file": "samples/HV_65.wav",
    "license": "GPL-3.0-or-later WITH FreePats exception",
    "credit": "FSS Steel-String Guitar, Gary Campion (FlameStudios), adapted by FreePats"
+  }
+ ],
+ "acoustic-guitar-steel/perf-1": [
+  {
+   "source": "commons",
+   "file": "File:Upon This Mountain - Liam Riley- The Fitzcarraldos.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Upon_This_Mountain_-_Liam_Riley-_The_Fitzcarraldos.ogg",
+   "license": "CC BY-SA 3.0",
+   "artist": "Sillyfolkboy",
+   "excerpt": "16.5-30.5s",
+   "credit": "Sillyfolkboy (Wikimedia Commons)"
+  }
+ ],
+ "acoustic-guitar-steel/perf-2": [
+  {
+   "source": "commons",
+   "file": "File:Hairy Larry-Iriver Blues-Mono Monster.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Hairy_Larry-Iriver_Blues-Mono_Monster.ogg",
+   "license": "CC BY-SA 4.0",
+   "artist": "Larry Heyl",
+   "excerpt": "82.5-96.5s",
+   "credit": "Larry Heyl (Wikimedia Commons)"
   }
  ],
  "electric-guitar-clean/note-1": [
@@ -1605,6 +1715,28 @@
    "credit": "FreePats Electric Guitar FSBS (clean)"
   }
  ],
+ "electric-guitar-clean/perf-1": [
+  {
+   "source": "commons",
+   "file": "File:WizzNeck.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:WizzNeck.ogg",
+   "license": "CC BY-SA 3.0",
+   "artist": "RiverCO",
+   "excerpt": "7.1-21.1s",
+   "credit": "RiverCO (Wikimedia Commons)"
+  }
+ ],
+ "electric-guitar-clean/perf-2": [
+  {
+   "source": "commons",
+   "file": "File:Mama put my guns in ground.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Mama_put_my_guns_in_ground.ogg",
+   "license": "CC BY-SA 3.0",
+   "artist": "Mike Beer",
+   "excerpt": "118.2-132.2s",
+   "credit": "Mike Beer (Wikimedia Commons)"
+  }
+ ],
  "electric-guitar-distorted/note-1": [
   {
    "source": "freepats",
@@ -1757,6 +1889,28 @@
    "file": "samples/bridge/C#4_s5_01.flac",
    "license": "CC0-1.0",
    "credit": "FreePats Electric Guitar FSBS (distortion 1)"
+  }
+ ],
+ "electric-guitar-distorted/perf-1": [
+  {
+   "source": "commons",
+   "file": "File:Chorus and distortion guitar improvisation.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Chorus_and_distortion_guitar_improvisation.ogg",
+   "license": "CC BY-SA 4.0",
+   "artist": "Skimel",
+   "excerpt": "73.2-87.2s",
+   "credit": "Skimel (Wikimedia Commons)"
+  }
+ ],
+ "electric-guitar-distorted/perf-2": [
+  {
+   "source": "commons",
+   "file": "File:Etuda Lubica.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Etuda_Lubica.ogg",
+   "license": "CC BY-SA 3.0",
+   "artist": "Mike Beer",
+   "excerpt": "125.2-139.2s",
+   "credit": "Mike Beer (Wikimedia Commons)"
   }
  ],
  "electric-bass/note-1": [
@@ -1944,6 +2098,28 @@
    "file": "samples/finger/D#.flac",
    "license": "CC0-1.0",
    "credit": "FreePats Finger Bass YR"
+  }
+ ],
+ "electric-bass/perf-1": [
+  {
+   "source": "commons",
+   "file": "File:Bass played with a pick.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Bass_played_with_a_pick.ogg",
+   "license": "CC BY 4.0",
+   "artist": "Houstonbassdemo",
+   "excerpt": "105.2-119.2s",
+   "credit": "Houstonbassdemo (Wikimedia Commons)"
+  }
+ ],
+ "electric-bass/perf-2": [
+  {
+   "source": "commons",
+   "file": "File:Fretless bass solo - harmonics.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Fretless_bass_solo_-_harmonics.ogg",
+   "license": "CC BY-SA 4.0",
+   "artist": "Skimel",
+   "excerpt": "9.2-23.2s",
+   "credit": "Skimel (Wikimedia Commons)"
   }
  ],
  "ukulele/note-1": [
@@ -2142,6 +2318,28 @@
    "credit": "FreePats Ukulele"
   }
  ],
+ "ukulele/perf-1": [
+  {
+   "source": "commons",
+   "file": "File:Steve Combs - 01 - Uke Improv in C.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Steve_Combs_-_01_-_Uke_Improv_in_C.ogg",
+   "license": "CC BY 4.0",
+   "artist": "Steve Combs",
+   "excerpt": "100.7-114.7s",
+   "credit": "Steve Combs (Wikimedia Commons)"
+  }
+ ],
+ "ukulele/perf-2": [
+  {
+   "source": "commons",
+   "file": "File:Ukulele playing.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Ukulele_playing.ogg",
+   "license": "CC BY-SA 4.0",
+   "artist": "Cassa342",
+   "excerpt": "2.8-16.8s",
+   "credit": "Cassa342 (Wikimedia Commons)"
+  }
+ ],
  "harp/note-1": [
   {
    "source": "vcsl",
@@ -2294,6 +2492,28 @@
    "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Chordophones/Composite%20Chordophones/Concert%20Harp/KSHarp_F4_f1.wav",
    "license": "CC0-1.0",
    "credit": "Versilian Studios and contributors"
+  }
+ ],
+ "harp/perf-1": [
+  {
+   "source": "commons",
+   "file": "File:Hotel Juárez - Introducción (arpa sola).ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Hotel_Ju%C3%A1rez_-_Introducci%C3%B3n_(arpa_sola).ogg",
+   "license": "CC BY 4.0",
+   "artist": "Luisalvaz",
+   "excerpt": "139.9-153.9s",
+   "credit": "Luisalvaz (Wikimedia Commons)"
+  }
+ ],
+ "harp/perf-2": [
+  {
+   "source": "commons",
+   "file": "File:01 La Nueva Alianza.wav",
+   "url": "https://commons.wikimedia.org/wiki/File:01_La_Nueva_Alianza.wav",
+   "license": "CC BY-SA 4.0",
+   "artist": "WBDelgadoL",
+   "excerpt": "19.5-33.5s",
+   "credit": "WBDelgadoL (Wikimedia Commons)"
   }
  ],
  "harp/v-folk-harp-lever-harp": [
@@ -2571,15 +2791,15 @@
    "credit": "StephanDo (Wikimedia Commons)"
   }
  ],
- "banjo/phrase": [
+ "banjo/perf-1": [
   {
-   "source": "commons",
-   "file": "File:Banjo.ogg",
-   "url": "https://commons.wikimedia.org/wiki/File:Banjo.ogg",
-   "license": "CC BY-SA 3.0",
-   "artist": "Poniol60",
-   "excerpt": "1.0-11.0s",
-   "credit": "Poniol60 (Wikimedia Commons)"
+   "source": "url",
+   "file": "folktunes0001_forrestOliphant_clawhammerBanjo_crippleCreek.flac",
+   "url": "https://archive.org/details/folktunes0001_forrestOliphant_clawhammerBanjo_crippleCreek",
+   "license": "Public domain",
+   "artist": "Forrest Oliphant",
+   "excerpt": "0.0-16.0s",
+   "credit": "Forrest Oliphant"
   }
  ],
  "banjo/mix": [
@@ -2607,6 +2827,28 @@
   }
  ],
  "banjo/phone": [
+  {
+   "source": "commons",
+   "file": "File:Banjo.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Banjo.ogg",
+   "license": "CC BY-SA 3.0",
+   "artist": "Poniol60",
+   "excerpt": "1.0-11.0s",
+   "credit": "Poniol60 (Wikimedia Commons)"
+  }
+ ],
+ "banjo/perf-2": [
+  {
+   "source": "url",
+   "file": "FretlessBanjoBlues.ogg",
+   "url": "https://archive.org/details/FretlessBanjoBlues",
+   "license": "Public domain",
+   "artist": "Bob Naylor",
+   "excerpt": "32.2-46.2s",
+   "credit": "Bob Naylor"
+  }
+ ],
+ "banjo/phrase": [
   {
    "source": "commons",
    "file": "File:Banjo.ogg",
@@ -2719,6 +2961,33 @@
    "credit": "Versilian Studios and contributors"
   }
  ],
+ "grand-piano/scale": [
+  {
+   "source": "vcsl",
+   "file": "Chordophones/Zithers/Grand Piano, Steinway B/Sus/JHPiano_Sus_Close_A#0_vl3_rr1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/Sus/JHPiano_Sus_Close_A%230_vl3_rr1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios and contributors"
+  }
+ ],
+ "grand-piano/range": [
+  {
+   "source": "vcsl",
+   "file": "Chordophones/Zithers/Grand Piano, Steinway B/Sus/JHPiano_Sus_Close_A#0_vl3_rr1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/Sus/JHPiano_Sus_Close_A%230_vl3_rr1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios and contributors"
+  }
+ ],
+ "grand-piano/chords": [
+  {
+   "source": "vcsl",
+   "file": "Chordophones/Zithers/Grand Piano, Steinway B/Sus/JHPiano_Sus_Close_A#0_vl3_rr1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/Sus/JHPiano_Sus_Close_A%230_vl3_rr1.wav",
+   "license": "CC0-1.0",
+   "credit": "Versilian Studios and contributors"
+  }
+ ],
  "grand-piano/phrase": [
   {
    "source": "vcsl",
@@ -2745,33 +3014,6 @@
    "source": "vcsl",
    "file": "Chordophones/Zithers/Grand Piano, Steinway B/Sus/JHPiano_Sus_Close_D4_vl3_rr1.wav",
    "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/Sus/JHPiano_Sus_Close_D4_vl3_rr1.wav",
-   "license": "CC0-1.0",
-   "credit": "Versilian Studios and contributors"
-  }
- ],
- "grand-piano/scale": [
-  {
-   "source": "vcsl",
-   "file": "Chordophones/Zithers/Grand Piano, Steinway B/Sus/JHPiano_Sus_Close_A#0_vl3_rr1.wav",
-   "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/Sus/JHPiano_Sus_Close_A%230_vl3_rr1.wav",
-   "license": "CC0-1.0",
-   "credit": "Versilian Studios and contributors"
-  }
- ],
- "grand-piano/range": [
-  {
-   "source": "vcsl",
-   "file": "Chordophones/Zithers/Grand Piano, Steinway B/Sus/JHPiano_Sus_Close_A#0_vl3_rr1.wav",
-   "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/Sus/JHPiano_Sus_Close_A%230_vl3_rr1.wav",
-   "license": "CC0-1.0",
-   "credit": "Versilian Studios and contributors"
-  }
- ],
- "grand-piano/chords": [
-  {
-   "source": "vcsl",
-   "file": "Chordophones/Zithers/Grand Piano, Steinway B/Sus/JHPiano_Sus_Close_A#0_vl3_rr1.wav",
-   "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/Sus/JHPiano_Sus_Close_A%230_vl3_rr1.wav",
    "license": "CC0-1.0",
    "credit": "Versilian Studios and contributors"
   }
@@ -2847,6 +3089,28 @@
    "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/Sus/JHPiano_Sus_Close_D4_vl3_rr1.wav",
    "license": "CC0-1.0",
    "credit": "Versilian Studios and contributors"
+  }
+ ],
+ "grand-piano/perf-1": [
+  {
+   "source": "commons",
+   "file": "File:Beethoven, Sonata No. 8 in C Minor Pathetique, Op. 13 - III. Rondo - Allegro.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Beethoven,_Sonata_No._8_in_C_Minor_Pathetique,_Op._13_-_III._Rondo_-_Allegro.ogg",
+   "license": "CC0",
+   "artist": "Ludwig van Beethoven",
+   "excerpt": "245.9-259.9s",
+   "credit": "Ludwig van Beethoven (Wikimedia Commons)"
+  }
+ ],
+ "grand-piano/perf-2": [
+  {
+   "source": "commons",
+   "file": "File:Bach, J S - Goldberg Variations, BWV988 - 02. Variation 1 (Shelley Katz).flac",
+   "url": "https://commons.wikimedia.org/wiki/File:Bach,_J_S_-_Goldberg_Variations,_BWV988_-_02._Variation_1_(Shelley_Katz).flac",
+   "license": "Public domain",
+   "artist": "Johann Sebastian Bach",
+   "excerpt": "96.1-110.1s",
+   "credit": "Johann Sebastian Bach (Wikimedia Commons)"
   }
  ],
  "grand-piano/v-soft-touch": [
@@ -2998,6 +3262,28 @@
    "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Chordophones/Zithers/Upright%20Piano%2C%20Yamaha/Sustains/Upright1_Sus_C3_vl2_rr1.wav",
    "license": "CC0-1.0",
    "credit": "Versilian Studios and contributors"
+  }
+ ],
+ "upright-piano/perf-1": [
+  {
+   "source": "commons",
+   "file": "File:Prelude op28 n4.wav",
+   "url": "https://commons.wikimedia.org/wiki/File:Prelude_op28_n4.wav",
+   "license": "CC BY-SA 4.0",
+   "artist": "Hérisson grognon",
+   "excerpt": "52.7-66.7s",
+   "credit": "Hérisson grognon (Wikimedia Commons)"
+  }
+ ],
+ "upright-piano/perf-2": [
+  {
+   "source": "commons",
+   "file": "File:Outing- Chinese kids' Piano Song - Junjun's edition (selected from real piano lesson).ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Outing-_Chinese_kids%27_Piano_Song_-_Junjun%27s_edition_(selected_from_real_piano_lesson).ogg",
+   "license": "CC BY-SA 4.0",
+   "artist": "Jason M. C., Han",
+   "excerpt": "2.2-16.2s",
+   "credit": "Jason M. C., Han (Wikimedia Commons)"
   }
  ],
  "harpsichord/note-1": [
@@ -3173,6 +3459,28 @@
    "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Chordophones/Zithers/Harpsichord%2C%20French/Sustains/Harpsi2_Normal_G%232_rr1_Main.wav",
    "license": "CC0-1.0",
    "credit": "Versilian Studios and contributors"
+  }
+ ],
+ "harpsichord/perf-1": [
+  {
+   "source": "commons",
+   "file": "File:Orlando Gibbons Pavan MB16.wav",
+   "url": "https://commons.wikimedia.org/wiki/File:Orlando_Gibbons_Pavan_MB16.wav",
+   "license": "CC0",
+   "artist": "FrancoisCouperin",
+   "excerpt": "197.0-211.0s",
+   "credit": "FrancoisCouperin (Wikimedia Commons)"
+  }
+ ],
+ "harpsichord/perf-2": [
+  {
+   "source": "commons",
+   "file": "File:Domenico Scarlatti Sonata K10.wav",
+   "url": "https://commons.wikimedia.org/wiki/File:Domenico_Scarlatti_Sonata_K10.wav",
+   "license": "CC0",
+   "artist": "FrancoisCouperin",
+   "excerpt": "149.5-163.5s",
+   "credit": "FrancoisCouperin (Wikimedia Commons)"
   }
  ],
  "harpsichord/v-lute-stop-muted": [
@@ -3584,6 +3892,17 @@
    "credit": "Versilian Studios and contributors"
   }
  ],
+ "pipe-organ/perf-1": [
+  {
+   "source": "commons",
+   "file": "File:Berceuse Orgel Wunderle.wav",
+   "url": "https://commons.wikimedia.org/wiki/File:Berceuse_Orgel_Wunderle.wav",
+   "license": "CC0",
+   "artist": "Vox Mirabilis",
+   "excerpt": "140.0-154.0s",
+   "credit": "Vox Mirabilis (Wikimedia Commons)"
+  }
+ ],
  "pipe-organ/v-quiet-stop": [
   {
    "source": "vcsl",
@@ -3810,6 +4129,33 @@
    "credit": "FreePats Button Accordion HN (michael02022)"
   }
  ],
+ "accordion/scale": [
+  {
+   "source": "freepats",
+   "bank": "ButtonAccordionHN",
+   "file": "Button Accordion HN B3.flac",
+   "license": "CC0-1.0",
+   "credit": "FreePats Button Accordion HN (michael02022)"
+  }
+ ],
+ "accordion/range": [
+  {
+   "source": "freepats",
+   "bank": "ButtonAccordionHN",
+   "file": "Button Accordion HN B3.flac",
+   "license": "CC0-1.0",
+   "credit": "FreePats Button Accordion HN (michael02022)"
+  }
+ ],
+ "accordion/chords": [
+  {
+   "source": "freepats",
+   "bank": "ButtonAccordionHN",
+   "file": "Button Accordion HN B3.flac",
+   "license": "CC0-1.0",
+   "credit": "FreePats Button Accordion HN (michael02022)"
+  }
+ ],
  "accordion/phrase": [
   {
    "source": "freepats",
@@ -3836,33 +4182,6 @@
    "source": "freepats",
    "bank": "ButtonAccordionHN",
    "file": "Button Accordion HN G5.flac",
-   "license": "CC0-1.0",
-   "credit": "FreePats Button Accordion HN (michael02022)"
-  }
- ],
- "accordion/scale": [
-  {
-   "source": "freepats",
-   "bank": "ButtonAccordionHN",
-   "file": "Button Accordion HN B3.flac",
-   "license": "CC0-1.0",
-   "credit": "FreePats Button Accordion HN (michael02022)"
-  }
- ],
- "accordion/range": [
-  {
-   "source": "freepats",
-   "bank": "ButtonAccordionHN",
-   "file": "Button Accordion HN B3.flac",
-   "license": "CC0-1.0",
-   "credit": "FreePats Button Accordion HN (michael02022)"
-  }
- ],
- "accordion/chords": [
-  {
-   "source": "freepats",
-   "bank": "ButtonAccordionHN",
-   "file": "Button Accordion HN B3.flac",
    "license": "CC0-1.0",
    "credit": "FreePats Button Accordion HN (michael02022)"
   }
@@ -3938,6 +4257,17 @@
    "file": "Button Accordion HN G5.flac",
    "license": "CC0-1.0",
    "credit": "FreePats Button Accordion HN (michael02022)"
+  }
+ ],
+ "accordion/perf-1": [
+  {
+   "source": "commons",
+   "file": "File:Accordéon chromatique - exercice 1 audio.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Accord%C3%A9on_chromatique_-_exercice_1_audio.ogg",
+   "license": "CC BY-SA 3.0",
+   "artist": "Cette image a été créée par Savant-fou Elle est donc sous licence libre. Si jamais vous avez besoin d'autres clichés sur ce thème, contactez-moi ! Merci de créditer: Image de Savant-fou (http://fr.wikipedia.org/wiki/Utilisateur:Savant-fou - //commons.wikimedia.org/wiki/File:Accord%C3%A9on_chromatique_-_exercice_1_audio.ogg). If you need other pictures about this subject, please feel free to contact me. Please credit : Picture of Savant-fou (http://fr.wikipedia.org/wiki/Utilisateur:Savant-fou - //commons.wikimedia.org/wiki/File:Accord%C3%A9on_chromatique_-_exercice_1_audio.ogg).",
+   "excerpt": "4.9-18.9s",
+   "credit": "Cette image a été créée par Savant-fou Elle est donc sous licence libre. Si jamais vous avez besoin d'autres clichés sur ce thème, contactez-moi ! Merci de créditer: Image de Savant-fou (http://fr.wikipedia.org/wiki/Utilisateur:Savant-fou - //commons.wikimedia.org/wiki/File:Accord%C3%A9on_chromatique_-_exercice_1_audio.ogg). If you need other pictures about this subject, please feel free to contact me. Please credit : Picture of Savant-fou (http://fr.wikipedia.org/wiki/Utilisateur:Savant-fou - //commons.wikimedia.org/wiki/File:Accord%C3%A9on_chromatique_-_exercice_1_audio.ogg). (Wikimedia Commons)"
   }
  ],
  "harmonica/note-1": [
@@ -4083,6 +4413,28 @@
    "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Aerophones/Free%20Aerophones/Harmonica-Hohner-Special20-C/Sustains/Normal/Hohner-Special20_Normal_C5.wav",
    "license": "CC0-1.0",
    "credit": "Versilian Studios and contributors"
+  }
+ ],
+ "harmonica/perf-1": [
+  {
+   "source": "commons",
+   "file": "File:Blues Harp1.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Blues_Harp1.ogg",
+   "license": "CC BY-SA 3.0",
+   "artist": "Grassinger",
+   "excerpt": "13.4-27.4s",
+   "credit": "Grassinger (Wikimedia Commons)"
+  }
+ ],
+ "harmonica/perf-2": [
+  {
+   "source": "commons",
+   "file": "File:Bluesharp riff.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Bluesharp_riff.ogg",
+   "license": "CC BY-SA 3.0",
+   "artist": "Julien Grandgagnage",
+   "excerpt": "1.0-15.0s",
+   "credit": "Julien Grandgagnage (Wikimedia Commons)"
   }
  ],
  "harmonica/v-hand-vibrato": [
@@ -4351,6 +4703,28 @@
    "credit": "Versilian Studios"
   }
  ],
+ "flute/perf-1": [
+  {
+   "source": "commons",
+   "file": "File:Karg-Elert - Caprices for Flute - No.3.allegro alla handel.Op.107.ladybyron.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Karg-Elert_-_Caprices_for_Flute_-_No.3.allegro_alla_handel.Op.107.ladybyron.ogg",
+   "license": "CC BY-SA 3.0",
+   "artist": "User:Lady Byron",
+   "excerpt": "22.1-36.1s",
+   "credit": "User:Lady Byron (Wikimedia Commons)"
+  }
+ ],
+ "flute/perf-2": [
+  {
+   "source": "commons",
+   "file": "File:Joachim Andersen - Etude 3 for Solo Flute.oga",
+   "url": "https://commons.wikimedia.org/wiki/File:Joachim_Andersen_-_Etude_3_for_Solo_Flute.oga",
+   "license": "CC BY-SA 2.0",
+   "artist": "Scott Goff (flute)",
+   "excerpt": "2.4-16.4s",
+   "credit": "Scott Goff (flute) (Wikimedia Commons)"
+  }
+ ],
  "flute/v-non-vibrato": [
   {
    "source": "vsco",
@@ -4505,6 +4879,17 @@
    "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Woodwinds/Piccolo/Sus/piccolo_C6_sustain1.wav",
    "license": "CC0-1.0",
    "credit": "Versilian Studios"
+  }
+ ],
+ "piccolo/perf-1": [
+  {
+   "source": "url",
+   "file": "PiccoloDemo.mp3",
+   "url": "https://archive.org/details/PiccoloDemo",
+   "license": "Public domain",
+   "artist": "Sarah Searles",
+   "excerpt": "5.0-19.0s",
+   "credit": "Sarah Searles"
   }
  ],
  "piccolo/v-staccato": [
@@ -4680,6 +5065,28 @@
    "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Aerophones/Edge-blown%20Aerophones/Baroque%20Alto%20Recorder/Sustain/AltRecorder_Sus_G%234_rr1_Main.wav",
    "license": "CC0-1.0",
    "credit": "Versilian Studios and contributors"
+  }
+ ],
+ "recorder/perf-1": [
+  {
+   "source": "commons",
+   "file": "File:Daphne.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Daphne.ogg",
+   "license": "CC BY-SA 4.0",
+   "artist": "Guido Magnano",
+   "excerpt": "48.7-62.7s",
+   "credit": "Guido Magnano (Wikimedia Commons)"
+  }
+ ],
+ "recorder/perf-2": [
+  {
+   "source": "commons",
+   "file": "File:Hans P Keuning - 12 difficult studies (treble recorder) - Vivace.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Hans_P_Keuning_-_12_difficult_studies_(treble_recorder)_-_Vivace.ogg",
+   "license": "CC BY-SA 3.0",
+   "artist": "No machine-readable author provided. Jmfayard assumed (based on copyright claims).",
+   "excerpt": "2.2-16.2s",
+   "credit": "No machine-readable author provided. Jmfayard assumed (based on copyright claims). (Wikimedia Commons)"
   }
  ],
  "recorder/v-soprano-recorder": [
@@ -4926,6 +5333,28 @@
    "credit": "Versilian Studios and contributors"
   }
  ],
+ "ocarina/perf-1": [
+  {
+   "source": "commons",
+   "file": "File:Ocarina de barro (impro).wav",
+   "url": "https://commons.wikimedia.org/wiki/File:Ocarina_de_barro_(impro).wav",
+   "license": "CC BY-SA 4.0",
+   "artist": "Luis Alvaz",
+   "excerpt": "36.6-50.6s",
+   "credit": "Luis Alvaz (Wikimedia Commons)"
+  }
+ ],
+ "ocarina/perf-2": [
+  {
+   "source": "commons",
+   "file": "File:MezzettiPt1Pg11No1.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:MezzettiPt1Pg11No1.ogg",
+   "license": "Public domain",
+   "artist": "Music by Mezzetti, file created by Alejandro Erickson",
+   "excerpt": "17.6-31.6s",
+   "credit": "Music by Mezzetti, file created by Alejandro Erickson (Wikimedia Commons)"
+  }
+ ],
  "ocarina/v-vibrato": [
   {
    "source": "vcsl",
@@ -5126,6 +5555,17 @@
    "credit": "Versilian Studios"
   }
  ],
+ "oboe/perf-1": [
+  {
+   "source": "commons",
+   "file": "File:Ferling Oboe Study No 28 Aaron Hill.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Ferling_Oboe_Study_No_28_Aaron_Hill.ogg",
+   "license": "Public domain",
+   "artist": "Aaron Hill Oboe / Franz Wilhelm Ferling (1796–1874) Bearbeitung (Video entfernt): Lewenstein",
+   "excerpt": "5.6-19.6s",
+   "credit": "Aaron Hill Oboe / Franz Wilhelm Ferling (1796–1874) Bearbeitung (Video entfernt): Lewenstein (Wikimedia Commons)"
+  }
+ ],
  "oboe/v-vibrato": [
   {
    "source": "vsco",
@@ -5291,6 +5731,28 @@
    "credit": "Versilian Studios"
   }
  ],
+ "clarinet/perf-1": [
+  {
+   "source": "commons",
+   "file": "File:A-Klarinette, Rachmaninov 2 II.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:A-Klarinette,_Rachmaninov_2_II.ogg",
+   "license": "CC BY-SA 4.0",
+   "artist": "Richard Haynes",
+   "excerpt": "1.0-15.0s",
+   "credit": "Richard Haynes (Wikimedia Commons)"
+  }
+ ],
+ "clarinet/perf-2": [
+  {
+   "source": "commons",
+   "file": "File:B-Klarinette, Beeth 8.III.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:B-Klarinette,_Beeth_8.III.ogg",
+   "license": "CC BY-SA 4.0",
+   "artist": "Richard Haynes",
+   "excerpt": "1.0-15.0s",
+   "credit": "Richard Haynes (Wikimedia Commons)"
+  }
+ ],
  "clarinet/v-staccato": [
   {
    "source": "vsco",
@@ -5438,6 +5900,17 @@
    "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Woodwinds/Bassoon/sus/PSBassoon_G2_v2_1.wav",
    "license": "CC0-1.0",
    "credit": "Versilian Studios"
+  }
+ ],
+ "bassoon/perf-1": [
+  {
+   "source": "commons",
+   "file": "File:Bassoon rimsky.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Bassoon_rimsky.ogg",
+   "license": "CC BY-SA 3.0",
+   "artist": "Nikolai Rimsky-Korsakov (1844-1908), composer Mezzofortist, uploader",
+   "excerpt": "1.5-15.5s",
+   "credit": "Nikolai Rimsky-Korsakov (1844-1908), composer Mezzofortist, uploader (Wikimedia Commons)"
   }
  ],
  "bassoon/v-vibrato": [
@@ -5654,6 +6127,28 @@
    "credit": "Versilian Studios and contributors"
   }
  ],
+ "tenor-sax/perf-1": [
+  {
+   "source": "commons",
+   "file": "File:Jakob Dont - Caprice Dont Mib Major - Arr for tenor saxophone - David Hernando Vitores.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Jakob_Dont_-_Caprice_Dont_Mib_Major_-_Arr_for_tenor_saxophone_-_David_Hernando_Vitores.ogg",
+   "license": "CC BY-SA 4.0",
+   "artist": "Jakob Dont",
+   "excerpt": "32.9-46.9s",
+   "credit": "Jakob Dont (Wikimedia Commons)"
+  }
+ ],
+ "tenor-sax/perf-2": [
+  {
+   "source": "commons",
+   "file": "File:Inasentimentalmood-first9bars.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Inasentimentalmood-first9bars.ogg",
+   "license": "CC BY-SA 3.0",
+   "artist": "Julien Grandgagnage",
+   "excerpt": "1.8-15.8s",
+   "credit": "Julien Grandgagnage (Wikimedia Commons)"
+  }
+ ],
  "tenor-sax/v-vibrato": [
   {
    "source": "vcsl",
@@ -5847,6 +6342,28 @@
    "credit": "Versilian Studios and contributors"
   }
  ],
+ "soprano-sax/perf-1": [
+  {
+   "source": "commons",
+   "file": "File:Georg Philipp Telemann - Fantasia No 11 - Soprano saxophone - David Hernando Vitores.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Georg_Philipp_Telemann_-_Fantasia_No_11_-_Soprano_saxophone_-_David_Hernando_Vitores.ogg",
+   "license": "CC BY-SA 4.0",
+   "artist": "Georg Philipp Telemann",
+   "excerpt": "7.5-21.5s",
+   "credit": "Georg Philipp Telemann (Wikimedia Commons)"
+  }
+ ],
+ "soprano-sax/perf-2": [
+  {
+   "source": "commons",
+   "file": "File:Georg Philipp Telemann - 3rd Fantasia for Flauta - Arr for Soprano Saxophone - David Hernando Vitores.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Georg_Philipp_Telemann_-_3rd_Fantasia_for_Flauta_-_Arr_for_Soprano_Saxophone_-_David_Hernando_Vitores.ogg",
+   "license": "CC BY-SA 4.0",
+   "artist": "Georg Philipp Telemann",
+   "excerpt": "77.5-91.5s",
+   "credit": "Georg Philipp Telemann (Wikimedia Commons)"
+  }
+ ],
  "soprano-sax/v-vibrato": [
   {
    "source": "vcsl",
@@ -5856,15 +6373,15 @@
    "credit": "Versilian Studios and contributors"
   }
  ],
- "alto-sax/phrase": [
+ "alto-sax/perf-1": [
   {
    "source": "commons",
-   "file": "File:Joachim Andersen - Caprice No.1 Op.15 - Arr for alto saxophone - David Hernando Vitores.ogg",
-   "url": "https://commons.wikimedia.org/wiki/File:Joachim_Andersen_-_Caprice_No.1_Op.15_-_Arr_for_alto_saxophone_-_David_Hernando_Vitores.ogg",
+   "file": "File:Johann Sebastian Bach - Sonata in G minor BWV 1001 Presto - Arr for alto saxophone - David Hernando Vitores.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Johann_Sebastian_Bach_-_Sonata_in_G_minor_BWV_1001_Presto_-_Arr_for_alto_saxophone_-_David_Hernando_Vitores.ogg",
    "license": "CC BY-SA 4.0",
-   "artist": "Joachim Andersen",
-   "excerpt": "43.2-53.2s",
-   "credit": "Joachim Andersen (Wikimedia Commons)"
+   "artist": "Johann Sebastian Bach",
+   "excerpt": "14.0-28.0s",
+   "credit": "Johann Sebastian Bach (Wikimedia Commons)"
   }
  ],
  "alto-sax/mix": [
@@ -5892,6 +6409,28 @@
   }
  ],
  "alto-sax/phone": [
+  {
+   "source": "commons",
+   "file": "File:Joachim Andersen - Caprice No.1 Op.15 - Arr for alto saxophone - David Hernando Vitores.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Joachim_Andersen_-_Caprice_No.1_Op.15_-_Arr_for_alto_saxophone_-_David_Hernando_Vitores.ogg",
+   "license": "CC BY-SA 4.0",
+   "artist": "Joachim Andersen",
+   "excerpt": "43.2-53.2s",
+   "credit": "Joachim Andersen (Wikimedia Commons)"
+  }
+ ],
+ "alto-sax/perf-2": [
+  {
+   "source": "commons",
+   "file": "File:Niccolò Paganini - Caprice No.24 Arr for alto saxophone - David Hernando Vitores.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Niccol%C3%B2_Paganini_-_Caprice_No.24_Arr_for_alto_saxophone_-_David_Hernando_Vitores.ogg",
+   "license": "CC BY-SA 4.0",
+   "artist": "Niccolò Paganini",
+   "excerpt": "165.2-179.2s",
+   "credit": "Niccolò Paganini (Wikimedia Commons)"
+  }
+ ],
+ "alto-sax/phrase": [
   {
    "source": "commons",
    "file": "File:Joachim Andersen - Caprice No.1 Op.15 - Arr for alto saxophone - David Hernando Vitores.ogg",
@@ -6169,6 +6708,28 @@
    "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Brass/Trumpet/sus/Sum_SHTrumpet_sus_D4_v1_rr1.wav",
    "license": "CC0-1.0",
    "credit": "Versilian Studios"
+  }
+ ],
+ "trumpet/perf-1": [
+  {
+   "source": "commons",
+   "file": "File:Trompetensolo Ich hatt einen Kameraden.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Trompetensolo_Ich_hatt_einen_Kameraden.ogg",
+   "license": "CC BY-SA 4.0",
+   "artist": "DrTrumpet",
+   "excerpt": "7.1-21.1s",
+   "credit": "DrTrumpet (Wikimedia Commons)"
+  }
+ ],
+ "trumpet/perf-2": [
+  {
+   "source": "commons",
+   "file": "File:Trumpet playing short excerpt for comparison with flugelhorn.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Trumpet_playing_short_excerpt_for_comparison_with_flugelhorn.ogg",
+   "license": "CC BY-SA 4.0",
+   "artist": "Ovinus Real",
+   "excerpt": "17.9-31.9s",
+   "credit": "Ovinus Real (Wikimedia Commons)"
   }
  ],
  "trumpet/v-vibrato": [
@@ -6559,6 +7120,17 @@
    "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Brass/Tenor%20Trombone/sus/tenortbn_sus_F2_v2_1.wav",
    "license": "CC0-1.0",
    "credit": "Versilian Studios"
+  }
+ ],
+ "trombone/perf-1": [
+  {
+   "source": "commons",
+   "file": "File:Jazz Trombone.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Jazz_Trombone.ogg",
+   "license": "CC BY 2.5",
+   "artist": "Serolillo",
+   "excerpt": "7.8-21.8s",
+   "credit": "Serolillo (Wikimedia Commons)"
   }
  ],
  "trombone/v-vibrato": [
@@ -7083,6 +7655,28 @@
    "credit": "Versilian Studios and contributors"
   }
  ],
+ "vibraphone/perf-1": [
+  {
+   "source": "commons",
+   "file": "File:Vibraphone music.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Vibraphone_music.ogg",
+   "license": "CC BY-SA 4.0",
+   "artist": "Krol111",
+   "excerpt": "0.0-14.0s",
+   "credit": "Krol111 (Wikimedia Commons)"
+  }
+ ],
+ "vibraphone/perf-2": [
+  {
+   "source": "commons",
+   "file": "File:F scale on vibraphone.oga",
+   "url": "https://commons.wikimedia.org/wiki/File:F_scale_on_vibraphone.oga",
+   "license": "CC BY-SA 4.0",
+   "artist": "Why? I Ask",
+   "excerpt": "0.0-14.0s",
+   "credit": "Why? I Ask (Wikimedia Commons)"
+  }
+ ],
  "vibraphone/v-soft-mallets": [
   {
    "source": "vcsl",
@@ -7232,6 +7826,17 @@
    "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Idiophones/Struck%20Idiophones/Marimba/Marimba_hit_Outrigger_C4_loud_01.wav",
    "license": "CC0-1.0",
    "credit": "Versilian Studios and contributors"
+  }
+ ],
+ "marimba/perf-1": [
+  {
+   "source": "commons",
+   "file": "File:Exemple marimba.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Exemple_marimba.ogg",
+   "license": "CC BY-SA 3.0",
+   "artist": "Bigfall00",
+   "excerpt": "81.0-95.0s",
+   "credit": "Bigfall00 (Wikimedia Commons)"
   }
  ],
  "xylophone/note-1": [
@@ -7916,6 +8521,28 @@
    "credit": "Versilian Studios and contributors"
   }
  ],
+ "kalimba/perf-1": [
+  {
+   "source": "commons",
+   "file": "File:Kalimba Sample.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Kalimba_Sample.ogg",
+   "license": "CC BY-SA 3.0",
+   "artist": "Obmuc",
+   "excerpt": "5.6-19.6s",
+   "credit": "Obmuc (Wikimedia Commons)"
+  }
+ ],
+ "kalimba/perf-2": [
+  {
+   "source": "commons",
+   "file": "File:Kalimba de coco.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Kalimba_de_coco.ogg",
+   "license": "CC BY-SA 4.0",
+   "artist": "Luisalvaz",
+   "excerpt": "7.9-21.9s",
+   "credit": "Luisalvaz (Wikimedia Commons)"
+  }
+ ],
  "kalimba/v-mbira-zimbabwe": [
   {
    "source": "vcsl",
@@ -8121,6 +8748,28 @@
    "credit": "FreePats Hang in D minor"
   }
  ],
+ "hang/perf-1": [
+  {
+   "source": "commons",
+   "file": "File:Hang 2005 horizontal.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Hang_2005_horizontal.ogg",
+   "license": "CC BY-SA 3.0",
+   "artist": "Michael Paschko (Ixkeys) www.hangblog.org",
+   "excerpt": "68.5-82.5s",
+   "credit": "Michael Paschko (Ixkeys) www.hangblog.org (Wikimedia Commons)"
+  }
+ ],
+ "hang/perf-2": [
+  {
+   "source": "commons",
+   "file": "File:Hang 2007 vertical.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Hang_2007_vertical.ogg",
+   "license": "CC BY-SA 3.0",
+   "artist": "Michael Paschko (Ixkeys) www.hangblog.org",
+   "excerpt": "49.9-63.9s",
+   "credit": "Michael Paschko (Ixkeys) www.hangblog.org (Wikimedia Commons)"
+  }
+ ],
  "balafon/note-1": [
   {
    "source": "vcsl",
@@ -8288,6 +8937,63 @@
    "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Idiophones/Friction%20Idiophones/Wine%20Glasses/Sustains/Slow/glass1_D%234_Slow_1_Main.wav",
    "license": "CC0-1.0",
    "credit": "Versilian Studios and contributors"
+  }
+ ],
+ "timpani/perf-1": [
+  {
+   "source": "commons",
+   "file": "File:Paukenwirbel auf einer Wiener Pauke mit acht verschiedenen Schlegeln.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Paukenwirbel_auf_einer_Wiener_Pauke_mit_acht_verschiedenen_Schlegeln.ogg",
+   "license": "CC BY-SA 4.0",
+   "artist": "DrTrumpet",
+   "excerpt": "6.1-20.1s",
+   "credit": "DrTrumpet (Wikimedia Commons)"
+  }
+ ],
+ "timpani/mix": [
+  {
+   "source": "commons",
+   "file": "File:Paukenwirbel auf einer Wiener Pauke mit acht verschiedenen Schlegeln.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Paukenwirbel_auf_einer_Wiener_Pauke_mit_acht_verschiedenen_Schlegeln.ogg",
+   "license": "CC BY-SA 4.0",
+   "artist": "DrTrumpet",
+   "excerpt": "6.1-20.1s",
+   "credit": "DrTrumpet (Wikimedia Commons)"
+  },
+  {
+   "source": "freepats",
+   "bank": "MuldjordKit",
+   "file": "drum groove (kick, snare, hi-hat)",
+   "license": "CC-BY-4.0",
+   "credit": "MuldjordKit by Lars Muldjord (FreePats stereo version)"
+  },
+  {
+   "source": "generated",
+   "preset": "speech-shaped noise and room reverb",
+   "license": "CC0-1.0",
+   "credit": "Generated in code for this library"
+  }
+ ],
+ "timpani/phone": [
+  {
+   "source": "commons",
+   "file": "File:Paukenwirbel auf einer Wiener Pauke mit acht verschiedenen Schlegeln.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Paukenwirbel_auf_einer_Wiener_Pauke_mit_acht_verschiedenen_Schlegeln.ogg",
+   "license": "CC BY-SA 4.0",
+   "artist": "DrTrumpet",
+   "excerpt": "6.1-20.1s",
+   "credit": "DrTrumpet (Wikimedia Commons)"
+  }
+ ],
+ "timpani/perf-2": [
+  {
+   "source": "commons",
+   "file": "File:Timpani F major triad.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Timpani_F_major_triad.ogg",
+   "license": "CC BY-SA 4.0",
+   "artist": "Schrauber5",
+   "excerpt": "0.0-14.0s",
+   "credit": "Schrauber5 (Wikimedia Commons)"
   }
  ],
  "timpani/hit-1": [
@@ -12147,14 +12853,14 @@
    "credit": "Unknown author (Wikimedia Commons)"
   }
  ],
- "bass-clarinet/phrase": [
+ "bass-clarinet/perf-1": [
   {
    "source": "commons",
    "file": "File:R. Strauss Don Qixote.ogg",
    "url": "https://commons.wikimedia.org/wiki/File:R._Strauss_Don_Qixote.ogg",
    "license": "CC BY-SA 4.0",
    "artist": "Richard Haynes",
-   "excerpt": "0.3-11.8s",
+   "excerpt": "0.0-14.0s",
    "credit": "Richard Haynes (Wikimedia Commons)"
   }
  ],
@@ -12193,14 +12899,25 @@
    "credit": "Richard Haynes (Wikimedia Commons)"
   }
  ],
- "contrabassoon/phrase": [
+ "bass-clarinet/phrase": [
+  {
+   "source": "commons",
+   "file": "File:R. Strauss Don Qixote.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:R._Strauss_Don_Qixote.ogg",
+   "license": "CC BY-SA 4.0",
+   "artist": "Richard Haynes",
+   "excerpt": "0.3-11.8s",
+   "credit": "Richard Haynes (Wikimedia Commons)"
+  }
+ ],
+ "contrabassoon/perf-1": [
   {
    "source": "commons",
    "file": "File:Contra2.ogg",
    "url": "https://commons.wikimedia.org/wiki/File:Contra2.ogg",
    "license": "CC BY-SA 3.0",
    "artist": "Kat Walsh. Uploaded by Mindspillage at en.wikipedia",
-   "excerpt": "1.0-13.0s",
+   "excerpt": "1.0-15.0s",
    "credit": "Kat Walsh. Uploaded by Mindspillage at en.wikipedia (Wikimedia Commons)"
   }
  ],
@@ -12239,14 +12956,25 @@
    "credit": "Kat Walsh. Uploaded by Mindspillage at en.wikipedia (Wikimedia Commons)"
   }
  ],
- "flugelhorn/phrase": [
+ "contrabassoon/phrase": [
+  {
+   "source": "commons",
+   "file": "File:Contra2.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Contra2.ogg",
+   "license": "CC BY-SA 3.0",
+   "artist": "Kat Walsh. Uploaded by Mindspillage at en.wikipedia",
+   "excerpt": "1.0-13.0s",
+   "credit": "Kat Walsh. Uploaded by Mindspillage at en.wikipedia (Wikimedia Commons)"
+  }
+ ],
+ "flugelhorn/perf-1": [
   {
    "source": "commons",
    "file": "File:Short flugelhorn excerpt.ogg",
    "url": "https://commons.wikimedia.org/wiki/File:Short_flugelhorn_excerpt.ogg",
    "license": "CC BY-SA 4.0",
    "artist": "Ovinus Real",
-   "excerpt": "17.2-27.2s",
+   "excerpt": "18.4-32.4s",
    "credit": "Ovinus Real (Wikimedia Commons)"
   }
  ],
@@ -12275,6 +13003,17 @@
   }
  ],
  "flugelhorn/phone": [
+  {
+   "source": "commons",
+   "file": "File:Short flugelhorn excerpt.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Short_flugelhorn_excerpt.ogg",
+   "license": "CC BY-SA 4.0",
+   "artist": "Ovinus Real",
+   "excerpt": "17.2-27.2s",
+   "credit": "Ovinus Real (Wikimedia Commons)"
+  }
+ ],
+ "flugelhorn/phrase": [
   {
    "source": "commons",
    "file": "File:Short flugelhorn excerpt.ogg",
