@@ -94,6 +94,29 @@
     return { resize: () => paintRowWaves(main) };
   }
 
+  const REPO = 'https://github.com/tarekgara/instrumedia';
+
+  /** A pre-filled GitHub issue for one clip, so feedback names exactly what's wrong. */
+  function reportUrl(inst, smp) {
+    const title = `Clip problem: ${inst.name}, ${smp.label}${smp.note && smp.note !== smp.label ? ' (' + smp.note + ')' : ''}`;
+    const body = [
+      `**Instrument:** ${inst.name} (\`${inst.id}\`)`,
+      `**Clip:** ${smp.label} (\`${smp.key}\`)${smp.note && smp.note !== smp.label ? `, labelled ${smp.note}` : ''}`,
+      `**Source:** ${smp.credit.join(', ')} · ${smp.license}`,
+      `**Page:** ${location.href}`,
+      '',
+      '**What is wrong?** (tick one or more)',
+      '- [ ] It is not this instrument',
+      '- [ ] The note name is wrong',
+      '- [ ] Poor recording (noise, distortion, other instruments)',
+      '- [ ] Other',
+      '',
+      '**Details:**',
+      '',
+    ].join('\n');
+    return `${REPO}/issues/new?labels=clip-feedback&title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}`;
+  }
+
   /* ================================================================ instrument */
 
   const AXIS = [8000, 2000, 500, 125];
@@ -139,7 +162,8 @@
               <div class="stage-label"><strong data-stage-title></strong><span data-stage-credit></span></div>
               <div class="stage-meta" data-stage-meta></div>
             </div>
-          </div>` : `
+          </div>
+          <p class="report-line"><a data-report target="_blank" rel="noopener">Something wrong with this clip?</a> Wrong instrument, wrong note, bad recording: tell us on GitHub.</p>` : `
           <div class="stage"><div class="stage-view" style="display:grid;place-items:center;cursor:default">
             <div style="text-align:center;max-width:44ch;padding:24px;color:oklch(0.8 0.02 80)">
               <p style="font:400 26px/1.2 var(--f-serif);color:oklch(0.95 0.01 85)">No recording yet</p>
@@ -222,6 +246,8 @@
       main.querySelector('[data-stage-credit]').innerHTML = current.link
         ? `<a href="${esc(current.link)}" target="_blank" rel="noopener" style="color:inherit">${credit}</a>` : credit;
       main.querySelector('[data-stage-meta]').textContent = current.dur.toFixed(1) + ' s';
+      const report = main.querySelector('[data-report]');
+      if (report) report.href = reportUrl(inst, current);
       history.replaceState(null, '', `#/i/${inst.id}?s=${current.key}`);
       drawConf();
       window.UI.syncPlaying();

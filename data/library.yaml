@@ -389,7 +389,7 @@ instruments:
     confusions:
       - { id: didgeridoo, cue: "Didgeridoo is blown and continuous. Jaw harp is plucked in rhythmic twangs." }
     samples:
-      notes: { src: freepats, bank: JawHarp, count: 3 }
+      notes: { src: freepats, bank: JawHarp, count: 3, unlabeled: true, take_label: Twang }
 
   - id: mandolin
     name: Mandolin
@@ -561,7 +561,7 @@ instruments:
       notes: { src: vcsl, dir: Aerophones/Edge-blown Aerophones/Pipe Organ/Loud, phrase: true }
       variants:
         - { label: Quiet stop, src: vcsl, dir: Aerophones/Edge-blown Aerophones/Pipe Organ/Quiet }
-        - { label: Pedal (bass), src: vcsl, dir: Aerophones/Edge-blown Aerophones/Pipe Organ/Loud Pedal }
+        - { label: Pedal (bass), src: vcsl, dir: Aerophones/Edge-blown Aerophones/Pipe Organ/Loud Pedal, octave: 0 }
         - { label: Small chamber organ, src: vcsl, dir: "Aerophones/Edge-blown Aerophones/Renaissance Organ/8'" }
 
   - id: drawbar-organ

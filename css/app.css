@@ -500,6 +500,9 @@ svg { width: 18px; height: 18px; flex: none; }
 .stage-label span { font-size: 12.5px; color: oklch(0.75 0.015 80); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .stage-meta { font-size: 12.5px; color: oklch(0.75 0.015 80); font-variant-numeric: tabular-nums; text-align: right; }
 
+.report-line { margin-top: 10px; font-size: 13px; color: var(--text-3); }
+.report-line a { color: var(--text-2); text-underline-offset: 3px; }
+.report-line a:hover { color: var(--accent); }
 .keys-strip { margin-top: 26px; }
 .keys-strip-head { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 10px; }
 .keys-strip-head span { font-size: 13px; color: var(--text-3); }

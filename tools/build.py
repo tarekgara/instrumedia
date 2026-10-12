@@ -45,7 +45,7 @@ ROOT = Path(__file__).resolve().parent.parent
 CACHE = ROOT / ".cache"
 AUDIO = ROOT / "audio"
 SR = 44100
-BUILD_VERSION = 7  # bump to invalidate every cached instrument
+BUILD_VERSION = 8  # bump to invalidate every cached instrument
 
 REPOS = {"vcsl": "sgossner/VCSL/master", "vsco": "sgossner/VSCO-2-CE/master"}
 
@@ -585,6 +585,39 @@ def candidates(spec):
     return out
 
 
+# Families whose notes have a clear fundamental, so a pitch detector can be trusted to catch
+# mislabelled source files. Bells, tines, drones and drums are left alone.
+CLEAN_TONE = {"bowed", "keys", "woodwind", "brass", "organ", "plucked"}
+DRONE_IDS = {"strumstick", "jaw-harp", "bagpipe", "dan-tranh", "harpsichord"}
+CLEAN_IDS = {"vibraphone", "marimba"}
+
+
+def replace_mislabelled(chosen, dets, offset, cands, loaded):
+    """Swap out notes whose audio is not the labelled pitch (any octave of it is tolerated,
+    since pitch detectors slip octaves on bright tones). Uses the nearest well-behaved neighbour."""
+    out = []
+    for m in chosen:
+        d = dets.get(m)
+        t = m + offset
+        if d is None or abs(d - t - 12 * round((d - t) / 12)) < 0.8:
+            out.append(m)
+            continue
+        for alt in sorted(cands, key=lambda k: abs(k - m)):
+            if alt in chosen or alt in out or alt == m:
+                continue
+            if alt not in loaded:
+                loaded[alt] = cands[alt][0]()
+            da = yin(trim(loaded[alt], 3))
+            ta = alt + offset
+            if da is not None and abs(da - ta - 12 * round((da - ta) / 12)) < 0.8:
+                log(f"  replaced mislabelled note {note_name(t)} (sounds like {note_name(d)}) with {note_name(ta)}")
+                out.append(alt)
+                break
+        else:
+            out.append(m)
+    return out
+
+
 def spread(keys, count):
     keys = sorted(keys)
     if len(keys) <= count:
@@ -681,15 +714,22 @@ def build_instrument(inst):
             raise RuntimeError(f"{iid}: no pitched candidates")
         chosen = spread(cands.keys(), ns.get("count", 5))
         loaded = {m: cands[m][0]() for m in chosen}
-        if ns["src"] in ("freepats", "generated"):
-            offset = 0
-        else:
-            offset = octave_offset([(m, yin(trim(loaded[m], 3))) for m in chosen])
-        main_center = float(np.median(chosen))
-        for i, m in enumerate(chosen, 1):
+        if ns.get("unlabeled"):
+            # Sources without real note names (e.g. numbered takes) are shown as takes, not notes.
+            for i, m in enumerate(chosen, 1):
+                emit(f"hit-{i}", f"{ns.get('take_label', 'Take')} {i}", "hits", trim(loaded[m], max_note), cands[m][1])
+            chosen = []
+        dets = {m: yin(trim(loaded[m], 3)) for m in chosen}
+        # Every source's octave numbering is checked against the audio, synths included:
+        # a sub-octave oscillator or a 16' drawbar moves the pitch you actually hear.
+        offset = octave_offset([(m, dets[m]) for m in chosen])
+        if (inst["family"] in CLEAN_TONE or iid in CLEAN_IDS) and iid not in DRONE_IDS and ns["src"] != "generated":
+            chosen = replace_mislabelled(chosen, dets, offset, cands, loaded)
+        main_center = float(np.median(chosen)) if chosen else None
+        for i, m in enumerate(sorted(chosen), 1):
             emit(f"note-{i}", note_name(m + offset), "register", trim(loaded[m], max_note), cands[m][1], midi=m + offset)
 
-        if ns.get("phrase") and len(cands) >= 3:
+        if ns.get("phrase") and len(cands) >= 3 and chosen:
             if ns["src"] == "generated" and ns["preset"] == "synth-pad":
                 chords = [[0, 4, 7], [-3, 0, 4], [-7, -3, 0], [-5, -1, 2]]
                 root = chosen[len(chosen) // 2]
@@ -749,7 +789,16 @@ def build_instrument(inst):
         m = min(cands.keys(), key=lambda k: abs(k - target))
         x = cands[m][0]()
         vs = slug(v["label"])
-        emit(f"v-{vs}", v["label"], "technique", trim(x, max_note), cands[m][1], midi=m + offset)
+        # Technique folders can number octaves differently from the main notes: check this clip's own audio.
+        voff = offset
+        det = None if "octave" in v else yin(trim(x, 3))
+        if "octave" in v:  # set by hand where the audio is ambiguous (e.g. stacked organ ranks)
+            voff = 12 * v["octave"]
+        if det is not None:
+            k = round((det - m) / 12)
+            if abs(det - m - 12 * k) < 1.2:
+                voff = 12 * k
+        emit(f"v-{vs}", v["label"], "technique", trim(x, max_note), cands[m][1], midi=m + voff)
         if v.get("phrase") and len(cands) >= 3:
             plan = phrase_notes(cands.keys(), PHRASE_SHORT)
             cache = {m: cands[m][0]() for m in {m for _, m, _ in plan}}

@@ -1770,7 +1770,7 @@
    "credit": "Versilian Studios and contributors"
   }
  ],
- "jaw-harp/note-1": [
+ "jaw-harp/hit-1": [
   {
    "source": "freepats",
    "bank": "JawHarp",
@@ -1779,7 +1779,7 @@
    "credit": "FreePats Jaw Harp"
   }
  ],
- "jaw-harp/note-2": [
+ "jaw-harp/hit-2": [
   {
    "source": "freepats",
    "bank": "JawHarp",
@@ -1788,7 +1788,7 @@
    "credit": "FreePats Jaw Harp"
   }
  ],
- "jaw-harp/note-3": [
+ "jaw-harp/hit-3": [
   {
    "source": "freepats",
    "bank": "JawHarp",
@@ -2133,8 +2133,8 @@
  "upright-piano/note-3": [
   {
    "source": "vcsl",
-   "file": "Chordophones/Zithers/Upright Piano, Yamaha/Sustains/Upright1_Sus_C3_vl2_rr1.wav",
-   "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Chordophones/Zithers/Upright%20Piano%2C%20Yamaha/Sustains/Upright1_Sus_C3_vl2_rr1.wav",
+   "file": "Chordophones/Zithers/Upright Piano, Yamaha/Sustains/Upright1_Sus_G2_vl2_rr1.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Chordophones/Zithers/Upright%20Piano%2C%20Yamaha/Sustains/Upright1_Sus_G2_vl2_rr1.wav",
    "license": "CC0-1.0",
    "credit": "Versilian Studios and contributors"
   }
@@ -2752,7 +2752,7 @@
   {
    "source": "freepats",
    "bank": "DrawbarOrganEmulation",
-   "file": "samples/E2.wav",
+   "file": "samples/C2.wav",
    "license": "CC0-1.0",
    "credit": "FreePats Drawbar Organ Emulation"
   }
@@ -5666,8 +5666,8 @@
  "vibraphone/note-1": [
   {
    "source": "vcsl",
-   "file": "Idiophones/Struck Idiophones/Vibraphone/Hard Mallets/Vibes_hard_A2_v2_rr1_Main.wav",
-   "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Idiophones/Struck%20Idiophones/Vibraphone/Hard%20Mallets/Vibes_hard_A2_v2_rr1_Main.wav",
+   "file": "Idiophones/Struck Idiophones/Vibraphone/Hard Mallets/Vibes_hard_C3_v2_rr1_Main.wav",
+   "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Idiophones/Struck%20Idiophones/Vibraphone/Hard%20Mallets/Vibes_hard_C3_v2_rr1_Main.wav",
    "license": "CC0-1.0",
    "credit": "Versilian Studios and contributors"
   }
