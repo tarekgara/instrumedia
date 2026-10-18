@@ -264,7 +264,10 @@ def commons(title):
     page = json.loads(meta_path.read_text(encoding="utf-8"))["query"]["pages"][0]
     ii = page["imageinfo"][0]
     em = ii.get("extmetadata", {})
-    strip = lambda v: re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "", v or "")).strip()
+    # list items and line breaks become "; " so multi-part credits don't run together
+    breaks = lambda v: re.sub(r"(?i)</li>\s*<li[^>]*>|<br\s*/?>|</p>\s*<p[^>]*>", "; ",
+                              re.sub(r"(?is)<(style|script)\b.*?</\1>", "", v or ""))
+    strip = lambda v: re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "", breaks(v))).strip()
     meta = {
         "source": "commons", "file": title, "url": ii["descriptionurl"],
         "license": strip(em.get("LicenseShortName", {}).get("value")),
@@ -888,6 +891,8 @@ def build_instrument(inst):
             path, meta = fetch_url(pf)
         else:
             path, meta = commons(pf["file"])
+            if pf.get("author"):  # some file pages put a paragraph in the Artist field
+                meta = {**meta, "artist": pf["author"]}
         full = load(path)
         dur = pf.get("dur", 14.0)
         start = pf["start"] if "start" in pf else best_window(full, dur)
@@ -905,6 +910,8 @@ def build_instrument(inst):
 
     for k, ex in enumerate(spec.get("excerpts", []), 1):
         path, meta = commons(ex["file"])
+        if ex.get("author"):
+            meta = {**meta, "artist": ex["author"]}
         full = load(path)
         dur = ex.get("dur", 8.0)
         start = ex["start"] if "start" in ex else best_window(full, dur)

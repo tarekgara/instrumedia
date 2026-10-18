@@ -155,7 +155,7 @@ instruments:
         - { label: Tremolo, src: vsco, dir: Strings/Solo Violin/Trem }
         - { label: Spiccato (bounced bow), src: vsco, dir: Strings/Solo Violin/spic, phrase: true }
       performances:
-        - {"file": "File:Bach Partita 2 - Allemanda - 18-04-2013.ogg", "label": "Bach Partita 2 - Allemanda - 18-04-2013", "start": 0.0, "dur": 16.0}
+        - {"file": "File:Bach Partita 2 - Allemanda - 18-04-2013.ogg", "label": "Bach, Partita No. 2: Allemanda", "start": 0.0, "dur": 16.0}
 
   - id: violin-section
     name: Violin section
@@ -194,8 +194,8 @@ instruments:
         - { label: Tremolo, src: vsco, dir: Strings/Viola Section/trem }
         - { label: Spiccato, src: vsco, dir: Strings/Viola Section/spic, phrase: true }
       performances:
-        - {"file": "File:Viola-walshimprov.ogg", "label": "Viola-walshimprov"}
-        - {"file": "File:Viola.ogg", "label": "Viola"}
+        - {"file": "File:Viola-walshimprov.ogg", "label": "Viola improvisation"}
+        - {"file": "File:Viola.ogg", "label": "Solo viola"}
 
   - id: cello
     name: Cello
@@ -218,8 +218,8 @@ instruments:
         - { label: Tremolo, src: vsco, dir: Strings/Cello Section/trem }
         - { label: Spiccato, src: vsco, dir: Strings/Cello Section/spic, phrase: true }
       performances:
-        - {"file": "File:Bach Cello Suite 1 Prelude (BWV 1007) Played by Chris.ogg", "label": "Bach Cello Suite 1 Prelude (BWV 1007) Played by Chris", "start": 0.0, "dur": 16.0}
-        - {"file": "File:Bach Cello Suite BWV 1008 Gigue.ogg", "label": "Bach Cello Suite BWV 1008 Gigue"}
+        - {"file": "File:Bach Cello Suite 1 Prelude (BWV 1007) Played by Chris.ogg", "label": "Bach, Cello Suite No. 1: Prelude", "start": 0.0, "dur": 16.0}
+        - {"file": "File:Bach Cello Suite BWV 1008 Gigue.ogg", "label": "Bach, Cello Suite No. 2: Gigue"}
 
   - id: double-bass
     name: Double bass
@@ -241,7 +241,7 @@ instruments:
         - { label: Non-vibrato, src: vsco, dir: Strings/Solo Contrabass/SusNV, prefer: [_v2] }
         - { label: Tremolo, src: vsco, dir: Strings/Solo Contrabass/Trem }
       performances:
-        - {"file": "File:Jazz walking bass on double bass.oga", "label": "Jazz walking bass on double bass"}
+        - {"file": "File:Jazz walking bass on double bass.oga", "label": "Jazz walking bass"}
 
   - id: erhu
     name: Erhu
@@ -252,13 +252,12 @@ instruments:
     listen: ["Frequent slides and bends", "A hollow nasal tone, almost vocal"]
     confusions:
       - { id: violin, cue: "Violin is fuller and more resonant. Erhu is thinner and slides much more." }
-
-  # ---------------------------------------------------------------- plucked
     samples:
       excerpts:
         - { file: "File:江河水.ogg", label: "“River” (Jiang He Shui)", dur: 10 }
         - { file: "File:二泉映月.ogg", label: "“The Moon Reflected on Erquan”", dur: 10 }
 
+  # ---------------------------------------------------------------- plucked
   - id: acoustic-guitar-nylon
     name: Classical guitar
     family: plucked
@@ -276,7 +275,7 @@ instruments:
       notes: { src: freepats, bank: SpanishClassicalGuitar, phrase: true }
       performances:
         - {"file": "File:Romance Anónimo (Jeux interdits).ogg", "label": "Romance Anónimo (Jeux interdits)", "start": 0.0, "dur": 16.0}
-        - {"file": "File:Recuerdos de la Alhambra.ogg", "label": "Recuerdos de la Alhambra"}
+        - {"file": "File:Recuerdos de la Alhambra.ogg", "label": "Tárrega, Recuerdos de la Alhambra"}
 
   - id: acoustic-guitar-steel
     name: Steel-string acoustic guitar
@@ -295,8 +294,8 @@ instruments:
     samples:
       notes: { src: freepats, bank: FSS-SteelStringGuitar, sfz: FSS-SteelStringGuitar, phrase: true }
       performances:
-        - {"file": "File:Upon This Mountain - Liam Riley- The Fitzcarraldos.ogg", "label": "Upon This Mountain - Liam Riley- The Fitzcarraldos"}
-        - {"file": "File:Hairy Larry-Iriver Blues-Mono Monster.ogg", "label": "Hairy Larry-Iriver Blues-Mono Monster"}
+        - {"file": "File:Upon This Mountain - Liam Riley- The Fitzcarraldos.ogg", "label": "Upon This Mountain (The Fitzcarraldos)"}
+        - {"file": "File:Hairy Larry-Iriver Blues-Mono Monster.ogg", "label": "Iriver Blues (Hairy Larry)"}
 
   - id: electric-guitar-clean
     name: Electric guitar (clean)
@@ -314,8 +313,8 @@ instruments:
     samples:
       notes: { src: freepats, bank: EGuitarFSBS-clean-bridge-small, phrase: true }
       performances:
-        - {"file": "File:WizzNeck.ogg", "label": "WizzNeck"}
-        - {"file": "File:Mama put my guns in ground.ogg", "label": "Mama put my guns in ground"}
+        - {"file": "File:WizzNeck.ogg", "label": "“WizzNeck”"}
+        - {"file": "File:Mama put my guns in ground.ogg", "label": "“Mama Put My Guns in the Ground”"}
 
   - id: electric-guitar-distorted
     name: Electric guitar (distorted)
@@ -352,7 +351,7 @@ instruments:
       notes: { src: freepats, bank: FingerBassYR, phrase: true }
       performances:
         - {"file": "File:Bass played with a pick.ogg", "label": "Bass played with a pick"}
-        - {"file": "File:Fretless bass solo - harmonics.ogg", "label": "Fretless bass solo - harmonics"}
+        - {"file": "File:Fretless bass solo - harmonics.ogg", "label": "Fretless bass solo, with harmonics"}
 
   - id: ukulele
     name: Ukulele
@@ -368,7 +367,7 @@ instruments:
     samples:
       notes: { src: freepats, bank: Ukulele, phrase: true }
       performances:
-        - {"file": "File:Steve Combs - 01 - Uke Improv in C.ogg", "label": "Steve Combs - 01 - Uke Improv in C"}
+        - {"file": "File:Steve Combs - 01 - Uke Improv in C.ogg", "label": "Uke improvisation in C (Steve Combs)"}
         - {"file": "File:Ukulele playing.ogg", "label": "Ukulele playing"}
 
   - id: harp
@@ -389,8 +388,8 @@ instruments:
       variants:
         - { label: Folk harp (lever harp), src: vcsl, dir: Chordophones/Composite Chordophones/Folk Harp, prefer: [_v3_] }
       performances:
-        - {"file": "File:Hotel Juárez - Introducción (arpa sola).ogg", "label": "Hotel Juárez - Introducción (arpa sola)"}
-        - {"file": "File:01 La Nueva Alianza.wav", "label": "01 La Nueva Alianza"}
+        - {"file": "File:Hotel Juárez - Introducción (arpa sola).ogg", "label": "Hotel Juárez: Introducción (solo harp)"}
+        - {"file": "File:01 La Nueva Alianza.wav", "label": "La Nueva Alianza"}
 
   - id: dan-tranh
     name: Zither (đàn tranh)
@@ -435,6 +434,8 @@ instruments:
     samples:
       excerpts:
         - { file: "File:Schneewalzer.ogg", label: "Waltz (concert mandolin)", dur: 8 }
+      performances:
+        - {"file": "File:Antonio Vivaldi, Mandolin Concerto in C major, RV 425.ogg", "label": "Vivaldi, Mandolin Concerto RV 425", "start": 107.5, "dur": 18.0}
 
   - id: banjo
     name: Banjo
@@ -461,13 +462,12 @@ instruments:
     listen: ["A buzzing, sizzling halo around each note", "Deep pitch bends and a shimmering drone"]
     confusions:
       - { id: dan-tranh, cue: "Zither is cleaner, without the sizzling buzz." }
-
-  # ---------------------------------------------------------------- keys
     samples:
       excerpts:
         - { file: "File:Sitar sample yaman.ogg", label: "Raag Yaman", dur: 10 }
         - { file: "File:Sitar clipping.ogg", label: "Phrase", dur: 8 }
 
+  # ---------------------------------------------------------------- keys
   - id: grand-piano
     name: Grand piano
     family: keys
@@ -487,8 +487,8 @@ instruments:
         - { label: Soft touch, src: vcsl, dir: "Chordophones/Zithers/Grand Piano, Steinway B/Sus", prefer: [_vl1_] }
         - { label: Dampened (no pedal), src: vcsl, dir: "Chordophones/Zithers/Grand Piano, Steinway B/NoSus", prefer: [_vl3_] }
       performances:
-        - {"file": "File:Beethoven, Sonata No. 8 in C Minor Pathetique, Op. 13 - III. Rondo - Allegro.ogg", "label": "Beethoven, Sonata No. 8 in C Minor Pathetique, Op. 13 - I…"}
-        - {"file": "File:Bach, J S - Goldberg Variations, BWV988 - 02. Variation 1 (Shelley Katz).flac", "label": "Bach, J S - Goldberg Variations, BWV988 - 02. Variation 1…"}
+        - {"file": "File:Beethoven, Sonata No. 8 in C Minor Pathetique, Op. 13 - III. Rondo - Allegro.ogg", "label": "Beethoven, Pathétique Sonata: I"}
+        - {"file": "File:Bach, J S - Goldberg Variations, BWV988 - 02. Variation 1 (Shelley Katz).flac", "label": "Bach, Goldberg Variations: Variation 1"}
 
   - id: upright-piano
     name: Upright piano
@@ -504,8 +504,8 @@ instruments:
     samples:
       notes: { src: vcsl, dir: "Chordophones/Zithers/Upright Piano, Yamaha/Sustains", prefer: [_vl2_, _rr1], phrase: true }
       performances:
-        - {"file": "File:Prelude op28 n4.wav", "label": "Prelude op28 n4"}
-        - {"file": "File:Outing- Chinese kids' Piano Song - Junjun's edition (selected from real piano lesson).ogg", "label": "Outing- Chinese kids' Piano Song - Junjun's edition (sele…"}
+        - {"file": "File:Prelude op28 n4.wav", "label": "Chopin, Prelude Op. 28 No. 4"}
+        - {"file": "File:Outing- Chinese kids' Piano Song - Junjun's edition (selected from real piano lesson).ogg", "label": "Outing (Chinese children's piano song)"}
 
   - id: harpsichord
     name: Harpsichord
@@ -523,8 +523,8 @@ instruments:
       variants:
         - { label: Lute stop (muted), src: vcsl, dir: "Chordophones/Zithers/Harpsichord, English/Sustains/Lute" }
       performances:
-        - {"file": "File:Orlando Gibbons Pavan MB16.wav", "label": "Orlando Gibbons Pavan MB16"}
-        - {"file": "File:Domenico Scarlatti Sonata K10.wav", "label": "Domenico Scarlatti Sonata K10"}
+        - {"file": "File:Orlando Gibbons Pavan MB16.wav", "label": "Gibbons, Pavan MB 16"}
+        - {"file": "File:Domenico Scarlatti Sonata K10.wav", "label": "Scarlatti, Sonata K. 10"}
 
   - id: fm-electric-piano
     name: FM electric piano
@@ -561,7 +561,6 @@ instruments:
     name: Celesta
     family: keys
     sub: Keyboard glockenspiel
-    status: wanted
     aliases: [celeste]
     traits: { pitched: "yes", sustain: decays, attack: [sharp], tone: [metallic], register: [high] }
     summary: Keyboard-played steel bars in resonators. The "Sugar Plum Fairy" sound. Soft, sweet, music-box bell.
@@ -570,6 +569,9 @@ instruments:
       - { id: glockenspiel, cue: "Glockenspiel is harder, brighter and rings longer." }
       - { id: vibraphone, cue: "Vibraphone is lower and usually has a wobbling vibrato." }
       - { id: music-box, cue: "Music box is tinier and plinkier, with a mechanical tick." }
+    samples:
+      performances:
+        - {"file": "File:Чайковский Танец Феи Драже из балета Щелкунчик.webm", "label": "Tchaikovsky, Dance of the Sugar Plum Fairy", "start": 0.5, "dur": 15.0}
 
   - id: music-box
     name: Music box
@@ -581,12 +583,11 @@ instruments:
     confusions:
       - { id: celesta, cue: "Celesta is fuller and softer." }
       - { id: kalimba, cue: "Kalimba is lower and woodier." }
-
-  # ---------------------------------------------------------------- organ
     samples:
       excerpts:
         - { file: "File:Caja de música (PianoConcerto5 Beethoven).ogg", label: "Beethoven theme", dur: 10 }
 
+  # ---------------------------------------------------------------- organ
   - id: pipe-organ
     name: Pipe organ
     family: organ
@@ -607,7 +608,7 @@ instruments:
         - { label: Pedal (bass), src: vcsl, dir: Aerophones/Edge-blown Aerophones/Pipe Organ/Loud Pedal, octave: 0 }
         - { label: Small chamber organ, src: vcsl, dir: "Aerophones/Edge-blown Aerophones/Renaissance Organ/8'" }
       performances:
-        - {"file": "File:Berceuse Orgel Wunderle.wav", "label": "Berceuse Orgel Wunderle"}
+        - {"file": "File:Berceuse Orgel Wunderle.wav", "label": "Berceuse, on pipe organ"}
 
   - id: drawbar-organ
     name: Drawbar organ (Hammond-style)
@@ -642,7 +643,9 @@ instruments:
     samples:
       notes: { src: freepats, bank: ButtonAccordionHN, phrase: true }
       performances:
-        - {"file": "File:Accordéon chromatique - exercice 1 audio.ogg", "label": "Chromatic accordion exercise"}
+        - {"file": "File:Accordéon chromatique - exercice 1 audio.ogg", "label": "Chromatic accordion exercise", "author": "Savant-fou"}
+        - {"file": "File:Oroitz Maiz - Praeludium XIV.wav", "label": "Bach on classical accordion (Oroitz Maiz)", "start": 0.5, "dur": 20.0}
+        - {"file": "File:Lõõtspillilugu.webm", "label": "Estonian folk tune on button accordion", "start": 2.0, "dur": 20.0}
 
   - id: harmonica
     name: Harmonica
@@ -662,8 +665,10 @@ instruments:
         - { label: Hand vibrato, src: vcsl, dir: Aerophones/Free Aerophones/Harmonica-Hohner-Special20-F/Sustains/HandVib }
         - { label: Chromatic harmonica, src: vcsl, dir: Aerophones/Free Aerophones/Harmonica-Hohner-Super64/Sustains/Normal }
       performances:
-        - {"file": "File:Blues Harp1.ogg", "label": "Blues Harp1"}
-        - {"file": "File:Bluesharp riff.ogg", "label": "Bluesharp riff"}
+        - {"file": "File:Blues Harp1.ogg", "label": "Blues harp"}
+        - {"file": "File:Bluesharp riff.ogg", "label": "Blues harp riff"}
+        - {"file": "File:Sounbeispiel Chromatische Mundharmonika.ogg", "label": "Chromatic harmonica tune", "dur": 20.0}
+        - {"file": "File:Wiener Tremolo Mundharmonika.ogg", "label": "Tremolo harmonica", "start": 17.0, "dur": 20.0}
 
   - id: harmonium
     name: Harmonium
@@ -689,12 +694,11 @@ instruments:
     listen: ["A reedy tone with breath dynamics", "Keyboard-like melodies"]
     confusions:
       - { id: harmonica, cue: "Harmonica bends notes and is breathier." }
-
-  # ---------------------------------------------------------------- woodwind
     samples:
       excerpts:
         - { file: "File:Melodica rakesofkildare.ogg", label: "Irish tune", dur: 10 }
 
+  # ---------------------------------------------------------------- woodwind
   - id: flute
     name: Flute
     family: woodwind
@@ -715,8 +719,8 @@ instruments:
         - { label: Non-vibrato, src: vsco, dir: Woodwinds/Flute/susNV }
         - { label: Staccato, src: vsco, dir: Woodwinds/Flute/stac, prefer: [_v2], phrase: true }
       performances:
-        - {"file": "File:Karg-Elert - Caprices for Flute - No.3.allegro alla handel.Op.107.ladybyron.ogg", "label": "Karg-Elert - Caprices for Flute - No.3.allegro alla hande…"}
-        - {"file": "File:Joachim Andersen - Etude 3 for Solo Flute.oga", "label": "Joachim Andersen - Etude 3 for Solo Flute"}
+        - {"file": "File:Karg-Elert - Caprices for Flute - No.3.allegro alla handel.Op.107.ladybyron.ogg", "label": "Karg-Elert, Caprice for Flute No. 3"}
+        - {"file": "File:Joachim Andersen - Etude 3 for Solo Flute.oga", "label": "Andersen, Etude No. 3 for solo flute"}
 
   - id: piccolo
     name: Piccolo
@@ -734,7 +738,7 @@ instruments:
       variants:
         - { label: Staccato, src: vsco, dir: Woodwinds/Piccolo/Stac }
       performances:
-        - {"url": "https://archive.org/download/PiccoloDemo/PiccoloDemo.mp3", "page": "https://archive.org/details/PiccoloDemo", "license": "Public domain", "author": "Sarah Searles", "label": "Piccolo Demo"}
+        - {"url": "https://archive.org/download/PiccoloDemo/PiccoloDemo.mp3", "page": "https://archive.org/details/PiccoloDemo", "license": "Public domain", "author": "Sarah Searles", "label": "Piccolo demo"}
 
   - id: recorder
     name: Recorder
@@ -756,7 +760,7 @@ instruments:
         - { label: Staccato, src: vcsl, dir: Aerophones/Edge-blown Aerophones/Baroque Alto Recorder/Staccato, phrase: true }
       performances:
         - {"file": "File:Daphne.ogg", "label": "Daphne"}
-        - {"file": "File:Hans P Keuning - 12 difficult studies (treble recorder) - Vivace.ogg", "label": "Hans P Keuning - 12 difficult studies (treble recorder) -…"}
+        - {"file": "File:Hans P Keuning - 12 difficult studies (treble recorder) - Vivace.ogg", "label": "Keuning, Difficult Studies: Vivace", "author": "Jmfayard"}
 
   - id: ocarina
     name: Ocarina
@@ -774,8 +778,8 @@ instruments:
       variants:
         - { label: Vibrato, src: vcsl, dir: "Aerophones/Edge-blown Aerophones/Ocarina, Typical/Sustains/SusVib" }
       performances:
-        - {"file": "File:Ocarina de barro (impro).wav", "label": "Ocarina de barro (impro)"}
-        - {"file": "File:MezzettiPt1Pg11No1.ogg", "label": "MezzettiPt1Pg11No1"}
+        - {"file": "File:Ocarina de barro (impro).wav", "label": "Clay ocarina improvisation"}
+        - {"file": "File:MezzettiPt1Pg11No1.ogg", "label": "Ocarina study (Mezzetti)"}
 
   - id: tin-whistle
     name: Tin whistle
@@ -809,19 +813,21 @@ instruments:
         - { label: Vibrato, src: vsco, dir: Woodwinds/Oboe/Vib, prefer: [_v2] }
         - { label: Staccato, src: vsco, dir: Woodwinds/Oboe/Stacc, prefer: [_v2], phrase: true }
       performances:
-        - {"file": "File:Ferling Oboe Study No 28 Aaron Hill.ogg", "label": "Ferling Oboe Study No 28 Aaron Hill"}
+        - {"file": "File:Ferling Oboe Study No 28 Aaron Hill.ogg", "label": "Ferling, Oboe Study No. 28 (Aaron Hill)"}
 
   - id: english-horn
     name: English horn
     family: woodwind
     sub: Double reed
-    status: wanted
     aliases: [cor anglais]
     traits: { pitched: "yes", sustain: held, attack: [soft], tone: [reedy], register: [mid] }
     summary: An alto oboe. Darker, more mournful, a favorite for melancholy solos.
     listen: ["A veiled, melancholic reed tone"]
     confusions:
       - { id: oboe, cue: "Oboe is higher and brighter." }
+    samples:
+      performances:
+        - {"file": "File:Antonin Dvorak - symphony no. 9 in e minor 'from the new world', op. 95 - ii. largo.ogg", "label": "Dvořák, New World Symphony: the Largo solo", "start": 33.5, "dur": 24.0}
 
   - id: clarinet
     name: Clarinet
@@ -840,8 +846,8 @@ instruments:
       variants:
         - { label: Staccato, src: vsco, dir: Woodwinds/Clarinet/stac, prefer: [_v2], phrase: true }
       performances:
-        - {"file": "File:A-Klarinette, Rachmaninov 2 II.ogg", "label": "A-Klarinette, Rachmaninov 2 II"}
-        - {"file": "File:B-Klarinette, Beeth 8.III.ogg", "label": "B-Klarinette, Beeth 8.III"}
+        - {"file": "File:A-Klarinette, Rachmaninov 2 II.ogg", "label": "Rachmaninov, Symphony No. 2 (A clarinet)"}
+        - {"file": "File:B-Klarinette, Beeth 8.III.ogg", "label": "Beethoven, Symphony No. 8: III (B♭ clarinet)"}
 
   - id: bassoon
     name: Bassoon
@@ -860,7 +866,7 @@ instruments:
         - { label: Vibrato, src: vsco, dir: Woodwinds/Bassoon/vib }
         - { label: Staccato, src: vsco, dir: Woodwinds/Bassoon/stac, prefer: [_v2], phrase: true }
       performances:
-        - {"file": "File:Bassoon rimsky.ogg", "label": "Bassoon rimsky"}
+        - {"file": "File:Bassoon rimsky.ogg", "label": "Rimsky-Korsakov bassoon solo"}
 
   - id: tenor-sax
     name: Tenor saxophone
@@ -881,8 +887,8 @@ instruments:
         - { label: Vibrato, src: vcsl, dir: Aerophones/Reed Aerophones/Tenor Saxophone/Vibrato }
         - { label: Staccato, src: vcsl, dir: Aerophones/Reed Aerophones/Tenor Saxophone/Staccato, phrase: true }
       performances:
-        - {"file": "File:Jakob Dont - Caprice Dont Mib Major - Arr for tenor saxophone - David Hernando Vitores.ogg", "label": "Jakob Dont - Caprice Dont Mib Major - Arr for tenor saxop…"}
-        - {"file": "File:Inasentimentalmood-first9bars.ogg", "label": "Inasentimentalmood-first9bars"}
+        - {"file": "File:Jakob Dont - Caprice Dont Mib Major - Arr for tenor saxophone - David Hernando Vitores.ogg", "label": "Dont, Caprice in E♭ (tenor sax)"}
+        - {"file": "File:Inasentimentalmood-first9bars.ogg", "label": "In a Sentimental Mood, opening"}
 
   - id: soprano-sax
     name: Soprano saxophone
@@ -901,8 +907,8 @@ instruments:
       variants:
         - { label: Vibrato, src: vcsl, dir: Aerophones/Reed Aerophones/Saxello/Vibrato }
       performances:
-        - {"file": "File:Georg Philipp Telemann - Fantasia No 11 - Soprano saxophone - David Hernando Vitores.ogg", "label": "Georg Philipp Telemann - Fantasia No 11 - Soprano saxopho…"}
-        - {"file": "File:Georg Philipp Telemann - 3rd Fantasia for Flauta - Arr for Soprano Saxophone - David Hernando Vitores.ogg", "label": "Georg Philipp Telemann - 3rd Fantasia for Flauta - Arr fo…"}
+        - {"file": "File:Georg Philipp Telemann - Fantasia No 11 - Soprano saxophone - David Hernando Vitores.ogg", "label": "Telemann, Fantasia No. 11 (soprano sax)"}
+        - {"file": "File:Georg Philipp Telemann - 3rd Fantasia for Flauta - Arr for Soprano Saxophone - David Hernando Vitores.ogg", "label": "Telemann, Fantasia No. 3 (soprano sax)"}
 
   - id: alto-sax
     name: Alto saxophone
@@ -917,8 +923,8 @@ instruments:
       excerpts:
         - { file: "File:Joachim Andersen - Caprice No.1 Op.15 - Arr for alto saxophone - David Hernando Vitores.ogg", label: "Caprice (unaccompanied)", dur: 10 }
       performances:
-        - {"file": "File:Johann Sebastian Bach - Sonata in G minor BWV 1001 Presto - Arr for alto saxophone - David Hernando Vitores.ogg", "label": "Johann Sebastian Bach - Sonata in G minor BWV 1001 Presto…"}
-        - {"file": "File:Niccolò Paganini - Caprice No.24 Arr for alto saxophone - David Hernando Vitores.ogg", "label": "Niccolò Paganini - Caprice No.24 Arr for alto saxophone -…"}
+        - {"file": "File:Johann Sebastian Bach - Sonata in G minor BWV 1001 Presto - Arr for alto saxophone - David Hernando Vitores.ogg", "label": "Bach, Sonata BWV 1001: Presto (alto sax)"}
+        - {"file": "File:Niccolò Paganini - Caprice No.24 Arr for alto saxophone - David Hernando Vitores.ogg", "label": "Paganini, Caprice No. 24 (alto sax)"}
 
   - id: bagpipe
     name: Bagpipes
@@ -933,6 +939,9 @@ instruments:
       - { id: accordion, cue: "Accordion plays chords and breathes with the bellows." }
     samples:
       notes: { src: freepats, bank: Bagpipe-small, phrase: true }
+      performances:
+        - {"url": "https://archive.org/download/aporee_19145_22231/berlinTempelhofDudelsack130811b.mp3", "page": "https://archive.org/details/aporee_19145_22231", "license": "CC BY 3.0", "author": "udo noll (radio aporee)", "label": "Highland pipes outdoors (three pipers)", "start": 9.0, "dur": 22.0}
+        - {"file": "File:Gaita Player in Santiago de Compostela.wav", "label": "Galician gaita (street piper)", "start": 0.5, "dur": 20.0}
 
   # ---------------------------------------------------------------- brass
   - id: trumpet
@@ -956,8 +965,8 @@ instruments:
         - { label: Straight mute, src: vsco, dir: Brass/Trumpet/straightM-sus, prefer: [_v2] }
         - { label: Harmon mute (wah), src: vsco, dir: Brass/Trumpet/harmonM-sus, prefer: [_v2] }
       performances:
-        - {"file": "File:Trompetensolo Ich hatt einen Kameraden.ogg", "label": "Trompetensolo Ich hatt einen Kameraden"}
-        - {"file": "File:Trumpet playing short excerpt for comparison with flugelhorn.ogg", "label": "Trumpet playing short excerpt for comparison with flugelhorn"}
+        - {"file": "File:Trompetensolo Ich hatt einen Kameraden.ogg", "label": "Trumpet solo: Ich hatt einen Kameraden"}
+        - {"file": "File:Trumpet playing short excerpt for comparison with flugelhorn.ogg", "label": "Short trumpet excerpt"}
 
   - id: french-horn
     name: French horn
@@ -977,6 +986,8 @@ instruments:
       variants:
         - { label: Staccato, src: vsco, dir: Brass/F Horn/stac, prefer: [_v2], phrase: true }
         - { label: Muted, src: vsco, dir: Brass/F Horn/mute }
+      performances:
+        - {"file": "File:Brahms - Symphony No. 1 in C minor, Op. 68 - IV. Adagio - Piu andante - Allegro non troppo, ma con brio - Piu allegro (Musopen Symphony).flac", "label": "Brahms, Symphony No. 1: the horn call", "start": 128.5, "dur": 19.0}
 
   - id: trombone
     name: Trombone
@@ -998,7 +1009,7 @@ instruments:
         - { label: Fall (glissando down), src: vsco, dir: Brass/OldTrombone/Fall }
         - { label: Buzzy, src: vsco, dir: Brass/OldTrombone/Buzz }
       performances:
-        - {"file": "File:Jazz Trombone.ogg", "label": "Jazz Trombone"}
+        - {"file": "File:Jazz Trombone.ogg", "label": "Jazz trombone"}
 
   - id: tuba
     name: Tuba
@@ -1010,12 +1021,32 @@ instruments:
     listen: ["Deep, round brass notes", "Oom-pah bass lines in marching and polka music"]
     confusions:
       - { id: trombone, cue: "Trombone is higher and brighter." }
+      - { id: euphonium, cue: "Euphonium is higher and lighter, and plays melodies." }
       - { id: electric-bass, cue: "Bass guitar is plucked with a clear attack." }
       - { id: double-bass, cue: "Double bass has bow grit or a woody pluck." }
     samples:
       notes: { src: vsco, dir: Brass/Tuba/sus, prefer: [_v2], phrase: true }
       variants:
         - { label: Staccato, src: vsco, dir: Brass/Tuba/stac, prefer: [_v2], phrase: true }
+      performances:
+        - {"file": "File:8 Days of Day- Tuba solo featuring Chief Musician James Hicks.webm", "label": "Tuba solo (US Navy Band)", "start": 0.3, "dur": 21.0}
+
+  - id: euphonium
+    name: Euphonium
+    family: brass
+    sub: Tenor tuba
+    aliases: [baritone horn, tenor tuba]
+    traits: { pitched: "yes", sustain: held, attack: [soft], tone: [brassy], register: [low, mid] }
+    summary: A small tuba pitched like a trombone. Warm, round and singing, the cello of the band.
+    listen: ["A warm, velvety brass tone, rounder than a trombone", "Lyrical tenor melodies and fast cornet-style runs in band music"]
+    confusions:
+      - { id: tuba, cue: "Tuba is deeper and heavier; euphonium sings in the tenor range." }
+      - { id: trombone, cue: "Trombone is brighter and brassier, and can slide between notes." }
+      - { id: french-horn, cue: "French horn is more distant and veiled; euphonium is closer and rounder." }
+    samples:
+      performances:
+        - {"file": "File:The Bride of the Waves - U.S. Coast Guard Band.ogg", "label": "The Bride of the Waves: cadenza (US Coast Guard Band)", "start": 62.5, "dur": 15.0}
+        - {"file": "File:The Bride of the Waves - U.S. Coast Guard Band.ogg", "label": "The Bride of the Waves: second cadenza", "start": 268.0, "dur": 11.0}
 
   - id: didgeridoo
     name: Didgeridoo
@@ -1090,7 +1121,7 @@ instruments:
     samples:
       notes: { src: vcsl, dir: Idiophones/Struck Idiophones/Marimba, prefer: [loud], phrase: true }
       performances:
-        - {"file": "File:Exemple marimba.ogg", "label": "Exemple marimba"}
+        - {"file": "File:Exemple marimba.ogg", "label": "Marimba example"}
 
   - id: xylophone
     name: Xylophone
@@ -1122,6 +1153,8 @@ instruments:
       - { id: gong, cue: "Gong has no clear pitch and swells after the hit." }
     samples:
       notes: { src: vcsl, dir: Idiophones/Struck Idiophones/Tubular Bells 2, prefer: [_v3_], phrase: true }
+      performances:
+        - {"file": "File:A Dream of a Witches' Sabbath - transcribed by Lt. Col. Jack T. Cline - U.S. Marine Band.ogg", "label": "Berlioz, Symphonie fantastique: funeral bells", "start": 161.5, "dur": 24.0}
 
   - id: hand-chimes
     name: Hand chimes
@@ -1154,7 +1187,7 @@ instruments:
       variants:
         - { label: Mbira (Zimbabwe), src: vcsl, dir: "Idiophones/Plucked Idiophones/Mbira dzaVadzimu Nyamaropa, Zimbabwe, Low B" }
       performances:
-        - {"file": "File:Kalimba Sample.ogg", "label": "Kalimba Sample"}
+        - {"file": "File:Kalimba Sample.ogg", "label": "Kalimba sample"}
         - {"file": "File:Kalimba de coco.ogg", "label": "Kalimba de coco"}
 
   - id: hang
@@ -1172,20 +1205,22 @@ instruments:
     samples:
       notes: { src: freepats, bank: Hang-D-minor, phrase: true }
       performances:
-        - {"file": "File:Hang 2005 horizontal.ogg", "label": "Hang 2005 horizontal"}
-        - {"file": "File:Hang 2007 vertical.ogg", "label": "Hang 2007 vertical"}
+        - {"file": "File:Hang 2005 horizontal.ogg", "label": "Hang (2005 model)"}
+        - {"file": "File:Hang 2007 vertical.ogg", "label": "Hang (2007 model)"}
 
   - id: steel-drum
     name: Steel pan
     family: mallet
     sub: Steel shell
-    status: wanted
     aliases: [steel drum, steelpan]
     traits: { pitched: "yes", sustain: decays, attack: [sharp], tone: [metallic], register: [mid, high] }
     summary: Caribbean tuned oil drum. Bright, bouncy, a quick metallic "boing".
     listen: ["A bright metallic ping with a vocal quality", "Rolled notes on long tones"]
     confusions:
       - { id: hang, cue: "Handpan is softer and more ethereal." }
+    samples:
+      performances:
+        - {"file": "File:Bach Sinfonia 12 for steel pan.webm", "label": "Bach, Sinfonia No. 12 on steel pans", "start": 1.0, "dur": 24.0}
 
   - id: balafon
     name: Balafon
@@ -1233,8 +1268,9 @@ instruments:
         - { label: Hit (soft), src: vcsl, dir: Membranophones/Struck Membranophones/Timpani 1/Hit, match: _v2_, limit: 1 }
         - { label: Roll, src: vcsl, dir: Membranophones/Struck Membranophones/Timpani 1/Roll, match: _v4_, limit: 1 }
       performances:
-        - {"file": "File:Paukenwirbel auf einer Wiener Pauke mit acht verschiedenen Schlegeln.ogg", "label": "Paukenwirbel auf einer Wiener Pauke mit acht verschiedene…"}
-        - {"file": "File:Timpani F major triad.ogg", "label": "Timpani F major triad"}
+        - {"file": "File:Paukenwirbel auf einer Wiener Pauke mit acht verschiedenen Schlegeln.ogg", "label": "Timpani rolls with eight different mallets"}
+        - {"file": "File:Timpani F major triad.ogg", "label": "F major triad on timpani"}
+        - {"file": "File:Timpani 02 L.wav", "label": "Mozart, timpani part (close microphone)", "start": 25.8, "dur": 20.0}
 
   - id: kick-drum
     name: Kick drum
@@ -1410,12 +1446,11 @@ instruments:
     listen: ["Ringing pitched tones", "A bass drum that bends upward"]
     confusions:
       - { id: darbuka, cue: "Darbuka tones are not pitched and do not bend." }
-
-  # ---------------------------------------------------------------- metal & small
     samples:
       excerpts:
         - { file: "File:Tabla drums demo.oga", label: "Demo", dur: 8 }
 
+  # ---------------------------------------------------------------- metal & small
   - id: hi-hat
     name: Hi-hat
     family: metal
@@ -1805,7 +1840,6 @@ instruments:
         - { label: Closed hat, src: generated, preset: dm-hat }
 
   # ---------------------------------------------------------------- added in round two
-
   - id: honky-tonk-piano
     name: Honky-tonk piano
     family: keys
@@ -2283,7 +2317,6 @@ instruments:
         - { file: "File:Interpretación del tema \"29 de setiembre\" ejecutada con sikus Malta - Sonido conjunto de Ira y Arka.wav", label: "Andean sikus (panpipes)", dur: 10 }
 
   # ---------------------------------------------------------------- recordings from Wikimedia Commons
-
   - id: wurlitzer
     name: Wurlitzer electric piano
     family: keys
@@ -2521,7 +2554,7 @@ instruments:
       excerpts:
         - { file: "File:R. Strauss Don Qixote.ogg", label: "Strauss, Don Quixote", dur: 11.5 }
       performances:
-        - {"file": "File:R. Strauss Don Qixote.ogg", "label": "R. Strauss Don Qixote"}
+        - {"file": "File:R. Strauss Don Qixote.ogg", "label": "R. Strauss, Don Quixote"}
 
   - id: contrabassoon
     name: Contrabassoon
@@ -2539,7 +2572,7 @@ instruments:
       excerpts:
         - { file: "File:Contra2.ogg", label: "Bach cello suite", dur: 12 }
       performances:
-        - {"file": "File:Contra2.ogg", "label": "Contra2"}
+        - {"file": "File:Contra2.ogg", "label": "Contrabassoon passage"}
 
   - id: flugelhorn
     name: Flugelhorn

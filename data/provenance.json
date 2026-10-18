@@ -2773,15 +2773,15 @@
    "credit": "FreePats Jaw Harp"
   }
  ],
- "mandolin/phrase": [
+ "mandolin/perf-1": [
   {
    "source": "commons",
-   "file": "File:Schneewalzer.ogg",
-   "url": "https://commons.wikimedia.org/wiki/File:Schneewalzer.ogg",
-   "license": "CC0",
-   "artist": "StephanDo",
-   "excerpt": "11.4-19.4s",
-   "credit": "StephanDo (Wikimedia Commons)"
+   "file": "File:Antonio Vivaldi, Mandolin Concerto in C major, RV 425.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Antonio_Vivaldi,_Mandolin_Concerto_in_C_major,_RV_425.ogg",
+   "license": "PDM-owner",
+   "artist": "The Milan Baroque Soloists",
+   "excerpt": "107.5-125.5s",
+   "credit": "The Milan Baroque Soloists (Wikimedia Commons)"
   }
  ],
  "mandolin/mix": [
@@ -2811,6 +2811,17 @@
   }
  ],
  "mandolin/phone": [
+  {
+   "source": "commons",
+   "file": "File:Schneewalzer.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Schneewalzer.ogg",
+   "license": "CC0",
+   "artist": "StephanDo",
+   "excerpt": "11.4-19.4s",
+   "credit": "StephanDo (Wikimedia Commons)"
+  }
+ ],
+ "mandolin/phrase": [
   {
    "source": "commons",
    "file": "File:Schneewalzer.ogg",
@@ -3736,6 +3747,54 @@
    "credit": "The original uploader was Fetz at German Wikipedia. (Wikimedia Commons)"
   }
  ],
+ "celesta/perf-1": [
+  {
+   "source": "commons",
+   "file": "File:Чайковский Танец Феи Драже из балета Щелкунчик.webm",
+   "url": "https://commons.wikimedia.org/wiki/File:%D0%A7%D0%B0%D0%B9%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9_%D0%A2%D0%B0%D0%BD%D0%B5%D1%86_%D0%A4%D0%B5%D0%B8_%D0%94%D1%80%D0%B0%D0%B6%D0%B5_%D0%B8%D0%B7_%D0%B1%D0%B0%D0%BB%D0%B5%D1%82%D0%B0_%D0%A9%D0%B5%D0%BB%D0%BA%D1%83%D0%BD%D1%87%D0%B8%D0%BA.webm",
+   "license": "CC BY 3.0",
+   "artist": "Moscow Conservatory (Российский национальный оркестр, Дирижёр — Владислав Лаврик)",
+   "excerpt": "0.5-15.5s",
+   "credit": "Moscow Conservatory (Российский национальный оркестр, Дирижёр — Владислав Лаврик) (Wikimedia Commons)"
+  }
+ ],
+ "celesta/mix": [
+  {
+   "source": "commons",
+   "file": "File:Чайковский Танец Феи Драже из балета Щелкунчик.webm",
+   "url": "https://commons.wikimedia.org/wiki/File:%D0%A7%D0%B0%D0%B9%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9_%D0%A2%D0%B0%D0%BD%D0%B5%D1%86_%D0%A4%D0%B5%D0%B8_%D0%94%D1%80%D0%B0%D0%B6%D0%B5_%D0%B8%D0%B7_%D0%B1%D0%B0%D0%BB%D0%B5%D1%82%D0%B0_%D0%A9%D0%B5%D0%BB%D0%BA%D1%83%D0%BD%D1%87%D0%B8%D0%BA.webm",
+   "license": "CC BY 3.0",
+   "artist": "Moscow Conservatory (Российский национальный оркестр, Дирижёр — Владислав Лаврик)",
+   "excerpt": "0.5-15.5s",
+   "credit": "Moscow Conservatory (Российский национальный оркестр, Дирижёр — Владислав Лаврик) (Wikimedia Commons)"
+  },
+  {
+   "source": "freepats",
+   "bank": "MuldjordKit",
+   "file": "drum groove (kick, snare, hi-hat)",
+   "license": "CC-BY-4.0",
+   "credit": "MuldjordKit by Lars Muldjord (FreePats stereo version)"
+  },
+  {
+   "source": "url",
+   "file": "LibriVox readings (two voices)",
+   "url": "https://archive.org/details/short_story_055_1304_librivox",
+   "license": "CC0-1.0",
+   "artist": "LibriVox volunteers",
+   "credit": "LibriVox volunteers"
+  }
+ ],
+ "celesta/phone": [
+  {
+   "source": "commons",
+   "file": "File:Чайковский Танец Феи Драже из балета Щелкунчик.webm",
+   "url": "https://commons.wikimedia.org/wiki/File:%D0%A7%D0%B0%D0%B9%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9_%D0%A2%D0%B0%D0%BD%D0%B5%D1%86_%D0%A4%D0%B5%D0%B8_%D0%94%D1%80%D0%B0%D0%B6%D0%B5_%D0%B8%D0%B7_%D0%B1%D0%B0%D0%BB%D0%B5%D1%82%D0%B0_%D0%A9%D0%B5%D0%BB%D0%BA%D1%83%D0%BD%D1%87%D0%B8%D0%BA.webm",
+   "license": "CC BY 3.0",
+   "artist": "Moscow Conservatory (Российский национальный оркестр, Дирижёр — Владислав Лаврик)",
+   "excerpt": "0.5-15.5s",
+   "credit": "Moscow Conservatory (Российский национальный оркестр, Дирижёр — Владислав Лаврик) (Wikimedia Commons)"
+  }
+ ],
  "music-box/phrase": [
   {
    "source": "commons",
@@ -4317,9 +4376,31 @@
    "file": "File:Accordéon chromatique - exercice 1 audio.ogg",
    "url": "https://commons.wikimedia.org/wiki/File:Accord%C3%A9on_chromatique_-_exercice_1_audio.ogg",
    "license": "CC BY-SA 3.0",
-   "artist": "Cette image a été créée par Savant-fou Elle est donc sous licence libre. Si jamais vous avez besoin d'autres clichés sur ce thème, contactez-moi ! Merci de créditer: Image de Savant-fou (http://fr.wikipedia.org/wiki/Utilisateur:Savant-fou - //commons.wikimedia.org/wiki/File:Accord%C3%A9on_chromatique_-_exercice_1_audio.ogg). If you need other pictures about this subject, please feel free to contact me. Please credit : Picture of Savant-fou (http://fr.wikipedia.org/wiki/Utilisateur:Savant-fou - //commons.wikimedia.org/wiki/File:Accord%C3%A9on_chromatique_-_exercice_1_audio.ogg).",
+   "artist": "Savant-fou",
    "excerpt": "4.9-18.9s",
-   "credit": "Cette image a été créée par Savant-fou Elle est donc sous licence libre. Si jamais vous avez besoin d'autres clichés sur ce thème, contactez-moi ! Merci de créditer: Image de Savant-fou (http://fr.wikipedia.org/wiki/Utilisateur:Savant-fou - //commons.wikimedia.org/wiki/File:Accord%C3%A9on_chromatique_-_exercice_1_audio.ogg). If you need other pictures about this subject, please feel free to contact me. Please credit : Picture of Savant-fou (http://fr.wikipedia.org/wiki/Utilisateur:Savant-fou - //commons.wikimedia.org/wiki/File:Accord%C3%A9on_chromatique_-_exercice_1_audio.ogg). (Wikimedia Commons)"
+   "credit": "Savant-fou (Wikimedia Commons)"
+  }
+ ],
+ "accordion/perf-2": [
+  {
+   "source": "commons",
+   "file": "File:Oroitz Maiz - Praeludium XIV.wav",
+   "url": "https://commons.wikimedia.org/wiki/File:Oroitz_Maiz_-_Praeludium_XIV.wav",
+   "license": "CC BY-SA 4.0",
+   "artist": "Xumariroca",
+   "excerpt": "0.5-20.5s",
+   "credit": "Xumariroca (Wikimedia Commons)"
+  }
+ ],
+ "accordion/perf-3": [
+  {
+   "source": "commons",
+   "file": "File:Lõõtspillilugu.webm",
+   "url": "https://commons.wikimedia.org/wiki/File:L%C3%B5%C3%B5tspillilugu.webm",
+   "license": "CC BY 4.0",
+   "artist": "Ivo Kruusamägi",
+   "excerpt": "2.0-22.0s",
+   "credit": "Ivo Kruusamägi (Wikimedia Commons)"
   }
  ],
  "harmonica/note-1": [
@@ -4489,6 +4570,28 @@
    "artist": "Julien Grandgagnage",
    "excerpt": "1.0-15.0s",
    "credit": "Julien Grandgagnage (Wikimedia Commons)"
+  }
+ ],
+ "harmonica/perf-3": [
+  {
+   "source": "commons",
+   "file": "File:Sounbeispiel Chromatische Mundharmonika.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Sounbeispiel_Chromatische_Mundharmonika.ogg",
+   "license": "CC BY-SA 3.0",
+   "artist": "Grassinger",
+   "excerpt": "28.9-48.9s",
+   "credit": "Grassinger (Wikimedia Commons)"
+  }
+ ],
+ "harmonica/perf-4": [
+  {
+   "source": "commons",
+   "file": "File:Wiener Tremolo Mundharmonika.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Wiener_Tremolo_Mundharmonika.ogg",
+   "license": "CC BY-SA 3.0",
+   "artist": "Matthias.Gruber 20:45, 26 October 2006 (UTC)",
+   "excerpt": "17.0-37.0s",
+   "credit": "Matthias.Gruber 20:45, 26 October 2006 (UTC) (Wikimedia Commons)"
   }
  ],
  "harmonica/v-hand-vibrato": [
@@ -5148,9 +5251,9 @@
    "file": "File:Hans P Keuning - 12 difficult studies (treble recorder) - Vivace.ogg",
    "url": "https://commons.wikimedia.org/wiki/File:Hans_P_Keuning_-_12_difficult_studies_(treble_recorder)_-_Vivace.ogg",
    "license": "CC BY-SA 3.0",
-   "artist": "No machine-readable author provided. Jmfayard assumed (based on copyright claims).",
+   "artist": "Jmfayard",
    "excerpt": "2.2-16.2s",
-   "credit": "No machine-readable author provided. Jmfayard assumed (based on copyright claims). (Wikimedia Commons)"
+   "credit": "Jmfayard (Wikimedia Commons)"
   }
  ],
  "recorder/v-soprano-recorder": [
@@ -5631,9 +5734,9 @@
    "file": "File:Ferling Oboe Study No 28 Aaron Hill.ogg",
    "url": "https://commons.wikimedia.org/wiki/File:Ferling_Oboe_Study_No_28_Aaron_Hill.ogg",
    "license": "Public domain",
-   "artist": "Aaron Hill Oboe / Franz Wilhelm Ferling (1796–1874) Bearbeitung (Video entfernt): Lewenstein",
+   "artist": "Aaron Hill Oboe / Franz Wilhelm Ferling (1796–1874); Bearbeitung (Video entfernt): Lewenstein",
    "excerpt": "5.6-19.6s",
-   "credit": "Aaron Hill Oboe / Franz Wilhelm Ferling (1796–1874) Bearbeitung (Video entfernt): Lewenstein (Wikimedia Commons)"
+   "credit": "Aaron Hill Oboe / Franz Wilhelm Ferling (1796–1874); Bearbeitung (Video entfernt): Lewenstein (Wikimedia Commons)"
   }
  ],
  "oboe/v-vibrato": [
@@ -5675,6 +5778,54 @@
    "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Woodwinds/Oboe/Stacc/Oboe_Stacc_F4_v2_rr1_Main.wav",
    "license": "CC0-1.0",
    "credit": "Versilian Studios"
+  }
+ ],
+ "english-horn/perf-1": [
+  {
+   "source": "commons",
+   "file": "File:Antonin Dvorak - symphony no. 9 in e minor 'from the new world', op. 95 - ii. largo.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Antonin_Dvorak_-_symphony_no._9_in_e_minor_%27from_the_new_world%27,_op._95_-_ii._largo.ogg",
+   "license": "Public domain",
+   "artist": "Antonín Dvořák",
+   "excerpt": "33.5-57.5s",
+   "credit": "Antonín Dvořák (Wikimedia Commons)"
+  }
+ ],
+ "english-horn/mix": [
+  {
+   "source": "commons",
+   "file": "File:Antonin Dvorak - symphony no. 9 in e minor 'from the new world', op. 95 - ii. largo.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Antonin_Dvorak_-_symphony_no._9_in_e_minor_%27from_the_new_world%27,_op._95_-_ii._largo.ogg",
+   "license": "Public domain",
+   "artist": "Antonín Dvořák",
+   "excerpt": "33.5-57.5s",
+   "credit": "Antonín Dvořák (Wikimedia Commons)"
+  },
+  {
+   "source": "freepats",
+   "bank": "MuldjordKit",
+   "file": "drum groove (kick, snare, hi-hat)",
+   "license": "CC-BY-4.0",
+   "credit": "MuldjordKit by Lars Muldjord (FreePats stereo version)"
+  },
+  {
+   "source": "url",
+   "file": "LibriVox readings (two voices)",
+   "url": "https://archive.org/details/short_story_055_1304_librivox",
+   "license": "CC0-1.0",
+   "artist": "LibriVox volunteers",
+   "credit": "LibriVox volunteers"
+  }
+ ],
+ "english-horn/phone": [
+  {
+   "source": "commons",
+   "file": "File:Antonin Dvorak - symphony no. 9 in e minor 'from the new world', op. 95 - ii. largo.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:Antonin_Dvorak_-_symphony_no._9_in_e_minor_%27from_the_new_world%27,_op._95_-_ii._largo.ogg",
+   "license": "Public domain",
+   "artist": "Antonín Dvořák",
+   "excerpt": "33.5-57.5s",
+   "credit": "Antonín Dvořák (Wikimedia Commons)"
   }
  ],
  "clarinet/note-1": [
@@ -6647,6 +6798,28 @@
    "credit": "FreePats Bagpipe"
   }
  ],
+ "bagpipe/perf-1": [
+  {
+   "source": "url",
+   "file": "berlinTempelhofDudelsack130811b.mp3",
+   "url": "https://archive.org/details/aporee_19145_22231",
+   "license": "CC BY 3.0",
+   "artist": "udo noll (radio aporee)",
+   "excerpt": "9.0-31.0s",
+   "credit": "udo noll (radio aporee)"
+  }
+ ],
+ "bagpipe/perf-2": [
+  {
+   "source": "commons",
+   "file": "File:Gaita Player in Santiago de Compostela.wav",
+   "url": "https://commons.wikimedia.org/wiki/File:Gaita_Player_in_Santiago_de_Compostela.wav",
+   "license": "CC BY-SA 4.0",
+   "artist": "Bikerhiker75",
+   "excerpt": "0.5-20.5s",
+   "credit": "Bikerhiker75 (Wikimedia Commons)"
+  }
+ ],
  "trumpet/note-1": [
   {
    "source": "vsco",
@@ -7020,6 +7193,17 @@
    "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Brass/F%20Horn/sus/MOHorn_sus_A2_v2_1.wav",
    "license": "CC0-1.0",
    "credit": "Versilian Studios"
+  }
+ ],
+ "french-horn/perf-1": [
+  {
+   "source": "commons",
+   "file": "File:Brahms - Symphony No. 1 in C minor, Op. 68 - IV. Adagio - Piu andante - Allegro non troppo, ma con brio - Piu allegro (Musopen Symphony).flac",
+   "url": "https://commons.wikimedia.org/wiki/File:Brahms_-_Symphony_No._1_in_C_minor,_Op._68_-_IV._Adagio_-_Piu_andante_-_Allegro_non_troppo,_ma_con_brio_-_Piu_allegro_(Musopen_Symphony).flac",
+   "license": "Public domain",
+   "artist": "Johannes Brahms",
+   "excerpt": "128.5-147.5s",
+   "credit": "Johannes Brahms (Wikimedia Commons)"
   }
  ],
  "french-horn/v-staccato": [
@@ -7399,6 +7583,17 @@
    "credit": "Versilian Studios"
   }
  ],
+ "tuba/perf-1": [
+  {
+   "source": "commons",
+   "file": "File:8 Days of Day- Tuba solo featuring Chief Musician James Hicks.webm",
+   "url": "https://commons.wikimedia.org/wiki/File:8_Days_of_Day-_Tuba_solo_featuring_Chief_Musician_James_Hicks.webm",
+   "license": "Public domain",
+   "artist": "United States Navy Band",
+   "excerpt": "0.3-21.3s",
+   "credit": "United States Navy Band (Wikimedia Commons)"
+  }
+ ],
  "tuba/v-staccato": [
   {
    "source": "vsco",
@@ -7429,6 +7624,65 @@
    "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Brass/Tuba/stac/Tuba3_stac_F2_v2_rr1_Sum.wav",
    "license": "CC0-1.0",
    "credit": "Versilian Studios"
+  }
+ ],
+ "euphonium/perf-1": [
+  {
+   "source": "commons",
+   "file": "File:The Bride of the Waves - U.S. Coast Guard Band.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:The_Bride_of_the_Waves_-_U.S._Coast_Guard_Band.ogg",
+   "license": "Public domain",
+   "artist": "Performance: U.S. Coast Guard Band; Composition: Herbert L. Clarke",
+   "excerpt": "62.5-77.5s",
+   "credit": "Performance: U.S. Coast Guard Band; Composition: Herbert L. Clarke (Wikimedia Commons)"
+  }
+ ],
+ "euphonium/mix": [
+  {
+   "source": "commons",
+   "file": "File:The Bride of the Waves - U.S. Coast Guard Band.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:The_Bride_of_the_Waves_-_U.S._Coast_Guard_Band.ogg",
+   "license": "Public domain",
+   "artist": "Performance: U.S. Coast Guard Band; Composition: Herbert L. Clarke",
+   "excerpt": "62.5-77.5s",
+   "credit": "Performance: U.S. Coast Guard Band; Composition: Herbert L. Clarke (Wikimedia Commons)"
+  },
+  {
+   "source": "freepats",
+   "bank": "MuldjordKit",
+   "file": "drum groove (kick, snare, hi-hat)",
+   "license": "CC-BY-4.0",
+   "credit": "MuldjordKit by Lars Muldjord (FreePats stereo version)"
+  },
+  {
+   "source": "url",
+   "file": "LibriVox readings (two voices)",
+   "url": "https://archive.org/details/short_story_055_1304_librivox",
+   "license": "CC0-1.0",
+   "artist": "LibriVox volunteers",
+   "credit": "LibriVox volunteers"
+  }
+ ],
+ "euphonium/phone": [
+  {
+   "source": "commons",
+   "file": "File:The Bride of the Waves - U.S. Coast Guard Band.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:The_Bride_of_the_Waves_-_U.S._Coast_Guard_Band.ogg",
+   "license": "Public domain",
+   "artist": "Performance: U.S. Coast Guard Band; Composition: Herbert L. Clarke",
+   "excerpt": "62.5-77.5s",
+   "credit": "Performance: U.S. Coast Guard Band; Composition: Herbert L. Clarke (Wikimedia Commons)"
+  }
+ ],
+ "euphonium/perf-2": [
+  {
+   "source": "commons",
+   "file": "File:The Bride of the Waves - U.S. Coast Guard Band.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:The_Bride_of_the_Waves_-_U.S._Coast_Guard_Band.ogg",
+   "license": "Public domain",
+   "artist": "Performance: U.S. Coast Guard Band; Composition: Herbert L. Clarke",
+   "excerpt": "268.0-279.0s",
+   "credit": "Performance: U.S. Coast Guard Band; Composition: Herbert L. Clarke (Wikimedia Commons)"
   }
  ],
  "didgeridoo/hit-1": [
@@ -8259,6 +8513,17 @@
    "credit": "Versilian Studios and contributors"
   }
  ],
+ "tubular-bells/perf-1": [
+  {
+   "source": "commons",
+   "file": "File:A Dream of a Witches' Sabbath - transcribed by Lt. Col. Jack T. Cline - U.S. Marine Band.ogg",
+   "url": "https://commons.wikimedia.org/wiki/File:A_Dream_of_a_Witches%27_Sabbath_-_transcribed_by_Lt._Col._Jack_T._Cline_-_U.S._Marine_Band.ogg",
+   "license": "Public domain",
+   "artist": "Composition: Hector Berlioz (1803-1869); Transcription: Lieutenant Colonel Jack T. Kline; Performance: U.S. Marine Band",
+   "excerpt": "161.5-185.5s",
+   "credit": "Composition: Hector Berlioz (1803-1869); Transcription: Lieutenant Colonel Jack T. Kline; Performance: U.S. Marine Band (Wikimedia Commons)"
+  }
+ ],
  "hand-chimes/note-1": [
   {
    "source": "vcsl",
@@ -8876,6 +9141,54 @@
    "credit": "Michael Paschko (Ixkeys) www.hangblog.org (Wikimedia Commons)"
   }
  ],
+ "steel-drum/perf-1": [
+  {
+   "source": "commons",
+   "file": "File:Bach Sinfonia 12 for steel pan.webm",
+   "url": "https://commons.wikimedia.org/wiki/File:Bach_Sinfonia_12_for_steel_pan.webm",
+   "license": "CC BY 3.0",
+   "artist": "Andy Clayton",
+   "excerpt": "1.0-25.0s",
+   "credit": "Andy Clayton (Wikimedia Commons)"
+  }
+ ],
+ "steel-drum/mix": [
+  {
+   "source": "commons",
+   "file": "File:Bach Sinfonia 12 for steel pan.webm",
+   "url": "https://commons.wikimedia.org/wiki/File:Bach_Sinfonia_12_for_steel_pan.webm",
+   "license": "CC BY 3.0",
+   "artist": "Andy Clayton",
+   "excerpt": "1.0-25.0s",
+   "credit": "Andy Clayton (Wikimedia Commons)"
+  },
+  {
+   "source": "freepats",
+   "bank": "MuldjordKit",
+   "file": "drum groove (kick, snare, hi-hat)",
+   "license": "CC-BY-4.0",
+   "credit": "MuldjordKit by Lars Muldjord (FreePats stereo version)"
+  },
+  {
+   "source": "url",
+   "file": "LibriVox readings (two voices)",
+   "url": "https://archive.org/details/short_story_055_1304_librivox",
+   "license": "CC0-1.0",
+   "artist": "LibriVox volunteers",
+   "credit": "LibriVox volunteers"
+  }
+ ],
+ "steel-drum/phone": [
+  {
+   "source": "commons",
+   "file": "File:Bach Sinfonia 12 for steel pan.webm",
+   "url": "https://commons.wikimedia.org/wiki/File:Bach_Sinfonia_12_for_steel_pan.webm",
+   "license": "CC BY 3.0",
+   "artist": "Andy Clayton",
+   "excerpt": "1.0-25.0s",
+   "credit": "Andy Clayton (Wikimedia Commons)"
+  }
+ ],
  "balafon/note-1": [
   {
    "source": "vcsl",
@@ -9104,6 +9417,17 @@
    "artist": "Schrauber5",
    "excerpt": "0.0-14.0s",
    "credit": "Schrauber5 (Wikimedia Commons)"
+  }
+ ],
+ "timpani/perf-3": [
+  {
+   "source": "commons",
+   "file": "File:Timpani 02 L.wav",
+   "url": "https://commons.wikimedia.org/wiki/File:Timpani_02_L.wav",
+   "license": "CC0",
+   "artist": "Mozart",
+   "excerpt": "25.8-45.8s",
+   "credit": "Mozart (Wikimedia Commons)"
   }
  ],
  "timpani/hit-1": [
@@ -12832,9 +13156,9 @@
    "file": "File:Shikanotoone new.ogg",
    "url": "https://commons.wikimedia.org/wiki/File:Shikanotoone_new.ogg",
    "license": "Public domain",
-   "artist": "derivative work: Torsodog (talk) Shikanotoone.ogg: Araki Kodō III (1879–1935)",
+   "artist": "derivative work: Torsodog (talk); Shikanotoone.ogg: Araki Kodō III (1879–1935)",
    "excerpt": "145.1-157.1s",
-   "credit": "derivative work: Torsodog (talk) Shikanotoone.ogg: Araki Kodō III (1879–1935) (Wikimedia Commons)"
+   "credit": "derivative work: Torsodog (talk); Shikanotoone.ogg: Araki Kodō III (1879–1935) (Wikimedia Commons)"
   }
  ],
  "bansuri/phrase": [
@@ -13094,9 +13418,9 @@
    "file": "File:Contra2.ogg",
    "url": "https://commons.wikimedia.org/wiki/File:Contra2.ogg",
    "license": "CC BY-SA 3.0",
-   "artist": "Kat Walsh. Uploaded by Mindspillage at en.wikipedia",
+   "artist": "Kat Walsh.; Uploaded by Mindspillage at en.wikipedia",
    "excerpt": "1.0-15.0s",
-   "credit": "Kat Walsh. Uploaded by Mindspillage at en.wikipedia (Wikimedia Commons)"
+   "credit": "Kat Walsh.; Uploaded by Mindspillage at en.wikipedia (Wikimedia Commons)"
   }
  ],
  "contrabassoon/mix": [
@@ -13105,9 +13429,9 @@
    "file": "File:Contra2.ogg",
    "url": "https://commons.wikimedia.org/wiki/File:Contra2.ogg",
    "license": "CC BY-SA 3.0",
-   "artist": "Kat Walsh. Uploaded by Mindspillage at en.wikipedia",
+   "artist": "Kat Walsh.; Uploaded by Mindspillage at en.wikipedia",
    "excerpt": "1.0-13.0s",
-   "credit": "Kat Walsh. Uploaded by Mindspillage at en.wikipedia (Wikimedia Commons)"
+   "credit": "Kat Walsh.; Uploaded by Mindspillage at en.wikipedia (Wikimedia Commons)"
   },
   {
    "source": "freepats",
@@ -13131,9 +13455,9 @@
    "file": "File:Contra2.ogg",
    "url": "https://commons.wikimedia.org/wiki/File:Contra2.ogg",
    "license": "CC BY-SA 3.0",
-   "artist": "Kat Walsh. Uploaded by Mindspillage at en.wikipedia",
+   "artist": "Kat Walsh.; Uploaded by Mindspillage at en.wikipedia",
    "excerpt": "1.0-13.0s",
-   "credit": "Kat Walsh. Uploaded by Mindspillage at en.wikipedia (Wikimedia Commons)"
+   "credit": "Kat Walsh.; Uploaded by Mindspillage at en.wikipedia (Wikimedia Commons)"
   }
  ],
  "contrabassoon/phrase": [
@@ -13142,9 +13466,9 @@
    "file": "File:Contra2.ogg",
    "url": "https://commons.wikimedia.org/wiki/File:Contra2.ogg",
    "license": "CC BY-SA 3.0",
-   "artist": "Kat Walsh. Uploaded by Mindspillage at en.wikipedia",
+   "artist": "Kat Walsh.; Uploaded by Mindspillage at en.wikipedia",
    "excerpt": "1.0-13.0s",
-   "credit": "Kat Walsh. Uploaded by Mindspillage at en.wikipedia (Wikimedia Commons)"
+   "credit": "Kat Walsh.; Uploaded by Mindspillage at en.wikipedia (Wikimedia Commons)"
   }
  ],
  "flugelhorn/perf-1": [

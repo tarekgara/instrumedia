@@ -1162,6 +1162,43 @@ tuba:
       A double bass is a string instrument, so it has a bowed grain or a
       woody pluck that dies away. The tuba is a smooth, round, brass tone with
       breath behind it.
+    euphonium: >-
+      A euphonium is a smaller tuba pitched an octave higher, so it sits in
+      the tenor range and usually plays melodies; the tuba is deeper and
+      heavier and holds down the bass.
+
+euphonium:
+  how: >-
+    The player buzzes the lips into a deep cup mouthpiece that feeds a wide,
+    cone-shaped brass tube, coiled and ending in an upward bell; three or four
+    valves add tubing to change pitch. It is built like a small tuba but
+    pitched an octave higher, in the same range as a trombone.
+  why: >-
+    The wide, widening bore and deep mouthpiece favour the lower overtones,
+    which gives a round, velvety tone with soft edges. A trombone covers the
+    same notes through a narrower, mostly straight tube, so it sounds brighter
+    and more cutting. Valves let the euphonium play fast, smooth runs that are
+    awkward on a slide.
+  music: >-
+    A mainstay of British brass bands, concert and military bands, where it
+    often carries the tenor melody and countermelodies; it also has a solo
+    repertoire of showpieces and variations.
+  range: >-
+    Low notes are dark and tuba-like, the middle is warm and singing, and the
+    top turns bright and horn-like without becoming harsh.
+  vs:
+    tuba: >-
+      A tuba is the same shape scaled up, an octave lower, with a heavier,
+      deeper sound that usually plays the bass line. The euphonium sits in
+      the tenor range and plays melodies.
+    trombone: >-
+      Both cover the same notes, but the trombone's narrower, cylindrical
+      tube makes it brighter and brassier when loud, and its slide can glide
+      between notes. The euphonium is rounder and mellower.
+    french-horn: >-
+      A horn's bell points backwards and its narrow tube is very long, so it
+      sounds more distant and veiled. The euphonium faces the listener and
+      sounds closer, warmer and more direct.
 
 didgeridoo:
   how: >-
