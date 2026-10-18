@@ -45,7 +45,7 @@ ROOT = Path(__file__).resolve().parent.parent
 CACHE = ROOT / ".cache"
 AUDIO = ROOT / "audio"
 SR = 44100
-BUILD_VERSION = 9  # bump to invalidate every cached instrument
+BUILD_VERSION = 10  # bump to invalidate every cached instrument
 
 REPOS = {"vcsl": "sgossner/VCSL/master", "vsco": "sgossner/VSCO-2-CE/master"}
 
@@ -503,6 +503,46 @@ def speech_noise(n):
     return band * env
 
 
+# Real speech for the busy mix: LibriVox volunteers (Short Story Collection Vol. 055, CC0).
+SPEECH_PAGE = "https://archive.org/details/short_story_055_1304_librivox"
+SPEECH_BASE = "https://archive.org/download/short_story_055_1304_librivox/"
+SPEECH_FILES = [
+    "shortstory055_03_sphinxwithoutasecret_rb_64kb.mp3",
+    "shortstory055_05_manwhowouldmanage_rg_64kb.mp3",
+    "shortstory055_06_encounter_bm_64kb.mp3",
+    "shortstory055_10_fromtheteethofthetide_jt_64kb.mp3",
+]
+_SPEECH = {}
+
+
+def speech_audio(name):
+    if name not in _SPEECH:
+        dest = CACHE / "speech" / name
+        if not dest.exists():
+            http_get(SPEECH_BASE + name, dest)
+        _SPEECH[name] = load(dest)
+    return _SPEECH[name]
+
+
+def conversation(n, seed):
+    """Two readers taking turns, like people talking in the room."""
+    rng = np.random.default_rng(seed)
+    voices = rng.choice(len(SPEECH_FILES), size=2, replace=False)
+    out = np.zeros(n, dtype=np.float32)
+    pos, turn = 0, 0
+    while pos < n:
+        full = speech_audio(SPEECH_FILES[voices[turn % 2]])
+        seg = full[int(rng.uniform(60, max(61, len(full) / SR - 10)) * SR):][: int(rng.uniform(1.6, 3.2) * SR)].copy()
+        k = min(len(seg), int(0.03 * SR))
+        seg[:k] *= np.linspace(0, 1, k)
+        seg[len(seg) - k:] *= np.linspace(1, 0, k)
+        end = min(n, pos + len(seg))
+        out[pos:end] += normalize(seg, -20)[: end - pos]
+        pos = end + int(rng.uniform(0.05, 0.35) * SR)
+        turn += 1
+    return out
+
+
 def busy_mix(phrase):
     n = len(phrase) + int(0.4 * SR)
     drums = np.zeros(n)
@@ -522,7 +562,9 @@ def busy_mix(phrase):
             drums[pos:end] += x[:end - pos] * g
     wet = reverb(phrase)[:n]
     wet = np.pad(wet, (0, n - len(wet)))
-    mix = (normalize(wet, -20) + normalize(drums, -24) + normalize(speech_noise(n), -25))
+    talk = reverb(conversation(n, seed=len(phrase)), secs=0.6, wet=0.18)[:n]
+    talk = np.pad(talk, (0, max(0, n - len(talk))))
+    mix = (normalize(wet, -20) + normalize(drums, -24) + normalize(talk, -24))
     return normalize(mix, -18)
 
 
@@ -838,7 +880,7 @@ def build_instrument(inst):
             emit("phrase", "Phrase", "phrase", phrase, origin)
             emit("mix", "Buried in a busy mix", "context", busy_mix(phrase),
                  origin + [{"source": "freepats", "bank": "MuldjordKit", "file": "drum groove (kick, snare, hi-hat)"},
-                           {"source": "generated", "preset": "speech-shaped noise and room reverb"}])
+                           {"source": "url", "file": "LibriVox readings (two voices)", "url": SPEECH_PAGE, "license": "CC0-1.0", "artist": "LibriVox volunteers"}])
             emit("phone", "Through a small speaker", "context", small_speaker(phrase), origin)
 
     for k, pf in enumerate(spec.get("performances", []), 1):
@@ -858,7 +900,7 @@ def build_instrument(inst):
         if not any(s["key"] == "mix" for s in samples):
             emit("mix", "Buried in a busy mix", "context", busy_mix(x[: int(8 * SR)]),
                  [origin, {"source": "freepats", "bank": "MuldjordKit", "file": "drum groove (kick, snare, hi-hat)"},
-                  {"source": "generated", "preset": "speech-shaped noise and room reverb"}])
+                  {"source": "url", "file": "LibriVox readings (two voices)", "url": SPEECH_PAGE, "license": "CC0-1.0", "artist": "LibriVox volunteers"}])
             emit("phone", "Through a small speaker", "context", small_speaker(x[: int(8 * SR)]), origin)
 
     for k, ex in enumerate(spec.get("excerpts", []), 1):
@@ -876,7 +918,7 @@ def build_instrument(inst):
         if key == "phrase":
             emit("mix", "Buried in a busy mix", "context", busy_mix(x),
                  [origin, {"source": "freepats", "bank": "MuldjordKit", "file": "drum groove (kick, snare, hi-hat)"},
-                  {"source": "generated", "preset": "speech-shaped noise and room reverb"}])
+                  {"source": "url", "file": "LibriVox readings (two voices)", "url": SPEECH_PAGE, "license": "CC0-1.0", "artist": "LibriVox volunteers"}])
             emit("phone", "Through a small speaker", "context", small_speaker(x), origin)
 
     for v in spec.get("variants", []):
@@ -1159,7 +1201,7 @@ def write_sources_md(lib, provenance):
         "",
         "Processing applied to all clips: trimmed to the onset, faded, mixed to mono, loudness-normalized",
         "to about -20 LUFS, encoded as MP3. Phrases are assembled from individual recorded notes.",
-        "\"Busy mix\" clips add a drum groove (MuldjordKit), speech-shaped noise and synthetic reverb.",
+        "\"Busy mix\" clips add a drum groove (MuldjordKit), real speech (LibriVox, CC0) and synthetic reverb.",
         "",
         "| Source | License | Clips |",
         "| --- | --- | ---: |",

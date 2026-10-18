@@ -6,14 +6,15 @@ is in [`data/provenance.json`](data/provenance.json).
 
 Processing applied to all clips: trimmed to the onset, faded, mixed to mono, loudness-normalized
 to about -20 LUFS, encoded as MP3. Phrases are assembled from individual recorded notes.
-"Busy mix" clips add a drum groove (MuldjordKit), speech-shaped noise and synthetic reverb.
+"Busy mix" clips add a drum groove (MuldjordKit), real speech (LibriVox, CC0) and synthetic reverb.
 
 | Source | License | Clips |
 | --- | --- | ---: |
 | Versilian Studios and contributors | CC0-1.0 | 538 |
 | Versilian Studios | CC0-1.0 | 287 |
-| Generated in code for this library | CC0-1.0 | 198 |
+| Generated in code for this library | CC0-1.0 | 106 |
 | MuldjordKit by Lars Muldjord (FreePats stereo version) | CC-BY-4.0 | 98 |
+| LibriVox volunteers | CC0-1.0 | 92 |
 | FreePats Spanish Classical Guitar | CC0-1.0 | 23 |
 | FSS Steel-String Guitar, Gary Campion (FlameStudios), adapted by FreePats | GPL-3.0-or-later WITH FreePats exception | 23 |
 | FreePats Ukulele | CC0-1.0 | 23 |

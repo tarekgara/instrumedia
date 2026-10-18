@@ -1041,7 +1041,7 @@
         <p><strong>Library</strong> is for when you roughly know the family. <strong>Not sure?</strong> ranks every instrument from a few questions you answer by ear. <strong>Quiz</strong> trains your ear on instruments that are easy to mix up. <strong>Compare</strong> puts instruments side by side: press <kbd>1</kbd>–<kbd>6</kbd> to flip between them.</p>
         <p>Every reference clip is loudness-matched (about −20 LUFS), so you hear the instrument rather than the volume. Single notes are spread across each instrument's range, and Compare can play the same register on every lane.</p>
         <p>If you have a recording of your own, drop it anywhere on the page. It's decoded in your browser, never uploaded; <kbd>0</kbd> plays it from any page, and Compare adds it as an extra lane, matched in level and, when it has a clear pitch, in register.</p>
-        <p>“Buried in a busy mix” adds a drum groove, speech-shaped noise and room reverb. “Through a small speaker” band-limits the phrase like a phone or TV speaker. Recordings in the wild rarely sound like a studio, and these help you recognise an instrument when it isn't front and centre.</p>
+        <p>“Buried in a busy mix” adds a drum groove, two people talking (real speech, from public-domain LibriVox readings) and room reverb. “Through a small speaker” band-limits the phrase like a phone or TV speaker. Recordings in the wild rarely sound like a studio, and these help you recognise an instrument when it isn't front and centre.</p>
         <h2>Keyboard</h2>
         <table>
           <tr><th>Key</th><th>Action</th></tr>
